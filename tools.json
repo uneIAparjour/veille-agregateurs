@@ -1,109 +1,7 @@
 {
-  "generated_at": "2026-04-19T20:56:20.444671+00:00",
-  "count": 16,
+  "generated_at": "2026-04-19T21:14:58.312719+00:00",
+  "count": 18,
   "tools": [
-    {
-      "name": "Free AI Tools",
-      "tool_url": "https://aitoptools.com/free-ai-tools/",
-      "description": "",
-      "source": "AI Top Tools",
-      "date_iso": "2026-04-19T20:56:10.581484+00:00",
-      "categories": []
-    },
-    {
-      "name": "Explore a huge, always-growing library of 10,000+ AI tools — all with reviews fr",
-      "tool_url": "https://aitoptools.com/",
-      "description": "Simplifying AI tool selection for every need.",
-      "source": "AI Top Tools",
-      "date_iso": "2026-04-19T20:56:10.576359+00:00",
-      "categories": []
-    },
-    {
-      "name": "🛎️ Claude Bans OpenClaw",
-      "tool_url": "https://aisecret.us/claude-bans-openclaw/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.040354+00:00",
-      "categories": []
-    },
-    {
-      "name": "🛎️ Tokenmaxxing Race",
-      "tool_url": "https://aisecret.us/tokenmaxxing-race/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.040037+00:00",
-      "categories": []
-    },
-    {
-      "name": "🛎️ Mythos Preview Leaks",
-      "tool_url": "https://aisecret.us/mythos-preview-leaks/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.039715+00:00",
-      "categories": [
-        "youtube"
-      ]
-    },
-    {
-      "name": "🛎️ HappyHorse Disappears",
-      "tool_url": "https://aisecret.us/happyhorse-disappears/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.039345+00:00",
-      "categories": []
-    },
-    {
-      "name": "🛎️ Mythos Paused",
-      "tool_url": "https://aisecret.us/mythos-paused/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.039024+00:00",
-      "categories": [
-        "youtube"
-      ]
-    },
-    {
-      "name": "🛎️ Modern Galileo Moment",
-      "tool_url": "https://aisecret.us/modern-galileo-moment/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.038694+00:00",
-      "categories": []
-    },
-    {
-      "name": "🛎️ Swallow Everything",
-      "tool_url": "https://aisecret.us/swallow-everything/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.038337+00:00",
-      "categories": [
-        "youtube"
-      ]
-    },
-    {
-      "name": "🛎️ The First Real AI Nuclear",
-      "tool_url": "https://aisecret.us/template-copy-copy-copy/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.038003+00:00",
-      "categories": []
-    },
-    {
-      "name": "🛎️ Claude Asks for Your ID",
-      "tool_url": "https://aisecret.us/claude-asks-for-your-id/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.037663+00:00",
-      "categories": []
-    },
-    {
-      "name": "🛎️ A Split Era",
-      "tool_url": "https://aisecret.us/a-split-era/",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-04-19T20:56:01.037219+00:00",
-      "categories": []
-    },
     {
       "name": "Fixa.dev",
       "tool_url": "https://www.producthunt.com/products/fixa-dev",
@@ -145,6 +43,137 @@
         "automatisation",
         "site web"
       ]
+    },
+    {
+      "name": "Arky",
+      "tool_url": "https://www.producthunt.com/products/arky",
+      "description": "Your canvas for thinking with AI Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-16T23:50:44-07:00",
+      "categories": [
+        "infographie"
+      ]
+    },
+    {
+      "name": "Ichiba AI",
+      "tool_url": "https://www.producthunt.com/products/ichiba-ai",
+      "description": "AI to AI influence, scored. See what moves the models. Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-16T22:07:24-07:00",
+      "categories": []
+    },
+    {
+      "name": "Hacktron",
+      "tool_url": "https://www.producthunt.com/products/hacktron",
+      "description": "Your AI security engineer. Ship fast while staying secure. Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-16T21:36:40-07:00",
+      "categories": []
+    },
+    {
+      "name": "Studio – The AI-Native Media Workspace",
+      "tool_url": "https://www.producthunt.com/products/coreviz-visual-ai-for-teams",
+      "description": "Organize, tag and edit thousands of photos at once with AI Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-16T21:19:40-07:00",
+      "categories": [
+        "images",
+        "musique"
+      ]
+    },
+    {
+      "name": "Proxima",
+      "tool_url": "https://www.producthunt.com/products/proxima-agentic-training-partner",
+      "description": "AI-Native Workout Programming Companion Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-16T13:12:10-07:00",
+      "categories": []
+    },
+    {
+      "name": "GPT‑Rosalind",
+      "tool_url": "https://www.producthunt.com/products/openai",
+      "description": "Purpose-built model for scientific research & drug discovery Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-16T12:38:44-07:00",
+      "categories": [
+        "recherche"
+      ]
+    },
+    {
+      "name": "Sharpsana",
+      "tool_url": "https://www.producthunt.com/products/sharpsana",
+      "description": "The AI agent that runs your entire startup Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-16T12:12:44-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Navox Agents",
+      "tool_url": "https://www.producthunt.com/products/navox-agents",
+      "description": "Specialist AI engineering team for Claude Code Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-16T11:37:14-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Perplexity Personal Computer",
+      "tool_url": "https://www.producthunt.com/products/perplexity-ai",
+      "description": "Local files. Native apps. Voice control. Always on. Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-16T08:54:07-07:00",
+      "categories": [
+        "voix",
+        "documents",
+        "recherche"
+      ]
+    },
+    {
+      "name": "Verdent 2.0",
+      "tool_url": "https://www.producthunt.com/products/verdent-deck",
+      "description": "Your AI Technical Cofounder Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-15T20:19:40-07:00",
+      "categories": []
+    },
+    {
+      "name": "E.Y.E. by Expert Chase",
+      "tool_url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
+      "description": "Where human life runs with AI Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-15T12:46:19-07:00",
+      "categories": []
+    },
+    {
+      "name": "CoAgentor",
+      "tool_url": "https://www.producthunt.com/products/coagentor",
+      "description": "AI Agents that participate live in meetings Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-15T11:11:13-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Geekflare Scraping API v2",
+      "tool_url": "https://www.producthunt.com/products/geekflare-api",
+      "description": "RAG-ready web scraping that cuts your LLM token costs Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-14T05:59:52-07:00",
+      "categories": [
+        "LLM"
+      ]
+    },
+    {
+      "name": "Vantage in Google Labs",
+      "tool_url": "https://www.producthunt.com/products/google",
+      "description": "Practice & assess future-ready skills with AI-simulated team Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-13T21:56:33-07:00",
+      "categories": []
     }
   ]
 }
