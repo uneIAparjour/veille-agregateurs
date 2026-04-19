@@ -1,0 +1,41 @@
+name: Veille quotidienne outils IA
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installer les dependances
+        run: pip install requests feedparser beautifulsoup4 lxml
+
+      - name: Recuperer les outils
+        run: python fetch_tools.py
+
+      - name: Verifier si tools.json a change
+        id: check
+        run: |
+          git diff --quiet tools.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit et push
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tools.json
+          git commit -m "Veille du $(date +'%d/%m/%Y')"
+          git push
