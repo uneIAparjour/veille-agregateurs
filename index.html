@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veille IA — uneiaparjour.fr</title>
+<style>
+  :root{--orange:#E67E22;--orange-dark:#D35400;--orange-bg:#2a1f0e;--bg:#1a1a1a;--bg2:#242424;--bg3:#2d2d2d;--border:#3a3a3a;--border2:#444;--text:#e8e8e8;--text2:#a0a0a0;--text3:#606060;--green:#27ae60;--green-bg:#1a2e1f;--red:#e74c3c;--red-bg:#2e1a1a;--yellow:#e6a817;--yellow-bg:#2e2410;--blue:#3498db;--blue-bg:#1a2535}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .layout{display:grid;grid-template-columns:230px 1fr;min-height:100vh}
+  .sidebar{background:var(--bg2);border-right:1px solid var(--border);padding:1.25rem;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
+  .main{padding:1.5rem 2rem;max-width:900px}
+  .logo{font-size:12px;font-weight:700;color:var(--orange);letter-spacing:.8px;margin-bottom:1.5rem;display:flex;align-items:center;gap:8px}
+  .logo-dot{width:7px;height:7px;background:var(--orange);border-radius:50%}
+  .sec-label{font-size:10px;font-weight:700;letter-spacing:1.2px;color:var(--text3);text-transform:uppercase;margin:1rem 0 .5rem}
+  .source-row{display:flex;align-items:center;justify-content:space-between;padding:5px 8px;border-radius:5px;margin-bottom:3px}
+  .source-row:hover{background:var(--bg3)}
+  .source-row .sname{font-size:12px;color:var(--text2)}
+  .source-row a{font-size:11px;color:var(--orange);opacity:.7}
+  .source-row a:hover{opacity:1;text-decoration:underline}
+  .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1rem}
+  .stat-block{background:var(--bg3);border-radius:6px;padding:10px 12px}
+  .stat-num{font-size:22px;font-weight:700;line-height:1}
+  .stat-lbl{font-size:11px;color:var(--text3);margin-top:2px}
+  .sel-item{padding:5px 0;border-bottom:1px solid var(--border);font-size:12px}
+  .sel-item .sn{color:var(--text);font-weight:500;display:block;margin-bottom:1px}
+  .sel-item .sc{color:var(--text3);font-size:11px}
+  .toolbar{display:flex;align-items:flex-start;gap:10px;margin-bottom:1.25rem;flex-wrap:wrap}
+  .page-title{font-size:18px;font-weight:700}
+  .update-info{font-size:12px;color:var(--text3);margin-top:2px}
+  .filter-bar{display:flex;gap:6px;margin-bottom:1.25rem;flex-wrap:wrap}
+  .filter-btn{padding:5px 14px;border-radius:20px;border:1px solid var(--border2);background:transparent;color:var(--text2);font-size:12px;cursor:pointer;transition:all .15s}
+  .filter-btn:hover{border-color:var(--orange);color:var(--orange)}
+  .filter-btn.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+  .cpill{display:inline-flex;align-items:center;justify-content:center;background:var(--bg3);color:var(--text3);border-radius:10px;min-width:18px;height:18px;font-size:10px;font-weight:700;padding:0 5px;margin-left:4px}
+  .cards{display:flex;flex-direction:column;gap:10px}
+  .card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;transition:border-color .15s,opacity .2s}
+  .card:hover{border-color:var(--border2)}
+  .card.state-pub{border-color:var(--green)}
+  .card.state-ign{opacity:.3}
+  .card.state-done{opacity:.45}
+  .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+  .tool-name{font-size:15px;font-weight:600;color:var(--text)}
+  .tool-name:hover{color:var(--orange)}
+  .cbadges{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0}
+  .card-desc{font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:10px}
+  .card-meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+  .card-actions{display:flex;gap:8px;align-items:center;border-top:1px solid var(--border);padding-top:10px;flex-wrap:wrap}
+  .badge{font-size:11px;padding:2px 8px;border-radius:4px;display:inline-block;font-weight:500}
+  .b-src{background:var(--bg3);color:var(--text2);border:1px solid var(--border2)}
+  .b-cat{background:var(--blue-bg);color:var(--blue)}
+  .b-pub{background:var(--green-bg);color:var(--green)}
+  .b-done{background:var(--bg3);color:var(--text3);border:1px solid var(--border)}
+  .btn{padding:6px 14px;border-radius:6px;border:1px solid var(--border2);background:transparent;color:var(--text2);font-size:12px;cursor:pointer;transition:all .15s}
+  .btn:hover{background:var(--bg3);color:var(--text)}
+  .btn-g{border-color:var(--green);color:var(--green)}
+  .btn-g:hover{background:var(--green-bg)}
+  .btn-sm{padding:4px 10px;font-size:11px}
+  .sl-pub{font-size:11px;font-weight:700;color:var(--green);letter-spacing:.3px}
+  .sl-done{font-size:11px;color:var(--text3)}
+  .empty{text-align:center;padding:4rem 1rem;color:var(--text3)}
+  .empty-icon{font-size:36px;margin-bottom:1rem;opacity:.4}
+  .loading{text-align:center;padding:3rem;color:var(--text3)}
+  .spinner{display:inline-block;width:20px;height:20px;border:2px solid var(--border2);border-top-color:var(--orange);border-radius:50%;animation:spin .8s linear infinite;margin-bottom:1rem}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .export-area{margin-top:1.5rem;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.25rem}
+  .export-pre{font-family:'Courier New',monospace;font-size:12px;white-space:pre-wrap;color:var(--text);background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:1rem;max-height:280px;overflow-y:auto;line-height:1.7;margin-top:10px}
+  .rbtn{font-size:12px;color:var(--text3);cursor:pointer;border:none;background:none;padding:0}
+  .rbtn:hover{color:var(--orange)}
+  @media(max-width:640px){.layout{grid-template-columns:1fr}.sidebar{position:static;height:auto}.main{padding:1rem}}
+</style>
+</head>
+<body>
+<div class="layout">
+
+<div class="sidebar">
+  <div class="logo"><div class="logo-dot"></div>VEILLE IA — uneiaparjour.fr</div>
+  <div class="stat-row">
+    <div class="stat-block"><div class="stat-num" id="s-total">—</div><div class="stat-lbl">outils trouvés</div></div>
+    <div class="stat-block"><div class="stat-num" style="color:var(--green)" id="s-pub">0</div><div class="stat-lbl">à publier</div></div>
+  </div>
+  <div class="sec-label">Sources</div>
+  <div class="source-row"><span class="sname">Aixploria</span><a href="https://www.aixploria.com/fr/derniers-ajouts/" target="_blank">derniers →</a></div>
+  <div class="source-row"><span class="sname">There's an AI</span><a href="https://theresanaiforthat.com/newest/" target="_blank">nouveaux →</a></div>
+  <div class="source-row"><span class="sname">Futurepedia</span><a href="https://www.futurepedia.io/ai-tools" target="_blank">nouveaux →</a></div>
+  <div class="source-row"><span class="sname">Future Tools</span><a href="https://futuretools.io/" target="_blank">ouvrir →</a></div>
+  <div class="source-row"><span class="sname">AI Secret</span><a href="https://aisecret.us/" target="_blank">ouvrir →</a></div>
+  <div class="source-row"><span class="sname">AI Tools Directory</span><a href="https://aitoolsdirectory.com/?filter=Price-%3AFree,Freemium" target="_blank">free →</a></div>
+  <div class="source-row"><span class="sname">Powerful AI Tools</span><a href="https://www.powerfulai.tools/?filter=Free" target="_blank">free →</a></div>
+  <div class="source-row"><span class="sname">AI Top Tools</span><a href="https://aitoptools.com/#Free;" target="_blank">free →</a></div>
+  <div class="source-row"><span class="sname">AI Tools .sh</span><a href="https://aitools.sh/free" target="_blank">free →</a></div>
+  <div class="source-row"><span class="sname">Toolify.ai</span><a href="https://www.toolify.ai/new" target="_blank">nouveaux →</a></div>
+  <div class="source-row"><span class="sname">Product Hunt AI</span><a href="https://www.producthunt.com/topics/artificial-intelligence" target="_blank">ouvrir →</a></div>
+  <div class="source-row"><span class="sname">The Rundown</span><a href="https://www.therundown.ai/" target="_blank">ouvrir →</a></div>
+  <div class="sec-label" style="margin-top:1.25rem">À publier <span class="cpill" id="s-pub2">0</span></div>
+  <div id="sel-list" style="flex:1;overflow-y:auto"><div style="font-size:12px;color:var(--text3);padding:4px 0">Aucun outil retenu</div></div>
+  <div style="padding-top:1rem;display:flex;flex-direction:column;gap:6px">
+    <button class="btn btn-sm" style="width:100%" onclick="exportSelected()">Exporter la sélection</button>
+    <button class="btn btn-sm" style="width:100%;color:var(--red);border-color:var(--red-bg)" onclick="clearAll()">Réinitialiser</button>
+  </div>
+</div>
+
+<div class="main">
+  <div class="toolbar">
+    <div>
+      <div class="page-title">Veille du <span id="today-lbl">—</span></div>
+      <div class="update-info">Automatique chaque nuit à 5h · <button class="rbtn" onclick="loadTools()">↻ Actualiser</button></div>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="setFilter('all',this)">Tous <span class="cpill" id="f-all">0</span></button>
+    <button class="filter-btn" onclick="setFilter('pending',this)">Non traités <span class="cpill" id="f-pend">0</span></button>
+    <button class="filter-btn" onclick="setFilter('pub',this)">À publier <span class="cpill" id="f-pub">0</span></button>
+    <button class="filter-btn" onclick="setFilter('done',this)">Déjà publié <span class="cpill" id="f-done">0</span></button>
+  </div>
+  <div id="cards-zone"><div class="loading"><div class="spinner"></div><br>Chargement...</div></div>
+  <div id="export-area" class="export-area" style="display:none">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <strong style="font-size:13px">Export — <span id="exp-count">0</span> outil(s)</strong>
+      <button class="btn btn-sm" onclick="copyExp()">Copier</button>
+    </div>
+    <pre class="export-pre" id="exp-pre"></pre>
+  </div>
+</div>
+</div>
+
+<script>
+const SK='veille-states-v2';
+let tools=[],states=JSON.parse(localStorage.getItem(SK)||'{}'),filter='all';
+function saveS(){localStorage.setItem(SK,JSON.stringify(states))}
+function getS(t){return(states[t.tool_url]||{}).state||'pending'}
+function setS(url,s){states[url]={state:s,ts:Date.now()};saveS();render();updateSidebar();updateStats()}
+function pruneS(){const c=Date.now()-7*86400000;const f={};for(const[k,v]of Object.entries(states))if(!v.ts||v.ts>c)f[k]=v;states=f;saveS()}
+
+async function loadTools(){
+  document.getElementById('cards-zone').innerHTML='<div class="loading"><div class="spinner"></div><br>Chargement...</div>';
+  try{
+    const r=await fetch('tools.json?t='+Date.now());
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const d=await r.json();
+    tools=d.tools||[];
+    pruneS();
+    document.getElementById('today-lbl').textContent=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});
+    updateStats();updateSidebar();render();
+  }catch(e){
+    document.getElementById('cards-zone').innerHTML=`<div class="empty"><div class="empty-icon">✕</div><strong>Impossible de charger tools.json</strong><br><span style="font-size:12px;color:var(--text3);margin-top:8px;display:block">Lance le workflow GitHub Actions manuellement<br>depuis l'onglet Actions du dépôt.</span></div>`;
+  }
+}
+
+function filteredTools(){
+  if(filter==='pending')return tools.filter(t=>getS(t)==='pending');
+  if(filter==='pub')return tools.filter(t=>getS(t)==='pub');
+  if(filter==='done')return tools.filter(t=>getS(t)==='done');
+  return tools;
+}
+
+function updateStats(){
+  const n=tools.length,pub=tools.filter(t=>getS(t)==='pub').length,done=tools.filter(t=>getS(t)==='done').length,pend=tools.filter(t=>getS(t)==='pending').length;
+  document.getElementById('s-total').textContent=n;
+  document.getElementById('s-pub').textContent=pub;
+  document.getElementById('s-pub2').textContent=pub;
+  document.getElementById('f-all').textContent=n;
+  document.getElementById('f-pend').textContent=pend;
+  document.getElementById('f-pub').textContent=pub;
+  document.getElementById('f-done').textContent=done;
+}
+
+function updateSidebar(){
+  const sel=tools.filter(t=>getS(t)==='pub');
+  document.getElementById('sel-list').innerHTML=sel.length===0
+    ?'<div style="font-size:12px;color:var(--text3);padding:4px 0">Aucun outil retenu</div>'
+    :sel.map(t=>`<div class="sel-item"><a class="sn" href="${t.tool_url}" target="_blank">${t.name}</a><span class="sc">${(t.categories||[]).join(' · ')}</span></div>`).join('');
+}
+
+function render(){
+  const list=filteredTools(),zone=document.getElementById('cards-zone');
+  if(list.length===0){zone.innerHTML='<div class="empty"><div class="empty-icon">○</div>Aucun outil dans cette vue.</div>';return;}
+  zone.innerHTML='<div class="cards">'+list.map(renderCard).join('')+'</div>';
+}
+
+function renderCard(t){
+  const url=t.tool_url,s=getS(t),cls=s==='pub'?'state-pub':s==='done'?'state-done':s==='ign'?'state-ign':'';
+  const date=t.date_iso?new Date(t.date_iso).toLocaleDateString('fr-FR',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'';
+  const u=url.replace(/'/g,"\\'");
+  const actions={
+    pending:`<button class="btn btn-g btn-sm" onclick="setS('${u}','pub')">À publier</button><button class="btn btn-sm" onclick="setS('${u}','done')">Déjà publié</button><button class="btn btn-sm" onclick="setS('${u}','ign')">Ignorer</button>`,
+    pub:`<span class="sl-pub">✓ À publier</span><button class="btn btn-sm" onclick="setS('${u}','pending')">Annuler</button><button class="btn btn-sm" onclick="setS('${u}','done')">Déjà publié</button>`,
+    done:`<span class="sl-done">— Déjà publié</span><button class="btn btn-sm" onclick="setS('${u}','pending')">Réinitialiser</button>`,
+    ign:`<span style="font-size:11px;color:var(--text3)">Ignoré</span><button class="btn btn-sm" onclick="setS('${u}','pending')">Restaurer</button>`,
+  };
+  return`<div class="card ${cls}">
+    <div class="card-top">
+      <a class="tool-name" href="${url}" target="_blank">${t.name}</a>
+      <div class="cbadges"><span class="badge b-src">${t.source||'—'}</span>${s==='pub'?'<span class="badge b-pub">À publier</span>':s==='done'?'<span class="badge b-done">Publié</span>':''}</div>
+    </div>
+    ${t.description?`<p class="card-desc">${t.description}</p>`:''}
+    <div class="card-meta">
+      ${(t.categories||[]).map(c=>`<span class="badge b-cat">${c}</span>`).join('')}
+      ${date?`<span style="font-size:11px;color:var(--text3);margin-left:auto">${date}</span>`:''}
+    </div>
+    <div class="card-actions">${actions[s]||actions.pending}</div>
+  </div>`;
+}
+
+function setFilter(f,btn){filter=f;document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render()}
+
+function exportSelected(){
+  const sel=tools.filter(t=>getS(t)==='pub');
+  if(!sel.length){alert('Aucun outil marqué "À publier".');return;}
+  const txt=sel.map(t=>`${t.name}\n${t.tool_url}\n\n${t.description||(t.description='(sans description)')}\n\nCatégories : ${(t.categories||[]).join(', ')||'—'}\nSource : ${t.source||'—'}`).join('\n\n────────\n\n');
+  document.getElementById('exp-count').textContent=sel.length;
+  document.getElementById('exp-pre').textContent=txt;
+  const a=document.getElementById('export-area');
+  a.style.display='block';
+  a.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function copyExp(){
+  navigator.clipboard.writeText(document.getElementById('exp-pre').textContent).then(()=>{
+    const b=event.target;b.textContent='Copié !';setTimeout(()=>b.textContent='Copier',2000);
+  });
+}
+
+function clearAll(){
+  if(confirm('Réinitialiser tous les états ?')){states={};saveS();render();updateSidebar();updateStats();document.getElementById('export-area').style.display='none';}
+}
+
+loadTools();
+</script>
+</body>
+</html>
