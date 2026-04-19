@@ -1,5 +1,150 @@
 {
-  "generated_at": "2026-04-19T00:00:00+00:00",
-  "count": 0,
-  "tools": []
+  "generated_at": "2026-04-19T20:56:20.444671+00:00",
+  "count": 16,
+  "tools": [
+    {
+      "name": "Free AI Tools",
+      "tool_url": "https://aitoptools.com/free-ai-tools/",
+      "description": "",
+      "source": "AI Top Tools",
+      "date_iso": "2026-04-19T20:56:10.581484+00:00",
+      "categories": []
+    },
+    {
+      "name": "Explore a huge, always-growing library of 10,000+ AI tools — all with reviews fr",
+      "tool_url": "https://aitoptools.com/",
+      "description": "Simplifying AI tool selection for every need.",
+      "source": "AI Top Tools",
+      "date_iso": "2026-04-19T20:56:10.576359+00:00",
+      "categories": []
+    },
+    {
+      "name": "🛎️ Claude Bans OpenClaw",
+      "tool_url": "https://aisecret.us/claude-bans-openclaw/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.040354+00:00",
+      "categories": []
+    },
+    {
+      "name": "🛎️ Tokenmaxxing Race",
+      "tool_url": "https://aisecret.us/tokenmaxxing-race/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.040037+00:00",
+      "categories": []
+    },
+    {
+      "name": "🛎️ Mythos Preview Leaks",
+      "tool_url": "https://aisecret.us/mythos-preview-leaks/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.039715+00:00",
+      "categories": [
+        "youtube"
+      ]
+    },
+    {
+      "name": "🛎️ HappyHorse Disappears",
+      "tool_url": "https://aisecret.us/happyhorse-disappears/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.039345+00:00",
+      "categories": []
+    },
+    {
+      "name": "🛎️ Mythos Paused",
+      "tool_url": "https://aisecret.us/mythos-paused/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.039024+00:00",
+      "categories": [
+        "youtube"
+      ]
+    },
+    {
+      "name": "🛎️ Modern Galileo Moment",
+      "tool_url": "https://aisecret.us/modern-galileo-moment/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.038694+00:00",
+      "categories": []
+    },
+    {
+      "name": "🛎️ Swallow Everything",
+      "tool_url": "https://aisecret.us/swallow-everything/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.038337+00:00",
+      "categories": [
+        "youtube"
+      ]
+    },
+    {
+      "name": "🛎️ The First Real AI Nuclear",
+      "tool_url": "https://aisecret.us/template-copy-copy-copy/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.038003+00:00",
+      "categories": []
+    },
+    {
+      "name": "🛎️ Claude Asks for Your ID",
+      "tool_url": "https://aisecret.us/claude-asks-for-your-id/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.037663+00:00",
+      "categories": []
+    },
+    {
+      "name": "🛎️ A Split Era",
+      "tool_url": "https://aisecret.us/a-split-era/",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-04-19T20:56:01.037219+00:00",
+      "categories": []
+    },
+    {
+      "name": "Fixa.dev",
+      "tool_url": "https://www.producthunt.com/products/fixa-dev",
+      "description": "A cloud-native AI agent that can build literally anything Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-18T18:16:40-07:00",
+      "categories": [
+        "automatisation",
+        "youtube"
+      ]
+    },
+    {
+      "name": "Grok Voice API",
+      "tool_url": "https://www.producthunt.com/products/grok",
+      "description": "Fast, accurate STT and TTS APIs at the best price Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-17T23:11:31-07:00",
+      "categories": [
+        "voix"
+      ]
+    },
+    {
+      "name": "Hipocampus",
+      "tool_url": "https://www.producthunt.com/products/hipocampus",
+      "description": "AI operators that own team workflows Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-17T06:49:04-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Is Your Site Agent-Ready? by Cloudflare",
+      "tool_url": "https://www.producthunt.com/products/is-your-site-agent-ready",
+      "description": "Scan your website to see how ready it is for AI agents. Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-17T06:10:30-07:00",
+      "categories": [
+        "automatisation",
+        "site web"
+      ]
+    }
+  ]
 }
