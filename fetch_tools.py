@@ -71,7 +71,7 @@ CATEGORIES_KW = {
 }
 
 DIRECTORY_DOMAINS = {
-    "theresanaiforthat.com","futurepedia.io","futuretools.io",
+    "theresanaiforthat.com","free.theresanaiforthat.com","futurepedia.io","futuretools.io",
     "aixploria.com","aisecret.us","aitoolsdirectory.com",
     "powerfulai.tools","aitoptools.com","aitools.sh",
     "toolify.ai","producthunt.com","therundown.ai",
@@ -209,19 +209,11 @@ def scrape_cards(source_name, url, base, card_sel, name_sel=None, desc_sel=None,
 
 def fetch_aixploria():
     """WordPress FR — le RSS est légèrement malformé mais feedparser extrait les entrées."""
-    return fetch_rss("Aixploria", "https://www.aixploria.com/fr/feed/")
+    return fetch_rss("Aixploria", "https://www.aixploria.com/feed/")
 
 def fetch_taaift():
     """There's an AI for That — RSS malformé mais parseable ; HTML bloqué par Cloudflare."""
-    for rss in [
-        "https://theresanaiforthat.com/feed/",
-        "https://theresanaiforthat.com/rss.xml",
-        "https://theresanaiforthat.com/rss/",
-    ]:
-        res = fetch_rss("There's an AI for That", rss)
-        if res:
-            return res
-    return []
+    return fetch_rss("There's an AI for That", "https://free.theresanaiforthat.com/")
 
 def fetch_futurepedia():
     """Futurepedia — RSS malformé mais parseable ; HTML derrière Cloudflare."""
