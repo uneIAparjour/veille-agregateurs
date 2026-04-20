@@ -1,7 +1,15 @@
 {
-  "generated_at": "2026-04-19T21:14:58.312719+00:00",
-  "count": 18,
+  "generated_at": "2026-04-20T19:10:51.193634+00:00",
+  "count": 14,
   "tools": [
+    {
+      "name": "Embedist",
+      "tool_url": "https://www.producthunt.com/products/embedist",
+      "description": "Opensource AI-native embedded development environment Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-19T01:51:38-07:00",
+      "categories": []
+    },
     {
       "name": "Fixa.dev",
       "tool_url": "https://www.producthunt.com/products/fixa-dev",
@@ -11,16 +19,6 @@
       "categories": [
         "automatisation",
         "youtube"
-      ]
-    },
-    {
-      "name": "Grok Voice API",
-      "tool_url": "https://www.producthunt.com/products/grok",
-      "description": "Fast, accurate STT and TTS APIs at the best price Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-17T23:11:31-07:00",
-      "categories": [
-        "voix"
       ]
     },
     {
@@ -45,51 +43,6 @@
       ]
     },
     {
-      "name": "Arky",
-      "tool_url": "https://www.producthunt.com/products/arky",
-      "description": "Your canvas for thinking with AI Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-16T23:50:44-07:00",
-      "categories": [
-        "infographie"
-      ]
-    },
-    {
-      "name": "Ichiba AI",
-      "tool_url": "https://www.producthunt.com/products/ichiba-ai",
-      "description": "AI to AI influence, scored. See what moves the models. Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-16T22:07:24-07:00",
-      "categories": []
-    },
-    {
-      "name": "Hacktron",
-      "tool_url": "https://www.producthunt.com/products/hacktron",
-      "description": "Your AI security engineer. Ship fast while staying secure. Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-16T21:36:40-07:00",
-      "categories": []
-    },
-    {
-      "name": "Studio – The AI-Native Media Workspace",
-      "tool_url": "https://www.producthunt.com/products/coreviz-visual-ai-for-teams",
-      "description": "Organize, tag and edit thousands of photos at once with AI Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-16T21:19:40-07:00",
-      "categories": [
-        "images",
-        "musique"
-      ]
-    },
-    {
-      "name": "Proxima",
-      "tool_url": "https://www.producthunt.com/products/proxima-agentic-training-partner",
-      "description": "AI-Native Workout Programming Companion Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-16T13:12:10-07:00",
-      "categories": []
-    },
-    {
       "name": "GPT‑Rosalind",
       "tool_url": "https://www.producthunt.com/products/openai",
       "description": "Purpose-built model for scientific research & drug discovery Discussion | Link",
@@ -97,26 +50,6 @@
       "date_iso": "2026-04-16T12:38:44-07:00",
       "categories": [
         "recherche"
-      ]
-    },
-    {
-      "name": "Sharpsana",
-      "tool_url": "https://www.producthunt.com/products/sharpsana",
-      "description": "The AI agent that runs your entire startup Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-16T12:12:44-07:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Navox Agents",
-      "tool_url": "https://www.producthunt.com/products/navox-agents",
-      "description": "Specialist AI engineering team for Claude Code Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-16T11:37:14-07:00",
-      "categories": [
-        "automatisation"
       ]
     },
     {
@@ -140,31 +73,59 @@
       "categories": []
     },
     {
-      "name": "E.Y.E. by Expert Chase",
-      "tool_url": "https://www.producthunt.com/products/expert-chase-deleted-1107920",
-      "description": "Where human life runs with AI Discussion | Link",
+      "name": "PangeAI",
+      "tool_url": "https://www.producthunt.com/products/pangeai",
+      "description": "Instant, agent-driven spatial analysis and decision-making Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-15T12:46:19-07:00",
-      "categories": []
-    },
-    {
-      "name": "CoAgentor",
-      "tool_url": "https://www.producthunt.com/products/coagentor",
-      "description": "AI Agents that participate live in meetings Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-15T11:11:13-07:00",
+      "date_iso": "2026-04-15T17:43:18-07:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Geekflare Scraping API v2",
-      "tool_url": "https://www.producthunt.com/products/geekflare-api",
-      "description": "RAG-ready web scraping that cuts your LLM token costs Discussion | Link",
+      "name": "Mainteny",
+      "tool_url": "https://www.producthunt.com/products/mainteny",
+      "description": "AI-powered Operating System for Maintenance Companies Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-14T05:59:52-07:00",
+      "date_iso": "2026-04-15T17:42:38-07:00",
+      "categories": []
+    },
+    {
+      "name": "Claro",
+      "tool_url": "https://www.producthunt.com/products/getclaro",
+      "description": "Claro runs the AI agents that operate on your data Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-15T17:42:28-07:00",
       "categories": [
-        "LLM"
+        "automatisation",
+        "données"
+      ]
+    },
+    {
+      "name": "DogBase v2 Official Launch",
+      "tool_url": "https://www.producthunt.com/products/dogbase",
+      "description": "The AI-powered platform built for professional K9 teams Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-15T17:42:12-07:00",
+      "categories": []
+    },
+    {
+      "name": "Granter",
+      "tool_url": "https://www.producthunt.com/products/granter-ai",
+      "description": "Your company's AI Grant Consultant Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-15T17:42:02-07:00",
+      "categories": []
+    },
+    {
+      "name": "Pegasus 1.5 by TwelveLabs",
+      "tool_url": "https://www.producthunt.com/products/twelvelabs",
+      "description": "AI model for transforming video into Time-Based Metadata Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-14T14:17:09-07:00",
+      "categories": [
+        "vidéo",
+        "données"
       ]
     },
     {
