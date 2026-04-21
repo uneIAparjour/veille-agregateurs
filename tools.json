@@ -1,113 +1,210 @@
 {
-  "generated_at": "2026-04-20T19:10:51.193634+00:00",
-  "count": 14,
+  "generated_at": "2026-04-21T19:13:54.325088+00:00",
+  "count": 25,
   "tools": [
     {
-      "name": "Embedist",
-      "tool_url": "https://www.producthunt.com/products/embedist",
-      "description": "Opensource AI-native embedded development environment Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-19T01:51:38-07:00",
+      "name": "KiloClaw",
+      "tool_url": "https://www.aixploria.com/kiloclaw/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-21T07:07:58+00:00",
       "categories": []
     },
     {
-      "name": "Fixa.dev",
-      "tool_url": "https://www.producthunt.com/products/fixa-dev",
-      "description": "A cloud-native AI agent that can build literally anything Discussion | Link",
+      "name": "Kimi K2.6",
+      "tool_url": "https://www.aixploria.com/kimi-k2-6/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-21T06:57:28+00:00",
+      "categories": []
+    },
+    {
+      "name": "Pioneer",
+      "tool_url": "https://www.producthunt.com/products/launching-pioneer",
+      "description": "Fine-tune any LLM in minutes, with one prompt Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-18T18:16:40-07:00",
+      "date_iso": "2026-04-20T22:39:25-07:00",
       "categories": [
-        "automatisation",
-        "youtube"
+        "LLM"
       ]
     },
     {
-      "name": "Hipocampus",
-      "tool_url": "https://www.producthunt.com/products/hipocampus",
-      "description": "AI operators that own team workflows Discussion | Link",
+      "name": "Gauge Sentiment",
+      "tool_url": "https://www.producthunt.com/products/gauge",
+      "description": "How is your brand perceived by AI? Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-17T06:49:04-07:00",
-      "categories": [
-        "automatisation"
-      ]
+      "date_iso": "2026-04-20T21:10:50-07:00",
+      "categories": []
     },
     {
-      "name": "Is Your Site Agent-Ready? by Cloudflare",
-      "tool_url": "https://www.producthunt.com/products/is-your-site-agent-ready",
-      "description": "Scan your website to see how ready it is for AI agents. Discussion | Link",
+      "name": "SHIFTLY",
+      "tool_url": "https://www.producthunt.com/products/shiftly-2",
+      "description": "AI-powered growth strategist for builders and small teams Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-17T06:10:30-07:00",
+      "date_iso": "2026-04-20T02:25:34-07:00",
       "categories": [
-        "automatisation",
         "site web"
       ]
     },
     {
-      "name": "GPT‑Rosalind",
-      "tool_url": "https://www.producthunt.com/products/openai",
-      "description": "Purpose-built model for scientific research & drug discovery Discussion | Link",
+      "name": "Chat Skills for AI Agents",
+      "tool_url": "https://www.producthunt.com/products/cometchat-skills",
+      "description": "One file. Any agent. Working chat in under 10 minutes. Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-16T12:38:44-07:00",
+      "date_iso": "2026-04-20T02:18:23-07:00",
       "categories": [
-        "recherche"
-      ]
-    },
-    {
-      "name": "Perplexity Personal Computer",
-      "tool_url": "https://www.producthunt.com/products/perplexity-ai",
-      "description": "Local files. Native apps. Voice control. Always on. Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-16T08:54:07-07:00",
-      "categories": [
-        "voix",
+        "chatbot",
         "documents",
-        "recherche"
+        "automatisation"
       ]
     },
     {
-      "name": "Verdent 2.0",
-      "tool_url": "https://www.producthunt.com/products/verdent-deck",
-      "description": "Your AI Technical Cofounder Discussion | Link",
+      "name": "PageOn.AI 3.0",
+      "tool_url": "https://www.producthunt.com/products/pageon-ai",
+      "description": "A smarter visual agent for slides, posters & infographics Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-15T20:19:40-07:00",
-      "categories": []
+      "date_iso": "2026-04-19T23:54:46-07:00",
+      "categories": [
+        "images",
+        "automatisation",
+        "présentation"
+      ]
     },
     {
-      "name": "PangeAI",
-      "tool_url": "https://www.producthunt.com/products/pangeai",
-      "description": "Instant, agent-driven spatial analysis and decision-making Discussion | Link",
+      "name": "Cosmic Agent Marketplace",
+      "tool_url": "https://www.producthunt.com/products/cosmic",
+      "description": "AI agents for your team, built into your CMS Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-15T17:43:18-07:00",
+      "date_iso": "2026-04-19T22:27:58-07:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Mainteny",
-      "tool_url": "https://www.producthunt.com/products/mainteny",
-      "description": "AI-powered Operating System for Maintenance Companies Discussion | Link",
+      "name": "delegare",
+      "tool_url": "https://www.producthunt.com/products/delegare",
+      "description": "Give AI agents spending power without giving up control Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-15T17:42:38-07:00",
+      "date_iso": "2026-04-19T14:54:31-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Rowboat",
+      "tool_url": "https://www.producthunt.com/products/rowboat",
+      "description": "The AI work app that understands how you work Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-18T10:56:13-07:00",
       "categories": []
     },
     {
-      "name": "Claro",
+      "name": "Grok 4.3",
+      "tool_url": "https://www.aixploria.com/grok-4-3-model-xai/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-18T10:16:18+00:00",
+      "categories": []
+    },
+    {
+      "name": "Google Flow Music",
+      "tool_url": "https://www.aixploria.com/google-flow-music-ai/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-18T09:50:26+00:00",
+      "categories": [
+        "musique"
+      ]
+    },
+    {
+      "name": "Heygen HyperFrames",
+      "tool_url": "https://www.aixploria.com/heygen-hyperframes-video/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-18T09:23:18+00:00",
+      "categories": []
+    },
+    {
+      "name": "Claude Design",
+      "tool_url": "https://www.aixploria.com/claude-design/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-18T09:11:44+00:00",
+      "categories": [
+        "infographie"
+      ]
+    },
+    {
+      "name": "Hermes Agent",
+      "tool_url": "https://www.aixploria.com/hermes-agent-nous-research-ai/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-18T09:00:35+00:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Katzilla",
+      "tool_url": "https://www.producthunt.com/products/katzilla",
+      "description": "Easy goverment data access for citizens, optimized for AI Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-18T08:59:33-07:00",
+      "categories": [
+        "données"
+      ]
+    },
+    {
+      "name": "Byoky",
+      "tool_url": "https://www.producthunt.com/products/byoky",
+      "description": "Share your AI budget without sharing your keys Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-17T11:12:29-07:00",
+      "categories": []
+    },
+    {
+      "name": "ClankerPass",
+      "tool_url": "https://www.producthunt.com/products/clankerpass",
+      "description": "Can you convince an AI that you're an AI? Discussion | Link",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-17T07:26:46-07:00",
+      "categories": []
+    },
+    {
+      "name": "GPT‑Rosalind",
+      "tool_url": "https://www.aixploria.com/gpt%e2%80%91rosalind/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-17T01:38:08+00:00",
+      "categories": []
+    },
+    {
+      "name": "Qwen3.6‑35B",
+      "tool_url": "https://www.aixploria.com/qwen3-6%e2%80%9135b/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-17T01:30:13+00:00",
+      "categories": []
+    },
+    {
+      "name": "Claude Opus 4.7",
+      "tool_url": "https://www.aixploria.com/claude-opus-4-7-model/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-17T00:53:10+00:00",
+      "categories": []
+    },
+    {
+      "name": "Claro - Research Agents",
       "tool_url": "https://www.producthunt.com/products/getclaro",
       "description": "Claro runs the AI agents that operate on your data Discussion | Link",
       "source": "Product Hunt",
       "date_iso": "2026-04-15T17:42:28-07:00",
       "categories": [
         "automatisation",
+        "recherche",
         "données"
       ]
-    },
-    {
-      "name": "DogBase v2 Official Launch",
-      "tool_url": "https://www.producthunt.com/products/dogbase",
-      "description": "The AI-powered platform built for professional K9 teams Discussion | Link",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-15T17:42:12-07:00",
-      "categories": []
     },
     {
       "name": "Granter",
@@ -118,23 +215,24 @@
       "categories": []
     },
     {
-      "name": "Pegasus 1.5 by TwelveLabs",
-      "tool_url": "https://www.producthunt.com/products/twelvelabs",
-      "description": "AI model for transforming video into Time-Based Metadata Discussion | Link",
+      "name": "Flow AI",
+      "tool_url": "https://www.producthunt.com/products/agent-maya-by-flow-ai",
+      "description": "Turn Linkedin into unlimited leads on auto-pilot Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-14T14:17:09-07:00",
+      "date_iso": "2026-04-15T08:56:59-07:00",
       "categories": [
-        "vidéo",
-        "données"
+        "usage illimité"
       ]
     },
     {
-      "name": "Vantage in Google Labs",
-      "tool_url": "https://www.producthunt.com/products/google",
-      "description": "Practice & assess future-ready skills with AI-simulated team Discussion | Link",
+      "name": "RapidNative",
+      "tool_url": "https://www.producthunt.com/products/rapidnative",
+      "description": "The AI app builder that actually builds the whole app Discussion | Link",
       "source": "Product Hunt",
-      "date_iso": "2026-04-13T21:56:33-07:00",
-      "categories": []
+      "date_iso": "2026-04-15T03:24:28-07:00",
+      "categories": [
+        "site web"
+      ]
     }
   ]
 }
