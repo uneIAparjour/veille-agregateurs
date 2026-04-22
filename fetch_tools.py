@@ -22,6 +22,7 @@ Sources et stratégies :
   ✗ aitools.sh         — Cloudflare IP block
 """
 import json, re, time, sys
+from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urljoin, urlparse
 
@@ -143,7 +144,7 @@ def get_html(url, referer=None):
     hdrs = dict(HEADERS)
     if referer:
         hdrs["Referer"] = referer
-    r = requests.get(url, headers=hdrs, timeout=20)
+    r = requests.get(url, headers=hdrs, timeout=6)
     r.raise_for_status()
     return BeautifulSoup(r.text, "html.parser")
 
@@ -152,7 +153,7 @@ def get_json(url, referer=None):
     hdrs["Accept"] = "application/json, */*"
     if referer:
         hdrs["Referer"] = referer
-    r = requests.get(url, headers=hdrs, timeout=20)
+    r = requests.get(url, headers=hdrs, timeout=6)
     r.raise_for_status()
     return r.json()
 
@@ -681,7 +682,7 @@ def fetch_reddit():
             r = requests.get(
                 f"https://www.reddit.com/r/{sub}/new.json?limit=15",
                 headers={"User-Agent": reddit_ua},
-                timeout=15
+                timeout=6
             )
             r.raise_for_status()
             posts = r.json().get("data",{}).get("children",[])
@@ -715,14 +716,13 @@ def fetch_reddit():
 
 # ── Nouveaux répertoires ──────────────────────────────────────────────────────
 def _multi_strategy(source_name, base_url, scrape_url=None, api_paths=None):
-    """Helper universel : essaie WP API, puis RSS, puis API JSON, puis scraping HTML."""
+    """Helper universel : essaie WP API, puis RSS /feed/, puis API JSON, puis scraping HTML."""
     # 1. WP REST API
     res = _wp_api_tools(source_name, base_url)
     if res: return res
-    # 2. RSS standard
-    for rss_path in ["/feed/", "/rss", "/rss.xml", "/feed"]:
-        res = fetch_rss(source_name, base_url.rstrip("/") + rss_path)
-        if res: return res
+    # 2. RSS — une seule tentative sur /feed/
+    res = fetch_rss(source_name, base_url.rstrip("/") + "/feed/")
+    if res: return res
     # 3. API JSON custom
     for path in (api_paths or []):
         try:
@@ -1085,15 +1085,28 @@ def deduplicate(tools):
         out.append(t)
     return out
 
+def run_fetcher(fn):
+    """Exécute un fetcher et retourne (nom, résultats)."""
+    try:
+        return fn.__name__, fn()
+    except Exception as e:
+        print(f"  Erreur {fn.__name__}: {e}", file=sys.stderr)
+        return fn.__name__, []
+
 def main():
     print(f"Veille IA — {datetime.now().strftime('%Y-%m-%d %H:%M')} — {len(FETCHERS)} sources\n")
     all_tools = []
-    for fn in FETCHERS:
-        try:
-            all_tools.extend(fn())
-        except Exception as e:
-            print(f"  Erreur {fn.__name__}: {e}", file=sys.stderr)
-        time.sleep(2)
+    # Exécution parallèle — max 8 workers, timeout 45s par fetcher
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = {executor.submit(run_fetcher, fn): fn.__name__ for fn in FETCHERS}
+        for future in as_completed(futures, timeout=120):
+            try:
+                _name, results = future.result(timeout=45)
+                all_tools.extend(results)
+            except FuturesTimeout:
+                print(f"  Timeout: {futures[future]}", file=sys.stderr)
+            except Exception as e:
+                print(f"  Erreur future {futures[future]}: {e}", file=sys.stderr)
 
     all_tools = deduplicate(all_tools)
     all_tools.sort(key=lambda t: t.get("date_iso",""), reverse=True)
