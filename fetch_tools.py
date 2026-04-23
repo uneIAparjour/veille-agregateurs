@@ -619,29 +619,12 @@ def _multi_strategy(source_name, base_url, scrape_url=None, api_paths=None):
 
 # Tier 1 — qualité / pertinence élevée
 
-def fetch_dang():
-    """dang.ai — répertoire curé de haute qualité."""
-    return _multi_strategy(
-        "dang.ai", "https://dang.ai",
-        api_paths=["/api/tools?sort=newest&limit=20","/api/v1/tools?limit=20","/api/categories/newest"]
-    )
-
 def fetch_bestofai():
     """bestofai.com — sélection curative de qualité."""
     return _multi_strategy(
         "Best of AI", "https://bestofai.com",
         api_paths=["/api/tools?sort=newest&limit=20"]
     )
-
-def fetch_noteableai():
-    """noteableai.com — outils IA notables, sélection curative."""
-    return _multi_strategy(
-        "NotableAI", "https://noteableai.com",
-        api_paths=["/api/tools?sort=newest&limit=20"]
-    )
-
-def fetch_hdrobots():
-    return _multi_strategy("HD Robots", "https://hdrobots.com")
 
 def fetch_bestfreeai():
     return _multi_strategy("Best Free AI", "https://bestfreeaiwebsites.com")
@@ -717,35 +700,6 @@ def _scrape_cards_simple(source_name, url, base, card_sel, name_sel, desc_sel, m
         print(f"  {source_name} HTML erreur: {e}", file=sys.stderr)
     return results
 
-def fetch_ailibrary():
-    """ailibrary.io - bibliotheque d'outils IA."""
-    for api_url in [
-        "https://www.ailibrary.io/api/tools?sort=newest&limit=20",
-        "https://www.ailibrary.io/api/v1/tools?page=1&limit=20",
-    ]:
-        try:
-            data  = get_json(api_url)
-            items = data if isinstance(data, list) else data.get("tools") or data.get("data") or []
-            results = []
-            for item in items[:20]:
-                name = (item.get("name") or item.get("title") or "").strip()
-                url  = item.get("url") or item.get("website") or item.get("link","")
-                desc = item.get("description") or ""
-                date_iso = parse_date(item.get("createdAt") or item.get("date",""))
-                if name and url:
-                    results.append(make_tool(name, url, desc, "AI Library", date_iso))
-            if results:
-                print(f"  AI Library (API): {len(results)}")
-                return results
-        except Exception: pass
-    res = fetch_rss("AI Library", "https://www.ailibrary.io/feed")
-    if res: return res
-    return _scrape_cards_simple(
-        "AI Library", "https://www.ailibrary.io/", "https://www.ailibrary.io",
-        "article,.tool,.card,[class*='tool'],[class*='card'],[class*='item']",
-        "h2,h3,h4,strong,.name,.title", "p,.desc,.description"
-    )
-
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 FETCHERS = [
@@ -756,12 +710,8 @@ FETCHERS = [
     fetch_taaift,        # API JSON officielle
     fetch_therundown,    # RSS newsletter — liens outils extraits
     fetch_hackernews,    # API Algolia show_hn filtré IA
-    fetch_noteableai,    # WP API — 20 résultats confirmés
-    fetch_hdrobots,      # WP API — 20 résultats confirmés
     fetch_bestfreeai,    # RSS — 9 résultats confirmés
-    fetch_dang,          # HTML — 2 résultats confirmés
     fetch_bestofai,      # HTML — 2 résultats confirmés
-    fetch_ailibrary,     # HTML — 1 résultat confirmé
 ]
 
 def deduplicate(tools):
