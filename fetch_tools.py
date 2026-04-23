@@ -368,11 +368,12 @@ def fetch_aitoptools():
         for a in index_page.find_all("a", href=True):
             full = urljoin(BASE, a["href"])
             if (full.startswith(BASE) and
-                    "/free-ai-tools/" in full and
                     full.rstrip("/") != INDEX.rstrip("/") and
-                    full not in cat_links):
+                    full not in cat_links and
+                    full != BASE and
+                    full != BASE + "/"):
                 cat_links.append(full)
-        cat_links = list(dict.fromkeys(cat_links))[:8]
+        cat_links = list(dict.fromkeys(cat_links))[:10]
         print(f"  AI Top Tools — {len(cat_links)} catégories trouvées")
 
         # Page index
@@ -472,99 +473,6 @@ def fetch_taaift():
     results = fetch_rss("There's an AI for That", "https://theresanaiforthat.com/rss/")
     return results
 
-def fetch_futurepedia():
-    """Futurepedia — API Next.js interne /api/tools."""
-    results = []
-    api_urls = [
-        "https://www.futurepedia.io/api/tools?sort=newest&page=1&limit=20",
-        "https://www.futurepedia.io/api/tools?sort=new&page=1&limit=20",
-        "https://www.futurepedia.io/api/tools/newest?limit=20",
-    ]
-    for api_url in api_urls:
-        try:
-            data = get_json(api_url, referer="https://www.futurepedia.io/")
-            items = (data if isinstance(data, list)
-                     else data.get("tools") or data.get("data") or data.get("results") or [])
-            if not isinstance(items, list) or not items:
-                continue
-            for item in items[:20]:
-                name = (item.get("name") or item.get("title") or "").strip()
-                url  = item.get("url") or item.get("website") or item.get("link","")
-                desc = item.get("description") or item.get("summary","")
-                date_iso = parse_date(item.get("createdAt") or item.get("date") or item.get("created_at",""))
-                if name and url:
-                    results.append(make_tool(name, url, desc, "Futurepedia", date_iso))
-            if results:
-                print(f"  Futurepedia (API): {len(results)}")
-                return results
-        except Exception as e:
-            print(f"  Futurepedia {api_url}: {e}", file=sys.stderr)
-    # Fallback RSS
-    results = fetch_rss("Futurepedia", "https://www.futurepedia.io/rss.xml")
-    return results
-
-def fetch_betalist():
-    """BetaList — lancements de nouveaux produits/startups, dont beaucoup d'IA.
-    RSS public sans protection Cloudflare."""
-    results = []
-    try:
-        feed = feedparser.parse(
-            "https://betalist.com/feed.xml",
-            request_headers={"User-Agent": HEADERS["User-Agent"]}
-        )
-        if not feed.entries:
-            raise Exception(f"0 entrées")
-        ai_kw = ["ai","artificial intelligence","gpt","llm","generative","neural",
-                 "machine learning","chatbot","image gen","voice","automation","agent",
-                 "copilot","assistant","ml ","deep learning"]
-        for entry in feed.entries[:30]:
-            title    = entry.get("title","").strip()
-            url      = entry.get("link","")
-            summary  = entry.get("summary","") or ""
-            desc     = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
-            date_iso = parse_date(entry.get("published") or entry.get("updated",""))
-            if not title or not url or not is_recent(date_iso):
-                continue
-            combined = (title + " " + desc).lower()
-            if not any(kw in combined for kw in ai_kw):
-                continue
-            # Cherche l'URL externe réelle dans le contenu
-            tool_url = url
-            if summary:
-                for a in BeautifulSoup(summary,"html.parser").find_all("a", href=True):
-                    if is_external(a["href"]):
-                        tool_url = a["href"]; break
-            results.append(make_tool(title, tool_url, desc, "BetaList", date_iso))
-        print(f"  BetaList (RSS): {len(results)}")
-    except Exception as e:
-        print(f"  BetaList erreur: {e}", file=sys.stderr)
-    return results
-
-def fetch_github_ai():
-    """GitHub Topics artificial-intelligence — Atom feed public, pas de Cloudflare.
-    Retourne les dépôts récents tagués artificial-intelligence (souvent des outils)."""
-    results = []
-    try:
-        feed = feedparser.parse(
-            "https://github.com/topics/artificial-intelligence.atom",
-            request_headers={"User-Agent": HEADERS["User-Agent"]}
-        )
-        if not feed.entries:
-            raise Exception("0 entrées")
-        for entry in feed.entries[:20]:
-            title    = entry.get("title","").strip()
-            url      = entry.get("link","")
-            summary  = entry.get("summary","") or ""
-            desc     = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)[:300]
-            date_iso = parse_date(entry.get("updated") or entry.get("published",""))
-            if not title or not url or not is_recent(date_iso):
-                continue
-            results.append(make_tool(title, url, desc, "GitHub AI", date_iso))
-        print(f"  GitHub AI (Atom): {len(results)}")
-    except Exception as e:
-        print(f"  GitHub AI erreur: {e}", file=sys.stderr)
-    return results
-
 def fetch_therundown():
     """The Rundown AI — newsletter IA sur Beehiiv.
     Extrait les liens vers des outils dans le contenu de chaque issue."""
@@ -619,15 +527,13 @@ def fetch_hackernews():
     results = []
     AI_TITLE_KW = [
         "ai","gpt","llm","llama","claude","gemini","generative","neural",
-        "image gen","text to","voice","speech","chatbot","agent","automation",
-        "ml ","machine learning","diffusion","embedding","rag","copilot",
-        "openai","anthropic","mistral","stable diffusion","midjourney",
+        "image","voice","speech","chatbot","agent","automat","ml",
+        "machine learning","diffusion","embedding","rag","copilot",
+        "openai","anthropic","mistral","model","assistant","bot",
     ]
-    # Mots indiquant un article/blog plutôt qu'un outil
+    # Mots indiquant clairement un article/opinion — filtre minimal
     ARTICLE_KW = [
-        "why ","how ","what ","when ","the case for","opinion","analysis",
-        "lessons","thoughts on","reflections","my experience","deep dive",
-        "state of","understanding","benchmark","comparison","versus",
+        "the case for","my experience","deep dive","state of the",
     ]
     try:
         cutoff_ts = int((datetime.now(timezone.utc) - timedelta(hours=CUTOFF_HOURS)).timestamp())
@@ -672,49 +578,6 @@ def fetch_hackernews():
         print(f"  Hacker News erreur: {e}", file=sys.stderr)
     return results
 
-def fetch_reddit():
-    """Reddit r/ArtificialIntelligence + r/AITools — JSON API public.
-    Reddit accepte les requêtes sans auth depuis des IPs serveur."""
-    results = []
-    reddit_ua = "veille-ia-bot/1.0 (https://uneiaparjour.fr; contact@uneiaparjour.fr)"
-    for sub in ["ArtificialIntelligence","aitools","ChatGPT","StableDiffusion"]:
-        try:
-            r = requests.get(
-                f"https://www.reddit.com/r/{sub}/new.json?limit=15",
-                headers={"User-Agent": reddit_ua},
-                timeout=6
-            )
-            r.raise_for_status()
-            posts = r.json().get("data",{}).get("children",[])
-            count = 0
-            for post in posts:
-                d = post.get("data",{})
-                title    = d.get("title","").strip()
-                url      = d.get("url","")
-                selftext = d.get("selftext","")[:300]
-                created  = d.get("created_utc", 0)
-                date_iso = datetime.fromtimestamp(created, tz=timezone.utc).isoformat()
-                if not title or not url or not is_recent(date_iso):
-                    continue
-                # Filtre : liens externes seulement (pas de self posts sans lien)
-                if not is_external(url):
-                    continue
-                # Filtre : pertinence IA
-                combined = (title + " " + selftext).lower()
-                ai_kw = ["ai","tool","app","generate","model","llm","gpt","image","voice","chat","automate"]
-                if not any(kw in combined for kw in ai_kw):
-                    continue
-                results.append(make_tool(title[:80], url, selftext, f"Reddit r/{sub}", date_iso))
-                count += 1
-                if count >= 5:
-                    break
-            print(f"  Reddit r/{sub}: {count}")
-            time.sleep(0.5)
-        except Exception as e:
-            print(f"  Reddit r/{sub} erreur: {e}", file=sys.stderr)
-    return results
-
-# ── Nouveaux répertoires ──────────────────────────────────────────────────────
 def _multi_strategy(source_name, base_url, scrape_url=None, api_paths=None):
     """Helper universel : essaie WP API, puis RSS /feed/, puis API JSON, puis scraping HTML."""
     # 1. WP REST API
@@ -756,36 +619,11 @@ def _multi_strategy(source_name, base_url, scrape_url=None, api_paths=None):
 
 # Tier 1 — qualité / pertinence élevée
 
-def fetch_aioftheday():
-    """aioftheday.com — 1 outil IA par jour (concept identique au site)."""
-    return _multi_strategy(
-        "AI of the Day", "https://aioftheday.com",
-        api_paths=["/api/tools?sort=newest&limit=20","/api/v1/tools?limit=20"]
-    )
-
 def fetch_dang():
     """dang.ai — répertoire curé de haute qualité."""
     return _multi_strategy(
         "dang.ai", "https://dang.ai",
         api_paths=["/api/tools?sort=newest&limit=20","/api/v1/tools?limit=20","/api/categories/newest"]
-    )
-
-def fetch_wikiaitools():
-    """wikiaitools.com — encyclopédie complète d'outils IA."""
-    return _multi_strategy(
-        "WikiAI Tools", "https://www.wikiaitools.com",
-        api_paths=["/api/tools?sort=newest&limit=20"]
-    )
-
-def fetch_aitools_fyi():
-    """aitools.fyi — répertoire multilangue dont FR."""
-    return _multi_strategy(
-        "AI Tools FYI", "https://aitools.fyi",
-        api_paths=[
-            "/api/tools?sort=newest&limit=20",
-            "/api/v1/tools?page=1&limit=20",
-            "/api/tools/new?limit=20",
-        ]
     )
 
 def fetch_bestofai():
@@ -802,70 +640,11 @@ def fetch_noteableai():
         api_paths=["/api/tools?sort=newest&limit=20"]
     )
 
-def fetch_aitoolnet():
-    """aitoolnet.com — grand répertoire international."""
-    return _multi_strategy(
-        "AI Tool Net", "https://www.aitoolnet.com",
-        api_paths=[
-            "/api/tools?sort=newest&limit=20",
-            "/api/v1/tools?page=1&limit=20",
-        ]
-    )
-
-# Tier 2 — pertinents, architecture WP probable
-
 def fetch_hdrobots():
     return _multi_strategy("HD Robots", "https://hdrobots.com")
 
-def fetch_toolspedia():
-    return _multi_strategy("Toolspedia", "https://www.toolspedia.io",
-        api_paths=["/api/tools?sort=newest&limit=20"])
-
-def fetch_toolscout():
-    return _multi_strategy("ToolScout", "https://toolscout.ai",
-        api_paths=["/api/tools?sort=newest&limit=20"])
-
-def fetch_madgenius():
-    return _multi_strategy("MadGenius", "https://madgenius.co")
-
-def fetch_aitools_lol():
-    return _multi_strategy("AI Tools LOL", "https://aitools.lol")
-
-def fetch_ai_finder():
-    return _multi_strategy("AI Finder", "https://ai-finder.net")
-
-def fetch_aitoolhunt():
-    return _multi_strategy("AI Tool Hunt", "https://www.aitoolhunt.com",
-        api_paths=["/api/tools?sort=newest&limit=20"])
-
-def fetch_aitoolboard():
-    return _multi_strategy("AI Tool Board", "https://aitoolboard.com")
-
-def fetch_toolsstory():
-    return _multi_strategy("Tools Story", "https://toolsstory.net")
-
-def fetch_freeaitoolsdirectory():
-    return _multi_strategy("Free AI Tools Directory", "https://free-ai-tools-directory.com")
-
-def fetch_aitoolguru():
-    return _multi_strategy("AI Tool Guru", "https://aitoolguru.com")
-
-def fetch_aicenter():
-    return _multi_strategy("AI Center", "https://aicenter.ai",
-        api_paths=["/api/tools?sort=newest&limit=20"])
-
 def fetch_bestfreeai():
     return _multi_strategy("Best Free AI", "https://bestfreeaiwebsites.com")
-
-def fetch_fastpedia():
-    return _multi_strategy("Fastpedia", "https://fastpedia.io",
-        api_paths=["/api/tools?sort=newest&limit=20"])
-
-def fetch_faind():
-    return _multi_strategy("Faind.ai", "https://faind.ai",
-        api_paths=["/api/tools?sort=newest&limit=20","/api/v1/tools?limit=20"])
-
-
 
 def _wp_api_tools(source_name, base_url, per_page=20):
     """Helper generique WP REST API : extrait l'URL reelle de l'outil depuis le content."""
@@ -938,87 +717,6 @@ def _scrape_cards_simple(source_name, url, base, card_sel, name_sel, desc_sel, m
         print(f"  {source_name} HTML erreur: {e}", file=sys.stderr)
     return results
 
-def fetch_aiapp_fr():
-    """aiapp.fr - repertoire francais d'outils IA (probablement WordPress)."""
-    res = _wp_api_tools("aiapp.fr", "https://aiapp.fr")
-    if res: return res
-    return _scrape_cards_simple(
-        "aiapp.fr", "https://aiapp.fr/", "https://aiapp.fr",
-        "article,.tool,.card,[class*='tool'],[class*='post']",
-        "h2,h3,.entry-title,strong", "p,.excerpt,.description"
-    )
-
-def fetch_iaweb_fr():
-    """iaweb.fr - repertoire francais d'outils IA."""
-    res = _wp_api_tools("iaweb.fr", "https://iaweb.fr")
-    if res: return res
-    return _scrape_cards_simple(
-        "iaweb.fr", "https://iaweb.fr/", "https://iaweb.fr",
-        "article,.tool,.card,[class*='tool'],[class*='post']",
-        "h2,h3,.entry-title,strong", "p,.excerpt,.description"
-    )
-
-def fetch_openfuture():
-    """openfuture.ai/fr - repertoire d'outils IA, section francaise."""
-    for api_url in [
-        "https://openfuture.ai/api/tools?lang=fr&sort=newest&limit=20",
-        "https://openfuture.ai/api/tools?sort=newest&limit=20",
-    ]:
-        try:
-            data  = get_json(api_url, referer="https://openfuture.ai/fr")
-            items = data if isinstance(data, list) else data.get("tools") or data.get("data") or []
-            results = []
-            for item in items[:20]:
-                name = (item.get("name") or item.get("title") or "").strip()
-                url  = item.get("url") or item.get("website") or item.get("link","")
-                desc = item.get("description") or ""
-                date_iso = parse_date(item.get("createdAt") or item.get("date",""))
-                if name and url:
-                    results.append(make_tool(name, url, desc, "OpenFuture AI", date_iso))
-            if results:
-                print(f"  OpenFuture AI (API): {len(results)}")
-                return results
-        except Exception: pass
-    res = _wp_api_tools("OpenFuture AI", "https://openfuture.ai")
-    if res: return res
-    res = fetch_rss("OpenFuture AI", "https://openfuture.ai/feed/")
-    if res: return res
-    return _scrape_cards_simple(
-        "OpenFuture AI", "https://openfuture.ai/fr", "https://openfuture.ai",
-        "article,.tool,.card,[class*='tool'],[class*='item']",
-        "h2,h3,h4,strong,.name,.title", "p,.desc,.description"
-    )
-
-def fetch_aiscout():
-    """aiscout.net - repertoire d'outils IA anglophone."""
-    res = _wp_api_tools("AI Scout", "https://aiscout.net")
-    if res: return res
-    res = fetch_rss("AI Scout", "https://aiscout.net/feed/")
-    if res: return res
-    for api_url in [
-        "https://aiscout.net/api/tools?sort=newest&limit=20",
-        "https://aiscout.net/api/v1/tools?limit=20",
-    ]:
-        try:
-            data  = get_json(api_url)
-            items = data if isinstance(data, list) else data.get("tools") or data.get("data") or []
-            results = []
-            for item in items[:20]:
-                name = (item.get("name") or item.get("title") or "").strip()
-                url  = item.get("url") or item.get("website") or item.get("link","")
-                desc = item.get("description") or ""
-                if name and url:
-                    results.append(make_tool(name, url, desc, "AI Scout"))
-            if results:
-                print(f"  AI Scout (API): {len(results)}")
-                return results
-        except Exception: pass
-    return _scrape_cards_simple(
-        "AI Scout", "https://aiscout.net/", "https://aiscout.net",
-        "article,.tool,.card,[class*='tool'],[class*='item']",
-        "h2,h3,h4,strong,.name,.title", "p,.desc,.description,.excerpt"
-    )
-
 def fetch_ailibrary():
     """ailibrary.io - bibliotheque d'outils IA."""
     for api_url in [
@@ -1051,27 +749,19 @@ def fetch_ailibrary():
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 FETCHERS = [
-    fetch_producthunt,    # RSS PH AI — URL produit extraite du HTML desc
-    fetch_aisecret,       # HTML scraping DAILY TL;DR
-    fetch_aitoptools,     # HTML /free-ai-tools/ 2 niveaux
-    fetch_aixploria,      # WP API — URL outil extraite du content
-    fetch_taaift,         # API JSON officielle
-    fetch_futurepedia,    # API Next.js interne
-    fetch_betalist,       # RSS BetaList — lancements filtres IA
-    fetch_github_ai,      # Atom GitHub topics/artificial-intelligence
-    fetch_therundown,     # RSS newsletter — liens outils extraits
-    fetch_hackernews,     # API Algolia show_hn + filtre IA
-    fetch_reddit,         # JSON Reddit r/aitools etc.
-    # Repertoires batch 1
-    fetch_aiapp_fr, fetch_iaweb_fr, fetch_openfuture, fetch_aiscout, fetch_ailibrary,
-    # Repertoires batch 2 — Tier 1
-    fetch_aioftheday, fetch_dang, fetch_wikiaitools, fetch_aitools_fyi,
-    fetch_bestofai, fetch_noteableai, fetch_aitoolnet,
-    # Repertoires batch 2 — Tier 2
-    fetch_hdrobots, fetch_toolspedia, fetch_toolscout, fetch_madgenius,
-    fetch_aitools_lol, fetch_ai_finder, fetch_aitoolhunt, fetch_aitoolboard,
-    fetch_toolsstory, fetch_freeaitoolsdirectory, fetch_aitoolguru,
-    fetch_aicenter, fetch_bestfreeai, fetch_fastpedia, fetch_faind,
+    fetch_producthunt,   # RSS — URL réelle extraite du HTML desc
+    fetch_aisecret,      # HTML scraping DAILY TL;DR
+    fetch_aitoptools,    # HTML /free-ai-tools/ 2 niveaux
+    fetch_aixploria,     # WP API + RSS fallback
+    fetch_taaift,        # API JSON officielle
+    fetch_therundown,    # RSS newsletter — liens outils extraits
+    fetch_hackernews,    # API Algolia show_hn filtré IA
+    fetch_noteableai,    # WP API — 20 résultats confirmés
+    fetch_hdrobots,      # WP API — 20 résultats confirmés
+    fetch_bestfreeai,    # RSS — 9 résultats confirmés
+    fetch_dang,          # HTML — 2 résultats confirmés
+    fetch_bestofai,      # HTML — 2 résultats confirmés
+    fetch_ailibrary,     # HTML — 1 résultat confirmé
 ]
 
 def deduplicate(tools):
@@ -1099,7 +789,7 @@ def main():
     # Exécution parallèle — max 8 workers, timeout 45s par fetcher
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = {executor.submit(run_fetcher, fn): fn.__name__ for fn in FETCHERS}
-        for future in as_completed(futures, timeout=120):
+        for future in as_completed(futures):
             try:
                 _name, results = future.result(timeout=45)
                 all_tools.extend(results)
