@@ -1,554 +1,219 @@
 {
-  "generated_at": "2026-04-23T20:55:49.793663+00:00",
-  "count": 90,
+  "generated_at": "2026-04-24T18:53:54.132150+00:00",
+  "count": 52,
   "tools": [
-    {
-      "name": "HeraHaven AI",
-      "tool_url": "https://l.dang.ai/q3f6",
-      "description": "",
-      "source": "dang.ai",
-      "date_iso": "2026-04-23T20:55:49.593632+00:00",
-      "categories": []
-    },
     {
       "name": "AI Tools4,738",
       "tool_url": "https://bestofai.com/tool/lifestack-fit",
       "description": "Share your daily habits. Discover theirs. LifeStack is where you share your daily routines, supplements, and wellness habits with friends — and explore the life stacks of influencers, creators, and experts.",
       "source": "Best of AI",
-      "date_iso": "2026-04-23T20:55:49.201198+00:00",
+      "date_iso": "2026-04-24T18:53:54.125405+00:00",
       "categories": []
     },
     {
-      "name": "Free",
-      "tool_url": "https://www.ailibrary.io/",
+      "name": "Roids – Open Source Steroids for your Agents",
+      "tool_url": "https://github.com/Developing-Gamer/roids",
       "description": "",
-      "source": "AI Library",
-      "date_iso": "2026-04-23T20:55:48.150959+00:00",
-      "categories": []
-    },
-    {
-      "name": "Best AI Image Generation in 2026",
-      "tool_url": "https://www.fotor.com",
-      "description": "Looking for the best AI tools for ai image generation? We reviewed tools from our directory of 1,600+ AI tools and picked the top 3 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.863390+00:00",
-      "categories": [
-        "images"
-      ]
-    },
-    {
-      "name": "Best AI Code Assistants in 2026",
-      "tool_url": "https://www.cursor.com/",
-      "description": "Looking for the best AI tools for ai code assistants? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.854833+00:00",
-      "categories": [
-        "chatbot"
-      ]
-    },
-    {
-      "name": "Top 10 AI Tools for Video Creators in 2026",
-      "tool_url": "https://www.comfy.org/",
-      "description": "Looking for the best AI tools for video creators? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. ComfyUI […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.849390+00:00",
-      "categories": [
-        "vidéo"
-      ]
-    },
-    {
-      "name": "Top 10 AI Tools for Designers in 2026",
-      "tool_url": "https://www.figma.com/make/",
-      "description": "Looking for the best AI tools for designers? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. Figma Make […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.843967+00:00",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T17:48:02+00:00",
       "categories": [
         "automatisation",
-        "infographie"
+        "open source"
       ]
     },
     {
-      "name": "Top 10 AI Tools for Data Scientists in 2026",
-      "tool_url": "https://chat.qwenlm.ai/",
-      "description": "Looking for the best AI tools for data scientists? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. Qwen […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.826459+00:00",
+      "name": "Harmonic Progression Podcast on Humans, AI and Tech News",
+      "tool_url": "https://open.spotify.com/episode/0Q03ytkssZxw2YUKzwUkKZ",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T17:31:55+00:00",
       "categories": [
-        "données"
+        "voix",
+        "actualités"
       ]
     },
     {
-      "name": "Top 10 AI Tools for Writers & Bloggers in 2026",
-      "tool_url": "https://aistudio.google.com/",
-      "description": "Looking for the best AI tools for writers & bloggers? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.820974+00:00",
-      "categories": [
-        "texte"
-      ]
+      "name": "Signova AI – DocuSign alternative for $7",
+      "tool_url": "https://signova.ai",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T17:05:30+00:00",
+      "categories": []
     },
     {
-      "name": "Best AI Presentation Tools in 2026",
-      "tool_url": "https://beta.tome.app/",
-      "description": "Looking for the best AI tools for ai presentation tools? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.815560+00:00",
-      "categories": [
-        "présentation"
-      ]
-    },
-    {
-      "name": "Best AI Search Engines in 2026",
-      "tool_url": "https://semanticscholar.org",
-      "description": "Looking for the best AI tools for ai search engines? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.810145+00:00",
+      "name": "Claude proxy to record interactions-browse, search sessions, usage, MCP",
+      "tool_url": "https://github.com/tillahoffmann/cctape",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T16:44:14+00:00",
       "categories": [
         "recherche"
       ]
     },
     {
-      "name": "Top 10 AI Tools for HR & Recruiters in 2026",
-      "tool_url": "https://www.grammarly.com",
-      "description": "Looking for the best AI tools for hr & recruiters? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.796088+00:00",
-      "categories": []
-    },
-    {
-      "name": "Top 10 AI Tools for Customer Support in 2026",
-      "tool_url": "https://forms.app/",
-      "description": "Looking for the best AI tools for customer support? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. Forms.app […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.784480+00:00",
-      "categories": []
-    },
-    {
-      "name": "Best AI Music Generation in 2026",
-      "tool_url": "https://www.suno.ai/",
-      "description": "Looking for the best AI tools for ai music generation? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.778866+00:00",
-      "categories": [
-        "musique"
-      ]
-    },
-    {
-      "name": "Best Text to Speech in 2026",
-      "tool_url": "https://elevenlabs.io/?from=kristiyanlukanov1182",
-      "description": "Looking for the best AI tools for text to speech? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.770554+00:00",
+      "name": "Turn speech into text anywhere via hotkey (runs on Intel NPU, no cloud)",
+      "tool_url": "https://github.com/anubhavgupta/whisper-npu",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T16:18:43+00:00",
       "categories": [
         "voix",
         "texte"
       ]
     },
     {
-      "name": "Best AI Photo Editors in 2026",
-      "tool_url": "https://tools.picsart.com",
-      "description": "Looking for the best AI tools for ai photo editors? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.764911+00:00",
-      "categories": [
-        "images"
-      ]
-    },
-    {
-      "name": "Top 7 AI Tools for Accountants in 2026",
-      "tool_url": "https://www.chatbase.co/?via=hdrobots",
-      "description": "Looking for the best AI tools for accountants? We reviewed tools from our directory of 1,600+ AI tools and picked the top 7 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. Chatbase ChatGPT […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.759326+00:00",
-      "categories": [
-        "chatbot"
-      ]
-    },
-    {
-      "name": "Top 10 AI Tools for Sales Teams in 2026",
-      "tool_url": "https://apollo.partnerlinks.io/hdrobots",
-      "description": "Looking for the best AI tools for sales teams? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. Apollo.io […]",
-      "source": "HD Robots",
-      "date_iso": "2026-04-23T20:55:47.755117+00:00",
-      "categories": []
-    },
-    {
-      "name": "Text to Speech Online Free Unlimited Mp3 Download",
-      "tool_url": "https://www.techradar.com/news/the-best-free-text-to-speech-software",
-      "description": "Yield unprecedented audio transformation with free online text-to-speech tools that unlock limitless possibilities for converting written content into captivating spoken narratives.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.242517+00:00",
-      "categories": [
-        "voix",
-        "musique",
-        "texte"
-      ]
-    },
-    {
-      "name": "Which AI Voice Changers Lead Speech Technology in 2025?",
-      "tool_url": "https://www.marketsandmarkets.com/Market-Reports/ai-voice-generator-market-144271159.html",
-      "description": "Pioneering AI voice changers from tech giants and startups reshape how we communicate, but which ones will dominate 2025?",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.241947+00:00",
-      "categories": [
-        "voix"
-      ]
-    },
-    {
-      "name": "Top 5 Ai Voice Audio Recorder Use Cases",
-      "tool_url": "https://otter.ai",
-      "description": "Powerful AI voice recorders propel productivity, transforming spoken words into actionable insights across collaboration, content creation, and multilingual domains.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.239701+00:00",
-      "categories": [
-        "voix",
-        "musique",
-        "texte"
-      ]
-    },
-    {
-      "name": "3 Essential Call Recording Software for Training Purposes in 2025",
-      "tool_url": "https://www.capterra.com/call-recording-software/",
-      "description": "Witness the transformative power of call recording software that promises to revolutionize agent training, performance, and customer experience in ways you never imagined.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.238814+00:00",
+      "name": "PrivateClaw – AI agents running in confidential VMs you can verify",
+      "tool_url": "https://privateclaw.dev",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T15:26:02+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Top 5 Auto Note Taker From Audio in 2025",
-      "tool_url": "https://screenapp.io/blog/top-10-audio-notetakers-for-2024",
-      "description": "Powerful AI-driven auto note takers are revolutionizing how professionals capture, transcribe, and transform conversations into actionable insights.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.237534+00:00",
+      "name": "Browser Harness – Gives LLM freedom to complete any browser task",
+      "tool_url": "https://github.com/browser-use/browser-harness",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T14:31:38+00:00",
       "categories": [
-        "musique",
-        "chatbot"
+        "LLM",
+        "navigateur"
       ]
     },
     {
-      "name": "5 Best Meeting Assistants That Listen and Take Notes For You In 2025",
-      "tool_url": "https://www.datasciencecentral.com/revolutionizing-meetings-with-ai-meeting-assistants/",
-      "description": "Boldly revolutionizing workplace productivity, these AI-powered meeting assistants will transform how professionals capture, analyze, and leverage critical conversation insights.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.236157+00:00",
+      "name": "Headless terminal - Allow agents to run any interactive TUI or CLI",
+      "tool_url": "https://github.com/montanaflynn/headless-terminal",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T14:18:25+00:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Moltnet – open-source local chat for AI agents",
+      "tool_url": "https://moltnet.dev/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T13:25:00+00:00",
       "categories": [
         "chatbot",
-        "LLM"
+        "automatisation",
+        "open source"
       ]
     },
     {
-      "name": "How to Use AI Voice Changers in 2025",
-      "tool_url": "https://www.hume.ai/blog/the-seven-best-ai-voice-generators-in-2025",
-      "description": "Unlock endless voice transformation possibilities in 2025 with AI voice changers that make switching personas easier than ever before.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.234854+00:00",
-      "categories": [
-        "voix",
-        "automatisation"
-      ]
-    },
-    {
-      "name": "AI Voice Changers for Phone Calls: Top 5 Picks in 2025",
-      "tool_url": "https://www.guru99.com/best-voice-changer-apps-android-ios.html",
-      "description": "Peek into the future of phone calls with these game-changing AI voice changers that transform how we communicate and connect.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.232685+00:00",
-      "categories": [
-        "voix",
-        "jeu vidéo"
-      ]
-    },
-    {
-      "name": "7 Steps to Convert Your Voice Into an AI Voice Clone",
-      "tool_url": "https://maestra.ai/blogs/best-voice-cloning-software",
-      "description": "Master the art of AI voice cloning with these seven proven steps that transform your voice into a digital twin.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.231496+00:00",
-      "categories": [
-        "voix"
-      ]
-    },
-    {
-      "name": "7 Voice to Text Recorders in 2025",
-      "tool_url": "https://vsnaptechnology.com/voice-technology-2025",
-      "description": "Voice Technology Revolution You’re standing at the cusp of a voice technology revolution that’s reshaping how we interact with devices and digital systems. Biometric voice recognition will become a critical security feature, enabling devices to identify and authenticate users through their unique vocal signatures. Imagine speaking naturally to your gadgets and having them understand not […]",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.229026+00:00",
-      "categories": [
-        "voix",
-        "texte"
-      ]
-    },
-    {
-      "name": "Fireflies AI Note Taking Assistant",
-      "tool_url": "https://thebusinessdive.com/fireflies-ai-review",
-      "description": "Optimize your virtual meetings with Fireflies AI, the automated assistant that captures conversations while you focus on what matters most.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.227648+00:00",
-      "categories": [
-        "chatbot"
-      ]
-    },
-    {
-      "name": "Neil Patel: Internet Marketing Troll and Scam (With Pictures)",
-      "tool_url": "https://economictimes.com/news/company/corporate-trends/neil-patel-the-digital-marketing-maverick-who-transformed-the-industry/articleshow/104393463.cms",
-      "description": "Controversial marketing guru Neil Patel faces accusations of deception and manipulation – but is there truth behind his digital empire?",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.226409+00:00",
+      "name": "12ui – Image to Code",
+      "tool_url": "https://12ui.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T13:15:54+00:00",
       "categories": [
         "images"
       ]
     },
     {
-      "name": "PLAUD.AI Acquires Y Combinator-Backed StarJar to Launch ‘PLAUD for Business’ Enterprise Solution",
-      "tool_url": "https://ground.news/article/plaudai-acquires-yc-backed-starjar-to-power-its-new-enterprise-solution-plaud-for-business",
-      "description": "AI powerhouse PLAUD.AI acquires medical document automation leader StarJar, setting stage for revolutionary enterprise solution launch.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.223879+00:00",
-      "categories": [
-        "documents",
-        "automatisation"
-      ]
-    },
-    {
-      "name": "What Are The Recovery Plans For C3.ai Inc In Q2 Of 2025",
-      "tool_url": "https://c3.ai/c3-ai-announces-fiscal-third-quarter-2025-financial-results/",
-      "description": "Through strategic partnerships and a $730M war chest, C3.ai plots an ambitious comeback, but what’s their secret weapon for 2025?",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.223088+00:00",
+      "name": "Atomic – Local-first, AI-augmented personal knowledge base",
+      "tool_url": "https://atomicapp.ai/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T12:07:30+00:00",
       "categories": []
     },
     {
-      "name": "Top AI Stock News [April 25, 2025]",
-      "tool_url": "https://www.nerdwallet.com/article/investing/ai-stocks-invest-in-artificial-intelligence",
-      "description": "Ongoing AI stock recoveries spark optimism as industry leaders regain momentum, but one unexpected player threatens to reshape the market landscape.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.222197+00:00",
+      "name": "I built an AI alternative to NoBroker/MagicBricks that never calls you",
+      "tool_url": "https://www.abodex.space/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T11:33:37+00:00",
+      "categories": []
+    },
+    {
+      "name": "PhotoSharpener – sharpen and upscale photos in the browser with AI",
+      "tool_url": "https://photosharpener.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T11:09:13+00:00",
+      "categories": [
+        "images",
+        "navigateur"
+      ]
+    },
+    {
+      "name": "Figpack science viz – Python script → Shareable HTML Bundle in cloud",
+      "tool_url": "https://figpack.org",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T10:39:27+00:00",
+      "categories": [
+        "site web",
+        "youtube"
+      ]
+    },
+    {
+      "name": "Daily China AI news briefing – engineering, product, and business",
+      "tool_url": "https://overnightai.substack.com/p/china-ai-news-eight-chinese-chip",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-04-24T10:25:44+00:00",
       "categories": [
         "actualités"
       ]
     },
     {
-      "name": "Top Uses For MPC Implementations",
-      "tool_url": "https://safeheron.com/products/mpc-node-suite/",
-      "description": "Multi-party computation servers enable secure collaboration across industries—discover the five game-changing applications your competitors are already using.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.221278+00:00",
-      "categories": [
-        "jeu vidéo"
-      ]
-    },
-    {
-      "name": "AI Automation Experts Flooding Your Facebook Feeds : Join My Cool Skool",
-      "tool_url": "https://sproutsocial.com/insights/facebook-stats-for-marketers/",
-      "description": "Facebook feeds flood with AI automation experts promising $10,000 monthly through SKOOL communities, but the real winners might surprise you.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.219725+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Plaud AI Notepin Review: 9/10?",
-      "tool_url": "https://www.youtube.com/watch?v=hwFjXQ-nSuQ",
-      "description": "Transform your audio capture with PLAUD NotePin’s AI transcription technology and 20-hour battery life in 2025.",
-      "source": "NotableAI",
-      "date_iso": "2026-04-23T20:55:47.218653+00:00",
-      "categories": [
-        "musique",
-        "youtube"
-      ]
-    },
-    {
-      "name": "Object Storage Vendors – Compared",
-      "tool_url": "https://storage.mixpeek.com",
+      "name": "GPT‑5.5",
+      "tool_url": "https://www.aixploria.com/gpt%e2%80%915-5/",
       "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T20:46:00+00:00",
-      "categories": [
-        "LLM"
-      ]
+      "source": "Aixploria",
+      "date_iso": "2026-04-24T08:56:53+00:00",
+      "categories": []
     },
     {
-      "name": "PayClaw – a gasless USDC wallet for AI agents (12 frameworks)",
-      "tool_url": "https://github.com/ONSARI/payclaw-skill",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T20:09:28+00:00",
-      "categories": [
-        "automatisation"
-      ]
+      "name": "EaseMate AI",
+      "tool_url": "https://www.aixploria.com/easemate-ai/",
+      "description": "EaseMate AI : Connectez-vous aux meilleurs modèles IA du marché .",
+      "source": "Aixploria",
+      "date_iso": "2026-04-24T08:28:14+00:00",
+      "categories": []
     },
     {
-      "name": "Twitter for Voice Notes",
-      "tool_url": "https://earful.world/?q=&tab=all",
+      "name": "DeepSeek V4",
+      "tool_url": "https://www.aixploria.com/deepseek-v4/",
       "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T20:07:30+00:00",
+      "source": "Aixploria",
+      "date_iso": "2026-04-24T08:09:20+00:00",
+      "categories": []
+    },
+    {
+      "name": "Mumble AI",
+      "tool_url": "https://www.aixploria.com/mumble-ai/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-24T07:36:47+00:00",
+      "categories": []
+    },
+    {
+      "name": "Grok Voice Think Fast 1.0",
+      "tool_url": "https://www.aixploria.com/grok-voice-think-fast-1-0/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-24T07:25:24+00:00",
       "categories": [
         "voix"
       ]
     },
     {
-      "name": "Chestnut – The antidote to AI-induced skill atrophy",
-      "tool_url": "https://www.chestnut.so/",
+      "name": "How LLMs Work – Interactive visual guide based on Karpathy's lecture",
+      "tool_url": "https://ynarwal.github.io/how-llms-work/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-04-23T19:47:17+00:00",
-      "categories": []
-    },
-    {
-      "name": "Récif – Open-source control tower for AI agents on Kubernetes",
-      "tool_url": "https://recif-platform.github.io",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T19:32:23+00:00",
+      "date_iso": "2026-04-24T06:48:53+00:00",
       "categories": [
-        "automatisation",
-        "open source"
+        "images",
+        "LLM"
       ]
-    },
-    {
-      "name": "TeamFuse – Dev team built on distributed Claude Code agents",
-      "tool_url": "https://github.com/agentdmai/teamfuse",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T19:12:48+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "AgentSearch – Self-hosted search and MCP for AI agents, no API keys",
-      "tool_url": "https://github.com/brcrusoe72/agent-search",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T18:25:08+00:00",
-      "categories": [
-        "automatisation",
-        "recherche",
-        "open source"
-      ]
-    },
-    {
-      "name": "mls-go – pure Go implementation of RFC 9420 (MLS)",
-      "tool_url": "https://github.com/thomas-vilte/mls-go",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T17:43:47+00:00",
-      "categories": []
-    },
-    {
-      "name": "Ungate – use Claude and GPT subscriptions in Cursor without API costs",
-      "tool_url": "https://github.com/orchidfiles/ungate",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T17:23:32+00:00",
-      "categories": []
-    },
-    {
-      "name": "StillOtter – a minimalist daily planning app",
-      "tool_url": "https://stillotter.com",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T17:03:18+00:00",
-      "categories": []
-    },
-    {
-      "name": "Omens AI filters my feeds so I spend 0 minutes doomscrolling",
-      "tool_url": "https://omens.online",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T16:53:13+00:00",
-      "categories": []
-    },
-    {
-      "name": "Vibe-coding video games with Claude (Day 10: Dominoes)",
-      "tool_url": "https://gamevibe.us/10-dominoes",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T16:38:03+00:00",
-      "categories": [
-        "vidéo",
-        "jeu vidéo"
-      ]
-    },
-    {
-      "name": "Run coding agents in microVM sandboxes instead of your host machine",
-      "tool_url": "https://github.com/superhq-ai/superhq",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T16:28:03+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Interactive knowledge graph for the AAuth (Agent Auth) protocol",
-      "tool_url": "https://mcp-shark.github.io/aauth-explorer/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T15:53:50+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Clawd Penguin – a virtual hangout for when Claude goes down",
-      "tool_url": "https://clawdpenguin.com",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T15:38:22+00:00",
-      "categories": []
-    },
-    {
-      "name": "We're building Apache spark for agents with Rust and Datafusion",
-      "tool_url": "https://github.com/SkardiLabs/skardi",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T15:35:57+00:00",
-      "categories": [
-        "automatisation",
-        "données"
-      ]
-    },
-    {
-      "name": "AgentBox – SDK to Run Claude Code, Codex, or OpenCode in Any Sandbox",
-      "tool_url": "https://github.com/TwillAI/agentbox-sdk",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T15:19:20+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "AI Square Face Avatar Generator and Classic Flash Pixel Icon Generator",
-      "tool_url": "https://www.squarefacegenerator.ai",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T15:17:05+00:00",
-      "categories": []
-    },
-    {
-      "name": "Core – open-source AI butler that clears your backlog without you",
-      "tool_url": "https://www.getcore.me/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T15:14:25+00:00",
-      "categories": [
-        "open source"
-      ]
-    },
-    {
-      "name": "Uvx skill-mgr install -t Claude -t codex",
-      "tool_url": "https://github.com/AI-Colleagues/skill-mgr",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-04-23T15:09:54+00:00",
-      "categories": []
     },
     {
       "name": "Never Pay for Video Courses Again! Discover these 9 FREE Runway Video Tutorials",
@@ -560,6 +225,58 @@
         "vidéo",
         "éducation"
       ]
+    },
+    {
+      "name": "Mozart Studio 1.0",
+      "tool_url": "https://www.producthunt.com/products/mozart-ai",
+      "description": "A Generative Audio Workstation with VSTs",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-23T14:22:53-07:00",
+      "categories": [
+        "musique"
+      ]
+    },
+    {
+      "name": "Codex 3.0 by OpenAI",
+      "tool_url": "https://www.producthunt.com/products/codex-3-0-by-openai",
+      "description": "Codex can now build, test & debug on autopilot",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-23T11:48:21-07:00",
+      "categories": []
+    },
+    {
+      "name": "LifeOS",
+      "tool_url": "https://www.producthunt.com/products/lifeos-6",
+      "description": "Turn your AI chats/memory to intros with real humans",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-23T08:42:26-07:00",
+      "categories": [
+        "chatbot"
+      ]
+    },
+    {
+      "name": "NotchNest AI",
+      "tool_url": "https://www.producthunt.com/products/notchnest-quick-access-hub",
+      "description": "AI powered by Apple Intelligence now in your Notch",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-23T05:41:19-07:00",
+      "categories": []
+    },
+    {
+      "name": "Spira AI",
+      "tool_url": "https://www.producthunt.com/products/spira-ai",
+      "description": "AI Influencer that always on trend, create & grow your brand",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-23T01:15:57-07:00",
+      "categories": []
+    },
+    {
+      "name": "Onboarding0",
+      "tool_url": "https://www.producthunt.com/products/onboarding0",
+      "description": "Turn company knowledge into AI-guided onboarding",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-23T01:07:22-07:00",
+      "categories": []
     },
     {
       "name": "Monid",
@@ -594,14 +311,12 @@
       ]
     },
     {
-      "name": "Claude Code /ultrareview",
-      "tool_url": "https://www.producthunt.com/products/claude-code",
-      "description": "Cloud code review using a fleet of parallel agents",
+      "name": "Google Workspace Intelligence",
+      "tool_url": "https://www.producthunt.com/products/google",
+      "description": "AI that understands and powers your Workspace",
       "source": "Product Hunt",
-      "date_iso": "2026-04-22T10:09:56-07:00",
-      "categories": [
-        "automatisation"
-      ]
+      "date_iso": "2026-04-22T12:42:56-07:00",
+      "categories": []
     },
     {
       "name": "Free LLM API",
@@ -632,16 +347,6 @@
       ]
     },
     {
-      "name": "Gemini Enterprise Agent Platform",
-      "tool_url": "https://www.producthunt.com/products/google",
-      "description": "Google's platform to run AI agents at enterprise scale",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-22T09:14:59-07:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
       "name": "Qwen3.6-27B",
       "tool_url": "https://www.producthunt.com/products/qwen3",
       "description": "The sweet-spot open dense model for coding agents",
@@ -660,14 +365,6 @@
       "categories": []
     },
     {
-      "name": "CalBye AI",
-      "tool_url": "https://www.aixploria.com/calbye-ai/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-04-22T04:50:31+00:00",
-      "categories": []
-    },
-    {
       "name": "HubSpot AEO",
       "tool_url": "https://www.aixploria.com/hubspot-aeo/",
       "description": "",
@@ -676,19 +373,22 @@
       "categories": []
     },
     {
+      "name": "ChatGPT Images 2.0",
+      "tool_url": "https://www.aixploria.com/chatgpt-images-2-0/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-04-22T04:26:57+00:00",
+      "categories": [
+        "images",
+        "chatbot"
+      ]
+    },
+    {
       "name": "Go Humanize AI",
       "tool_url": "https://www.aixploria.com/go-humanize-ai/",
       "description": "",
       "source": "Aixploria",
       "date_iso": "2026-04-22T04:17:06+00:00",
-      "categories": []
-    },
-    {
-      "name": "Zawa.ai",
-      "tool_url": "https://www.aixploria.com/zawa-ai/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-04-22T04:03:07+00:00",
       "categories": []
     },
     {
@@ -710,61 +410,12 @@
       "categories": []
     },
     {
-      "name": "kimiflare",
-      "tool_url": "https://www.producthunt.com/products/kimiflare",
-      "description": "kimi k2.6 cli code editor hosted on cloudflare workers AI",
+      "name": "Ask Product Hunt AI",
+      "tool_url": "https://www.producthunt.com/products/producthunt",
+      "description": "Find the right product, just ask",
       "source": "Product Hunt",
-      "date_iso": "2026-04-21T18:16:37-07:00",
+      "date_iso": "2026-04-21T16:25:31-07:00",
       "categories": []
-    },
-    {
-      "name": "ChatGPT Images 2.0",
-      "tool_url": "https://www.producthunt.com/products/chatgpt-images-2-0",
-      "description": "First image model with thinking capabilities",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-21T12:04:42-07:00",
-      "categories": [
-        "images",
-        "chatbot"
-      ]
-    },
-    {
-      "name": "DecisionBox Enterprise",
-      "tool_url": "https://www.producthunt.com/products/decisionbox",
-      "description": "Agent that writes SQL for you to validate database insights",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-21T09:29:54-07:00",
-      "categories": [
-        "automatisation",
-        "données"
-      ]
-    },
-    {
-      "name": "KiloClaw",
-      "tool_url": "https://www.aixploria.com/kiloclaw/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-04-21T07:07:58+00:00",
-      "categories": []
-    },
-    {
-      "name": "Kimi K2.6",
-      "tool_url": "https://www.aixploria.com/kimi-k2-6/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-04-21T06:57:28+00:00",
-      "categories": []
-    },
-    {
-      "name": "ml-intern",
-      "tool_url": "https://www.producthunt.com/products/ml-intern",
-      "description": "Hugging Face's AI agent that automates post-training",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-21T05:13:32-07:00",
-      "categories": [
-        "automatisation",
-        "open source"
-      ]
     },
     {
       "name": "Design.MD",
@@ -775,16 +426,6 @@
       "categories": [
         "automatisation",
         "infographie"
-      ]
-    },
-    {
-      "name": "Loomal",
-      "tool_url": "https://www.producthunt.com/products/loomal",
-      "description": "Identity infrastructure for AI agents",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-21T00:07:27-07:00",
-      "categories": [
-        "automatisation"
       ]
     },
     {
@@ -855,25 +496,6 @@
         "images",
         "infographie"
       ]
-    },
-    {
-      "name": "Stanley For 𝕏",
-      "tool_url": "https://www.producthunt.com/products/stanley-for-x",
-      "description": "The world's first AI Head of Content",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-20T09:52:38-07:00",
-      "categories": [
-        "texte",
-        "histoires enfants"
-      ]
-    },
-    {
-      "name": "Grok 4.3",
-      "tool_url": "https://www.aixploria.com/grok-4-3-model-xai/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-04-18T10:16:18+00:00",
-      "categories": []
     }
   ]
 }
