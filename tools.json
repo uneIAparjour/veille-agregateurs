@@ -1,209 +1,165 @@
 {
-  "generated_at": "2026-05-01T19:17:41.082548+00:00",
-  "count": 47,
+  "generated_at": "2026-05-02T19:00:29.823584+00:00",
+  "count": 41,
   "tools": [
     {
       "name": "AI Tools4,738",
       "tool_url": "https://bestofai.com/tool/lifestack-fit",
       "description": "Share your daily habits. Discover theirs. LifeStack is where you share your daily routines, supplements, and wellness habits with friends — and explore the life stacks of influencers, creators, and experts.",
       "source": "Best of AI",
-      "date_iso": "2026-05-01T19:13:00.529263+00:00",
+      "date_iso": "2026-05-02T19:00:29.143146+00:00",
       "categories": []
     },
     {
-      "name": "Generate marketing material with your text and images in minutes",
-      "tool_url": "https://correctify.com.cy/",
+      "name": "Native agent runtime for Conductor OSS",
+      "tool_url": "https://github.com/agentspan-ai/agentspan",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T19:10:13+00:00",
-      "categories": [
-        "images",
-        "texte"
-      ]
-    },
-    {
-      "name": "An Agent First Slack CLI",
-      "tool_url": "https://github.com/tilework-tech/nori-slack-cli",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T19:05:21+00:00",
+      "date_iso": "2026-05-02T18:37:50+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Omar – A TUI for managing 100 coding agents",
-      "tool_url": "https://omar.tech",
+      "name": "Writing a deep-research agent from scratch",
+      "tool_url": "https://deep-research-agent.pagey.site",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T18:35:13+00:00",
+      "date_iso": "2026-05-02T16:41:41+00:00",
+      "categories": [
+        "texte",
+        "automatisation",
+        "recherche"
+      ]
+    },
+    {
+      "name": "TradingAgents without the API bill – run multi agents in Claude Code",
+      "tool_url": "https://github.com/lucemia/trading-agents-plugin",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-02T15:39:56+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "AI CAD Harness",
-      "tool_url": "https://fusion.adam.new/install",
+      "name": "AgInTiFlow, a local web and CLI agent workspace using DeepSeek",
+      "tool_url": "https://www.npmjs.com/package/@lazyingart/agintiflow",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T17:43:53+00:00",
-      "categories": []
-    },
-    {
-      "name": "Reckoner – A query workbench for domain experts",
-      "tool_url": "https://github.com/peirce-lang/reckoner",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T16:47:38+00:00",
-      "categories": []
-    },
-    {
-      "name": "Duo – AI Matchmaking over iMessage",
-      "tool_url": "https://tryduo.net",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T16:42:53+00:00",
-      "categories": []
-    },
-    {
-      "name": "Email for AI Agents",
-      "tool_url": "https://robotomail.com",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T15:54:30+00:00",
+      "date_iso": "2026-05-02T13:31:00+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Council – Run Claude, Codex and Gemini against the same prompt",
-      "tool_url": "https://council.armstr.ng/",
+      "name": "Mljar Studio – local AI data analyst that saves analysis as notebooks",
+      "tool_url": "https://mljar.com/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T15:28:54+00:00",
-      "categories": []
-    },
-    {
-      "name": "Herald – Local-first terminal email client",
-      "tool_url": "https://herald-mail.app/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T15:06:01+00:00",
-      "categories": []
-    },
-    {
-      "name": "GitLeak – A GitHub OSINT tool for emails, timezones, and activity",
-      "tool_url": "https://gitleak.io",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T14:48:20+00:00",
+      "date_iso": "2026-05-02T10:21:31+00:00",
       "categories": [
-        "open source"
+        "musique",
+        "données"
       ]
     },
     {
-      "name": "Raft to allow a group of AI agents to reach consensus",
-      "tool_url": "https://github.com/dhiaayachi/gravity-ai",
+      "name": "Autorank – Rank on Google and AI search while you sleep",
+      "tool_url": "https://www.getautorank.ai/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T14:23:02+00:00",
+      "date_iso": "2026-05-02T09:31:21+00:00",
       "categories": [
-        "automatisation"
+        "recherche"
       ]
     },
     {
-      "name": "Csrct – The Bottleneck Is the Strategy",
-      "tool_url": "https://csrct.substack.com/p/the-bottleneck-is-the-strategy",
+      "name": "I built Male Hormone Lab Interpreter that does what LLMs can't",
+      "tool_url": "https://www.longevity-tools.com/male-hormones-interpreter",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T13:51:05+00:00",
+      "date_iso": "2026-05-02T09:12:39+00:00",
       "categories": [
-        "chatbot"
-      ]
-    },
-    {
-      "name": "Secure-by-default Ollama Docker image with built-in auth, only 70MB",
-      "tool_url": "https://github.com/hwdsl2/docker-ollama",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T13:15:22+00:00",
-      "categories": [
-        "images",
         "LLM"
       ]
     },
     {
-      "name": "Stanzio, AI presentation tool that designs each slide as real HTML",
-      "tool_url": "https://stanzio.fly.dev/",
+      "name": "Filling PDF forms with AI using client-side tool calling",
+      "tool_url": "https://copilot.simplepdf.com/?share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076&form=w9&lang=en",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T12:54:51+00:00",
+      "date_iso": "2026-05-02T08:54:27+00:00",
       "categories": [
-        "présentation",
-        "site web",
-        "infographie"
+        "documents"
       ]
     },
     {
-      "name": "MappyMail – The cheapest way to send letters online",
-      "tool_url": "https://mappymail.com",
+      "name": "Hollow is an open-sourced self-modifying agentic system",
+      "tool_url": "https://github.com/ninjahawk/hollow-agentOS",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T12:45:27+00:00",
-      "categories": []
-    },
-    {
-      "name": "LocalVQE: Tiny ~1M param audio model that cancels echo and noise",
-      "tool_url": "https://huggingface.co/spaces/LocalAI-io/LocalVQE-demo",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T12:21:31+00:00",
+      "date_iso": "2026-05-02T07:43:29+00:00",
       "categories": [
-        "musique"
-      ]
-    },
-    {
-      "name": "\"Woo\", a multi-user world for agents",
-      "tool_url": "https://woo.hughpyle.workers.dev/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T11:17:53+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Revdoku – visual document review with AI (open-source)",
-      "tool_url": "https://github.com/revdoku/revdoku",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-01T11:01:24+00:00",
-      "categories": [
-        "images",
-        "documents",
+        "automatisation",
         "open source"
       ]
     },
     {
-      "name": "Loopsy, a way for terminals and AI agents on different machines to talk",
-      "tool_url": "https://github.com/leox255/loopsy",
+      "name": "Create the right image sizes for social media",
+      "tool_url": "https://skills.sh/branding5/social-media-image-sizes/social-media-image-sizes",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T10:25:41+00:00",
+      "date_iso": "2026-05-02T07:43:23+00:00",
+      "categories": [
+        "images"
+      ]
+    },
+    {
+      "name": "Agent with its own computer on the cloud",
+      "tool_url": "https://pulsarbot.cloud/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-02T07:15:45+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Modeleon – Python DSL that compiles to live Excel formulas",
-      "tool_url": "https://github.com/modeleonai/modeleon",
+      "name": "I made an AI task scheduling app",
+      "tool_url": "https://apps.apple.com/us/app/taskmaster-ai-assistant/id6761262496",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-01T10:08:21+00:00",
+      "date_iso": "2026-05-02T05:41:08+00:00",
+      "categories": []
+    },
+    {
+      "name": "Agent-desktop – Native desktop automation CLI for AI agents",
+      "tool_url": "https://github.com/lahfir/agent-desktop",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-02T02:18:24+00:00",
       "categories": [
-        "données",
-        "youtube"
+        "automatisation"
       ]
+    },
+    {
+      "name": "The 10 Best prompts to create logos with ChatGPT 2.0 Image",
+      "tool_url": "https://bestfreeaiwebsites.com/10-best-prompts-to-create-logos-with-chatgpt2-image/",
+      "description": "ChatGPT 2.0 Image THE 10 BEST LOGO PROMPTS These prompts can generate insanely good logos […]",
+      "source": "Best Free AI",
+      "date_iso": "2026-05-01T08:39:04+00:00",
+      "categories": [
+        "images",
+        "chatbot"
+      ]
+    },
+    {
+      "name": "20 Ways to Use Claude",
+      "tool_url": "https://bestfreeaiwebsites.com/20-ways-to-use-claude/",
+      "description": "20 Ways to Use Claude – SimplyDigital.gr Artificial Intelligence · Claude · Guide 20 Ways […]",
+      "source": "Best Free AI",
+      "date_iso": "2026-05-01T08:23:00+00:00",
+      "categories": []
     },
     {
       "name": "Mistral Medium 3.5",
@@ -301,6 +257,16 @@
       "categories": []
     },
     {
+      "name": "Feather",
+      "tool_url": "https://www.producthunt.com/products/feather-18",
+      "description": "Photo editor with local AI",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-29T17:13:24-07:00",
+      "categories": [
+        "images"
+      ]
+    },
+    {
       "name": "Voice Agent API",
       "tool_url": "https://www.producthunt.com/products/assemblyai",
       "description": "One API to build production-ready voice agents",
@@ -359,16 +325,6 @@
       "categories": []
     },
     {
-      "name": "Plannotator",
-      "tool_url": "https://www.producthunt.com/products/plannotator",
-      "description": "Annotate any doc, URL, or folder - send feedback to agents",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-28T22:30:31-07:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
       "name": "Tinfoil",
       "tool_url": "https://www.producthunt.com/products/tinfoil-private-ai-chat",
       "description": "AI chat and API that keeps your conversations fully private",
@@ -396,6 +352,16 @@
       "description": "Picsart's power right from your AI chat box",
       "source": "Product Hunt",
       "date_iso": "2026-04-28T07:31:08-07:00",
+      "categories": [
+        "chatbot"
+      ]
+    },
+    {
+      "name": "9 FREE guides to Master Claude",
+      "tool_url": "https://bestfreeaiwebsites.com/9-free-guides-to-master-claude/",
+      "description": "SimplyDigital.gr 9 Free Guides to Master Claude From your very first chat to building production […]",
+      "source": "Best Free AI",
+      "date_iso": "2026-04-28T07:08:02+00:00",
       "categories": [
         "chatbot"
       ]
@@ -430,34 +396,13 @@
       ]
     },
     {
-      "name": "Lingbot-map",
-      "tool_url": "https://www.aixploria.com/lingbot-map-3d-model/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-04-25T09:58:11+00:00",
+      "name": "Filect",
+      "tool_url": "https://www.producthunt.com/products/filect",
+      "description": "Organize Your Files With AI",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-26T14:57:34-07:00",
       "categories": [
-        "chatbot"
-      ]
-    },
-    {
-      "name": "Workspace Agents ChatGPT",
-      "tool_url": "https://www.aixploria.com/workspace-agents-chatgpt/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-04-25T09:45:43+00:00",
-      "categories": [
-        "chatbot",
-        "automatisation"
-      ]
-    },
-    {
-      "name": "BeatMv",
-      "tool_url": "https://www.aixploria.com/beatmv-ai/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-04-25T09:03:29+00:00",
-      "categories": [
-        "musique"
+        "documents"
       ]
     }
   ]
