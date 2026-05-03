@@ -1,145 +1,175 @@
 {
-  "generated_at": "2026-05-02T19:00:29.823584+00:00",
-  "count": 41,
+  "generated_at": "2026-05-03T19:00:31.442819+00:00",
+  "count": 45,
   "tools": [
     {
       "name": "AI Tools4,738",
       "tool_url": "https://bestofai.com/tool/lifestack-fit",
       "description": "Share your daily habits. Discover theirs. LifeStack is where you share your daily routines, supplements, and wellness habits with friends — and explore the life stacks of influencers, creators, and experts.",
       "source": "Best of AI",
-      "date_iso": "2026-05-02T19:00:29.143146+00:00",
+      "date_iso": "2026-05-03T19:00:31.309778+00:00",
       "categories": []
     },
     {
-      "name": "Native agent runtime for Conductor OSS",
-      "tool_url": "https://github.com/agentspan-ai/agentspan",
+      "name": "TrainForgeTester – deterministic scenario tests for AI agents",
+      "tool_url": "https://github.com/TrainForge/TrainForgeTester",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-02T18:37:50+00:00",
+      "date_iso": "2026-05-03T18:52:38+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Writing a deep-research agent from scratch",
-      "tool_url": "https://deep-research-agent.pagey.site",
+      "name": "Security Scanner for Agent Skills and MCP",
+      "tool_url": "https://github.com/snyk/agent-scan",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-02T16:41:41+00:00",
-      "categories": [
-        "texte",
-        "automatisation",
-        "recherche"
-      ]
-    },
-    {
-      "name": "TradingAgents without the API bill – run multi agents in Claude Code",
-      "tool_url": "https://github.com/lucemia/trading-agents-plugin",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-02T15:39:56+00:00",
+      "date_iso": "2026-05-03T18:10:38+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "AgInTiFlow, a local web and CLI agent workspace using DeepSeek",
-      "tool_url": "https://www.npmjs.com/package/@lazyingart/agintiflow",
+      "name": "Orchestrate Dockerized Claude Code sessions from your issue tracker",
+      "tool_url": "https://github.com/smithy-ai/smithy-ai",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-02T13:31:00+00:00",
+      "date_iso": "2026-05-03T17:58:55+00:00",
+      "categories": []
+    },
+    {
+      "name": "Local semantic memory for coding agents",
+      "tool_url": "https://github.com/Chadi00/thr",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T17:37:48+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Mljar Studio – local AI data analyst that saves analysis as notebooks",
-      "tool_url": "https://mljar.com/",
+      "name": "MegaLLM – Universal LLM client for any OpenAI-compatible API",
+      "tool_url": "https://megallm.netlify.app/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-02T10:21:31+00:00",
-      "categories": [
-        "musique",
-        "données"
-      ]
-    },
-    {
-      "name": "Autorank – Rank on Google and AI search while you sleep",
-      "tool_url": "https://www.getautorank.ai/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-02T09:31:21+00:00",
-      "categories": [
-        "recherche"
-      ]
-    },
-    {
-      "name": "I built Male Hormone Lab Interpreter that does what LLMs can't",
-      "tool_url": "https://www.longevity-tools.com/male-hormones-interpreter",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-02T09:12:39+00:00",
+      "date_iso": "2026-05-03T17:15:46+00:00",
       "categories": [
         "LLM"
       ]
     },
     {
-      "name": "Filling PDF forms with AI using client-side tool calling",
-      "tool_url": "https://copilot.simplepdf.com/?share=a7d00ad073c75a75d493228e6ff7b11eb3f2d945b6175913e87898ec96ca8076&form=w9&lang=en",
+      "name": "Kubesplaining CLI that maps RBAC privilege-escalation paths in K8s",
+      "tool_url": "https://github.com/0hardik1/Kubesplaining",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-02T08:54:27+00:00",
-      "categories": [
-        "documents"
-      ]
-    },
-    {
-      "name": "Hollow is an open-sourced self-modifying agentic system",
-      "tool_url": "https://github.com/ninjahawk/hollow-agentOS",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-02T07:43:29+00:00",
-      "categories": [
-        "automatisation",
-        "open source"
-      ]
-    },
-    {
-      "name": "Create the right image sizes for social media",
-      "tool_url": "https://skills.sh/branding5/social-media-image-sizes/social-media-image-sizes",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-02T07:43:23+00:00",
-      "categories": [
-        "images"
-      ]
-    },
-    {
-      "name": "Agent with its own computer on the cloud",
-      "tool_url": "https://pulsarbot.cloud/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-02T07:15:45+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "I made an AI task scheduling app",
-      "tool_url": "https://apps.apple.com/us/app/taskmaster-ai-assistant/id6761262496",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-02T05:41:08+00:00",
+      "date_iso": "2026-05-03T15:39:16+00:00",
       "categories": []
     },
     {
-      "name": "Agent-desktop – Native desktop automation CLI for AI agents",
-      "tool_url": "https://github.com/lahfir/agent-desktop",
+      "name": "Llmconfig – configfile and CLI for local LLM",
+      "tool_url": "https://github.com/kiliczsh/llmconfig",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-02T02:18:24+00:00",
+      "date_iso": "2026-05-03T15:31:44+00:00",
+      "categories": [
+        "documents",
+        "LLM"
+      ]
+    },
+    {
+      "name": "Semble – Code search for agents that uses 98% fewer tokens than grep",
+      "tool_url": "https://github.com/MinishLab/semble",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T15:02:08+00:00",
+      "categories": [
+        "automatisation",
+        "recherche"
+      ]
+    },
+    {
+      "name": "Deckades – Was Star Wars released before or after the first Email?",
+      "tool_url": "https://deckades.app/daily",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T14:51:58+00:00",
+      "categories": [
+        "présentation"
+      ]
+    },
+    {
+      "name": "ShadowBrokers – AI trade signals for retail traders",
+      "tool_url": "https://www.shadowbrokers.app/start",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T12:32:36+00:00",
+      "categories": []
+    },
+    {
+      "name": "Flop Map – a 3D globe of every known AI compute cluster",
+      "tool_url": "https://flopmap.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T12:19:54+00:00",
+      "categories": [
+        "images 3D"
+      ]
+    },
+    {
+      "name": "A strict-maintenance fork of ingress-Nginx",
+      "tool_url": "https://github.com/forkline/ingress-nginx",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T11:58:07+00:00",
+      "categories": []
+    },
+    {
+      "name": "Event-Sourced Domain Modeling",
+      "tool_url": "https://www.esdm.io",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T11:57:55+00:00",
+      "categories": []
+    },
+    {
+      "name": "How to build CLI for agents – Loxone CLI as an example",
+      "tool_url": "https://github.com/eisber/lox-cli",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T11:23:13+00:00",
       "categories": [
         "automatisation"
+      ]
+    },
+    {
+      "name": "BoxLite – the all-terrain micro-VM",
+      "tool_url": "https://github.com/boxlite-ai/boxlite",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T08:28:49+00:00",
+      "categories": []
+    },
+    {
+      "name": "Editor, Browser, Terminal, Mail, Agents. AI Sharing Context",
+      "tool_url": "https://github.com/raiyanyahya/kit",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T08:11:11+00:00",
+      "categories": [
+        "texte",
+        "automatisation",
+        "histoires enfants"
+      ]
+    },
+    {
+      "name": "Enoch – Control Plane for Autonomous AI Research",
+      "tool_url": "https://github.com/alias8818/enoch-agentic-research-system",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-03T07:45:21+00:00",
+      "categories": [
+        "recherche"
       ]
     },
     {
@@ -278,6 +308,17 @@
       ]
     },
     {
+      "name": "PandaProbe",
+      "tool_url": "https://www.producthunt.com/products/pandaprobe",
+      "description": "open source agent engineering platform",
+      "source": "Product Hunt",
+      "date_iso": "2026-04-29T09:53:50-07:00",
+      "categories": [
+        "automatisation",
+        "open source"
+      ]
+    },
+    {
       "name": "Crin AI",
       "tool_url": "https://www.producthunt.com/products/crin-ai",
       "description": "Learn about AI & watch text become tokens in a node graph",
@@ -344,16 +385,6 @@
         "voix",
         "chatbot",
         "automatisation"
-      ]
-    },
-    {
-      "name": "Picsart CLI",
-      "tool_url": "https://www.producthunt.com/products/picsart",
-      "description": "Picsart's power right from your AI chat box",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-28T07:31:08-07:00",
-      "categories": [
-        "chatbot"
       ]
     },
     {
