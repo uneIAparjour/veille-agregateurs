@@ -1,211 +1,333 @@
 {
-  "generated_at": "2026-05-07T19:43:30.336052+00:00",
-  "count": 46,
+  "generated_at": "2026-05-08T19:19:05.850423+00:00",
+  "count": 45,
   "tools": [
     {
       "name": "AI Tools4,738",
       "tool_url": "https://bestofai.com/tool/lifestack-fit",
       "description": "Share your daily habits. Discover theirs. LifeStack is where you share your daily routines, supplements, and wellness habits with friends — and explore the life stacks of influencers, creators, and experts.",
       "source": "Best of AI",
-      "date_iso": "2026-05-07T19:43:30.239325+00:00",
+      "date_iso": "2026-05-08T19:19:04.473935+00:00",
       "categories": []
     },
     {
-      "name": "Swipe Copilot – Less time on Tinder, more dates worth going on",
-      "tool_url": "https://www.swipecopilot.com/",
+      "name": "Automation ROI calculator for repetitive admin workflows",
+      "tool_url": "https://tinyopsstudio.com/automation-roi-calculator",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-07T19:22:48+00:00",
-      "categories": []
-    },
-    {
-      "name": "Rig – a Ghostty sidecar for managing agents",
-      "tool_url": "https://github.com/backnotprop/rig",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T19:19:36+00:00",
+      "date_iso": "2026-05-08T19:06:07+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Describe what makes a photo \"bad\" and let a local LLM flag them",
-      "tool_url": "https://github.com/iamnotagentleman/bad-photos-out",
+      "name": "Terminal Arcade – Side quests when agents are cooking",
+      "tool_url": "https://twitter.com/DavidAmal/status/2052819451259834376",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-07T18:50:18+00:00",
+      "date_iso": "2026-05-08T18:44:20+00:00",
       "categories": [
-        "images",
-        "automatisation",
-        "LLM"
+        "automatisation"
       ]
     },
     {
-      "name": "I built a platform for experimenting with attention arbitrage",
-      "tool_url": "https://readyfaucet.com/",
+      "name": "Openloom – Turn Loom links into transcripts and frames an LLM can watch",
+      "tool_url": "https://www.useopenloom.com/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-07T18:46:28+00:00",
+      "date_iso": "2026-05-08T18:25:45+00:00",
       "categories": [
-        "LLM"
+        "LLM",
+        "youtube"
       ]
     },
     {
-      "name": "A local-only image filter editor and batch processor in the browser",
-      "tool_url": "https://kaliedarik.github.io/sc-filter-builder/",
+      "name": "Agent-isolated remote envs with full Docker Compose support",
+      "tool_url": "https://github.com/qosha1/remote-compose",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-07T18:43:22+00:00",
+      "date_iso": "2026-05-08T18:01:54+00:00",
       "categories": [
-        "images",
-        "navigateur"
+        "musique",
+        "automatisation"
       ]
     },
     {
-      "name": "Real-time world model demo",
-      "tool_url": "https://www.reactor.inc/",
+      "name": "Build a custom AI in under 60 seconds (demo video)",
+      "tool_url": "https://www.youtube.com/watch?v=wXnq_49sCow",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-07T18:41:43+00:00",
-      "categories": []
-    },
-    {
-      "name": "Verdict – model evals on your own data, not someone else's benchmark",
-      "tool_url": "https://github.com/aevyraai/verdict",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T18:26:03+00:00",
-      "categories": [
-        "données"
-      ]
-    },
-    {
-      "name": "Bilig – a headless spreadsheet engine for Node services and agents",
-      "tool_url": "https://github.com/proompteng/bilig",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T18:16:44+00:00",
-      "categories": [
-        "automatisation",
-        "données"
-      ]
-    },
-    {
-      "name": "Agent-data – a CLI for giving agents real-time, structured data",
-      "tool_url": "https://agent-data.dev/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T17:50:14+00:00",
-      "categories": [
-        "automatisation",
-        "données"
-      ]
-    },
-    {
-      "name": "Bookstoread.ai – Discover non-fiction books using AI",
-      "tool_url": "https://bookstoread.ai",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T17:38:53+00:00",
-      "categories": []
-    },
-    {
-      "name": "AI Generated Videos for your Code diffs",
-      "tool_url": "https://steerable.dev/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T17:26:17+00:00",
+      "date_iso": "2026-05-08T17:26:43+00:00",
       "categories": [
         "vidéo"
       ]
     },
     {
-      "name": "Airlock – self-upgrading compiled AI agents",
-      "tool_url": "https://github.com/airlockrun/airlock/",
+      "name": "PostDew – LinkedIn posts that don't sound like AI",
+      "tool_url": "https://www.postdew.com/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-07T17:10:24+00:00",
+      "date_iso": "2026-05-08T17:13:45+00:00",
+      "categories": []
+    },
+    {
+      "name": "UltraCompress – first mathematically lossless 5-bit LLM compression",
+      "tool_url": "https://github.com/sipsalabs/ultracompress",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T16:49:21+00:00",
+      "categories": [
+        "LLM"
+      ]
+    },
+    {
+      "name": "Rubberduck – Software design agent where you make the decisions",
+      "tool_url": "https://userubberduck.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T16:24:42+00:00",
+      "categories": [
+        "automatisation",
+        "infographie"
+      ]
+    },
+    {
+      "name": "Slidemoji – A Daily Puzzle Game",
+      "tool_url": "https://slidemoji.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T15:56:07+00:00",
+      "categories": [
+        "jeu vidéo"
+      ]
+    },
+    {
+      "name": "AI Fluency Diagnostic",
+      "tool_url": "https://ai-pilled.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T15:43:56+00:00",
+      "categories": []
+    },
+    {
+      "name": "Oc-go-cc, an Open-source proxy that lets Claude Code use OSS models",
+      "tool_url": "https://github.com/samueltuyizere/oc-go-cc",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T15:31:26+00:00",
+      "categories": [
+        "open source"
+      ]
+    },
+    {
+      "name": "I built a playground of interative A/B testing for RAG",
+      "tool_url": "https://rag-dr.hanhanwu.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T15:00:56+00:00",
+      "categories": [
+        "LLM"
+      ]
+    },
+    {
+      "name": "NPM Package that fills forms via voice using Gemini Live API",
+      "tool_url": "https://www.npmjs.com/package/audio-forms",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T14:41:09+00:00",
+      "categories": [
+        "voix"
+      ]
+    },
+    {
+      "name": "A near-zero-dependency Java UI toolkit for admin panels and AI flows",
+      "tool_url": "https://github.com/vadimv/server-components",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T14:39:42+00:00",
+      "categories": []
+    },
+    {
+      "name": "Slate – agentic pre-production studio for solo Youtubers",
+      "tool_url": "https://useslate.app/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T14:28:23+00:00",
+      "categories": [
+        "musique",
+        "automatisation",
+        "youtube"
+      ]
+    },
+    {
+      "name": "Coord – atomic task claims for parallel AI coding agents",
+      "tool_url": "https://github.com/DmarshalTU/coord",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T14:16:03+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Local-first long-term memory engine for AI agents·MCP/CLI· 100% local",
-      "tool_url": "https://github.com/misaelzapata/memoirs",
+      "name": "Git for AI Agents",
+      "tool_url": "https://github.com/regent-vcs/re_gent",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-07T16:38:58+00:00",
+      "date_iso": "2026-05-08T14:15:36+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "OTel native agent to instrument applications",
-      "tool_url": "https://otex.dev/",
+      "name": "Arlo – Your AI Chief of Staff: Kill 80% of the noise. Focus on the 20%.",
+      "tool_url": "https://www.arlo.fyi",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-07T16:37:18+00:00",
+      "date_iso": "2026-05-08T13:14:19+00:00",
+      "categories": []
+    },
+    {
+      "name": "NanoCorp – Create autonomous companies run by AI",
+      "tool_url": "https://www.nanocorp.so",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T12:19:56+00:00",
+      "categories": []
+    },
+    {
+      "name": "Rfp.ai – answer RFPs from approved docs, with source citations",
+      "tool_url": "https://rfp.ai/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-08T12:02:21+00:00",
+      "categories": []
+    },
+    {
+      "name": "KodHau",
+      "tool_url": "https://www.producthunt.com/products/kodhau-senior-context-for-ai-agents",
+      "description": "Stop your AI from breaking prod-give it your team decisions",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T23:59:12-07:00",
+      "categories": []
+    },
+    {
+      "name": "Monid 2.0",
+      "tool_url": "https://www.producthunt.com/products/monid",
+      "description": "OpenRouter for agent tools",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T21:48:50-07:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Employees use ChatGPT.Your CISO has no visibility. EU AI Act says fix it",
-      "tool_url": "https://senthex.com/en/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T16:26:37+00:00",
+      "name": "Illospace",
+      "tool_url": "https://www.producthunt.com/products/illospace",
+      "description": "Living space where teams and agents work together",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T16:38:55-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Sendly",
+      "tool_url": "https://www.producthunt.com/products/sendly-2",
+      "description": "SMS For AI Agents & Developers",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T15:55:21-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "SecureLend Agents",
+      "tool_url": "https://www.producthunt.com/products/securelend-agents",
+      "description": "AI underwriting agents for VCs, lenders and insurers",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T15:32:29-07:00",
+      "categories": [
+        "texte",
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Cardamom",
+      "tool_url": "https://www.producthunt.com/products/cardamom-2",
+      "description": "AI phone ordering for takeout-heavy restaurants",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T14:28:11-07:00",
+      "categories": []
+    },
+    {
+      "name": "Fabraix",
+      "tool_url": "https://www.producthunt.com/products/nyx-4",
+      "description": "Find gaps in your AI agents before users do",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T11:21:51-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Maia Executives",
+      "tool_url": "https://www.producthunt.com/products/maia-your-ai-co-worker",
+      "description": "Meet AI Executives running business operations end-to-end.",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T10:05:14-07:00",
+      "categories": []
+    },
+    {
+      "name": "Reefy",
+      "tool_url": "https://www.producthunt.com/products/reefy",
+      "description": "Turn any PC into a private AI machine",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T09:57:11-07:00",
+      "categories": []
+    },
+    {
+      "name": "AgentChat",
+      "tool_url": "https://www.producthunt.com/products/agentchat",
+      "description": "Messaging Platform for Agents",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T07:17:36-07:00",
+      "categories": [
+        "chatbot",
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Espa",
+      "tool_url": "https://www.producthunt.com/products/espa",
+      "description": "AI executive assistant for your to-do's, scheduling, & email",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T05:32:18-07:00",
       "categories": [
         "chatbot"
       ]
     },
     {
-      "name": "Daily AI-guessed odds of an Iran peace deal, vs. oil/gas prices",
-      "tool_url": "https://iranpeacedeal.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T16:23:32+00:00",
-      "categories": []
-    },
-    {
-      "name": "Infinite you – multi agent workflow system",
-      "tool_url": "https://github.com/portpowered/infinite-you",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T16:21:04+00:00",
+      "name": "MiniMax Hub",
+      "tool_url": "https://www.producthunt.com/products/minimax",
+      "description": "Desktop AI workstation with agent-driven visual canvas",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T04:21:27-07:00",
       "categories": [
+        "images",
         "automatisation",
-        "usage illimité"
-      ]
-    },
-    {
-      "name": "My Collection of UX / AI Design Claude Code Skills",
-      "tool_url": "https://github.com/tommyjepsen/awesome-ux-skills",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T16:19:00+00:00",
-      "categories": [
         "infographie"
       ]
     },
     {
-      "name": "Statewright – Visual state machines that make AI agents reliable",
-      "tool_url": "https://statewright.ai/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T15:40:17+00:00",
+      "name": "APIEval-20",
+      "tool_url": "https://www.producthunt.com/products/kushoai",
+      "description": "An open benchmark for AI agents that test APIs",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T04:03:39-07:00",
       "categories": [
-        "images",
         "automatisation"
       ]
-    },
-    {
-      "name": "Stage CLI – an easier way of reading your AI generated changes locally",
-      "tool_url": "https://github.com/ReviewStage/stage-cli",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-07T15:38:36+00:00",
-      "categories": []
     },
     {
       "name": "GeniLoop",
@@ -226,14 +348,12 @@
       ]
     },
     {
-      "name": "LikeTony.ai",
-      "tool_url": "https://www.producthunt.com/products/liketony-ai",
-      "description": "Make your landing sound like Elon, Jobs or Yoda",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-06T23:50:49-07:00",
-      "categories": [
-        "automatisation"
-      ]
+      "name": "GPT‑5.5 Instant",
+      "tool_url": "https://www.aixploria.com/gpt%e2%80%915-5-instant-openai/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-05-07T01:25:29+00:00",
+      "categories": []
     },
     {
       "name": "Basedash MCP server",
@@ -243,6 +363,16 @@
       "date_iso": "2026-05-06T15:31:59-07:00",
       "categories": [
         "données"
+      ]
+    },
+    {
+      "name": "iOrchestra AI Hardware Engineers",
+      "tool_url": "https://www.producthunt.com/products/vibe-engineer-by-iorchestra",
+      "description": "Prompt to production-ready Hardware designs for manufacture",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-06T10:08:38-07:00",
+      "categories": [
+        "infographie"
       ]
     },
     {
@@ -267,75 +397,12 @@
       ]
     },
     {
-      "name": "Knowly 1.0",
-      "tool_url": "https://www.producthunt.com/products/knowly-ai",
-      "description": "LLM Wiki + NotebookLM, in one closed-loop Proactive AI",
+      "name": "Finlingo",
+      "tool_url": "https://www.producthunt.com/products/finlingo",
+      "description": "Your own AI CFO, watching your money on autopilot",
       "source": "Product Hunt",
-      "date_iso": "2026-05-05T21:40:53-07:00",
-      "categories": [
-        "LLM"
-      ]
-    },
-    {
-      "name": "Ads in ChatGPT",
-      "tool_url": "https://www.producthunt.com/products/chatgpt",
-      "description": "Create, manage, and measure your ChatGPT ad campaigns",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-05T20:17:32-07:00",
-      "categories": [
-        "chatbot"
-      ]
-    },
-    {
-      "name": "Kanwas",
-      "tool_url": "https://www.producthunt.com/products/kanwas",
-      "description": "An open-source brain for your team",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-05T15:00:12-07:00",
-      "categories": [
-        "open source"
-      ]
-    },
-    {
-      "name": "DevPass by LLM Gateway",
-      "tool_url": "https://www.producthunt.com/products/devpass-by-llm-gateway",
-      "description": "One key to access every coding model in 3 flat prices",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-05T12:14:26-07:00",
-      "categories": [
-        "LLM"
-      ]
-    },
-    {
-      "name": "Ajelix AI Agent for Work",
-      "tool_url": "https://www.producthunt.com/products/ajelix-ai-excel-tools",
-      "description": "The first truly agentic AI sidebar for Google Workspace™",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-05T11:49:37-07:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Claude Agents for Financial Services",
-      "tool_url": "https://www.producthunt.com/products/claude-code",
-      "description": "Finance agent templates for pitches, KYC, and closing books",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-05T10:19:05-07:00",
-      "categories": [
-        "automatisation",
-        "présentation"
-      ]
-    },
-    {
-      "name": "GPT‑5.5 Instant",
-      "tool_url": "https://www.producthunt.com/products/openai",
-      "description": "Smarter, more personal answers as ChatGPT's new default",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-05T10:05:04-07:00",
-      "categories": [
-        "chatbot"
-      ]
+      "date_iso": "2026-05-05T15:46:48-07:00",
+      "categories": []
     },
     {
       "name": "The 10 Most Viral prompts to create images with ChatGPT 2.0 Image",
@@ -350,6 +417,16 @@
       ]
     },
     {
+      "name": "Flare",
+      "tool_url": "https://www.producthunt.com/products/flare-9",
+      "description": "AI-native voice-first social app for GenZ",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-05T07:38:00-07:00",
+      "categories": [
+        "voix"
+      ]
+    },
+    {
       "name": "FlowMarket",
       "tool_url": "https://www.producthunt.com/products/flowmarket-2",
       "description": "A social network of AI agents generating B2B deals",
@@ -357,100 +434,6 @@
       "date_iso": "2026-05-05T06:01:30-07:00",
       "categories": [
         "automatisation"
-      ]
-    },
-    {
-      "name": "moar",
-      "tool_url": "https://www.producthunt.com/products/moar-2",
-      "description": "Your documents. AI ready.",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-04T17:45:48-07:00",
-      "categories": [
-        "documents"
-      ]
-    },
-    {
-      "name": "The 10 Best prompts to create logos with ChatGPT 2.0 Image",
-      "tool_url": "https://bestfreeaiwebsites.com/10-best-prompts-to-create-logos-with-chatgpt2-image/",
-      "description": "ChatGPT 2.0 Image THE 10 BEST LOGO PROMPTS These prompts can generate insanely good logos […]",
-      "source": "Best Free AI",
-      "date_iso": "2026-05-01T08:39:04+00:00",
-      "categories": [
-        "images",
-        "chatbot"
-      ]
-    },
-    {
-      "name": "20 Ways to Use Claude",
-      "tool_url": "https://bestfreeaiwebsites.com/20-ways-to-use-claude/",
-      "description": "20 Ways to Use Claude – SimplyDigital.gr Artificial Intelligence · Claude · Guide 20 Ways […]",
-      "source": "Best Free AI",
-      "date_iso": "2026-05-01T08:23:00+00:00",
-      "categories": []
-    },
-    {
-      "name": "Mistral Medium 3.5",
-      "tool_url": "https://www.aixploria.com/mistral-medium-3-5/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-05-01T01:27:21+00:00",
-      "categories": [
-        "LLM"
-      ]
-    },
-    {
-      "name": "AI Video Translator",
-      "tool_url": "https://www.aixploria.com/ai-video-translator/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-05-01T00:12:53+00:00",
-      "categories": [
-        "vidéo"
-      ]
-    },
-    {
-      "name": "hiData.ai",
-      "tool_url": "https://www.aixploria.com/hidata-ai/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-05-01T00:02:24+00:00",
-      "categories": [
-        "données"
-      ]
-    },
-    {
-      "name": "Vimi",
-      "tool_url": "https://www.aixploria.com/vimi-art/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-04-30T23:57:08+00:00",
-      "categories": []
-    },
-    {
-      "name": "SLED AI",
-      "tool_url": "https://www.producthunt.com/products/sled-ai",
-      "description": "Public-sector revenue engine for B2B companies",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-30T18:52:30-07:00",
-      "categories": []
-    },
-    {
-      "name": "Eloo",
-      "tool_url": "https://www.producthunt.com/products/eloo",
-      "description": "AI Teams That Build Themselves",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-30T18:51:24-07:00",
-      "categories": []
-    },
-    {
-      "name": "Open Finance MCP",
-      "tool_url": "https://www.producthunt.com/products/open-finance-mcp",
-      "description": "Access your bank data in ChatGPT & Claude via Open Finance",
-      "source": "Product Hunt",
-      "date_iso": "2026-04-30T15:27:51-07:00",
-      "categories": [
-        "chatbot",
-        "données"
       ]
     }
   ]
