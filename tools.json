@@ -1,207 +1,205 @@
 {
-  "generated_at": "2026-05-08T19:19:05.850423+00:00",
-  "count": 45,
+  "generated_at": "2026-05-09T19:02:50.453669+00:00",
+  "count": 46,
   "tools": [
     {
       "name": "AI Tools4,738",
       "tool_url": "https://bestofai.com/tool/lifestack-fit",
       "description": "Share your daily habits. Discover theirs. LifeStack is where you share your daily routines, supplements, and wellness habits with friends — and explore the life stacks of influencers, creators, and experts.",
       "source": "Best of AI",
-      "date_iso": "2026-05-08T19:19:04.473935+00:00",
+      "date_iso": "2026-05-09T19:02:50.219270+00:00",
       "categories": []
     },
     {
-      "name": "Automation ROI calculator for repetitive admin workflows",
-      "tool_url": "https://tinyopsstudio.com/automation-roi-calculator",
+      "name": "Shoehorn – Backstage without the maintenance overhead",
+      "tool_url": "https://shoehorn.dev",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-08T19:06:07+00:00",
+      "date_iso": "2026-05-09T19:01:30+00:00",
+      "categories": []
+    },
+    {
+      "name": "How-to-Train-Your-GPT",
+      "tool_url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T18:10:21+00:00",
+      "categories": []
+    },
+    {
+      "name": "Durable async jobs for x402-paid APIs",
+      "tool_url": "https://github.com/clearedink/cleared-jobs",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T17:49:28+00:00",
+      "categories": []
+    },
+    {
+      "name": "AirScore – Daily air-quality emails synthesizing EPA, NOAA, and pollen",
+      "tool_url": "https://getairscore.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T17:18:01+00:00",
+      "categories": []
+    },
+    {
+      "name": "My AI agents bully each other to prevent context drift",
+      "tool_url": "https://wuphf.team",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T16:22:23+00:00",
+      "categories": [
+        "texte",
+        "automatisation",
+        "histoires enfants"
+      ]
+    },
+    {
+      "name": "Armorer – A secure local control plane to sandbox AI agents in Docker",
+      "tool_url": "https://github.com/ArmorerLabs/Armorer",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T16:09:51+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Terminal Arcade – Side quests when agents are cooking",
-      "tool_url": "https://twitter.com/DavidAmal/status/2052819451259834376",
+      "name": "AaaS – Agent as a Service",
+      "tool_url": "https://github.com/Tem-Degu/streetai-aaas",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-08T18:44:20+00:00",
+      "date_iso": "2026-05-09T14:22:26+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Openloom – Turn Loom links into transcripts and frames an LLM can watch",
-      "tool_url": "https://www.useopenloom.com/",
+      "name": "Mochi.js: bun-native high-fidelity browser automation library",
+      "tool_url": "https://mochijs.com/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-08T18:25:45+00:00",
+      "date_iso": "2026-05-09T14:01:40+00:00",
+      "categories": [
+        "automatisation",
+        "navigateur"
+      ]
+    },
+    {
+      "name": "An 8-bit computer made from one NAND gate, and live-evolving neural net",
+      "tool_url": "https://github.com/ninjahawk/VirtualPC",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T12:58:48+00:00",
+      "categories": []
+    },
+    {
+      "name": "Share to ChatGPT Widgets",
+      "tool_url": "https://share2chatgpt.franzai.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T12:48:52+00:00",
+      "categories": [
+        "chatbot"
+      ]
+    },
+    {
+      "name": "CADBench – every AI CAD tool I tested fails on basic mechanical parts",
+      "tool_url": "https://evals-for-ai-cads.vercel.app/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T12:20:18+00:00",
+      "categories": []
+    },
+    {
+      "name": "Local AI search for your video library (local, open source)",
+      "tool_url": "https://edit-mind.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T12:17:10+00:00",
+      "categories": [
+        "vidéo",
+        "recherche",
+        "open source"
+      ]
+    },
+    {
+      "name": "Anycrap – REST API for 35k absurdist AI-generated products",
+      "tool_url": "https://anycrap.shop/developers",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T11:26:51+00:00",
+      "categories": []
+    },
+    {
+      "name": "DuoSolve – Daily grammer practice game",
+      "tool_url": "https://duobook.co/duosolve",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T10:55:28+00:00",
+      "categories": [
+        "jeu vidéo"
+      ]
+    },
+    {
+      "name": "Dikaletus – meeting recording and transcription using Mistral AI",
+      "tool_url": "https://codeberg.org/MimosaDev/dikaletus",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T09:28:32+00:00",
       "categories": [
         "LLM",
         "youtube"
       ]
     },
     {
-      "name": "Agent-isolated remote envs with full Docker Compose support",
-      "tool_url": "https://github.com/qosha1/remote-compose",
+      "name": "KillClawd – a sarcastic AI desktop crab by local Ollama",
+      "tool_url": "https://github.com/ninjahawk/KillClawd",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-08T18:01:54+00:00",
-      "categories": [
-        "musique",
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Build a custom AI in under 60 seconds (demo video)",
-      "tool_url": "https://www.youtube.com/watch?v=wXnq_49sCow",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T17:26:43+00:00",
-      "categories": [
-        "vidéo"
-      ]
-    },
-    {
-      "name": "PostDew – LinkedIn posts that don't sound like AI",
-      "tool_url": "https://www.postdew.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T17:13:45+00:00",
-      "categories": []
-    },
-    {
-      "name": "UltraCompress – first mathematically lossless 5-bit LLM compression",
-      "tool_url": "https://github.com/sipsalabs/ultracompress",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T16:49:21+00:00",
+      "date_iso": "2026-05-09T02:21:23+00:00",
       "categories": [
         "LLM"
       ]
     },
     {
-      "name": "Rubberduck – Software design agent where you make the decisions",
-      "tool_url": "https://userubberduck.com/",
+      "name": "Nexa-gauge – Cache/cost-aware graph-based eval for LLM and RAG",
+      "tool_url": "https://github.com/harnexa/nexa-gauge",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-08T16:24:42+00:00",
-      "categories": [
-        "automatisation",
-        "infographie"
-      ]
-    },
-    {
-      "name": "Slidemoji – A Daily Puzzle Game",
-      "tool_url": "https://slidemoji.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T15:56:07+00:00",
-      "categories": [
-        "jeu vidéo"
-      ]
-    },
-    {
-      "name": "AI Fluency Diagnostic",
-      "tool_url": "https://ai-pilled.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T15:43:56+00:00",
-      "categories": []
-    },
-    {
-      "name": "Oc-go-cc, an Open-source proxy that lets Claude Code use OSS models",
-      "tool_url": "https://github.com/samueltuyizere/oc-go-cc",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T15:31:26+00:00",
-      "categories": [
-        "open source"
-      ]
-    },
-    {
-      "name": "I built a playground of interative A/B testing for RAG",
-      "tool_url": "https://rag-dr.hanhanwu.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T15:00:56+00:00",
+      "date_iso": "2026-05-09T00:45:32+00:00",
       "categories": [
         "LLM"
       ]
     },
     {
-      "name": "NPM Package that fills forms via voice using Gemini Live API",
-      "tool_url": "https://www.npmjs.com/package/audio-forms",
+      "name": "AI-native tech assessments (end of LeetCode)",
+      "tool_url": "https://www.openround.ai/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-08T14:41:09+00:00",
-      "categories": [
-        "voix"
-      ]
-    },
-    {
-      "name": "A near-zero-dependency Java UI toolkit for admin panels and AI flows",
-      "tool_url": "https://github.com/vadimv/server-components",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T14:39:42+00:00",
+      "date_iso": "2026-05-09T00:28:24+00:00",
       "categories": []
     },
     {
-      "name": "Slate – agentic pre-production studio for solo Youtubers",
-      "tool_url": "https://useslate.app/",
+      "name": "[Video] Tribute to LLM releases in April 2026",
+      "tool_url": "https://www.youtube.com/watch?v=uu5ffMH_X9w",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-08T14:28:23+00:00",
+      "date_iso": "2026-05-08T23:53:05+00:00",
       "categories": [
-        "musique",
-        "automatisation",
-        "youtube"
+        "vidéo",
+        "LLM"
       ]
     },
     {
-      "name": "Coord – atomic task claims for parallel AI coding agents",
-      "tool_url": "https://github.com/DmarshalTU/coord",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T14:16:03+00:00",
+      "name": "Staff.rip",
+      "tool_url": "https://www.producthunt.com/products/staff-rip",
+      "description": "Describe a code change in plain language and ship it",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-08T06:43:30-07:00",
       "categories": [
-        "automatisation"
+        "langues"
       ]
-    },
-    {
-      "name": "Git for AI Agents",
-      "tool_url": "https://github.com/regent-vcs/re_gent",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T14:15:36+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Arlo – Your AI Chief of Staff: Kill 80% of the noise. Focus on the 20%.",
-      "tool_url": "https://www.arlo.fyi",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T13:14:19+00:00",
-      "categories": []
-    },
-    {
-      "name": "NanoCorp – Create autonomous companies run by AI",
-      "tool_url": "https://www.nanocorp.so",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T12:19:56+00:00",
-      "categories": []
-    },
-    {
-      "name": "Rfp.ai – answer RFPs from approved docs, with source citations",
-      "tool_url": "https://rfp.ai/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T12:02:21+00:00",
-      "categories": []
     },
     {
       "name": "KodHau",
@@ -230,6 +228,14 @@
       "categories": [
         "automatisation"
       ]
+    },
+    {
+      "name": "How AI-pilled are you?",
+      "tool_url": "https://www.producthunt.com/products/how-ai-pilled-are-you",
+      "description": "Curious how AI-fluent your organization is?",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-07T16:10:14-07:00",
+      "categories": []
     },
     {
       "name": "Sendly",
@@ -356,16 +362,6 @@
       "categories": []
     },
     {
-      "name": "Basedash MCP server",
-      "tool_url": "https://www.producthunt.com/products/basedash",
-      "description": "Your data analyst, in every AI tool you already use",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-06T15:31:59-07:00",
-      "categories": [
-        "données"
-      ]
-    },
-    {
       "name": "iOrchestra AI Hardware Engineers",
       "tool_url": "https://www.producthunt.com/products/vibe-engineer-by-iorchestra",
       "description": "Prompt to production-ready Hardware designs for manufacture",
@@ -374,6 +370,14 @@
       "categories": [
         "infographie"
       ]
+    },
+    {
+      "name": "Prism",
+      "tool_url": "https://www.producthunt.com/products/prism-26",
+      "description": "Hire the best candidates, not just the available",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-06T09:31:45-07:00",
+      "categories": []
     },
     {
       "name": "The 10 Most Viral prompts to create images with ChatGPT 2.0 Image Part #2",
@@ -387,11 +391,11 @@
       ]
     },
     {
-      "name": "Phrony",
-      "tool_url": "https://www.producthunt.com/products/phrony",
-      "description": "Ship AI agents without the operational burden",
+      "name": "ClawTick",
+      "tool_url": "https://www.producthunt.com/products/clawtick",
+      "description": "Cron jobs for AI agents w/ one command, zero infrastructure",
       "source": "Product Hunt",
-      "date_iso": "2026-05-06T09:01:01-07:00",
+      "date_iso": "2026-05-06T03:24:51-07:00",
       "categories": [
         "automatisation"
       ]
@@ -427,11 +431,11 @@
       ]
     },
     {
-      "name": "FlowMarket",
-      "tool_url": "https://www.producthunt.com/products/flowmarket-2",
-      "description": "A social network of AI agents generating B2B deals",
+      "name": "Nylas CLI",
+      "tool_url": "https://www.producthunt.com/products/nylas",
+      "description": "Email, calendar, and contacts for AI agents",
       "source": "Product Hunt",
-      "date_iso": "2026-05-05T06:01:30-07:00",
+      "date_iso": "2026-05-04T19:58:35-07:00",
       "categories": [
         "automatisation"
       ]
