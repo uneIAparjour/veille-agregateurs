@@ -1,194 +1,189 @@
 {
-  "generated_at": "2026-05-09T19:02:50.453669+00:00",
-  "count": 46,
+  "generated_at": "2026-05-10T19:05:27.768388+00:00",
+  "count": 43,
   "tools": [
     {
       "name": "AI Tools4,738",
       "tool_url": "https://bestofai.com/tool/lifestack-fit",
       "description": "Share your daily habits. Discover theirs. LifeStack is where you share your daily routines, supplements, and wellness habits with friends — and explore the life stacks of influencers, creators, and experts.",
       "source": "Best of AI",
-      "date_iso": "2026-05-09T19:02:50.219270+00:00",
+      "date_iso": "2026-05-10T19:05:16.621884+00:00",
       "categories": []
     },
     {
-      "name": "Shoehorn – Backstage without the maintenance overhead",
-      "tool_url": "https://shoehorn.dev",
+      "name": "Mosaic – sort iOS icons by color using an evolutionary algorithm",
+      "tool_url": "https://github.com/RTiK/mosaic",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-09T19:01:30+00:00",
-      "categories": []
-    },
-    {
-      "name": "How-to-Train-Your-GPT",
-      "tool_url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T18:10:21+00:00",
-      "categories": []
-    },
-    {
-      "name": "Durable async jobs for x402-paid APIs",
-      "tool_url": "https://github.com/clearedink/cleared-jobs",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T17:49:28+00:00",
-      "categories": []
-    },
-    {
-      "name": "AirScore – Daily air-quality emails synthesizing EPA, NOAA, and pollen",
-      "tool_url": "https://getairscore.com",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T17:18:01+00:00",
-      "categories": []
-    },
-    {
-      "name": "My AI agents bully each other to prevent context drift",
-      "tool_url": "https://wuphf.team",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T16:22:23+00:00",
+      "date_iso": "2026-05-10T18:29:08+00:00",
       "categories": [
-        "texte",
-        "automatisation",
-        "histoires enfants"
+        "application"
       ]
     },
     {
-      "name": "Armorer – A secure local control plane to sandbox AI agents in Docker",
-      "tool_url": "https://github.com/ArmorerLabs/Armorer",
+      "name": "SimplyBudget, AI Finance Tracker",
+      "tool_url": "https://simplybudget.framer.ai/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-09T16:09:51+00:00",
+      "date_iso": "2026-05-10T18:26:06+00:00",
+      "categories": []
+    },
+    {
+      "name": "Lune - Software for agents that do serious science",
+      "tool_url": "https://luneresearch.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-10T17:50:10+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "AaaS – Agent as a Service",
-      "tool_url": "https://github.com/Tem-Degu/streetai-aaas",
+      "name": "Visual Learning with LLMs",
+      "tool_url": "https://forray.io/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-09T14:22:26+00:00",
+      "date_iso": "2026-05-10T17:46:57+00:00",
+      "categories": [
+        "images",
+        "éducation",
+        "LLM"
+      ]
+    },
+    {
+      "name": "Agent Postmortem Skill – Force AI coding agents to prove their work",
+      "tool_url": "https://github.com/plus8bit/agent-postmortem-skill",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-10T16:49:40+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Mochi.js: bun-native high-fidelity browser automation library",
-      "tool_url": "https://mochijs.com/",
+      "name": "(Update) Mermaid Diagrams in SmallDocs",
+      "tool_url": "https://sdocs.dev/s/WGRRhlhz#k=9KZpXs9Mbvz3UVtve0oG3wF3HRohbBwET1oGDKR9LLA",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-09T14:01:40+00:00",
+      "date_iso": "2026-05-10T16:20:31+00:00",
       "categories": [
-        "automatisation",
+        "mindmap"
+      ]
+    },
+    {
+      "name": "I made an AI tool to keep my browser tabs clean",
+      "tool_url": "https://www.uncluttr.net",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-10T12:16:15+00:00",
+      "categories": [
         "navigateur"
       ]
     },
     {
-      "name": "An 8-bit computer made from one NAND gate, and live-evolving neural net",
-      "tool_url": "https://github.com/ninjahawk/VirtualPC",
+      "name": "Make your codebase agent ready",
+      "tool_url": "https://github.com/jaksa76/agentize",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-09T12:58:48+00:00",
-      "categories": []
-    },
-    {
-      "name": "Share to ChatGPT Widgets",
-      "tool_url": "https://share2chatgpt.franzai.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T12:48:52+00:00",
+      "date_iso": "2026-05-10T10:27:52+00:00",
       "categories": [
-        "chatbot"
+        "automatisation"
       ]
     },
     {
-      "name": "CADBench – every AI CAD tool I tested fails on basic mechanical parts",
-      "tool_url": "https://evals-for-ai-cads.vercel.app/",
+      "name": "Akmon, a Rust AI coding agent for regulated engineering",
+      "tool_url": "https://github.com/radotsvetkov/akmon",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-09T12:20:18+00:00",
+      "date_iso": "2026-05-10T10:25:10+00:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Modafinil - Let agents continue running while MacBook lid is closed",
+      "tool_url": "https://github.com/narcotic-sh/modafinil",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-10T03:17:03+00:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Fixing AI memory blind spot on connected facts with benchmark",
+      "tool_url": "https://yourmemoryai.xyz/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-10T03:03:40+00:00",
       "categories": []
     },
     {
-      "name": "Local AI search for your video library (local, open source)",
-      "tool_url": "https://edit-mind.com",
+      "name": "A Codex/Claude Code plugin for persistent product context thru sessions",
+      "tool_url": "https://github.com/idodekerobo/draft-cli-plugin",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-09T12:17:10+00:00",
+      "date_iso": "2026-05-10T02:53:29+00:00",
+      "categories": [
+        "texte",
+        "histoires enfants"
+      ]
+    },
+    {
+      "name": "Remind – schedule Claude Code on your Mac",
+      "tool_url": "https://olliewagner.com/remind",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-10T02:09:36+00:00",
+      "categories": []
+    },
+    {
+      "name": "XCrawl",
+      "tool_url": "https://www.aixploria.com/xcrawl/",
+      "description": "",
+      "source": "Aixploria",
+      "date_iso": "2026-05-10T01:39:11+00:00",
+      "categories": []
+    },
+    {
+      "name": "AI Design Taste – Design.md Generator",
+      "tool_url": "https://chromewebstore.google.com/detail/ai-design-taste-designmd/peclkdlolmcclhhgpoehpikgknbmkknc",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T20:52:59+00:00",
+      "categories": [
+        "infographie"
+      ]
+    },
+    {
+      "name": "Vibe-coding video games with Claude (Day 26: Primetime)",
+      "tool_url": "https://gamevibe.us/26-primetime",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-09T20:26:54+00:00",
       "categories": [
         "vidéo",
-        "recherche",
-        "open source"
-      ]
-    },
-    {
-      "name": "Anycrap – REST API for 35k absurdist AI-generated products",
-      "tool_url": "https://anycrap.shop/developers",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T11:26:51+00:00",
-      "categories": []
-    },
-    {
-      "name": "DuoSolve – Daily grammer practice game",
-      "tool_url": "https://duobook.co/duosolve",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T10:55:28+00:00",
-      "categories": [
         "jeu vidéo"
       ]
     },
     {
-      "name": "Dikaletus – meeting recording and transcription using Mistral AI",
-      "tool_url": "https://codeberg.org/MimosaDev/dikaletus",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T09:28:32+00:00",
+      "name": "AgentPeek",
+      "tool_url": "https://www.producthunt.com/products/agentpeek",
+      "description": "Claude Code and Codex in your Mac notch",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-09T15:27:11-07:00",
       "categories": [
-        "LLM",
-        "youtube"
+        "automatisation"
       ]
     },
     {
-      "name": "KillClawd – a sarcastic AI desktop crab by local Ollama",
-      "tool_url": "https://github.com/ninjahawk/KillClawd",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T02:21:23+00:00",
+      "name": "Adject 2.0",
+      "tool_url": "https://www.producthunt.com/products/adject",
+      "description": "Create hyperrealistic product visuals with AI",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-08T12:29:52-07:00",
       "categories": [
-        "LLM"
-      ]
-    },
-    {
-      "name": "Nexa-gauge – Cache/cost-aware graph-based eval for LLM and RAG",
-      "tool_url": "https://github.com/harnexa/nexa-gauge",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T00:45:32+00:00",
-      "categories": [
-        "LLM"
-      ]
-    },
-    {
-      "name": "AI-native tech assessments (end of LeetCode)",
-      "tool_url": "https://www.openround.ai/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-09T00:28:24+00:00",
-      "categories": []
-    },
-    {
-      "name": "[Video] Tribute to LLM releases in April 2026",
-      "tool_url": "https://www.youtube.com/watch?v=uu5ffMH_X9w",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-08T23:53:05+00:00",
-      "categories": [
-        "vidéo",
-        "LLM"
+        "images"
       ]
     },
     {
@@ -236,16 +231,6 @@
       "source": "Product Hunt",
       "date_iso": "2026-05-07T16:10:14-07:00",
       "categories": []
-    },
-    {
-      "name": "Sendly",
-      "tool_url": "https://www.producthunt.com/products/sendly-2",
-      "description": "SMS For AI Agents & Developers",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-07T15:55:21-07:00",
-      "categories": [
-        "automatisation"
-      ]
     },
     {
       "name": "SecureLend Agents",
@@ -360,16 +345,6 @@
       "source": "Aixploria",
       "date_iso": "2026-05-07T01:25:29+00:00",
       "categories": []
-    },
-    {
-      "name": "iOrchestra AI Hardware Engineers",
-      "tool_url": "https://www.producthunt.com/products/vibe-engineer-by-iorchestra",
-      "description": "Prompt to production-ready Hardware designs for manufacture",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-06T10:08:38-07:00",
-      "categories": [
-        "infographie"
-      ]
     },
     {
       "name": "Prism",
