@@ -1,204 +1,335 @@
 {
-  "generated_at": "2026-05-13T19:55:22.531138+00:00",
-  "count": 52,
+  "generated_at": "2026-05-14T19:46:17.987255+00:00",
+  "count": 47,
   "tools": [
     {
       "name": "AI Tools4,738",
       "tool_url": "https://bestofai.com/tool/lifestack-fit",
       "description": "Share your daily habits. Discover theirs. LifeStack is where you share your daily routines, supplements, and wellness habits with friends — and explore the life stacks of influencers, creators, and experts.",
       "source": "Best of AI",
-      "date_iso": "2026-05-13T19:55:22.054261+00:00",
+      "date_iso": "2026-05-14T19:46:17.733116+00:00",
       "categories": []
     },
     {
-      "name": "Brutal Audit, brutally honest AI site audit",
-      "tool_url": "https://brutalaudit.com",
+      "name": "Claude-stash – an idea queue for Claude Code",
+      "tool_url": "https://github.com/AmirSoleimani/claude-stash",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-13T19:36:45+00:00",
+      "date_iso": "2026-05-14T19:10:24+00:00",
       "categories": []
     },
     {
-      "name": "Ravan – Free streaming for AI-generated instrumental music",
-      "tool_url": "https://ravan.one",
+      "name": "Visualizing Tiny LLMs from OpenAI's Parameter Golf",
+      "tool_url": "https://leebutterman.com/2026/05/01/visualizing-tiny-llms-in-parameter-golf.html",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-13T19:25:20+00:00",
+      "date_iso": "2026-05-14T18:52:29+00:00",
       "categories": [
-        "musique"
+        "images",
+        "LLM"
       ]
     },
     {
-      "name": "Sunex Optics – MCP server for choosing best lens/CMOS image cameras",
-      "tool_url": "https://sunex-ai.com",
+      "name": "PlanBridge: open-source tool for precise feedback on coding agent plans",
+      "tool_url": "https://github.com/contextbridge/planbridge",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-13T18:09:26+00:00",
+      "date_iso": "2026-05-14T18:22:13+00:00",
       "categories": [
-        "images"
-      ]
-    },
-    {
-      "name": "Truly Typed – A writing app for the AI era",
-      "tool_url": "https://trulytyped.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T17:54:39+00:00",
-      "categories": [
-        "texte"
-      ]
-    },
-    {
-      "name": "Neural window manager, neural network moving windows from mouse actions",
-      "tool_url": "https://lusob.github.io/neural-os/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T17:46:15+00:00",
-      "categories": []
-    },
-    {
-      "name": "Claude Code plugin for two-way HTML artifact generation",
-      "tool_url": "https://github.com/f-labs-io/agent-html-skills",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T17:36:19+00:00",
-      "categories": [
-        "site web"
-      ]
-    },
-    {
-      "name": "Claude MCP to Fitness Tracker",
-      "tool_url": "https://keegnation.fit/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T17:34:04+00:00",
-      "categories": []
-    },
-    {
-      "name": "A open-source, local trace viewer for Claude Code and Codex sessions",
-      "tool_url": "https://github.com/DevonPeroutky/agent-profiler",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T17:29:11+00:00",
-      "categories": [
+        "automatisation",
         "open source"
       ]
     },
     {
-      "name": "Athena Index – behavioral credibility scores for public claims",
-      "tool_url": "https://www.athenaindex.com/",
+      "name": "image-3D – a web component for 3D images",
+      "tool_url": "https://mukba.ng/image-3d/docs/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-13T17:17:26+00:00",
-      "categories": []
-    },
-    {
-      "name": "Profine – Profile and rewrite your ML training loop on real GPUs",
-      "tool_url": "https://github.com/ProfineAI/profine-cli",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T17:07:22+00:00",
+      "date_iso": "2026-05-14T18:16:35+00:00",
       "categories": [
-        "texte",
-        "documents"
+        "images",
+        "images 3D"
       ]
     },
     {
-      "name": "AgentDeck – a game console for AI agent research",
-      "tool_url": "https://github.com/agentdeck/agentdeck",
+      "name": "Browse 61 3D Printable Robots",
+      "tool_url": "https://orobot.io/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-13T16:55:15+00:00",
+      "date_iso": "2026-05-14T18:10:28+00:00",
+      "categories": [
+        "chatbot",
+        "images 3D"
+      ]
+    },
+    {
+      "name": "Specdd – Spec-driven development as a Claude/Codex/Cursor skill",
+      "tool_url": "https://github.com/unboundinnov/specdd",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T17:56:56+00:00",
+      "categories": []
+    },
+    {
+      "name": "Nanci, CI written in plain Python, locally debuggable",
+      "tool_url": "https://nanci.dev/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T17:44:47+00:00",
+      "categories": [
+        "youtube"
+      ]
+    },
+    {
+      "name": "BlitzGraph – Supabase for graphs, designed for LLM agents",
+      "tool_url": "https://blitzgraph.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T17:27:10+00:00",
       "categories": [
         "automatisation",
-        "présentation",
+        "LLM",
+        "infographie"
+      ]
+    },
+    {
+      "name": "Pokémon SVG Generation LLM Benchmark",
+      "tool_url": "https://svg-bench.fenx.work/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T17:20:28+00:00",
+      "categories": [
+        "LLM"
+      ]
+    },
+    {
+      "name": "Halgorithem – Catching AI Hallucinations Using Trees, No AI in Pipeline",
+      "tool_url": "https://github.com/TangibleResearch/Halgorithem",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T15:38:12+00:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Watch a neural net learn to play Snake",
+      "tool_url": "https://ppo.gradexp.xyz/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T15:35:14+00:00",
+      "categories": []
+    },
+    {
+      "name": "StyleRef – Define your creative style once, use it across every AI tool",
+      "tool_url": "https://styleref.io",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T15:31:04+00:00",
+      "categories": []
+    },
+    {
+      "name": "A multi-model interface where LLMs discuss & argue with each other",
+      "tool_url": "https://rauno.ai",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T15:25:41+00:00",
+      "categories": [
+        "LLM"
+      ]
+    },
+    {
+      "name": "An interactive map of hidden AI dev agent action paths",
+      "tool_url": "https://www.clyra.cc/lab/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T15:05:44+00:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "I realized job search is basically an email problem so I built JobBox",
+      "tool_url": "https://www.jobbox.cc",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T15:03:17+00:00",
+      "categories": [
         "recherche"
       ]
     },
     {
-      "name": "EleutherAI / Lm-Evaluation-Harness",
-      "tool_url": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "name": "Klent – one click between your AI agent and a prod blast radius",
+      "tool_url": "https://klent.dev",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-13T16:13:05+00:00",
-      "categories": []
-    },
-    {
-      "name": "BossHogg: A PostHog CLI for Agents",
-      "tool_url": "https://github.com/aaronkwhite/bosshogg-cli",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T16:11:41+00:00",
+      "date_iso": "2026-05-14T14:57:26+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Ledger – Claude Code Token Spend Analyzer",
-      "tool_url": "https://github.com/delta-hq/cc-ledger",
+      "name": "3D-Agent – AI that edits Blender scenes through the Python API",
+      "tool_url": "https://3d-agent.com/blender-ai/plugin",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-13T16:09:45+00:00",
-      "categories": []
-    },
-    {
-      "name": "Ratify Protocol – prove who authorized an AI agent, offline, in <1ms",
-      "tool_url": "https://github.com/identities-ai/ratify-protocol",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T16:02:19+00:00",
+      "date_iso": "2026-05-14T14:47:46+00:00",
       "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Is This Agent Safe? Free security checker that platforms cannot revoke",
-      "tool_url": "https://agentgraph.co/check",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T15:59:52+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Learn algebra together, no AI slop, no ads or freemium, no registration",
-      "tool_url": "https://algebra.tutlm.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T15:40:00+00:00",
-      "categories": []
-    },
-    {
-      "name": "Endpoint Context Protocol – Browsers get HTML, AI agents get Markdown",
-      "tool_url": "https://endpointcontext.io",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-13T15:30:17+00:00",
-      "categories": [
-        "texte",
         "automatisation",
-        "site web"
+        "images 3D",
+        "youtube"
       ]
     },
     {
-      "name": "Mainline – a project tool with no backlog, story points or surveillance",
-      "tool_url": "https://mainline.dev/demo",
+      "name": "A whiteboard for your AI coding agent [video]",
+      "tool_url": "https://www.youtube.com/watch?v=bybJAl15jR8",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-13T15:00:55+00:00",
+      "date_iso": "2026-05-14T14:44:58+00:00",
       "categories": [
-        "histoires enfants"
+        "vidéo",
+        "automatisation"
       ]
     },
     {
-      "name": "SQLite-Columnar – Columnar Storage for SQLite",
-      "tool_url": "https://github.com/sqliteai/sqlite-columnar",
+      "name": "A simple Claude skin for ChatGPT",
+      "tool_url": "https://github.com/dmd/aimpostor",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-13T14:41:25+00:00",
+      "date_iso": "2026-05-14T14:20:07+00:00",
       "categories": [
-        "LLM"
+        "chatbot"
+      ]
+    },
+    {
+      "name": "An opinionated index of AI developer tools",
+      "tool_url": "https://devindex.ai/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-14T14:17:43+00:00",
+      "categories": []
+    },
+    {
+      "name": "Raindrop Workshop",
+      "tool_url": "https://www.producthunt.com/products/raindrop",
+      "description": "Open source, free, local debugger for AI agents",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T23:50:48-07:00",
+      "categories": [
+        "automatisation",
+        "open source"
+      ]
+    },
+    {
+      "name": "Agent FM for Claude Code & Codex",
+      "tool_url": "https://www.producthunt.com/products/agent-fm-for-claude-code-codex",
+      "description": "Tune in and stay in the loop with your agents 🎧",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T20:29:24-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Enjo Help Center",
+      "tool_url": "https://www.producthunt.com/products/enjo-help-center",
+      "description": "AI auto-builds your help centers that learn from your team",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T20:01:38-07:00",
+      "categories": []
+    },
+    {
+      "name": "transfa.sh",
+      "tool_url": "https://www.producthunt.com/products/transfa-sh",
+      "description": "WeTransfer for AI agents",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T18:12:10-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "The Augmented AI",
+      "tool_url": "https://www.producthunt.com/products/the-augmented-ai-live-ai-cortex",
+      "description": "Real-time AI insights for meetings without interruptions",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T18:09:28-07:00",
+      "categories": []
+    },
+    {
+      "name": "Crystal",
+      "tool_url": "https://www.producthunt.com/products/crystal-7",
+      "description": "Identify rocks, crystals & gemstones instantly with AI",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T16:42:49-07:00",
+      "categories": []
+    },
+    {
+      "name": "Tenure",
+      "tool_url": "https://www.producthunt.com/products/tenure",
+      "description": "Your AI finally learns how to talk to you",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T15:57:53-07:00",
+      "categories": []
+    },
+    {
+      "name": "MobileCLI",
+      "tool_url": "https://www.producthunt.com/products/mobilecli",
+      "description": "Remote AI Terminal Control",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T08:27:12-07:00",
+      "categories": []
+    },
+    {
+      "name": "DesignMD",
+      "tool_url": "https://www.producthunt.com/products/designmd-2",
+      "description": "Turn any website into an AI-ready design system",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T07:40:33-07:00",
+      "categories": [
+        "site web",
+        "infographie"
+      ]
+    },
+    {
+      "name": "Open Browser Use",
+      "tool_url": "https://www.producthunt.com/products/open-browser-use",
+      "description": "Open-source browser automation for local AI agents",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T02:12:57-07:00",
+      "categories": [
+        "automatisation",
+        "open source",
+        "navigateur"
+      ]
+    },
+    {
+      "name": "Open Computer Use",
+      "tool_url": "https://www.producthunt.com/products/open-computer-use",
+      "description": "Open-source Computer Use MCP for AI agents",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T01:20:31-07:00",
+      "categories": [
+        "automatisation",
+        "open source"
+      ]
+    },
+    {
+      "name": "AURIXA",
+      "tool_url": "https://www.producthunt.com/products/replit",
+      "description": "Your AI companion that is always present and deeply attuned",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T00:51:08-07:00",
+      "categories": []
+    },
+    {
+      "name": "Quietly",
+      "tool_url": "https://www.producthunt.com/products/quietly-5",
+      "description": "Offline AI IDE & local Chat",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T00:32:48-07:00",
+      "categories": [
+        "chatbot"
       ]
     },
     {
@@ -212,26 +343,13 @@
       ]
     },
     {
-      "name": "Blaze 2.0",
-      "tool_url": "https://www.producthunt.com/products/blaze-5",
-      "description": "AI marketer for SMBs complete w/ strategy, content, and ads",
+      "name": "RoBrain",
+      "tool_url": "https://www.producthunt.com/products/robrain",
+      "description": "Shared AI memory that stops agents from repeating mistakes",
       "source": "Product Hunt",
-      "date_iso": "2026-05-12T21:02:47-07:00",
+      "date_iso": "2026-05-12T10:45:00-07:00",
       "categories": [
-        "texte",
-        "histoires enfants"
-      ]
-    },
-    {
-      "name": "BossHogg",
-      "tool_url": "https://www.producthunt.com/products/bosshogg",
-      "description": "Agent-first CLI for PostHog analytics and feature flags",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-12T18:45:29-07:00",
-      "categories": [
-        "automatisation",
-        "données",
-        "youtube"
+        "automatisation"
       ]
     },
     {
@@ -246,27 +364,6 @@
       ]
     },
     {
-      "name": "Mycelis",
-      "tool_url": "https://www.producthunt.com/products/mycelis",
-      "description": "Serverless AI workspace with smart routing & MCP agents",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-12T09:34:28-07:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Pipecat",
-      "tool_url": "https://www.producthunt.com/products/pipecat-2",
-      "description": "Build AI workflows and assistants for your business",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-12T08:59:14-07:00",
-      "categories": [
-        "chatbot",
-        "automatisation"
-      ]
-    },
-    {
       "name": "Design anything with Claude in 5 minutes",
       "tool_url": "https://bestfreeaiwebsites.com/design-anything-with-claude-in-5-minutes/",
       "description": "How to Design Anything on Claude in 5 Minutes | SimplyDigital SimplyDigital.gr AI Tools & […]",
@@ -278,14 +375,12 @@
       ]
     },
     {
-      "name": "Jootle",
-      "tool_url": "https://www.producthunt.com/products/jootle",
-      "description": "Your private, always-on AI assistant for teams and families",
+      "name": "Ansvisor",
+      "tool_url": "https://www.producthunt.com/products/ansvisor",
+      "description": "Scale your brand visibility across AI answer engines",
       "source": "Product Hunt",
-      "date_iso": "2026-05-12T06:11:31-07:00",
-      "categories": [
-        "chatbot"
-      ]
+      "date_iso": "2026-05-12T06:53:55-07:00",
+      "categories": []
     },
     {
       "name": "Designkit",
@@ -332,98 +427,11 @@
       "categories": []
     },
     {
-      "name": "Whisper Internet Infra AI Context",
-      "tool_url": "https://www.producthunt.com/products/whisper-internet-infra-ai-context",
-      "description": "Free MCP for security AI: live BGP, DNS, threat graph",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-12T02:29:30-07:00",
-      "categories": [
-        "texte",
-        "histoires enfants"
-      ]
-    },
-    {
       "name": "AI Math Solver",
       "tool_url": "https://www.aixploria.com/ai-math-solver/",
       "description": "",
       "source": "Aixploria",
       "date_iso": "2026-05-12T02:07:06+00:00",
-      "categories": []
-    },
-    {
-      "name": "Bouquin & Ink",
-      "tool_url": "https://www.producthunt.com/products/bouquin-ink",
-      "description": "Write in your own voice with a muse to inspire you",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-11T19:54:49-07:00",
-      "categories": [
-        "voix"
-      ]
-    },
-    {
-      "name": "Polygram",
-      "tool_url": "https://www.producthunt.com/products/polygram-4",
-      "description": "AI-native design and coding app to build mobile & web apps",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-11T14:26:17-07:00",
-      "categories": [
-        "site web",
-        "infographie"
-      ]
-    },
-    {
-      "name": "Whisper Island by Coddo",
-      "tool_url": "https://www.producthunt.com/products/coddo",
-      "description": "Voice transcription lives in the Mac notch",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-11T13:16:09-07:00",
-      "categories": [
-        "voix",
-        "youtube"
-      ]
-    },
-    {
-      "name": "Crade AI",
-      "tool_url": "https://www.producthunt.com/products/crade",
-      "description": "Like ChatGPT, but it sees your screen",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-11T09:44:04-07:00",
-      "categories": [
-        "chatbot"
-      ]
-    },
-    {
-      "name": "Khaos Brain",
-      "tool_url": "https://www.producthunt.com/products/khaos-brain",
-      "description": "Local predictive memory for AI agents",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-11T07:44:17-07:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "knooth",
-      "tool_url": "https://www.producthunt.com/products/knooth",
-      "description": "Screen recording with AI-powered editing for Mac",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-11T07:28:36-07:00",
-      "categories": []
-    },
-    {
-      "name": "AI meeting notes by Snaply",
-      "tool_url": "https://www.producthunt.com/products/ai-dication-by-snaply",
-      "description": "Free & Private AI meeting notes for you Mac",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-11T01:26:44-07:00",
-      "categories": []
-    },
-    {
-      "name": "Auvylo",
-      "tool_url": "https://www.producthunt.com/products/auvylo",
-      "description": "Turn astrology and Four Pillars into AI personas you talk to",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-10T02:17:30-07:00",
       "categories": []
     },
     {
@@ -435,68 +443,14 @@
       "categories": []
     },
     {
-      "name": "IndexedAI",
-      "tool_url": "https://www.producthunt.com/products/indexedai",
-      "description": "Your site scores X/100 for AI agents with next steps",
+      "name": "Asteroid",
+      "tool_url": "https://www.producthunt.com/products/asteroid-3",
+      "description": "Build Browser, Linux and Windows AI agents in seconds",
       "source": "Product Hunt",
-      "date_iso": "2026-05-08T16:07:10-07:00",
+      "date_iso": "2026-05-09T21:12:54-07:00",
       "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "HeyNews",
-      "tool_url": "https://www.producthunt.com/products/heynews",
-      "description": "Your newsletter, your voice, ready to publish in 5 minutes",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-08T04:06:37-07:00",
-      "categories": [
-        "voix",
-        "actualités"
-      ]
-    },
-    {
-      "name": "Frontdesk AI",
-      "tool_url": "https://www.producthunt.com/products/frontdesk-ai",
-      "description": "AI COO to run your business like a Fortune 500 enterprise",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-07T12:06:38-07:00",
-      "categories": []
-    },
-    {
-      "name": "GeniLoop",
-      "tool_url": "https://www.aixploria.com/geniloop/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-05-07T02:04:30+00:00",
-      "categories": []
-    },
-    {
-      "name": "Seed3D 2.0",
-      "tool_url": "https://www.aixploria.com/seed3d-2-0-bytedance/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-05-07T01:52:49+00:00",
-      "categories": [
-        "images 3D"
-      ]
-    },
-    {
-      "name": "GPT‑5.5 Instant",
-      "tool_url": "https://www.aixploria.com/gpt%e2%80%915-5-instant-openai/",
-      "description": "",
-      "source": "Aixploria",
-      "date_iso": "2026-05-07T01:25:29+00:00",
-      "categories": []
-    },
-    {
-      "name": "Memoket Gem",
-      "tool_url": "https://www.producthunt.com/products/memoket-gem",
-      "description": "An AI wearable that remembers your conversations all day",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-06T21:28:59-07:00",
-      "categories": [
-        "chatbot"
+        "automatisation",
+        "navigateur"
       ]
     }
   ]
