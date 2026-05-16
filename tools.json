@@ -1,198 +1,219 @@
 {
-  "generated_at": "2026-05-15T19:43:35.487343+00:00",
-  "count": 47,
+  "generated_at": "2026-05-16T19:05:09.916896+00:00",
+  "count": 50,
   "tools": [
     {
       "name": "AI Tools4,738",
       "tool_url": "https://bestofai.com/tool/lifestack-fit",
       "description": "Share your daily habits. Discover theirs. LifeStack is where you share your daily routines, supplements, and wellness habits with friends — and explore the life stacks of influencers, creators, and experts.",
       "source": "Best of AI",
-      "date_iso": "2026-05-15T19:38:57.367068+00:00",
+      "date_iso": "2026-05-16T19:05:09.637661+00:00",
       "categories": []
     },
     {
-      "name": "Claude Code vs. Codex Global Usage Leaderboard",
-      "tool_url": "https://costhawk.ai/leaderboard",
+      "name": "Daily vibe-coding video games, day 33: Tower Defense (single prompt)",
+      "tool_url": "https://gamevibe.us/33-tower-defense",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-15T19:18:44+00:00",
-      "categories": []
+      "date_iso": "2026-05-16T18:11:23+00:00",
+      "categories": [
+        "vidéo",
+        "jeu vidéo"
+      ]
     },
     {
-      "name": "Emergence World: World building as a way to evaluate LLMs",
-      "tool_url": "https://world.emergence.ai/",
+      "name": "Hermes-agentmemory, pull-model episodic memory with real deletes",
+      "tool_url": "https://github.com/MukundaKatta/hermes-agentmemory",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-15T19:07:22+00:00",
+      "date_iso": "2026-05-16T18:00:38+00:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Vyvoice: Privacy-first, cross-platform, offline voice transcription app",
+      "tool_url": "https://vyvoice.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T15:47:03+00:00",
+      "categories": [
+        "voix",
+        "youtube"
+      ]
+    },
+    {
+      "name": "Strava for AI coding – analytics on your Copilot/Claude/Codex usage",
+      "tool_url": "https://github.com/microsoft/AI-Engineering-Coach",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T15:23:41+00:00",
+      "categories": [
+        "données",
+        "youtube"
+      ]
+    },
+    {
+      "name": "Infinite Swap – Trade a bottle cap up to a house",
+      "tool_url": "https://infiniteswap.app/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T15:18:47+00:00",
+      "categories": [
+        "chatbot",
+        "usage illimité"
+      ]
+    },
+    {
+      "name": "Agenda Intel MD – schemas and CLI to audit LLM strategic-risk briefs",
+      "tool_url": "https://github.com/vassiliylakhonin/agenda-intelligence-md",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T15:12:02+00:00",
       "categories": [
         "LLM"
       ]
     },
     {
-      "name": "AI movies and dystopian/utopian futures",
-      "tool_url": "https://github.com/2020science/ai-in-films-corpus",
+      "name": "A Claude Skill to render resume templates. CV/Resumes are HTML and JSON",
+      "tool_url": "https://github.com/farhan0167/cv-claw",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-15T18:45:49+00:00",
+      "date_iso": "2026-05-16T13:48:28+00:00",
+      "categories": [
+        "site web",
+        "images 3D"
+      ]
+    },
+    {
+      "name": "Pop the AI Bubble – A satirical card game mocking AI hype",
+      "tool_url": "https://poptheaibubble.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T12:22:05+00:00",
+      "categories": [
+        "jeu vidéo"
+      ]
+    },
+    {
+      "name": "ThumbAPI – thumbnail generation API for developers",
+      "tool_url": "https://thumbapi.dev",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T12:11:34+00:00",
       "categories": []
     },
     {
-      "name": "Check for CVE-2026-31431 (copy.fail) without overwriting su",
-      "tool_url": "https://github.com/bddap/supertee",
+      "name": "Let's build Claude Code from scratch (tutorial)",
+      "tool_url": "https://www.youtube.com/watch?v=8pDfgBEy8bg",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-15T17:21:36+00:00",
+      "date_iso": "2026-05-16T11:42:10+00:00",
+      "categories": []
+    },
+    {
+      "name": "Offline voice to text and AI keyboard",
+      "tool_url": "https://apps.apple.com/us/app/dictawiz-voice-notes-recorder/id6759256382",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T09:53:46+00:00",
       "categories": [
+        "voix",
         "texte"
       ]
     },
     {
-      "name": "Find local farms near you with raw dairy, pasture eggs, and more",
-      "tool_url": "https://farm-to-door.com/",
+      "name": "A Dark Cave – Minimalistic Graphics in the Age of AI Slop",
+      "tool_url": "https://a-dark-cave.com/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-15T17:15:08+00:00",
+      "date_iso": "2026-05-16T08:57:47+00:00",
       "categories": []
     },
     {
-      "name": "Sx – an open-source package manager for AI skills, MCPs, and commands",
-      "tool_url": "https://github.com/sleuth-io/sx",
+      "name": "AI/ML benchmark for local LLM inference and XGBoost training on GPU/CPU",
+      "tool_url": "https://github.com/albedan/ai-ml-gpu-bench",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-15T17:03:22+00:00",
+      "date_iso": "2026-05-16T08:48:58+00:00",
       "categories": [
+        "LLM"
+      ]
+    },
+    {
+      "name": "Incultnito Studio – Fulfillment MCP for apparel brands",
+      "tool_url": "https://www.incultnito.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T08:47:54+00:00",
+      "categories": [
+        "musique",
+        "LLM"
+      ]
+    },
+    {
+      "name": "How-to-train-your-GPT. Every line commented",
+      "tool_url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T08:37:20+00:00",
+      "categories": []
+    },
+    {
+      "name": "AI that audits your codebase in 60 seconds",
+      "tool_url": "https://triyambakam-apex-corp.hf.space",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T04:35:46+00:00",
+      "categories": []
+    },
+    {
+      "name": "LightningTrack – Issue tracker built for AI-assisted development",
+      "tool_url": "https://lightningtrack.io/login",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T02:12:47+00:00",
+      "categories": []
+    },
+    {
+      "name": "Nexa-Gauge – LLM eval framework, now with self-hosted model support",
+      "tool_url": "https://github.com/harnexa/nexa-gauge",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-16T01:39:35+00:00",
+      "categories": [
+        "LLM",
         "open source"
       ]
     },
     {
-      "name": "We made a back end agnostic SDK for Agent Memory",
-      "tool_url": "https://github.com/atomicstrata/atomicmemory-sdk",
+      "name": "Plan-Graph based code generation with LLMs",
+      "tool_url": "https://github.com/agrin96/VibegraphGenerator",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-15T16:52:05+00:00",
+      "date_iso": "2026-05-16T01:34:58+00:00",
       "categories": [
-        "automatisation"
+        "LLM"
       ]
     },
     {
-      "name": "Billoop – generate Factur-X and UBL e-invoices from Shopify orders",
-      "tool_url": "https://apps.shopify.com/billoop",
+      "name": "AI Design Taste Generator",
+      "tool_url": "https://aidesigntaste.com/chrome-extension",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-15T16:21:32+00:00",
+      "date_iso": "2026-05-15T21:22:14+00:00",
       "categories": [
-        "voix"
+        "infographie"
       ]
     },
     {
-      "name": "Setup a box on demand and run your agent on it remotely",
-      "tool_url": "https://www.gibil.dev/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T15:59:44+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Revos – architecture checks for AI-generated code",
-      "tool_url": "https://github.com/mattykry/revos",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T15:53:25+00:00",
-      "categories": []
-    },
-    {
-      "name": "Chuddy, self-hosted media downloading, translation and OCR Telegram bot",
-      "tool_url": "https://github.com/kivirnz/chuddy",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T15:08:05+00:00",
-      "categories": [
-        "chatbot",
-        "open source",
-        "langues"
-      ]
-    },
-    {
-      "name": "CtxVault – receipts for AI context, not another memory store",
-      "tool_url": "https://ctxvault.github.io/ctxvault/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T14:30:03+00:00",
-      "categories": [
-        "texte",
-        "histoires enfants"
-      ]
-    },
-    {
-      "name": "Cchost – Run multiple isolated Claude Code accounts on one machine",
-      "tool_url": "https://github.com/allenhack638/cchost",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T14:29:59+00:00",
-      "categories": []
-    },
-    {
-      "name": "Claurst – Rust-Based OSS Terminal Coding Agent Now in Beta",
-      "tool_url": "https://github.com/kuberwastaken/claurst",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T13:57:46+00:00",
-      "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "PileaX – AI Chat and note and book Library, all-in-one KnowledgeBase",
-      "tool_url": "https://github.com/pileax-ai/pileax",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T13:23:47+00:00",
+      "name": "ChatGPT for Personal Finance",
+      "tool_url": "https://www.producthunt.com/products/openai",
+      "description": "Personal finance guidance powered by ChatGPT",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-15T12:16:51-07:00",
       "categories": [
         "chatbot"
-      ]
-    },
-    {
-      "name": "Daily GPU rental prices across 25 marketplaces",
-      "tool_url": "https://www.aiminingco.com",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T13:00:12+00:00",
-      "categories": []
-    },
-    {
-      "name": "Vouch, I scanned 50 AI-coded repos with my own scanner",
-      "tool_url": "https://www.vouch-secure.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T12:54:41+00:00",
-      "categories": []
-    },
-    {
-      "name": "Message other Claude Code users with your Claude Code",
-      "tool_url": "https://pavanmadiraju91.github.io/answering-machine/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T11:34:05+00:00",
-      "categories": []
-    },
-    {
-      "name": "I built a free AI startup validator – it scored a dog walking app 4/10",
-      "tool_url": "https://tools.predictionoracle.io/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T11:10:07+00:00",
-      "categories": []
-    },
-    {
-      "name": "One Markdown File to Set Up Claude, Codex, Cursor and Copilot",
-      "tool_url": "https://github.com/kernalix7/ai-project-setup",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T09:58:42+00:00",
-      "categories": [
-        "documents"
       ]
     },
     {
@@ -344,14 +365,6 @@
       ]
     },
     {
-      "name": "Crystal",
-      "tool_url": "https://www.producthunt.com/products/crystal-7",
-      "description": "Identify rocks, crystals & gemstones instantly with AI",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-13T16:42:49-07:00",
-      "categories": []
-    },
-    {
       "name": "Gradient Bang",
       "tool_url": "https://www.producthunt.com/products/gradient-bang",
       "description": "Massively multi-player game played by talking to an LLM",
@@ -374,14 +387,14 @@
       ]
     },
     {
-      "name": "Open Computer Use",
-      "tool_url": "https://www.producthunt.com/products/open-computer-use",
-      "description": "Open-source Computer Use MCP for AI agents",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-13T01:20:31-07:00",
+      "name": "Design anything with Claude in 5 minutes",
+      "tool_url": "https://bestfreeaiwebsites.com/design-anything-with-claude-in-5-minutes/",
+      "description": "How to Design Anything on Claude in 5 Minutes | SimplyDigital SimplyDigital.gr AI Tools & […]",
+      "source": "Best Free AI",
+      "date_iso": "2026-05-12T08:16:05+00:00",
       "categories": [
-        "automatisation",
-        "open source"
+        "infographie",
+        "youtube"
       ]
     },
     {
@@ -443,6 +456,37 @@
       "source": "Product Hunt",
       "date_iso": "2026-05-11T15:24:50-07:00",
       "categories": []
+    },
+    {
+      "name": "Agentmemory",
+      "tool_url": "https://www.producthunt.com/products/agent-memory-dev",
+      "description": "Persistent memory for Claude Code, Codex & coding agents",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-11T02:53:56-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Gemini 3.1 Flash-Lite",
+      "tool_url": "https://www.producthunt.com/products/gemini-3-1-flash-lite-2",
+      "description": "Lightweight Gemini model for high-volume AI pipelines",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-11T00:41:05-07:00",
+      "categories": [
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Loova Agents",
+      "tool_url": "https://www.producthunt.com/products/loova-agents",
+      "description": "Your AI director for creating cinematic videos with ease",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-09T23:39:10-07:00",
+      "categories": [
+        "vidéo",
+        "automatisation"
+      ]
     }
   ]
 }
