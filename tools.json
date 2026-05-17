@@ -1,210 +1,172 @@
 {
-  "generated_at": "2026-05-16T19:05:09.916896+00:00",
-  "count": 50,
+  "generated_at": "2026-05-17T19:10:53.341495+00:00",
+  "count": 46,
   "tools": [
     {
       "name": "AI Tools4,738",
       "tool_url": "https://bestofai.com/tool/lifestack-fit",
       "description": "Share your daily habits. Discover theirs. LifeStack is where you share your daily routines, supplements, and wellness habits with friends — and explore the life stacks of influencers, creators, and experts.",
       "source": "Best of AI",
-      "date_iso": "2026-05-16T19:05:09.637661+00:00",
+      "date_iso": "2026-05-17T19:10:53.323566+00:00",
       "categories": []
     },
     {
-      "name": "Daily vibe-coding video games, day 33: Tower Defense (single prompt)",
-      "tool_url": "https://gamevibe.us/33-tower-defense",
+      "name": "Amazon-ready books from simple HTML: EPublish",
+      "tool_url": "https://frequal.com/epublish/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-16T18:11:23+00:00",
+      "date_iso": "2026-05-17T17:43:56+00:00",
       "categories": [
-        "vidéo",
-        "jeu vidéo"
+        "site web"
       ]
     },
     {
-      "name": "Hermes-agentmemory, pull-model episodic memory with real deletes",
-      "tool_url": "https://github.com/MukundaKatta/hermes-agentmemory",
+      "name": "Due Diligence Agents – 13 AI agents for M&A contract analysis",
+      "tool_url": "https://github.com/zoharbabin/due-diligence-agents",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-16T18:00:38+00:00",
+      "date_iso": "2026-05-17T16:28:29+00:00",
+      "categories": [
+        "documents",
+        "automatisation"
+      ]
+    },
+    {
+      "name": "Kami Subs – Live AI subtitles overlay for any browser video",
+      "tool_url": "https://github.com/MohammdKopa/kami-subs",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T16:23:27+00:00",
+      "categories": [
+        "vidéo",
+        "langues",
+        "navigateur"
+      ]
+    },
+    {
+      "name": "Semble – Code search for agents that uses 98% fewer tokens than grep",
+      "tool_url": "https://github.com/MinishLab/semble",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T15:37:07+00:00",
+      "categories": [
+        "automatisation",
+        "recherche"
+      ]
+    },
+    {
+      "name": "A choose-your-own-adventure through 28 possible AI futures",
+      "tool_url": "https://es92.github.io/Singularity-Map/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T15:27:32+00:00",
+      "categories": []
+    },
+    {
+      "name": "Forecasting my backyard weather with a 22M time-series model",
+      "tool_url": "https://huggingface.co/spaces/bitsofchris/time-series-ai-weather-forecast",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T15:08:35+00:00",
+      "categories": []
+    },
+    {
+      "name": "Proper, a Rails-shaped Python web framework",
+      "tool_url": "https://properproject.org/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T14:58:55+00:00",
+      "categories": [
+        "youtube"
+      ]
+    },
+    {
+      "name": "A Claude Code skill that tells Claude when not to use Claude",
+      "tool_url": "https://github.com/metravod/llm-buster-skill",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T13:30:22+00:00",
+      "categories": []
+    },
+    {
+      "name": "CLI for image/video to ASCII art",
+      "tool_url": "https://github.com/k-wong/ascii-art-generator",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T12:27:48+00:00",
+      "categories": [
+        "images",
+        "vidéo"
+      ]
+    },
+    {
+      "name": "MaragingLoop: Autonomous Bare-Metal OS Agent",
+      "tool_url": "https://github.com/GistNoesis/MaragingLoop/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T11:11:52+00:00",
+      "categories": [
+        "automatisation",
+        "LLM"
+      ]
+    },
+    {
+      "name": "GDD–36 MCP tools to run N isolated Chromium browsers from Claude/Cursor",
+      "tool_url": "https://github.com/Cap-of-tea/GDD",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T09:18:28+00:00",
+      "categories": [
+        "navigateur"
+      ]
+    },
+    {
+      "name": "Give your AI agent a brain that understands your codebase",
+      "tool_url": "https://github.com/bitloops/bitloops",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-05-17T05:22:37+00:00",
       "categories": [
         "automatisation"
       ]
     },
     {
-      "name": "Vyvoice: Privacy-first, cross-platform, offline voice transcription app",
-      "tool_url": "https://vyvoice.com",
+      "name": "SoccQR – Lost and Found Labels for Soccer Balls / Gamified Training Log",
+      "tool_url": "https://soccqr.com",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-16T15:47:03+00:00",
+      "date_iso": "2026-05-17T01:36:41+00:00",
       "categories": [
-        "voix",
-        "youtube"
+        "qr code"
       ]
     },
     {
-      "name": "Strava for AI coding – analytics on your Copilot/Claude/Codex usage",
-      "tool_url": "https://github.com/microsoft/AI-Engineering-Coach",
+      "name": "I built a free PDF editor to fix Claude's horribly-generated PDFs",
+      "tool_url": "https://composer-sepia.vercel.app",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-16T15:23:41+00:00",
+      "date_iso": "2026-05-17T00:00:46+00:00",
       "categories": [
-        "données",
-        "youtube"
+        "documents"
       ]
     },
     {
-      "name": "Infinite Swap – Trade a bottle cap up to a house",
-      "tool_url": "https://infiniteswap.app/",
+      "name": "Anagardens: A Daily Word Game",
+      "tool_url": "https://www.anagardens.com/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-16T15:18:47+00:00",
-      "categories": [
-        "chatbot",
-        "usage illimité"
-      ]
-    },
-    {
-      "name": "Agenda Intel MD – schemas and CLI to audit LLM strategic-risk briefs",
-      "tool_url": "https://github.com/vassiliylakhonin/agenda-intelligence-md",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T15:12:02+00:00",
-      "categories": [
-        "LLM"
-      ]
-    },
-    {
-      "name": "A Claude Skill to render resume templates. CV/Resumes are HTML and JSON",
-      "tool_url": "https://github.com/farhan0167/cv-claw",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T13:48:28+00:00",
-      "categories": [
-        "site web",
-        "images 3D"
-      ]
-    },
-    {
-      "name": "Pop the AI Bubble – A satirical card game mocking AI hype",
-      "tool_url": "https://poptheaibubble.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T12:22:05+00:00",
+      "date_iso": "2026-05-16T23:52:05+00:00",
       "categories": [
         "jeu vidéo"
       ]
     },
     {
-      "name": "ThumbAPI – thumbnail generation API for developers",
-      "tool_url": "https://thumbapi.dev",
+      "name": "Firehooks – Get app users from TikTok without paid ads",
+      "tool_url": "https://ads.firehooks.io/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-05-16T12:11:34+00:00",
+      "date_iso": "2026-05-16T21:05:41+00:00",
       "categories": []
-    },
-    {
-      "name": "Let's build Claude Code from scratch (tutorial)",
-      "tool_url": "https://www.youtube.com/watch?v=8pDfgBEy8bg",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T11:42:10+00:00",
-      "categories": []
-    },
-    {
-      "name": "Offline voice to text and AI keyboard",
-      "tool_url": "https://apps.apple.com/us/app/dictawiz-voice-notes-recorder/id6759256382",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T09:53:46+00:00",
-      "categories": [
-        "voix",
-        "texte"
-      ]
-    },
-    {
-      "name": "A Dark Cave – Minimalistic Graphics in the Age of AI Slop",
-      "tool_url": "https://a-dark-cave.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T08:57:47+00:00",
-      "categories": []
-    },
-    {
-      "name": "AI/ML benchmark for local LLM inference and XGBoost training on GPU/CPU",
-      "tool_url": "https://github.com/albedan/ai-ml-gpu-bench",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T08:48:58+00:00",
-      "categories": [
-        "LLM"
-      ]
-    },
-    {
-      "name": "Incultnito Studio – Fulfillment MCP for apparel brands",
-      "tool_url": "https://www.incultnito.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T08:47:54+00:00",
-      "categories": [
-        "musique",
-        "LLM"
-      ]
-    },
-    {
-      "name": "How-to-train-your-GPT. Every line commented",
-      "tool_url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T08:37:20+00:00",
-      "categories": []
-    },
-    {
-      "name": "AI that audits your codebase in 60 seconds",
-      "tool_url": "https://triyambakam-apex-corp.hf.space",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T04:35:46+00:00",
-      "categories": []
-    },
-    {
-      "name": "LightningTrack – Issue tracker built for AI-assisted development",
-      "tool_url": "https://lightningtrack.io/login",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T02:12:47+00:00",
-      "categories": []
-    },
-    {
-      "name": "Nexa-Gauge – LLM eval framework, now with self-hosted model support",
-      "tool_url": "https://github.com/harnexa/nexa-gauge",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T01:39:35+00:00",
-      "categories": [
-        "LLM",
-        "open source"
-      ]
-    },
-    {
-      "name": "Plan-Graph based code generation with LLMs",
-      "tool_url": "https://github.com/agrin96/VibegraphGenerator",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-16T01:34:58+00:00",
-      "categories": [
-        "LLM"
-      ]
-    },
-    {
-      "name": "AI Design Taste Generator",
-      "tool_url": "https://aidesigntaste.com/chrome-extension",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-05-15T21:22:14+00:00",
-      "categories": [
-        "infographie"
-      ]
     },
     {
       "name": "ChatGPT for Personal Finance",
@@ -387,6 +349,17 @@
       ]
     },
     {
+      "name": "Vivago Video Agent",
+      "tool_url": "https://www.producthunt.com/products/viva",
+      "description": "Skip the prompting. Produce consistently compelling videos.",
+      "source": "Product Hunt",
+      "date_iso": "2026-05-13T06:02:37-07:00",
+      "categories": [
+        "vidéo",
+        "automatisation"
+      ]
+    },
+    {
       "name": "Design anything with Claude in 5 minutes",
       "tool_url": "https://bestfreeaiwebsites.com/design-anything-with-claude-in-5-minutes/",
       "description": "How to Design Anything on Claude in 5 Minutes | SimplyDigital SimplyDigital.gr AI Tools & […]",
@@ -474,17 +447,6 @@
       "source": "Product Hunt",
       "date_iso": "2026-05-11T00:41:05-07:00",
       "categories": [
-        "automatisation"
-      ]
-    },
-    {
-      "name": "Loova Agents",
-      "tool_url": "https://www.producthunt.com/products/loova-agents",
-      "description": "Your AI director for creating cinematic videos with ease",
-      "source": "Product Hunt",
-      "date_iso": "2026-05-09T23:39:10-07:00",
-      "categories": [
-        "vidéo",
         "automatisation"
       ]
     }
