@@ -4,18 +4,33 @@ fetch_tools.py — Veille quotidienne outils IA (uneiaparjour.fr)
 
 Sources et stratégies :
   ✓ Product Hunt       — RSS officiel (fiable)
-  ✓ AI Secret          — HTML scraping section DAILY TL;DR
-  ✓ AI Top Tools       — HTML scraping /free-ai-tools/
   ✓ Hacker News        — API Algolia (pas d'auth, pas de rate limit strict)
-  ✓ Reddit r/artificial — JSON API public
-  ✓ Aixploria          — WP REST API (contourne le RSS bloqué)
-  ✓ There's an AI      — API JSON officielle (https://theresanaiforthat.com/api/)
+  ✓ Aixploria          — WP REST API
+  ✓ aiapp.fr           — WP REST API
+  ✓ iaweb.fr           — WP REST API
+  ✓ WikiAI Tools       — WP REST API
+  ✓ Notable AI         — WP REST API
+  ✓ AI Tool Guru       — WP REST API
+  ✓ HD Robots          — WP REST API
+  ✓ Tools Story        — WP REST API
+  ✓ Free AI Tools Dir. — WP REST API
+  ✓ Mad Genius         — WP REST API
+  ✓ AI Tools LOL       — WP REST API
+  ✓ AI Finder          — WP REST API
+  ✓ AI Tool Hunt       — WP REST API
+  ✓ AI Tool Board      — WP REST API
+  ✓ Fastpedia          — WP REST API
   ✓ BetaList           — RSS lancements produits filtrés IA
   ✓ GitHub AI Topics   — Atom feed public (repositories IA récents)
-  ✓ Futurepedia        — API /api/tools (Next.js interne)
-  ✓ The Rundown AI     — RSS newsletter (liens outils extraits)
+  ✓ Reddit r/aitools   — JSON API public
 
-  ✗ futuretools.io     — Cloudflare IP block, pas d'API publique
+  ✗ AI Secret          — 403 depuis IPs GitHub Actions (Cloudflare)
+  ✗ AI Top Tools       — 403 depuis IPs GitHub Actions (Cloudflare)
+  ✗ There's an AI      — 403 depuis IPs GitHub Actions
+  ✗ The Rundown AI     — 403 depuis IPs GitHub Actions (Beehiiv)
+  ✗ Best Free AI       — 403 depuis IPs GitHub Actions
+  ✗ Best of AI         — 403 depuis IPs GitHub Actions
+  ✗ futuretools.io     — Cloudflare IP block
   ✗ powerfulai.tools   — Cloudflare IP block
   ✗ toolify.ai         — Cloudflare IP block
   ✗ aitoolsdirectory   — Cloudflare IP block
@@ -80,7 +95,12 @@ CATEGORIES_KW = {
 }
 
 DIRECTORY_DOMAINS = {
-    "theresanaiforthat.com","free.theresanaiforthat.com","futurepedia.io","aiscout.net","aiapp.fr","iaweb.fr","openfuture.ai","ailibrary.io","wikiaitools.com","toolscout.ai","hdrobots.com","toolspedia.io","madgenius.co","aioftheday.com","aitoolboard.com","aitools.lol","aitools.fyi","ai-finder.net","aitoolhunt.com","aitoolnet.com","dang.ai","toolsstory.net","free-ai-tools-directory.com","aitoolguru.com","noteableai.com","faind.ai","aicenter.ai","bestfreeaiwebsites.com","fastpedia.io","bestofai.com",
+    "theresanaiforthat.com","free.theresanaiforthat.com","futurepedia.io","aiscout.net",
+    "aiapp.fr","iaweb.fr","openfuture.ai","ailibrary.io","wikiaitools.com","toolscout.ai",
+    "hdrobots.com","toolspedia.io","madgenius.co","aioftheday.com","aitoolboard.com",
+    "aitools.lol","aitools.fyi","ai-finder.net","aitoolhunt.com","aitoolnet.com","dang.ai",
+    "toolsstory.net","free-ai-tools-directory.com","aitoolguru.com","noteableai.com",
+    "faind.ai","aicenter.ai","bestfreeaiwebsites.com","fastpedia.io","bestofai.com",
     "futuretools.io","aixploria.com","aisecret.us","aitoolsdirectory.com",
     "powerfulai.tools","aitoptools.com","aitools.sh","toolify.ai",
     "producthunt.com","therundown.ai","beehiiv.com","substack.com",
@@ -165,7 +185,6 @@ def fetch_rss(source_name, rss_url, ai_filter=False, max_items=30):
             "User-Agent": HEADERS["User-Agent"],
             "Accept": "application/rss+xml, application/xml, text/xml, */*",
         })
-        # Ne rejette pas sur bozo — feedparser extrait quand même les entrées
         if not feed.entries:
             raise Exception(f"0 entrées (bozo={feed.bozo})")
         for entry in feed.entries[:max_items]:
@@ -188,449 +207,10 @@ def fetch_rss(source_name, rss_url, ai_filter=False, max_items=30):
         print(f"  {source_name} RSS erreur: {e}", file=sys.stderr)
     return results
 
-# ── Sources ────────────────────────────────────────────────────────────────────
-
-def fetch_producthunt():
-    """Product Hunt AI — RSS officiel.
-    Le lien dans le flux RSS pointe vers producthunt.com/products/xxx.
-    On parse le HTML de la description pour extraire l'URL réelle du produit
-    (le lien texte "Link" dans chaque entrée RSS)."""
-    results = []
-    try:
-        feed = feedparser.parse(
-            "https://www.producthunt.com/feed?category=artificial-intelligence",
-            request_headers={
-                "User-Agent": HEADERS["User-Agent"],
-                "Accept": "application/rss+xml, application/xml, text/xml, */*",
-            }
-        )
-        if not feed.entries:
-            raise Exception(f"0 entrées (bozo={feed.bozo})")
-
-        for entry in feed.entries[:30]:
-            title    = entry.get("title","").strip()
-            ph_url   = entry.get("link","")           # URL producthunt.com
-            summary  = entry.get("summary","") or entry.get("description","")
-            date_iso = parse_date(entry.get("published") or entry.get("updated",""))
-
-            if not title or not is_recent(date_iso):
-                continue
-
-            # Filtre IA
-            combined = (title + " " + BeautifulSoup(summary,"html.parser").get_text()).lower()
-            ai_kw = ["ai","artificial intelligence","machine learning","llm","gpt",
-                     "generative","automation","chatbot","image","voice","neural","agent"]
-            if not any(kw in combined for kw in ai_kw):
-                continue
-
-            # Cherche l'URL réelle dans le HTML de la description
-            # PH RSS : <a href="https://reel-product.com">Link</a> à la fin de chaque entrée
-            tool_url = None
-            if summary:
-                desc_soup = BeautifulSoup(summary, "html.parser")
-                for a in desc_soup.find_all("a", href=True):
-                    href = a["href"].strip()
-                    if href.startswith("http") and is_external(href):
-                        tool_url = href
-                        break
-
-            if not tool_url:
-                tool_url = ph_url   # fallback page PH
-
-            desc = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
-            # Nettoie le texte "Discussion | Link" résiduel
-            desc = re.sub(r"Discussion\s*\|\s*Link", "", desc).strip()
-
-            results.append(make_tool(title, tool_url, desc, "Product Hunt", date_iso))
-
-        print(f"  Product Hunt (RSS): {len(results)}")
-    except Exception as e:
-        print(f"  Product Hunt erreur: {e}", file=sys.stderr)
-    return results
-
-def fetch_aisecret():
-    """AI Secret — section DAILY TL;DR (rendu côté serveur, pas de Cloudflare)."""
-    results, seen = [], set()
-    try:
-        page = get_html("https://aisecret.us/")
-
-        tldr_container = None
-
-        # Stratégie 1 : heading court contenant "tl;dr" ou "daily"
-        for el in page.find_all(["h1","h2","h3","h4","h5","h6","strong","b"]):
-            txt = el.get_text(strip=True).lower()
-            if ("tl;dr" in txt or "tldr" in txt or "daily" in txt) and len(txt) < 80:
-                # Cherche le conteneur parent avec des liens
-                for ancestor in el.parents:
-                    if ancestor.name in ("section","article","div","main","aside"):
-                        if ancestor.find("a", href=True):
-                            tldr_container = ancestor
-                            break
-                if tldr_container:
-                    break
-
-        # Stratégie 2 : id/class contenant "tldr" ou "daily"
-        if not tldr_container:
-            for attr in ["id","class"]:
-                for el in page.find_all(attrs={attr: re.compile(r"tl.?dr|daily", re.I)}):
-                    if el.find("a", href=True):
-                        tldr_container = el; break
-                if tldr_container:
-                    break
-
-        # Stratégie 3 : balise <section> ou <article> dont le premier texte contient "tl;dr"
-        if not tldr_container:
-            for el in page.find_all(["section","article"]):
-                first_text = el.get_text(strip=True)[:100].lower()
-                if "tl;dr" in first_text or "tldr" in first_text:
-                    tldr_container = el; break
-
-        if not tldr_container:
-            # Affiche la structure de la page pour diagnostic
-            headings = [(h.name, h.get_text(strip=True)[:60]) for h in page.find_all(["h1","h2","h3","h4"])]
-            print(f"  AI Secret : DAILY TL;DR introuvable. Headings: {headings[:8]}", file=sys.stderr)
-            return []
-
-        for a in tldr_container.find_all("a", href=True):
-            full = urljoin("https://aisecret.us", a["href"])
-            if not is_external(full) or full in seen:
-                continue
-            name = a.get_text(strip=True)[:80]
-            if not name or len(name) < 3:
-                name = urlparse(full).netloc
-            parent = a.find_parent(["li","p","div","span"])
-            desc   = parent.get_text(" ", strip=True)[:300] if parent else ""
-            seen.add(full)
-            results.append(make_tool(name, full, desc, "AI Secret"))
-
-        print(f"  AI Secret (DAILY TL;DR): {len(results)}")
-    except Exception as e:
-        print(f"  AI Secret erreur: {e}", file=sys.stderr)
-    return results
-
-def fetch_aitoptools():
-    """AI Top Tools /free-ai-tools/ — scraping 2 niveaux, URLs externes uniquement."""
-    BASE  = "https://aitoptools.com"
-    INDEX = f"{BASE}/free-ai-tools/"
-    results, seen_urls, seen_names = [], set(), set()
-
-    def extract_tools(page_soup, max_tools=8):
-        found = []
-        # Sélecteurs très larges pour couvrir la structure réelle
-        candidates = page_soup.select(
-            "article, li, "
-            "div[class*='tool'], div[class*='card'], div[class*='item'], div[class*='post'], "
-            "div[class*='grid'] > div, ul[class*='tool'] > li, ul[class*='list'] > li"
-        )
-        if not candidates:
-            # Fallback : tous les liens avec du texte
-            candidates = [a.find_parent(["li","div"]) or a
-                          for a in page_soup.find_all("a", href=True)
-                          if len(a.get_text(strip=True)) > 3]
-        for card in candidates[:80]:
-            if card is None:
-                continue
-            ne   = card.select_one("h1,h2,h3,h4,h5,strong,b,span[class*='name'],span[class*='title'],p[class*='name']")
-            name = ne.get_text(strip=True)[:80] if ne else card.get_text(strip=True)[:60]
-            name = re.sub(r"\s+", " ", name).strip()
-            if not name or len(name) < 3:
-                continue
-            # URL externe (le vrai site de l'outil)
-            ext_url = None
-            for a in card.find_all("a", href=True):
-                full = urljoin(BASE, a["href"])
-                if is_external(full):
-                    ext_url = full; break
-            # Cherche aussi dans les attributs data-*
-            if not ext_url:
-                for attr in ["data-url","data-href","data-link","data-website","data-external","data-tool-url"]:
-                    val = card.get(attr,"")
-                    if val and is_external(val):
-                        ext_url = val; break
-            if not ext_url:
-                continue
-            de   = card.select_one("p, span[class*='desc'], div[class*='desc'], div[class*='summary']")
-            desc = de.get_text(" ", strip=True)[:300] if de else ""
-            nk   = re.sub(r"[\s\-_]","", name.lower())
-            if ext_url in seen_urls or nk in seen_names:
-                continue
-            seen_urls.add(ext_url); seen_names.add(nk)
-            found.append(make_tool(name, ext_url, desc, "AI Top Tools"))
-            if len(found) >= max_tools:
-                break
-        return found
-
-    try:
-        index_page = get_html(INDEX)
-
-        # Collecte les liens de catégories
-        cat_links = []
-        for a in index_page.find_all("a", href=True):
-            full = urljoin(BASE, a["href"])
-            if (full.startswith(BASE) and
-                    full.rstrip("/") != INDEX.rstrip("/") and
-                    full not in cat_links and
-                    full != BASE and
-                    full != BASE + "/"):
-                cat_links.append(full)
-        cat_links = list(dict.fromkeys(cat_links))[:10]
-        print(f"  AI Top Tools — {len(cat_links)} catégories trouvées")
-
-        # Page index
-        r0 = extract_tools(index_page, max_tools=8)
-        results.extend(r0)
-
-        # Pages catégories
-        for cat_url in cat_links:
-            try:
-                cat_page = get_html(cat_url, referer=INDEX)
-                results.extend(extract_tools(cat_page, max_tools=5))
-            except Exception as e:
-                print(f"    Catégorie {cat_url}: {e}", file=sys.stderr)
-            time.sleep(1)
-
-        print(f"  AI Top Tools total: {len(results)}")
-    except Exception as e:
-        print(f"  AI Top Tools erreur: {e}", file=sys.stderr)
-    return results
-
-def fetch_aixploria():
-    """Aixploria — WP REST API avec content pour extraire l'URL réelle de l'outil.
-    Chaque article Aixploria présente un outil : le premier lien externe dans le
-    contenu est l'URL du vrai site de l'outil."""
-    results = []
-    try:
-        # On demande le content pour pouvoir extraire l'URL réelle de l'outil
-        data = get_json(
-            "https://www.aixploria.com/wp-json/wp/v2/posts"
-            "?per_page=20&orderby=date&_fields=title,link,content,excerpt,date",
-            referer="https://www.aixploria.com/"
-        )
-        for post in data:
-            title    = BeautifulSoup(post.get("title",{}).get("rendered",""), "html.parser").get_text().strip()
-            date_iso = parse_date(post.get("date",""))
-            if not title or not is_recent(date_iso):
-                continue
-
-            # Extrait le premier lien externe depuis le contenu HTML de l'article
-            content_html = post.get("content",{}).get("rendered","")
-            content_soup = BeautifulSoup(content_html, "html.parser")
-            tool_url = None
-            for a in content_soup.find_all("a", href=True):
-                href = a["href"].strip()
-                if href.startswith("http") and is_external(href):
-                    tool_url = href
-                    break
-
-            if not tool_url:
-                # Fallback : URL de la fiche Aixploria elle-même
-                tool_url = post.get("link","")
-                if not tool_url:
-                    continue
-
-            # Description : excerpt texte brut
-            excerpt = BeautifulSoup(post.get("excerpt",{}).get("rendered",""), "html.parser").get_text(" ", strip=True)
-            # Si pas d'excerpt, prend les 300 premiers caractères du contenu
-            if not excerpt.strip():
-                excerpt = content_soup.get_text(" ", strip=True)[:300]
-
-            results.append(make_tool(title, tool_url, excerpt, "Aixploria", date_iso))
-
-        print(f"  Aixploria (WP API): {len(results)}")
-    except Exception as e:
-        print(f"  Aixploria WP API erreur: {e}", file=sys.stderr)
-        results = fetch_rss("Aixploria", "https://www.aixploria.com/feed/")
-    return results
-
-def fetch_taaift():
-    """There's an AI for That — API JSON officielle.
-    L'API publique /api/ ne requiert pas d'authentification pour la liste."""
-    results = []
-    # Essai 1 : API officielle
-    for api_url in [
-        "https://theresanaiforthat.com/api/?order=date&limit=30",
-        "https://theresanaiforthat.com/api/featured/?order=date&limit=30",
-        "https://theresanaiforthat.com/api/new/?limit=30",
-    ]:
-        try:
-            data = get_json(api_url)
-            items = data if isinstance(data, list) else data.get("results", data.get("tools", data.get("data", [])))
-            if not isinstance(items, list):
-                continue
-            for item in items[:30]:
-                name = (item.get("name") or item.get("title") or "").strip()
-                url  = item.get("url") or item.get("website") or item.get("link") or item.get("href","")
-                desc = item.get("description") or item.get("summary","")
-                date_iso = parse_date(item.get("created_at") or item.get("date",""))
-                if name and url and is_recent(date_iso):
-                    results.append(make_tool(name, url, desc, "There's an AI for That", date_iso))
-            if results:
-                print(f"  There's an AI for That (API): {len(results)}")
-                return results
-        except Exception:
-            pass
-    # Essai 2 : RSS feed (avec bozo toléré)
-    results = fetch_rss("There's an AI for That", "https://theresanaiforthat.com/rss/")
-    return results
-
-def fetch_therundown():
-    """The Rundown AI — newsletter IA sur Beehiiv.
-    Extrait les liens vers des outils dans le contenu de chaque issue."""
-    results = []
-    rss_urls = [
-        "https://www.therundown.ai/rss",
-        "https://www.therundown.ai/feed",
-        "https://therundown.beehiiv.com/feed",
-    ]
-    for rss_url in rss_urls:
-        try:
-            feed = feedparser.parse(rss_url, request_headers={"User-Agent": HEADERS["User-Agent"]})
-            if not feed.entries:
-                continue
-            # Chaque entrée = une issue de newsletter
-            # On extrait les liens externes mentionnés dans le contenu
-            seen = set()
-            for entry in feed.entries[:5]:  # max 5 issues récentes
-                content = entry.get("content",[{}])[0].get("value","") or entry.get("summary","")
-                if not content:
-                    continue
-                soup = BeautifulSoup(content, "html.parser")
-                date_iso = parse_date(entry.get("published") or entry.get("updated",""))
-                for a in soup.find_all("a", href=True):
-                    href = a["href"].strip()
-                    if not is_external(href) or href in seen:
-                        continue
-                    name = a.get_text(strip=True)[:80]
-                    if not name or len(name) < 4:
-                        continue
-                    parent = a.find_parent(["li","p"])
-                    desc = parent.get_text(" ", strip=True)[:300] if parent else ""
-                    # Filtre : le lien doit ressembler à un outil (pas un article de presse)
-                    url_low = href.lower()
-                    if any(x in url_low for x in ["/blog/","/news/","/article/","twitter.com","x.com","linkedin.com","youtube.com"]):
-                        continue
-                    seen.add(href)
-                    results.append(make_tool(name, href, desc, "The Rundown AI", date_iso))
-            if results:
-                print(f"  The Rundown AI: {len(results)}")
-                return results
-        except Exception as e:
-            print(f"  The Rundown AI {rss_url}: {e}", file=sys.stderr)
-    if not results:
-        print(f"  The Rundown AI: 0")
-    return results
-
-def fetch_hackernews():
-    """Hacker News — tag show_hn uniquement via API Algolia.
-    Aucune restriction IP. Filtre sur les titres mentionnant l'IA pour éliminer
-    les Show HN non-IA (hardware, finance, etc.)."""
-    results = []
-    AI_TITLE_KW = [
-        "ai","gpt","llm","llama","claude","gemini","generative","neural",
-        "image","voice","speech","chatbot","agent","automat","ml",
-        "machine learning","diffusion","embedding","rag","copilot",
-        "openai","anthropic","mistral","model","assistant","bot",
-    ]
-    # Mots indiquant clairement un article/opinion — filtre minimal
-    ARTICLE_KW = [
-        "the case for","my experience","deep dive","state of the",
-    ]
-    try:
-        cutoff_ts = int((datetime.now(timezone.utc) - timedelta(hours=CUTOFF_HOURS)).timestamp())
-        data = get_json(
-            "https://hn.algolia.com/api/v1/search_by_date"
-            f"?tags=show_hn"
-            f"&numericFilters=created_at_i>{cutoff_ts}"
-            f"&hitsPerPage=50"
-        )
-        seen = set()
-        for hit in data.get("hits", []):
-            title = hit.get("title","").strip()
-            url   = hit.get("url","")
-            if not title or not url:
-                continue
-            # Exclure les URLs HN (discussions sans lien externe)
-            if "ycombinator.com" in url:
-                continue
-            # Exclure les URLs qui semblent être des articles/blogs
-            url_low = url.lower()
-            if any(x in url_low for x in ["/blog/","/posts/","/post/","/article/","/news/",".md","/wiki/"]):
-                continue
-            title_low = title.lower()
-            # Doit mentionner l'IA
-            if not any(kw in title_low for kw in AI_TITLE_KW):
-                continue
-            # Ne doit pas ressembler à un article
-            if any(kw in title_low for kw in ARTICLE_KW):
-                continue
-            if url in seen:
-                continue
-            seen.add(url)
-            date_iso = datetime.fromtimestamp(hit.get("created_at_i",0), tz=timezone.utc).isoformat()
-            # Nom = titre sans préfixe "Show HN:"
-            name = re.sub(r"^show hn\s*[:\-–]\s*", "", title, flags=re.I)[:80]
-            # Description = premier commentaire si disponible (souvent l'auteur qui décrit l'outil)
-            results.append(make_tool(name, url, "", "Hacker News", date_iso))
-
-        results = results[:20]
-        print(f"  Hacker News Show HN: {len(results)}")
-    except Exception as e:
-        print(f"  Hacker News erreur: {e}", file=sys.stderr)
-    return results
-
-def _multi_strategy(source_name, base_url, scrape_url=None, api_paths=None):
-    """Helper universel : essaie WP API, puis RSS /feed/, puis API JSON, puis scraping HTML."""
-    # 1. WP REST API
-    res = _wp_api_tools(source_name, base_url)
-    if res: return res
-    # 2. RSS — une seule tentative sur /feed/
-    res = fetch_rss(source_name, base_url.rstrip("/") + "/feed/")
-    if res: return res
-    # 3. API JSON custom
-    for path in (api_paths or []):
-        try:
-            data  = get_json(base_url.rstrip("/") + path)
-            items = data if isinstance(data, list) else (
-                data.get("tools") or data.get("data") or data.get("results") or []
-            )
-            results = []
-            for item in items[:20]:
-                name = (item.get("name") or item.get("title") or "").strip()
-                url  = item.get("url") or item.get("website") or item.get("link","")
-                desc = item.get("description") or ""
-                date_iso = parse_date(item.get("createdAt") or item.get("date",""))
-                if name and url:
-                    results.append(make_tool(name, url, desc, source_name, date_iso))
-            if results:
-                print(f"  {source_name} (API): {len(results)}")
-                return results
-        except Exception: pass
-    # 4. Scraping HTML générique
-    return _scrape_cards_simple(
-        source_name,
-        scrape_url or (base_url.rstrip("/") + "/"),
-        base_url,
-        "article,.tool,.card,[class*=\'tool\'],[class*=\'card\'],[class*=\'item\'],[class*=\'post\']",
-        "h2,h3,h4,.title,.name,strong",
-        "p,.desc,.description,.excerpt,.summary"
-    )
-
-# ── 22 nouvelles sources ───────────────────────────────────────────────────────
-
-# Tier 1 — qualité / pertinence élevée
-
-def fetch_bestofai():
-    """bestofai.com — sélection curative de qualité."""
-    return _multi_strategy(
-        "Best of AI", "https://bestofai.com",
-        api_paths=["/api/tools?sort=newest&limit=20"]
-    )
-
-def fetch_bestfreeai():
-    return _multi_strategy("Best Free AI", "https://bestfreeaiwebsites.com")
+# ── Helpers WP REST API et scraping ───────────────────────────────────────────
 
 def _wp_api_tools(source_name, base_url, per_page=20):
-    """Helper generique WP REST API : extrait l'URL reelle de l'outil depuis le content."""
+    """Helper générique WP REST API : extrait l'URL réelle de l'outil depuis le content."""
     results = []
     try:
         data = get_json(
@@ -639,7 +219,7 @@ def _wp_api_tools(source_name, base_url, per_page=20):
             referer=base_url + "/"
         )
         if not isinstance(data, list):
-            raise Exception("Reponse non-liste")
+            raise Exception("Réponse non-liste")
         for post in data:
             title    = BeautifulSoup(post.get("title",{}).get("rendered",""), "html.parser").get_text().strip()
             date_iso = parse_date(post.get("date",""))
@@ -667,7 +247,7 @@ def _wp_api_tools(source_name, base_url, per_page=20):
     return results
 
 def _scrape_cards_simple(source_name, url, base, card_sel, name_sel, desc_sel, max_items=20):
-    """Helper scraping generique."""
+    """Helper scraping générique."""
     results, seen = [], set()
     try:
         page = get_html(url, referer=base)
@@ -700,18 +280,292 @@ def _scrape_cards_simple(source_name, url, base, card_sel, name_sel, desc_sel, m
         print(f"  {source_name} HTML erreur: {e}", file=sys.stderr)
     return results
 
+def _multi_strategy(source_name, base_url, scrape_url=None, api_paths=None):
+    """Helper universel : essaie WP API, puis RSS /feed/, puis API JSON, puis scraping HTML."""
+    res = _wp_api_tools(source_name, base_url)
+    if res: return res
+    res = fetch_rss(source_name, base_url.rstrip("/") + "/feed/")
+    if res: return res
+    for path in (api_paths or []):
+        try:
+            data  = get_json(base_url.rstrip("/") + path)
+            items = data if isinstance(data, list) else (
+                data.get("tools") or data.get("data") or data.get("results") or []
+            )
+            results = []
+            for item in items[:20]:
+                name = (item.get("name") or item.get("title") or "").strip()
+                url  = item.get("url") or item.get("website") or item.get("link","")
+                desc = item.get("description") or ""
+                date_iso = parse_date(item.get("createdAt") or item.get("date",""))
+                if name and url:
+                    results.append(make_tool(name, url, desc, source_name, date_iso))
+            if results:
+                print(f"  {source_name} (API): {len(results)}")
+                return results
+        except Exception: pass
+    return _scrape_cards_simple(
+        source_name,
+        scrape_url or (base_url.rstrip("/") + "/"),
+        base_url,
+        "article,.tool,.card,[class*='tool'],[class*='card'],[class*='item'],[class*='post']",
+        "h2,h3,h4,.title,.name,strong",
+        "p,.desc,.description,.excerpt,.summary"
+    )
+
+# ── Sources actives ────────────────────────────────────────────────────────────
+
+def fetch_producthunt():
+    """Product Hunt AI — RSS officiel.
+    Le lien dans le flux RSS pointe vers producthunt.com/products/xxx.
+    On parse le HTML de la description pour extraire l'URL réelle du produit."""
+    results = []
+    try:
+        feed = feedparser.parse(
+            "https://www.producthunt.com/feed?category=artificial-intelligence",
+            request_headers={
+                "User-Agent": HEADERS["User-Agent"],
+                "Accept": "application/rss+xml, application/xml, text/xml, */*",
+            }
+        )
+        if not feed.entries:
+            raise Exception(f"0 entrées (bozo={feed.bozo})")
+
+        for entry in feed.entries[:30]:
+            title    = entry.get("title","").strip()
+            ph_url   = entry.get("link","")
+            summary  = entry.get("summary","") or entry.get("description","")
+            date_iso = parse_date(entry.get("published") or entry.get("updated",""))
+
+            if not title or not is_recent(date_iso):
+                continue
+
+            combined = (title + " " + BeautifulSoup(summary,"html.parser").get_text()).lower()
+            ai_kw = ["ai","artificial intelligence","machine learning","llm","gpt",
+                     "generative","automation","chatbot","image","voice","neural","agent"]
+            if not any(kw in combined for kw in ai_kw):
+                continue
+
+            tool_url = None
+            if summary:
+                desc_soup = BeautifulSoup(summary, "html.parser")
+                for a in desc_soup.find_all("a", href=True):
+                    href = a["href"].strip()
+                    if href.startswith("http") and is_external(href):
+                        tool_url = href
+                        break
+
+            if not tool_url:
+                tool_url = ph_url
+
+            desc = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
+            desc = re.sub(r"Discussion\s*\|\s*Link", "", desc).strip()
+
+            results.append(make_tool(title, tool_url, desc, "Product Hunt", date_iso))
+
+        print(f"  Product Hunt (RSS): {len(results)}")
+    except Exception as e:
+        print(f"  Product Hunt erreur: {e}", file=sys.stderr)
+    return results
+
+def fetch_hackernews():
+    """Hacker News — tag show_hn uniquement via API Algolia."""
+    results = []
+    AI_TITLE_KW = [
+        "ai","gpt","llm","llama","claude","gemini","generative","neural",
+        "image","voice","speech","chatbot","agent","automat","ml",
+        "machine learning","diffusion","embedding","rag","copilot",
+        "openai","anthropic","mistral","model","assistant","bot",
+    ]
+    ARTICLE_KW = ["the case for","my experience","deep dive","state of the"]
+    try:
+        cutoff_ts = int((datetime.now(timezone.utc) - timedelta(hours=CUTOFF_HOURS)).timestamp())
+        data = get_json(
+            "https://hn.algolia.com/api/v1/search_by_date"
+            f"?tags=show_hn"
+            f"&numericFilters=created_at_i>{cutoff_ts}"
+            f"&hitsPerPage=50"
+        )
+        seen = set()
+        for hit in data.get("hits", []):
+            title = hit.get("title","").strip()
+            url   = hit.get("url","")
+            if not title or not url:
+                continue
+            if "ycombinator.com" in url:
+                continue
+            url_low = url.lower()
+            if any(x in url_low for x in ["/blog/","/posts/","/post/","/article/","/news/",".md","/wiki/"]):
+                continue
+            title_low = title.lower()
+            if not any(kw in title_low for kw in AI_TITLE_KW):
+                continue
+            if any(kw in title_low for kw in ARTICLE_KW):
+                continue
+            if url in seen:
+                continue
+            seen.add(url)
+            date_iso = datetime.fromtimestamp(hit.get("created_at_i",0), tz=timezone.utc).isoformat()
+            name = re.sub(r"^show hn\s*[:\-–]\s*", "", title, flags=re.I)[:80]
+            results.append(make_tool(name, url, "", "Hacker News", date_iso))
+        results = results[:20]
+        print(f"  Hacker News Show HN: {len(results)}")
+    except Exception as e:
+        print(f"  Hacker News erreur: {e}", file=sys.stderr)
+    return results
+
+def fetch_aixploria():
+    """Aixploria — WP REST API avec content pour extraire l'URL réelle de l'outil."""
+    results = []
+    try:
+        data = get_json(
+            "https://www.aixploria.com/wp-json/wp/v2/posts"
+            "?per_page=20&orderby=date&_fields=title,link,content,excerpt,date",
+            referer="https://www.aixploria.com/"
+        )
+        for post in data:
+            title    = BeautifulSoup(post.get("title",{}).get("rendered",""), "html.parser").get_text().strip()
+            date_iso = parse_date(post.get("date",""))
+            if not title or not is_recent(date_iso):
+                continue
+            content_html = post.get("content",{}).get("rendered","")
+            content_soup = BeautifulSoup(content_html, "html.parser")
+            tool_url = None
+            for a in content_soup.find_all("a", href=True):
+                href = a["href"].strip()
+                if href.startswith("http") and is_external(href):
+                    tool_url = href
+                    break
+            if not tool_url:
+                tool_url = post.get("link","")
+                if not tool_url:
+                    continue
+            excerpt = BeautifulSoup(post.get("excerpt",{}).get("rendered",""), "html.parser").get_text(" ", strip=True)
+            if not excerpt.strip():
+                excerpt = content_soup.get_text(" ", strip=True)[:300]
+            results.append(make_tool(title, tool_url, excerpt, "Aixploria", date_iso))
+        print(f"  Aixploria (WP API): {len(results)}")
+    except Exception as e:
+        print(f"  Aixploria WP API erreur: {e}", file=sys.stderr)
+        results = fetch_rss("Aixploria", "https://www.aixploria.com/feed/")
+    return results
+
+# ── Sources WP REST API (même logique qu'Aixploria) ───────────────────────────
+
+def fetch_aiapp_fr():
+    return _wp_api_tools("aiapp.fr", "https://aiapp.fr")
+
+def fetch_iaweb_fr():
+    return _wp_api_tools("iaweb.fr", "https://iaweb.fr")
+
+def fetch_wikiaitools():
+    return _wp_api_tools("WikiAI Tools", "https://wikiaitools.com")
+
+def fetch_notableai():
+    return _wp_api_tools("Notable AI", "https://noteableai.com")
+
+def fetch_aitoolguru():
+    return _wp_api_tools("AI Tool Guru", "https://aitoolguru.com")
+
+def fetch_hdrobots():
+    return _wp_api_tools("HD Robots", "https://hdrobots.com")
+
+def fetch_toolsstory():
+    return _wp_api_tools("Tools Story", "https://toolsstory.net")
+
+def fetch_freeaitools():
+    return _wp_api_tools("Free AI Tools Dir.", "https://free-ai-tools-directory.com")
+
+def fetch_madgenius():
+    return _wp_api_tools("Mad Genius", "https://madgenius.co")
+
+def fetch_aitoolslol():
+    return _wp_api_tools("AI Tools LOL", "https://aitools.lol")
+
+def fetch_aifinder():
+    return _wp_api_tools("AI Finder", "https://ai-finder.net")
+
+def fetch_aitoolhunt():
+    return _wp_api_tools("AI Tool Hunt", "https://aitoolhunt.com")
+
+def fetch_aitoolboard():
+    return _wp_api_tools("AI Tool Board", "https://aitoolboard.com")
+
+def fetch_fastpedia():
+    return _wp_api_tools("Fastpedia", "https://fastpedia.io")
+
+# ── Sources RSS / API publiques ────────────────────────────────────────────────
+
+def fetch_betalist():
+    """BetaList — RSS lancements produits, filtré IA."""
+    return fetch_rss("BetaList", "https://betalist.com/feed.xml", ai_filter=True, max_items=20)
+
+def fetch_github_ai():
+    """GitHub Topics AI — Atom feed public des repos récents taggés AI."""
+    return fetch_rss("GitHub Topics AI", "https://github.com/topics/artificial-intelligence.atom",
+                     ai_filter=False, max_items=15)
+
+def fetch_reddit_aitools():
+    """Reddit r/aitools — JSON API public, liens externes uniquement."""
+    results = []
+    try:
+        data = get_json(
+            "https://www.reddit.com/r/aitools.json?limit=25&sort=new",
+            referer="https://www.reddit.com/"
+        )
+        posts = data.get("data", {}).get("children", [])
+        for post in posts:
+            d        = post.get("data", {})
+            title    = d.get("title", "").strip()
+            url      = d.get("url", "")
+            created  = d.get("created_utc", 0)
+            date_iso = datetime.fromtimestamp(created, tz=timezone.utc).isoformat() if created else None
+            if not title or not url or not is_external(url) or not is_recent(date_iso):
+                continue
+            desc = d.get("selftext", "")[:300]
+            results.append(make_tool(title, url, desc, "Reddit r/aitools", date_iso))
+        print(f"  Reddit r/aitools: {len(results)}")
+    except Exception as e:
+        print(f"  Reddit r/aitools erreur: {e}", file=sys.stderr)
+    return results
+
+# ── Sources bloquées depuis IPs GitHub Actions (conservées, non appelées) ──────
+
+# def fetch_aisecret():      # 403 Cloudflare
+# def fetch_aitoptools():    # 403 Cloudflare
+# def fetch_taaift():        # 403
+# def fetch_therundown():    # 403 Beehiiv
+# def fetch_bestfreeai():    # 403
+# def fetch_bestofai():      # 403
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 FETCHERS = [
-    fetch_producthunt,   # RSS — URL réelle extraite du HTML desc
-    fetch_aisecret,      # HTML scraping DAILY TL;DR
-    fetch_aitoptools,    # HTML /free-ai-tools/ 2 niveaux
-    fetch_aixploria,     # WP API + RSS fallback
-    fetch_taaift,        # API JSON officielle
-    fetch_therundown,    # RSS newsletter — liens outils extraits
-    fetch_hackernews,    # API Algolia show_hn filtré IA
-    fetch_bestfreeai,    # RSS — 9 résultats confirmés
-    fetch_bestofai,      # HTML — 2 résultats confirmés
+    # ── Confirmées fonctionnelles ────────────────────────────
+    fetch_producthunt,
+    fetch_hackernews,
+    fetch_aixploria,
+
+    # ── WP REST API — même logique qu'Aixploria ──────────────
+    fetch_aiapp_fr,
+    fetch_iaweb_fr,
+    fetch_wikiaitools,
+    fetch_notableai,
+    fetch_aitoolguru,
+    fetch_hdrobots,
+    fetch_toolsstory,
+    fetch_freeaitools,
+    fetch_madgenius,
+    fetch_aitoolslol,
+    fetch_aifinder,
+    fetch_aitoolhunt,
+    fetch_aitoolboard,
+    fetch_fastpedia,
+
+    # ── RSS / API publiques ──────────────────────────────────
+    fetch_betalist,
+    fetch_github_ai,
+    fetch_reddit_aitools,
 ]
 
 def deduplicate(tools):
@@ -726,7 +580,6 @@ def deduplicate(tools):
     return out
 
 def run_fetcher(fn):
-    """Exécute un fetcher et retourne (nom, résultats)."""
     try:
         return fn.__name__, fn()
     except Exception as e:
@@ -736,7 +589,6 @@ def run_fetcher(fn):
 def main():
     print(f"Veille IA — {datetime.now().strftime('%Y-%m-%d %H:%M')} — {len(FETCHERS)} sources\n")
     all_tools = []
-    # Exécution parallèle — max 8 workers, timeout 45s par fetcher
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = {executor.submit(run_fetcher, fn): fn.__name__ for fn in FETCHERS}
         for future in as_completed(futures):
