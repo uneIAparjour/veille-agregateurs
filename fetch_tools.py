@@ -7,24 +7,19 @@ Sources actives :
   ✓ Hacker News        — API Algolia show_hn (fiable)
   ✓ Aixploria          — WP REST API (fiable depuis GitHub Actions)
   ✓ FutureTools        — Scraping RSC Next.js (4000+ outils, pricing_tier)
-  ✓ There's an AI      — Scraping HTML /?sort=new (186 outils, pricing)
+  ✓ There's an AI      — Scraping HTML /?sort=new (pricing)
   ✓ AI Secret          — RSS Ghost + scraping articles (newsletter IA)
   ✓ Ben's Bites        — RSS Beehiiv (newsletter IA)
+  ✓ The Rundown AI     — RSS newsletter (newsletter IA)
+  ✓ TLDR AI            — RSS newsletter (newsletter IA)
   ✓ TechCrunch AI      — RSS catégorie AI
   ✓ GitHub Trending    — RSS tiers (repos trending, filtrés IA)
   ✓ Lobsters AI        — RSS tag AI
-
-Sources retirées (mortes / bloquées / bruit) :
-  ✗ aiapp.fr, iaweb.fr, WikiAI Tools, AI Tool Guru, HD Robots,
-    Tools Story, Free AI Tools Dir, Mad Genius, AI Tools LOL,
-    AI Finder, AI Tool Hunt, AI Tool Board, Fastpedia, Notable AI
-  ✗ BetaList (RSS 404), GitHub Topics Atom (renvoie HTML),
-    Reddit r/aitools (403 OAuth requis)
 """
-import json, re, time, sys
+import json, re, sys
 from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
 from datetime import datetime, timedelta, timezone
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlparse
 
 import requests
 import feedparser
@@ -167,14 +162,6 @@ def make_tool(name, url, desc, source, date_iso=None, pricing=None):
         "categories":  guess_categories(combined),
         "pricing":     pricing or guess_pricing(combined),
     }
-
-def get_html(url, referer=None, timeout=12):
-    hdrs = dict(HEADERS)
-    if referer:
-        hdrs["Referer"] = referer
-    r = requests.get(url, headers=hdrs, timeout=timeout)
-    r.raise_for_status()
-    return BeautifulSoup(r.text, "html.parser")
 
 def get_json(url, referer=None, timeout=12):
     hdrs = dict(HEADERS)
@@ -371,19 +358,19 @@ def fetch_futuretools():
             raise Exception(f"Payload RSC non trouvé ({len(scripts)} scripts, page {len(r.text)} chars)")
 
         tool_pattern = (
-            r'\\\\"slug\\\\":\\\\"([^\\\\]+)\\\\",'
-            r'\\\\"name\\\\":\\\\"([^\\\\]+)\\\\",'
-            r'\\\\"description_short\\\\":\\\\"([^\\\\]*?)\\\\",'
-            r'\\\\"website_url\\\\":\\\\"([^\\\\]*?)\\\\"'
+            r'\\"slug\\":\\"([^\\]+)\\",'
+            r'\\"name\\":\\"([^\\]+)\\",'
+            r'\\"description_short\\":\\"([^\\]*?)\\",'
+            r'\\"website_url\\":\\"([^\\]*?)\\"'
         )
         tools_raw = re.findall(tool_pattern, big_script)
 
         pricing_map = {}
-        for m in re.finditer(r'\\\\"slug\\\\":\\\\"([^\\\\]+)\\\\".*?\\\\"pricing_tier\\\\":\\\\"([^\\\\]+)\\\\"', big_script):
+        for m in re.finditer(r'\\"slug\\":\\"([^\\]+)\\".*?\\"pricing_tier\\":\\"([^\\]+)\\"', big_script):
             pricing_map[m.group(1)] = m.group(2)
 
         dates_map = {}
-        for m in re.finditer(r'\\\\"slug\\\\":\\\\"([^\\\\]+)\\\\".*?\\\\"published_at\\\\":\\\\"([^\\\\]+)\\\\"', big_script):
+        for m in re.finditer(r'\\"slug\\":\\"([^\\]+)\\".*?\\"published_at\\":\\"([^\\]+)\\"', big_script):
             dates_map[m.group(1)] = m.group(2)
 
         for slug, name, desc, website_url in tools_raw:
@@ -392,11 +379,11 @@ def fetch_futuretools():
                 continue
             pricing_raw = pricing_map.get(slug, "unknown")
             pricing = {"free": "free", "freemium": "freemium", "paid": "paid"}.get(pricing_raw, "unknown")
-            clean_url = website_url.replace("\\\\/", "/").replace("\\/", "/")
+            clean_url = website_url.replace("\\/", "/")
             results.append(make_tool(
-                name.replace('\\\\"', '"').replace('\\"', '"'),
+                name.replace('\\"', '"'),
                 clean_url,
-                desc.replace('\\\\"', '"').replace('\\"', '"'),
+                desc.replace('\\"', '"'),
                 "FutureTools",
                 date_iso,
                 pricing=pricing,
@@ -454,8 +441,6 @@ def fetch_taaft():
                 pricing = "free"
             elif "$" in price_text or "€" in price_text or price_text.lower().startswith("from"):
                 pricing = "paid"
-            elif "no pricing" in price_text.lower() or not price_text:
-                pricing = "unknown"
             else:
                 pricing = "unknown"
 
@@ -539,6 +524,16 @@ def fetch_bensbites():
     return fetch_rss("Ben's Bites", "https://www.bensbites.com/feed", ai_filter=True, max_items=20)
 
 
+def fetch_rundown():
+    """The Rundown AI — RSS newsletter."""
+    return fetch_rss("The Rundown AI", "https://www.therundown.ai/feed", ai_filter=False, max_items=20)
+
+
+def fetch_tldr_ai():
+    """TLDR AI — RSS newsletter."""
+    return fetch_rss("TLDR AI", "https://tldr.tech/ai/rss", ai_filter=False, max_items=20)
+
+
 def fetch_techcrunch_ai():
     """TechCrunch AI — RSS catégorie AI, filtré lancements/outils."""
     results = []
@@ -607,6 +602,8 @@ FETCHERS = [
     fetch_taaft,
     fetch_aisecret,
     fetch_bensbites,
+    fetch_rundown,
+    fetch_tldr_ai,
     fetch_techcrunch_ai,
     fetch_github_trending,
     fetch_lobsters,
