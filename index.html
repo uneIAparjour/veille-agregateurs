@@ -61,11 +61,8 @@
   .btn-g{border-color:var(--green);color:var(--green)}
   .btn-g:hover{background:var(--green-bg)}
   .btn-sm{padding:4px 10px;font-size:11px}
-  .btn-trigger{border-color:var(--orange);color:var(--orange);display:flex;align-items:center;gap:6px}
-  .btn-trigger:hover{background:var(--orange-bg)}
-  .btn-trigger.running{border-color:var(--yellow);color:var(--yellow);pointer-events:none}
-  .btn-trigger .trig-spinner{display:none;width:12px;height:12px;border:2px solid var(--border2);border-top-color:var(--yellow);border-radius:50%;animation:spin .8s linear infinite}
-  .btn-trigger.running .trig-spinner{display:inline-block}
+  .btn-trigger{border-color:var(--orange);color:var(--orange);display:flex;align-items:center;gap:6px;text-decoration:none}
+  .btn-trigger:hover{background:var(--orange-bg);color:var(--orange)}
   .sl-pub{font-size:11px;font-weight:700;color:var(--green);letter-spacing:.3px}
   .sl-done{font-size:11px;color:var(--text3)}
   .empty{text-align:center;padding:4rem 1rem;color:var(--text3)}
@@ -79,13 +76,6 @@
   .export-pre{font-family:'Courier New',monospace;font-size:12px;white-space:pre-wrap;color:var(--text);background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:1rem;max-height:280px;overflow-y:auto;line-height:1.7;margin-top:10px}
   .rbtn{font-size:12px;color:var(--text3);cursor:pointer;border:none;background:none;padding:0}
   .rbtn:hover{color:var(--orange)}
-  .trigger-modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.6);align-items:center;justify-content:center}
-  .trigger-modal.show{display:flex}
-  .trigger-box{background:var(--bg2);border:1px solid var(--border2);border-radius:12px;padding:1.5rem;max-width:400px;width:90%}
-  .trigger-box h3{font-size:15px;margin-bottom:8px}
-  .trigger-box p{font-size:13px;color:var(--text2);margin-bottom:16px;line-height:1.5}
-  .trigger-box input{width:100%;padding:8px 12px;border:1px solid var(--border2);border-radius:6px;background:var(--bg3);color:var(--text);font-size:13px;margin-bottom:12px}
-  .trigger-box .tbtns{display:flex;gap:8px;justify-content:flex-end}
   @media(max-width:640px){.layout{grid-template-columns:1fr}.sidebar{position:static;height:auto}.main{padding:1rem}}
 </style>
 </head>
@@ -103,16 +93,18 @@
     <div class="stat-block"><div class="stat-num" style="color:var(--orange);font-size:18px" id="s-new">0</div><div class="stat-lbl">nouveaux</div></div>
   </div>
   <div class="sec-label">Sources actives</div>
-  <div class="source-row"><span class="sname">Product Hunt AI</span><a href="https://www.producthunt.com/topics/artificial-intelligence" target="_blank">ouvrir →</a></div>
-  <div class="source-row"><span class="sname">Hacker News</span><a href="https://news.ycombinator.com/show" target="_blank">Show HN →</a></div>
-  <div class="source-row"><span class="sname">Aixploria</span><a href="https://www.aixploria.com/" target="_blank">ouvrir →</a></div>
-  <div class="source-row"><span class="sname">FutureTools</span><a href="https://futuretools.io/tools" target="_blank">ouvrir →</a></div>
-  <div class="source-row"><span class="sname">There's an AI</span><a href="https://theresanaiforthat.com/" target="_blank">ouvrir →</a></div>
-  <div class="source-row"><span class="sname">AI Secret</span><a href="https://aisecret.us/" target="_blank">ouvrir →</a></div>
-  <div class="source-row"><span class="sname">Ben's Bites</span><a href="https://www.bensbites.com/" target="_blank">newsletter →</a></div>
-  <div class="source-row"><span class="sname">TechCrunch AI</span><a href="https://techcrunch.com/category/artificial-intelligence/" target="_blank">ouvrir →</a></div>
-  <div class="source-row"><span class="sname">GitHub Trending</span><a href="https://github.com/trending" target="_blank">ouvrir →</a></div>
-  <div class="source-row"><span class="sname">Lobsters AI</span><a href="https://lobste.rs/t/ai" target="_blank">ouvrir →</a></div>
+  <div class="source-row"><span class="sname">Product Hunt AI</span><a href="https://www.producthunt.com/topics/artificial-intelligence" target="_blank">ouvrir</a></div>
+  <div class="source-row"><span class="sname">Hacker News</span><a href="https://news.ycombinator.com/show" target="_blank">Show HN</a></div>
+  <div class="source-row"><span class="sname">Aixploria</span><a href="https://www.aixploria.com/" target="_blank">ouvrir</a></div>
+  <div class="source-row"><span class="sname">FutureTools</span><a href="https://futuretools.io/tools" target="_blank">ouvrir</a></div>
+  <div class="source-row"><span class="sname">There's an AI</span><a href="https://theresanaiforthat.com/" target="_blank">ouvrir</a></div>
+  <div class="source-row"><span class="sname">AI Secret</span><a href="https://aisecret.us/" target="_blank">ouvrir</a></div>
+  <div class="source-row"><span class="sname">Ben's Bites</span><a href="https://www.bensbites.com/" target="_blank">newsletter</a></div>
+  <div class="source-row"><span class="sname">The Rundown AI</span><a href="https://www.therundown.ai/" target="_blank">newsletter</a></div>
+  <div class="source-row"><span class="sname">TLDR AI</span><a href="https://tldr.tech/ai" target="_blank">newsletter</a></div>
+  <div class="source-row"><span class="sname">TechCrunch AI</span><a href="https://techcrunch.com/category/artificial-intelligence/" target="_blank">ouvrir</a></div>
+  <div class="source-row"><span class="sname">GitHub Trending</span><a href="https://github.com/trending" target="_blank">ouvrir</a></div>
+  <div class="source-row"><span class="sname">Lobsters AI</span><a href="https://lobste.rs/t/ai" target="_blank">ouvrir</a></div>
   <div class="sec-label" style="margin-top:1.25rem">À publier <span class="cpill" id="s-pub2">0</span></div>
   <div id="sel-list" style="flex:1;overflow-y:auto"><div style="font-size:12px;color:var(--text3);padding:4px 0">Aucun outil retenu</div></div>
   <div style="padding-top:1rem;display:flex;flex-direction:column;gap:6px">
@@ -127,10 +119,9 @@
       <div class="page-title">Veille du <span id="today-lbl">—</span></div>
       <div class="update-info">Automatique chaque nuit · <button class="rbtn" onclick="loadTools()">↻ Actualiser</button></div>
     </div>
-    <button class="btn btn-trigger" id="trigger-btn" onclick="showTriggerModal()">
-      <div class="trig-spinner"></div>
+    <a class="btn btn-trigger" href="https://github.com/uneIAparjour/veille-agregateurs/actions/workflows/fetch-tools.yml" target="_blank">
       ▶ Lancer la collecte
-    </button>
+    </a>
   </div>
   <div class="filter-bar">
     <button class="filter-btn active" onclick="setFilter('all',this)">Tous <span class="cpill" id="f-all">0</span></button>
@@ -150,27 +141,8 @@
 </div>
 </div>
 
-<div class="trigger-modal" id="trigger-modal" onclick="if(event.target===this)hideTriggerModal()">
-  <div class="trigger-box">
-    <h3>Lancer la collecte manuellement</h3>
-    <p>Déclenche le workflow GitHub Actions pour mettre à jour tools.json maintenant. Le résultat sera disponible dans quelques minutes.</p>
-    <label style="font-size:12px;color:var(--text2);display:block;margin-bottom:4px">Token GitHub (Personal Access Token)</label>
-    <input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off">
-    <div style="font-size:11px;color:var(--text3);margin-bottom:12px;line-height:1.5">
-      Le token est enregistré localement dans votre navigateur.<br>
-      Permissions requises : <code style="color:var(--orange)">repo</code> ou <code style="color:var(--orange)">actions:write</code>
-    </div>
-    <div class="tbtns">
-      <button class="btn btn-sm" onclick="hideTriggerModal()">Annuler</button>
-      <button class="btn btn-sm btn-g" onclick="triggerWorkflow()">Lancer</button>
-    </div>
-  </div>
-</div>
-
 <script>
 const SK='veille-states-v3';
-const TK='veille-gh-token';
-const REPO='uneIAparjour/veille-agregateurs';
 let tools=[],states=JSON.parse(localStorage.getItem(SK)||'{}'),filter='all';
 
 function saveS(){localStorage.setItem(SK,JSON.stringify(states))}
@@ -189,7 +161,7 @@ async function loadTools(){
     document.getElementById('today-lbl').textContent=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});
     updateStats();updateSidebar();render();
   }catch(e){
-    document.getElementById('cards-zone').innerHTML=`<div class="empty"><div class="empty-icon">✕</div><strong>Impossible de charger tools.json</strong><br><span style="font-size:12px;color:var(--text3);margin-top:8px;display:block">Lance le workflow GitHub Actions manuellement<br>depuis l'onglet Actions du dépôt.</span></div>`;
+    document.getElementById('cards-zone').innerHTML=`<div class="empty"><div class="empty-icon">✕</div><strong>Impossible de charger tools.json</strong><br><span style="font-size:12px;color:var(--text3);margin-top:8px;display:block">Lance le workflow depuis le bouton<br>« Lancer la collecte » ci-dessus.</span></div>`;
   }
 }
 
@@ -295,7 +267,7 @@ function setFilter(f,btn){filter=f;document.querySelectorAll('.filter-btn').forE
 function exportSelected(){
   const sel=tools.filter(t=>getS(t)==='pub');
   if(!sel.length){alert('Aucun outil marqué "À publier".');return;}
-  const txt=sel.map(t=>`${t.name}\n${t.tool_url}\n\n${t.description||(t.description='(sans description)')}\n\nCatégories : ${(t.categories||[]).join(', ')||'—'}\nSource : ${t.source||'—'}\nPricing : ${t.pricing||'—'}`).join('\n\n────────\n\n');
+  const txt=sel.map(t=>`${t.name}\n${t.tool_url}\n\n${t.description||'(sans description)'}\n\nCatégories : ${(t.categories||[]).join(', ')||'—'}\nSource : ${t.source||'—'}\nPricing : ${t.pricing||'—'}`).join('\n\n────────\n\n');
   document.getElementById('exp-count').textContent=sel.length;
   document.getElementById('exp-pre').textContent=txt;
   const a=document.getElementById('export-area');
@@ -311,79 +283,6 @@ function copyExp(){
 
 function clearAll(){
   if(confirm('Réinitialiser tous les états ?')){states={};saveS();render();updateSidebar();updateStats();document.getElementById('export-area').style.display='none';}
-}
-
-// ── Déclenchement manuel GitHub Actions ───────────────────────────────────────
-
-function showTriggerModal(){
-  const saved=localStorage.getItem(TK)||'';
-  document.getElementById('gh-token').value=saved;
-  document.getElementById('trigger-modal').classList.add('show');
-  if(saved)document.getElementById('gh-token').select();
-}
-
-function hideTriggerModal(){
-  document.getElementById('trigger-modal').classList.remove('show');
-}
-
-async function triggerWorkflow(){
-  const token=document.getElementById('gh-token').value.trim();
-  if(!token){alert('Token requis');return;}
-  localStorage.setItem(TK,token);
-  hideTriggerModal();
-
-  const btn=document.getElementById('trigger-btn');
-  btn.classList.add('running');
-  btn.querySelector('.trig-spinner').style.display='inline-block';
-  btn.childNodes[btn.childNodes.length-1].textContent=' Collecte en cours…';
-
-  try{
-    const r=await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/fetch-tools.yml/dispatches`,{
-      method:'POST',
-      headers:{
-        'Authorization':`token ${token}`,
-        'Accept':'application/vnd.github+json',
-      },
-      body:JSON.stringify({ref:'main'}),
-    });
-    if(r.status===204){
-      pollForCompletion(token);
-    } else {
-      const err=await r.json().catch(()=>({}));
-      alert(`Erreur ${r.status} : ${err.message||'Vérifiez le token et les permissions.'}`);
-      resetTriggerBtn();
-    }
-  }catch(e){
-    alert('Erreur réseau : '+e.message);
-    resetTriggerBtn();
-  }
-}
-
-async function pollForCompletion(token){
-  let attempts=0;
-  const poll=setInterval(async()=>{
-    attempts++;
-    if(attempts>40){clearInterval(poll);resetTriggerBtn();return;}
-    try{
-      const r=await fetch(`https://api.github.com/repos/${REPO}/actions/runs?per_page=1&status=completed`,{
-        headers:{'Authorization':`token ${token}`,'Accept':'application/vnd.github+json'},
-      });
-      const data=await r.json();
-      const latest=data.workflow_runs?.[0];
-      if(latest && new Date(latest.updated_at)>new Date(Date.now()-120000)){
-        clearInterval(poll);
-        resetTriggerBtn();
-        loadTools();
-      }
-    }catch(e){/* continue polling */}
-  },10000);
-}
-
-function resetTriggerBtn(){
-  const btn=document.getElementById('trigger-btn');
-  btn.classList.remove('running');
-  btn.querySelector('.trig-spinner').style.display='none';
-  btn.childNodes[btn.childNodes.length-1].textContent=' Lancer la collecte';
 }
 
 loadTools();
