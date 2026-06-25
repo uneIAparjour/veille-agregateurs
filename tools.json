@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-25T18:59:26.912752+00:00",
-  "count": 71,
+  "generated_at": "2026-06-25T20:00:34.014465+00:00",
+  "count": 72,
   "tools": [
     {
       "name": "NousResearch/hermes-agent",
       "tool_url": "https://github.com/NousResearch/hermes-agent",
       "description": "The agent that grows with you Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research . It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:25.111227+00:00",
+      "date_iso": "2026-06-25T20:00:33.290752+00:00",
       "categories": [
         "images",
         "voix",
@@ -20,7 +20,7 @@
       "tool_url": "https://github.com/kunchenguid/no-mistakes",
       "description": "git push no-mistakes git push no-mistakes Kill all the slop. Raise clean PR. English · 简体中文 no-mistakes puts a local git proxy in front of your real remote. Push to no-mistakes instead of origin , and it spins up a disposable worktree, runs an AI-driven validation pipeline, forwards the branch to the configured push target only after every check passes, and opens a clean PR automatically. Non-bloc",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:25.098768+00:00",
+      "date_iso": "2026-06-25T20:00:33.277575+00:00",
       "categories": [
         "texte",
         "documents",
@@ -33,7 +33,7 @@
       "tool_url": "https://github.com/google-labs-code/design.md",
       "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system. DESIGN.md A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system. The Format A DESIGN.md file combines machine-readable design tokens (YAML fron",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:25.073096+00:00",
+      "date_iso": "2026-06-25T20:00:33.249923+00:00",
       "categories": [
         "images",
         "texte",
@@ -46,7 +46,7 @@
       "tool_url": "https://github.com/stablyai/orca",
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile. Orca Español · 中文 · 日本語 · 한국어 The AI Orchestrator for 100x builders. Run Codex, ClaudeCode, OpenCode or Pi side-by-side — each in its own worktree, tracked in one place. Download Orca Features Mobile Companion Monitor and steer your agents from your phone —",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:25.055560+00:00",
+      "date_iso": "2026-06-25T20:00:33.232611+00:00",
       "categories": [
         "images",
         "texte",
@@ -59,7 +59,7 @@
       "tool_url": "https://github.com/andreknieriem/headunit-revived",
       "description": "Headunit App for displaying Android Auto Headunit Revived Headunit Revived is an Android app that allows you to turn your Android tablet or phone into an Android Auto receiver. This project is a revived version of the original headunit project by the great Michael Reid. The original project can be found here: https://github.com/mikereidis/headunit Screenshots How to use Check out the Wiki for deta",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:25.041361+00:00",
+      "date_iso": "2026-06-25T20:00:33.221267+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -72,7 +72,7 @@
       "tool_url": "https://github.com/flutter/flutter",
       "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond Flutter is Google's SDK for crafting beautiful, fast user experiences for mobile, web, and desktop from a single codebase. Flutter works with existing code, is used by developers and organizations around the world, and is free and open source. Documentation Install Flutter Flutter documentation Development wiki Contributi",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:25.023603+00:00",
+      "date_iso": "2026-06-25T20:00:33.204214+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -85,7 +85,7 @@
       "tool_url": "https://github.com/revfactory/harness",
       "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use. Harness — The Team-Architecture Factory for Claude Code English | 한국어 | 日本語 Harness is a team-architecture factory for Claude Code. Say \"build a harness for this project\" (English) or \"하네스 구성해줘\" (한국어) or \"ハーネスを構成して\" (日本語), and the plugin turns your domain description into an agent",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:25.019922+00:00",
+      "date_iso": "2026-06-25T20:00:33.200511+00:00",
       "categories": [
         "images",
         "musique",
@@ -98,7 +98,7 @@
       "tool_url": "https://github.com/JCodesMore/ai-website-cloner-template",
       "description": "Clone any website with one command using AI coding agents AI Website Cloner Template A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents. Recommended: Claude Code with Opus 4.7 for best results — but works with a variety of AI coding agents. Point it at a URL, run /clone-website , and your AI agent will inspect the site, extract desi",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:25.009673+00:00",
+      "date_iso": "2026-06-25T20:00:33.189717+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -111,7 +111,7 @@
       "tool_url": "https://github.com/interviewstreet/hiring-agent",
       "description": "AI agent to evaluate and score resumes. Hiring Agent Resume-to-Score pipeline that extracts structured data from PDFs, enriches with GitHub signals, and outputs a fair, explainable evaluation. Contents Overview Architecture Installation and Setup Prerequisites Quick setup with pip Ollama models Configuration How it works CLI usage Directory layout Provider details Contributing License Overview Hir",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:25.002620+00:00",
+      "date_iso": "2026-06-25T20:00:33.182140+00:00",
       "categories": [
         "voix",
         "chatbot",
@@ -124,7 +124,7 @@
       "tool_url": "https://github.com/apple/container",
       "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon. container container is a tool that you can use to create and run Linux containers as lightweight virtual machines on your Mac. It's written in Swift, and optimized for Apple silicon. The tool consumes and produces OCI-compatible container images , s",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:24.994695+00:00",
+      "date_iso": "2026-06-25T20:00:33.173951+00:00",
       "categories": [
         "images",
         "chatbot",
@@ -137,7 +137,7 @@
       "tool_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. 📈 股票智能分析系统 🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱 产品预览 · 功能特性 · 快速开始 · 推送效果 · 文档中心 · 完整指南 简体中文 | English | 繁體中文 💖 赞助商 (Sponsors) 🖥️",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:24.991493+00:00",
+      "date_iso": "2026-06-25T20:00:33.170720+00:00",
       "categories": [
         "voix",
         "chatbot",
@@ -150,7 +150,7 @@
       "tool_url": "https://github.com/calesthio/OpenMontage",
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio. OpenMontage The first open-source, agentic video production system. Paste A Video · Quick Start · Try These Prompts · Pipelines · How It Works · Providers · Review Guide · Agent Guide Follow The Build Turn your AI coding assistant",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-25T18:59:24.976466+00:00",
+      "date_iso": "2026-06-25T20:00:33.155392+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -163,7 +163,7 @@
       "tool_url": "https://www.bensbites.com/p/chatgpts-nano-banana",
       "description": "testing popular design tools",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-25T18:59:24.533857+00:00",
+      "date_iso": "2026-06-25T20:00:32.755262+00:00",
       "categories": [
         "chatbot",
         "infographie"
@@ -175,7 +175,7 @@
       "tool_url": "https://www.bensbites.com/p/builders",
       "description": "GPT-5.5 is a good model",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-25T18:59:24.533750+00:00",
+      "date_iso": "2026-06-25T20:00:32.755151+00:00",
       "categories": [
         "site web"
       ],
@@ -186,7 +186,7 @@
       "tool_url": "https://www.bensbites.com/p/codex-is-gaining-steam",
       "description": "but I wish it had this",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-25T18:59:24.533580+00:00",
+      "date_iso": "2026-06-25T20:00:32.754957+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -195,7 +195,7 @@
       "tool_url": "https://www.bensbites.com/p/elon-doubled-limits",
       "description": "Free ChatGPT got instantly better.",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-25T18:59:24.533467+00:00",
+      "date_iso": "2026-06-25T20:00:32.754663+00:00",
       "categories": [
         "chatbot"
       ],
@@ -206,7 +206,7 @@
       "tool_url": "https://www.bensbites.com/p/bens-builds-3-an-email-app",
       "description": "They have some challenges 😅",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-25T18:59:24.533339+00:00",
+      "date_iso": "2026-06-25T20:00:32.754536+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -215,7 +215,7 @@
       "tool_url": "https://www.bensbites.com/p/hey-siri-meet-ai",
       "description": "what's the deal with loops",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-25T18:59:24.532660+00:00",
+      "date_iso": "2026-06-25T20:00:32.753865+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -224,7 +224,95 @@
       "tool_url": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
       "description": "little tools for making life easier",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-25T18:59:24.532384+00:00",
+      "date_iso": "2026-06-25T20:00:32.753566+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Object-storage native graph engine with Git-style workflows",
+      "tool_url": "https://github.com/modernrelay/omnigraph",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-25T19:59:35+00:00",
+      "categories": [
+        "automatisation",
+        "LLM"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Polygraph – Let AI agents see cross repo and maintain session memory",
+      "tool_url": "https://trypolygraph.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-25T19:58:56+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "I built an Ad-free Pinterest Alternative with AI content filtering",
+      "tool_url": "https://moodloom.xyz",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-25T19:55:21+00:00",
+      "categories": [
+        "texte",
+        "histoires enfants"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "OnBuzz – an open-source workspace for AI agent teams",
+      "tool_url": "https://github.com/Loxia-ai/onbuzz-community",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-25T19:37:48+00:00",
+      "categories": [
+        "automatisation",
+        "open source"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "OpenPhone – new open source, customized AI-native Android OS",
+      "tool_url": "https://github.com/secondly-com/openphone",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-25T19:33:23+00:00",
+      "categories": [
+        "open source",
+        "application"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Plansera AI, E-2 visa business plans, drafted by an AI",
+      "tool_url": "https://plansera.ai/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-25T19:30:29+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "I made a social media scheduler with API for AI Agents",
+      "tool_url": "https://schedpilot.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-25T19:08:27+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "No chair fixed my back, so we built one that won't let you sit still",
+      "tool_url": "https://www.movably.com/how-it-works",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-25T19:06:27+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -234,6 +322,17 @@
       "description": "",
       "source": "Hacker News",
       "date_iso": "2026-06-25T18:49:12+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Topos – Structural code quality metrics for agent-written programs",
+      "tool_url": "https://krv.ai/field-notes/evaluating-code-generation",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-25T18:47:38+00:00",
       "categories": [
         "automatisation"
       ],
@@ -345,101 +444,6 @@
       "categories": [
         "jeu vidéo"
       ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "A directory of no‑AI, privacy‑first software alternatives",
-      "tool_url": "https://noaialternative.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-25T16:24:43+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
-      "tool_url": "https://openknowledge.ai/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-25T16:04:46+00:00",
-      "categories": [
-        "open source"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "A Kanban for vibe coding in Claude Code and Codex",
-      "tool_url": "https://www.fredrin.dev",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-25T16:04:31+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Use AI once to build the automation, then run it with $0 in AI",
-      "tool_url": "https://www.visualbuild.me",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-25T15:56:20+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "VibeDrift – measuring AI coding drift across open source repos",
-      "tool_url": "https://www.vibedrift.ai",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-25T15:56:17+00:00",
-      "categories": [
-        "open source"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "Hikaru Labs – Bulk image and file processing, 100% in-browser",
-      "tool_url": "https://hikarulabs.xyz",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-25T15:48:43+00:00",
-      "categories": [
-        "images",
-        "documents",
-        "navigateur"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Clutch – decentralized ride-sharing on-chain (open source)",
-      "tool_url": "https://clutchprotocol.io/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-25T15:29:52+00:00",
-      "categories": [
-        "open source"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "Contraband – Ticketed VR cinema for indie and AI-made films",
-      "tool_url": "https://contraband.watch",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-25T15:25:41+00:00",
-      "categories": [
-        "vidéo"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "I made awesome lists available through CLI+Skills and MCP",
-      "tool_url": "https://www.context-awesome.com",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-25T15:11:47+00:00",
-      "categories": [],
       "pricing": "unknown"
     },
     {
@@ -705,6 +709,17 @@
       "description": "Fix what's breaking in your AI agent",
       "source": "Product Hunt",
       "date_iso": "2026-06-21T23:37:23-07:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "NeuralAgent 3.0",
+      "tool_url": "https://www.producthunt.com/products/neuralagent",
+      "description": "AI that executes UI actions on your computer in ~285ms",
+      "source": "Product Hunt",
+      "date_iso": "2026-06-21T15:47:17-07:00",
       "categories": [
         "automatisation"
       ],
