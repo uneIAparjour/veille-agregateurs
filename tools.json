@@ -1,52 +1,13 @@
 {
-  "generated_at": "2026-06-26T19:48:03.699910+00:00",
-  "count": 71,
+  "generated_at": "2026-06-27T19:21:02.515899+00:00",
+  "count": 72,
   "tools": [
-    {
-      "name": "shanraisshan/claude-code-best-practice",
-      "tool_url": "https://github.com/shanraisshan/claude-code-best-practice",
-      "description": "from vibe coding to agentic engineering - practice makes claude perfect claude-code-best-practice from vibe coding to agentic engineering - practice makes claude perfect = Agents · = Commands · = Skills Boris Cherny on X ( tweet 1 · tweet 2 · tweet 3 ) Tip Visit the How to Use section to take full advantage of this repo. 🧠 CONCEPTS Feature Location Description Subagents .claude/agents/<name>.md Co",
-      "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.445215+00:00",
-      "categories": [
-        "vidéo",
-        "voix",
-        "musique"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "Free-TV/IPTV",
-      "tool_url": "https://github.com/Free-TV/IPTV",
-      "description": "M3U Playlist for free TV channels Free TV This is an M3U playlist for free TV channels around the World. Either free locally (over the air): Or free on the Internet: Plex TV Pluto TV (English, Spanish, French, Italian) Redbox Live TV Roku TV Samsung TV Plus Youtube live channels To use it point your IPTV player to https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8 . Philosophy The",
-      "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.377303+00:00",
-      "categories": [
-        "texte",
-        "documents",
-        "automatisation"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "opendatalab/MinerU",
-      "tool_url": "https://github.com/opendatalab/MinerU",
-      "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows. English | 简体中文 🚀 Access MinerU Now→✅ Zero-Install Web Version ✅ Full-Featured Desktop Client ✅ Instant API Access; Skip deployment headaches – get all product formats in one click. Developers, dive in! 👋 join us on Discord and WeChat MinerU — High-accuracy document parsing engine for LLM",
-      "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.368324+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "voix"
-      ],
-      "pricing": "free"
-    },
     {
       "name": "IceWhaleTech/CasaOS",
       "tool_url": "https://github.com/IceWhaleTech/CasaOS",
       "description": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system. CasaOS - Your Personal Cloud Connect with the community, establish autonomy, reduce the cost of SaaS, and MAXIMIZE the potential for a personalized copilot. Website | Demo | GitHub Why do you need Personal Cloud? In 2020, the team noticed three important trends: The cost of computing power and storage was decreasing fast. A",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.349491+00:00",
+      "date_iso": "2026-06-27T19:20:53.505111+00:00",
       "categories": [
         "chatbot",
         "documents",
@@ -55,117 +16,39 @@
       "pricing": "free"
     },
     {
-      "name": "alibaba/page-agent",
-      "tool_url": "https://github.com/alibaba/page-agent",
-      "description": "JavaScript in-page GUI agent. Control web interfaces with natural language. Page Agent The GUI Agent Living in Your Webpage. Control web interfaces with natural language. 🌐 English | 中文 🚀 Demo | 📖 Docs | 📢 HN Discussion | 𝕏 Follow on X https://github.com/user-attachments/assets/a1f2eae2-13fb-4aae-98cf-a3fc1620a6c2 ✨ Features 🎯 Easy integration No need for browser extension / python / headless brow",
+      "name": "garrytan/gstack",
+      "tool_url": "https://github.com/garrytan/gstack",
+      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA gstack \"I don't think I've typed like a line of code probably since December, basically, which is an extremely large change.\" — Andrej Karpathy , No Priors podcast, March 2026 When I heard Karpathy say this, I wanted to find out how. How does one person ship",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.337537+00:00",
+      "date_iso": "2026-06-27T19:20:53.490894+00:00",
       "categories": [
-        "voix",
-        "chatbot",
-        "texte"
+        "images",
+        "vidéo",
+        "voix"
       ],
       "pricing": "free"
     },
     {
-      "name": "mukul975/Anthropic-Cybersecurity-Skills",
-      "tool_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0 Anthropic Cybersecurity Skills The largest open-source cybersecurity skills library for A",
+      "name": "NanmiCoder/MediaCrawler",
+      "tool_url": "https://github.com/NanmiCoder/MediaCrawler",
+      "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫 🔥 MediaCrawler - 自媒体平台爬虫 🕷️ 免责声明： 大家请以学习为目的使用本仓库⚠️⚠️⚠️⚠️， 爬虫违法违规的案件 本仓库的所有内容仅供学习和参考之用，禁止用于商业用途。任何人或组织不得将本仓库的内容用于非法用途或侵犯他人合法权益。本仓库所涉及的爬虫技术仅用于学习和研究，不得用于对其他平台进行大规模爬虫或其他非法行为。对于因使用本仓库内容而引起的任何法律责任，本仓库不承担任何责任。使用本仓库的内容即表示您同意本免责声明的所有条款和条件。 点击查看更为详细的免责声明。 点击跳转 📖 项目简介 一个功能强大的 多平台自媒体数据采集工具 ，支持小红书、抖音、快手、B站、微博、贴吧、知乎等",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.331171+00:00",
+      "date_iso": "2026-06-27T19:20:53.462946+00:00",
       "categories": [
-        "images",
-        "voix",
-        "chatbot"
+        "automatisation",
+        "recherche",
+        "données"
       ],
-      "pricing": "free"
+      "pricing": "unknown"
     },
     {
       "name": "aws/agent-toolkit-for-aws",
       "tool_url": "https://github.com/aws/agent-toolkit-for-aws",
       "description": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS Agent Toolkit for AWS Help AI coding agents build, deploy, and manage applications on AWS. The Agent Toolkit for AWS gives AI coding agents the tools, knowledge, and guardrails they need to work with AWS services. It works with the coding agents developers already use — including Claude Code, Codex, Cursor, and",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.305820+00:00",
+      "date_iso": "2026-06-27T19:20:53.450465+00:00",
       "categories": [
         "texte",
-        "documents",
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "garrytan/gstack",
-      "tool_url": "https://github.com/garrytan/gstack",
-      "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA gstack \"I don't think I've typed like a line of code probably since December, basically, which is an extremely large change.\" — Andrej Karpathy , No Priors podcast, March 2026 When I heard Karpathy say this, I wanted to find out how. How does one person ship",
-      "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.297779+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "voix"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "every-app/open-seo",
-      "tool_url": "https://github.com/every-app/open-seo",
-      "description": "Open source alternative to Semrush and Ahrefs OpenSEO Open source alternative to Semrush and Ahrefs OpenSEO is an SEO tool for the people . If tools like Semrush or Ahrefs are too expensive or bloated, OpenSEO is a pay-as-you-go alternative that you actually control. All-in-one SEO tool for you and your AI agent. Connect with any agent like Claude Code, OpenClaw or Hermes. We have pre-built skills",
-      "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.265181+00:00",
-      "categories": [
-        "images",
-        "voix",
-        "musique"
-      ],
-      "pricing": "freemium"
-    },
-    {
-      "name": "JCodesMore/ai-website-cloner-template",
-      "tool_url": "https://github.com/JCodesMore/ai-website-cloner-template",
-      "description": "Clone any website with one command using AI coding agents AI Website Cloner Template A reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI coding agents. Recommended: Claude Code with Opus 4.7 for best results — but works with a variety of AI coding agents. Point it at a URL, run /clone-website , and your AI agent will inspect the site, extract desi",
-      "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.237921+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "voix"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "apple/container",
-      "tool_url": "https://github.com/apple/container",
-      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon. container container is a tool that you can use to create and run Linux containers as lightweight virtual machines on your Mac. It's written in Swift, and optimized for Apple silicon. The tool consumes and produces OCI-compatible container images , s",
-      "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.230701+00:00",
-      "categories": [
-        "images",
-        "chatbot",
-        "documents"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "mauriceboe/TREK",
-      "tool_url": "https://github.com/mauriceboe/TREK",
-      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more. A self-hosted, real-time collaborative travel planner — with maps, budgets, packing lists, a journal, and AI built in. What you get See all features 🧭 Trip planning Drag & drop planner — organise places into day plans with reordering and cross-day moves Interactive",
-      "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.226513+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "musique"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "xbtlin/ai-berkshire",
-      "tool_url": "https://github.com/xbtlin/ai-berkshire",
-      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis. AI Berkshire - AI 时代的价值投资研究框架 \"Price is what you pay, value is what you get.\" — Warren Buffett 用 AI 重新定义投资研究的深度与效率。 AI Berkshire 是一套基于 Claude Code 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化",
-      "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.207189+00:00",
-      "categories": [
-        "voix",
         "documents",
         "automatisation"
       ],
@@ -176,7 +59,7 @@
       "tool_url": "https://github.com/calesthio/OpenMontage",
       "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio. OpenMontage The first open-source, agentic video production system. Paste A Video · Quick Start · Try These Prompts · Pipelines · How It Works · Providers · Review Guide · Agent Guide Follow The Build Turn your AI coding assistant",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.171657+00:00",
+      "date_iso": "2026-06-27T19:20:53.443702+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -185,11 +68,76 @@
       "pricing": "freemium"
     },
     {
-      "name": "google-labs-code/design.md",
-      "tool_url": "https://github.com/google-labs-code/design.md",
-      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system. DESIGN.md A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system. The Format A DESIGN.md file combines machine-readable design tokens (YAML fron",
+      "name": "xbtlin/ai-berkshire",
+      "tool_url": "https://github.com/xbtlin/ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial analysis. 中文 | English AI Berkshire - AI 时代的价值投资研究框架 \"Price is what you pay, value is what you get.\" — Warren Buffett 用 AI 重新定义投资研究的深度与效率。 AI Berkshire 是一套基于 Claude Code 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位",
       "source": "GitHub Trending",
-      "date_iso": "2026-06-26T19:48:03.140631+00:00",
+      "date_iso": "2026-06-27T19:20:53.407967+00:00",
+      "categories": [
+        "voix",
+        "documents",
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "mauriceboe/TREK",
+      "tool_url": "https://github.com/mauriceboe/TREK",
+      "description": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more. A self-hosted, real-time collaborative travel planner — with maps, budgets, packing lists, a journal, and AI built in. What you get See all features 🧭 Trip planning Drag & drop planner — organise places into day plans with reordering and cross-day moves Interactive",
+      "source": "GitHub Trending",
+      "date_iso": "2026-06-27T19:20:53.369982+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "musique"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "alchaincyf/zhangxuefeng-skill",
+      "tool_url": "https://github.com/alchaincyf/zhangxuefeng-skill",
+      "description": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。 张雪峰.skill 动画由 huashu-design skill 制作 「社会就是一个大筛子，用学历筛孩子，用房子筛父母，用工作筛家庭。」 张雪峰的认知操作系统。不是语录合集，是可运行的思维框架。 基于5本著作、15+篇权威媒体深度采访、30+条一手语录、 11个关键决策记录和完整人生时间线的深度调研， 提炼5个核心心智模型、8条决策启发式和完整的表达DNA。 看效果 · 安装 · 蒸馏了什么 · 调研来源 效果示例 问：我孩子今年高考，560分，河南的，想学金融，你怎么看？ 张雪峰 ❯ 停停停，你先别急着说金融。我问你几个问题。 家里是做金融的吗？爸妈在银行、证券公司、基金公司？ 有没有亲戚在这个行业里？",
+      "source": "GitHub Trending",
+      "date_iso": "2026-06-27T19:20:53.351265+00:00",
+      "categories": [
+        "voix",
+        "chatbot",
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "opendatalab/MinerU",
+      "tool_url": "https://github.com/opendatalab/MinerU",
+      "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows. English | 简体中文 🚀 Access MinerU Now→✅ Zero-Install Web Version ✅ Full-Featured Desktop Client ✅ Instant API Access; Skip deployment headaches – get all product formats in one click. Developers, dive in! 👋 join us on Discord and WeChat MinerU — High-accuracy document parsing engine for LLM",
+      "source": "GitHub Trending",
+      "date_iso": "2026-06-27T19:20:53.338536+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "voix"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "ripienaar/free-for-dev",
+      "tool_url": "https://github.com/ripienaar/free-for-dev",
+      "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev free-for.dev Developers and Open Source authors now have many services offering free tiers, but finding them all takes time to make informed decisions. This is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings with free developer tiers. The scope of this particular list is limited to thing",
+      "source": "GitHub Trending",
+      "date_iso": "2026-06-27T19:20:53.314882+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "voix"
+      ],
+      "pricing": "freemium"
+    },
+    {
+      "name": "grafana/grafana",
+      "tool_url": "https://github.com/grafana/grafana",
+      "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more. The open-source platform for monitoring and observability Grafana allows you to query, visualize, alert on and understand your metrics no matter where they are stored. Create, explore, and share dash",
+      "source": "GitHub Trending",
+      "date_iso": "2026-06-27T19:20:53.200128+00:00",
       "categories": [
         "images",
         "texte",
@@ -198,11 +146,63 @@
       "pricing": "free"
     },
     {
+      "name": "kunchenguid/no-mistakes",
+      "tool_url": "https://github.com/kunchenguid/no-mistakes",
+      "description": "git push no-mistakes git push no-mistakes Kill all the slop. Raise clean PR. English · 简体中文 no-mistakes puts a local git proxy in front of your real remote. Push to no-mistakes instead of origin , and it spins up a disposable worktree, runs an AI-driven validation pipeline, forwards the branch to the configured push target only after every check passes, and opens a clean PR automatically. Non-bloc",
+      "source": "GitHub Trending",
+      "date_iso": "2026-06-27T19:20:53.197331+00:00",
+      "categories": [
+        "texte",
+        "documents",
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "commaai/openpilot",
+      "tool_url": "https://github.com/commaai/openpilot",
+      "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars. openpilot openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system in 300+ supported cars. Docs · Roadmap · Contribute · Community · Try it on a comma four Quick start: bash <(curl -fsSL openpilot.comma.ai) Using openpilot in a car To",
+      "source": "GitHub Trending",
+      "date_iso": "2026-06-27T19:20:53.193126+00:00",
+      "categories": [
+        "chatbot",
+        "documents",
+        "automatisation"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "google-labs-code/design.md",
+      "tool_url": "https://github.com/google-labs-code/design.md",
+      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system. DESIGN.md A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system. The Format A DESIGN.md file combines machine-readable design tokens (YAML fron",
+      "source": "GitHub Trending",
+      "date_iso": "2026-06-27T19:20:53.185985+00:00",
+      "categories": [
+        "images",
+        "texte",
+        "documents"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "simplex-chat/simplex-chat",
+      "tool_url": "https://github.com/simplex-chat/simplex-chat",
+      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱! | 30/03/2023 | EN, FR , CZ , PL | SimpleX - the first messaging platform that has no user identifiers of any kind - 100% private by design! Why we are building SimpleX Network Welcome to SimpleX Chat! 📲 Install the app . ↔️ Connect to the team , join user",
+      "source": "GitHub Trending",
+      "date_iso": "2026-06-27T19:20:53.167521+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "voix"
+      ],
+      "pricing": "free"
+    },
+    {
       "name": "ChatGPT's Nano Banana",
       "tool_url": "https://www.bensbites.com/p/chatgpts-nano-banana",
       "description": "testing popular design tools",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-26T19:48:02.318284+00:00",
+      "date_iso": "2026-06-27T19:20:52.282256+00:00",
       "categories": [
         "chatbot",
         "infographie"
@@ -214,7 +214,7 @@
       "tool_url": "https://www.bensbites.com/p/builders",
       "description": "GPT-5.5 is a good model",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-26T19:48:02.318174+00:00",
+      "date_iso": "2026-06-27T19:20:52.282134+00:00",
       "categories": [
         "site web"
       ],
@@ -225,7 +225,7 @@
       "tool_url": "https://www.bensbites.com/p/codex-is-gaining-steam",
       "description": "but I wish it had this",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-26T19:48:02.317997+00:00",
+      "date_iso": "2026-06-27T19:20:52.276702+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -234,7 +234,7 @@
       "tool_url": "https://www.bensbites.com/p/elon-doubled-limits",
       "description": "Free ChatGPT got instantly better.",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-26T19:48:02.317878+00:00",
+      "date_iso": "2026-06-27T19:20:52.276558+00:00",
       "categories": [
         "chatbot"
       ],
@@ -245,7 +245,7 @@
       "tool_url": "https://www.bensbites.com/p/bens-builds-3-an-email-app",
       "description": "They have some challenges 😅",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-26T19:48:02.317753+00:00",
+      "date_iso": "2026-06-27T19:20:52.276430+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -254,7 +254,7 @@
       "tool_url": "https://www.bensbites.com/p/hey-siri-meet-ai",
       "description": "what's the deal with loops",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-26T19:48:02.317057+00:00",
+      "date_iso": "2026-06-27T19:20:52.275727+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -263,226 +263,257 @@
       "tool_url": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
       "description": "little tools for making life easier",
       "source": "Ben's Bites",
-      "date_iso": "2026-06-26T19:48:02.316793+00:00",
+      "date_iso": "2026-06-27T19:20:52.275152+00:00",
       "categories": [],
       "pricing": "unknown"
     },
     {
-      "name": "Mantis, A self-hosted LLM gateway",
-      "tool_url": "https://github.com/mantis-llm-gateway",
+      "name": "OpenOrb – I built a transparent multi-agent AI tool",
+      "tool_url": "https://openorb.onrender.com",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T19:15:04+00:00",
-      "categories": [
-        "LLM",
-        "open source"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Open protocol for agents to book vacation rentals direct from the host",
-      "tool_url": "https://vacationrentalprotocol.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-26T18:26:02+00:00",
+      "date_iso": "2026-06-27T18:32:17+00:00",
       "categories": [
         "automatisation"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "AgentBrush – Your coding agent's missing tool: image generation",
-      "tool_url": "https://agentbrush.dev/",
+      "name": "Humans Constructively Roasting AI Coded B2B SaaS",
+      "tool_url": "https://www.hyoomn.com/?0",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T18:13:01+00:00",
-      "categories": [
-        "images",
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "A map of every UK railway, including stations that no longer exist",
-      "tool_url": "https://trainmap.co.uk/map.html",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-26T17:44:17+00:00",
+      "date_iso": "2026-06-27T17:15:58+00:00",
       "categories": [],
       "pricing": "unknown"
     },
     {
-      "name": "TBD, a Mac-native CLI-forward coding agent multiplexer",
-      "tool_url": "https://github.com/cheapsteak/tbd",
+      "name": "A Living Neural Web in HTML5 Canvas",
+      "tool_url": "https://techoreon.github.io/verpad/canvas-playground.html",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T16:59:20+00:00",
+      "date_iso": "2026-06-27T16:35:47+00:00",
       "categories": [
-        "automatisation",
-        "bande dessinée"
+        "site web",
+        "infographie"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "Vynex API – One endpoint for 34 LLM models, paid with USDT",
-      "tool_url": "https://llm-api.vynexcloud.com/",
+      "name": "Ocarina – Automate and test MCP servers from YAML, no LLM",
+      "tool_url": "https://github.com/msradam/ocarina",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T16:54:58+00:00",
+      "date_iso": "2026-06-27T15:33:22+00:00",
       "categories": [
         "LLM"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "Smart model routing directly in Claude, Codex and Cursor",
-      "tool_url": "https://github.com/workweave/router",
+      "name": "I got tired of spending 3hrs daily on job applications,so I automated it",
+      "tool_url": "https://jobspire.co.in/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T16:40:11+00:00",
+      "date_iso": "2026-06-27T15:21:26+00:00",
       "categories": [],
       "pricing": "unknown"
     },
     {
-      "name": "AI Is Too Good at Coding, Let's Make It Better",
-      "tool_url": "https://github.com/Karthick-Ramachandran/persist-os",
+      "name": "AI-whisper – Claude works better when Codex watches its back",
+      "tool_url": "https://ai-creed.dev/projects/ai-whisper/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T16:35:48+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "OpenOrb – BYOK multi-AI council that shows its work",
-      "tool_url": "https://openorb.onrender.com",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-26T16:15:10+00:00",
+      "date_iso": "2026-06-27T15:07:57+00:00",
       "categories": [],
       "pricing": "unknown"
     },
     {
-      "name": "`uvx ptn` and expose any system to agents (dangerously)",
-      "tool_url": "https://pypi.org/project/ptn/",
+      "name": "Apex-1-flash, 4B LLM finetuned on RTX 5070",
+      "tool_url": "https://huggingface.co/OrbitAIEU/Apex-1-flash",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T16:07:32+00:00",
+      "date_iso": "2026-06-27T15:07:51+00:00",
       "categories": [
-        "automatisation"
+        "LLM"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "Lettered – a daily phrase puzzle game",
-      "tool_url": "https://lettered.io",
+      "name": "Discover content in any YouTube channel with RAG",
+      "tool_url": "https://askchannel.ai",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T16:01:17+00:00",
+      "date_iso": "2026-06-27T15:06:46+00:00",
+      "categories": [
+        "texte",
+        "LLM",
+        "histoires enfants"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "GemmaTrans – On-device translation for macOS, built with MLX",
+      "tool_url": "https://github.com/Rand01ph/gemma-trans",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-27T14:45:33+00:00",
+      "categories": [
+        "langues"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Hyoomn – We'll constructively roast your AI coded B2B SaaS",
+      "tool_url": "https://hyoomn.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-27T13:27:57+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Nirnam – a browser-native message bus and AI agent framework for MFEs",
+      "tool_url": "https://github.com/shaurcasm/nirnam",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-27T12:27:25+00:00",
+      "categories": [
+        "automatisation",
+        "navigateur"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Asian AI startups launch Mythos-like  models as Anthropic’s export ban drags on",
+      "tool_url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+      "description": "New models are launching in Asia that promise Mythos-like capabilities without fear of an export ban. U.S. AI labs may never recover this enormous market.",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-06-27T12:00:00+00:00",
+      "categories": [
+        "LLM",
+        "youtube"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Visual Map of ICML 2026 Papers",
+      "tool_url": "https://www.alphaxiv.org/icml/map",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-27T11:54:18+00:00",
+      "categories": [
+        "images",
+        "recherche"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Open Tag, the open source Claude Tag",
+      "tool_url": "https://github.com/CopilotKit/OpenTag",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-27T11:48:39+00:00",
+      "categories": [
+        "open source"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "PreFlight – A local AST background daemon to catch AI code drift",
+      "tool_url": "https://preflight-vibe.vercel.app/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-27T10:43:22+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Comparing Transformers and Hybrid Models at the Token Level",
+      "tool_url": "https://arxiv.org/pdf/2606.20936",
+      "description": "",
+      "source": "Lobsters",
+      "date_iso": "2026-06-27T10:16:10-05:00",
       "categories": [
         "jeu vidéo"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "My website as one connected graph – blog, second brain, and book",
-      "tool_url": "https://www.ssp.sh/",
+      "name": "Open-Source API for Asynchronous Tasks Using Agents",
+      "tool_url": "https://meerkatagents.com/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T15:52:26+00:00",
+      "date_iso": "2026-06-27T10:04:30+00:00",
       "categories": [
-        "texte",
-        "site web"
+        "automatisation",
+        "open source"
       ],
+      "pricing": "free"
+    },
+    {
+      "name": "Waitlio – The waitlist software for your next launch",
+      "tool_url": "https://waitlio.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-27T09:04:35+00:00",
+      "categories": [],
       "pricing": "unknown"
     },
     {
-      "name": "Xtra – a Python framework for reasoning about AI system threats",
-      "tool_url": "https://github.com/TangibleResearch/xtra",
+      "name": "Brytlog – AI logger",
+      "tool_url": "https://github.com/Guy-Sela/brytlog",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T15:28:33+00:00",
+      "date_iso": "2026-06-27T08:06:02+00:00",
       "categories": [
         "youtube"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "I compared 15 AI agent frameworks across 4 production stacks",
-      "tool_url": "https://compare-lab.xyz/ai-agent-frameworks/",
+      "name": "Hikaru Labs – image tools that run directly on your device",
+      "tool_url": "https://hikarulabs.xyz",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T15:21:14+00:00",
+      "date_iso": "2026-06-27T06:50:47+00:00",
+      "categories": [
+        "images"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "OpenClaw Launch – deploy a managed OpenClaw AI agent in 30s",
+      "tool_url": "https://openclawlaunch.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-06-27T05:37:36+00:00",
       "categories": [
         "automatisation"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "BetterDB, MIT Valkey-native context layer for AI agents",
-      "tool_url": "https://github.com/BetterDB-inc/monitor/tree/master/packages",
+      "name": "An LLM that designs M5Stack hardware builds",
+      "tool_url": "https://unitkit.pages.dev/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-06-26T15:16:24+00:00",
+      "date_iso": "2026-06-27T05:35:15+00:00",
       "categories": [
-        "texte",
-        "automatisation",
-        "histoires enfants"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Apply for jobs by directly emailing relevant people at a company",
-      "tool_url": "https://dmtheboss.com/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-26T15:03:45+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Image-inspector – find base images, see CVE counts, pin by digest",
-      "tool_url": "https://github.com/anmalkov/image-inspector",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-26T14:48:41+00:00",
-      "categories": [
-        "images"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "NexisSearch – Fast AI Search",
-      "tool_url": "https://nexisearch.com",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-26T13:53:44+00:00",
-      "categories": [
-        "recherche"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Orchestrate Claude Code agents on a canvas",
-      "tool_url": "https://rondoflow.app/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-26T13:51:17+00:00",
-      "categories": [
-        "automatisation",
+        "LLM",
         "infographie"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "ShotBrief – Daily photography briefings, should you shoot tomorrow?",
-      "tool_url": "https://shotbrief.app/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-06-26T13:18:19+00:00",
+      "name": "Trump Admin releases Anthropic  Mythos to be used by more than 100 US companies, agencies",
+      "tool_url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/",
+      "description": "Over 100 companies and government agencies are reportedly authorized to use Mythos 5, including their non-American employees.",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-06-27T01:01:37+00:00",
       "categories": [
-        "images"
+        "documents",
+        "youtube"
       ],
       "pricing": "unknown"
     },
@@ -588,20 +619,22 @@
       "pricing": "unknown"
     },
     {
+      "name": "Folio AI",
+      "tool_url": "https://www.producthunt.com/products/folio-ai",
+      "description": "Claude for PowerPoint, on steroids",
+      "source": "Product Hunt",
+      "date_iso": "2026-06-25T13:15:56-07:00",
+      "categories": [
+        "présentation"
+      ],
+      "pricing": "unknown"
+    },
+    {
       "name": "LockIn MCP",
       "tool_url": "https://www.producthunt.com/products/lockin-mcp",
       "description": "Let AI block distractions for you when you need to lock in",
       "source": "Product Hunt",
       "date_iso": "2026-06-25T02:35:32-07:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Former Infosys chief has a new startup that wants to challenge the IT services world",
-      "tool_url": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/",
-      "description": "Backed by Mayfield and Aramco Ventures, Vishal Sikka’s new venture brings together veterans from SAP, Infosys, and VianAI.",
-      "source": "TechCrunch AI",
-      "date_iso": "2026-06-24T23:26:52+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -685,6 +718,15 @@
       "pricing": "unknown"
     },
     {
+      "name": "Swimio",
+      "tool_url": "https://www.producthunt.com/products/swimio",
+      "description": "AI swim coach with Apple Watch tracking & smart workouts",
+      "source": "Product Hunt",
+      "date_iso": "2026-06-23T22:16:39-07:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
       "name": "VibeThinker-3B: Exploring the Frontier of Verifiable Reasoning in Small Language Models",
       "tool_url": "https://arxiv.org/abs/2606.16140",
       "description": "",
@@ -752,40 +794,11 @@
       "pricing": "unknown"
     },
     {
-      "name": "Mindstone Rebel",
-      "tool_url": "https://www.producthunt.com/products/mindstone-rebel",
-      "description": "AI workspace for agents that know your work and ask first",
-      "source": "Product Hunt",
-      "date_iso": "2026-06-22T12:45:00-07:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Crewdle AI",
-      "tool_url": "https://www.producthunt.com/products/crewdle",
-      "description": "Use every business AI tool without every subscription",
-      "source": "Product Hunt",
-      "date_iso": "2026-06-22T08:45:08-07:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
       "name": "CreateMemorial",
       "tool_url": "https://www.aixploria.com/creatememorial/",
       "description": "",
       "source": "Aixploria",
       "date_iso": "2026-06-22T01:47:52+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Brain² by ClickUp",
-      "tool_url": "https://www.producthunt.com/products/clickup",
-      "description": "One AI that knows your entire company and acts on it",
-      "source": "Product Hunt",
-      "date_iso": "2026-06-19T15:33:45-07:00",
       "categories": [],
       "pricing": "unknown"
     }
