@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T05:46:43.692079+00:00",
+  "generated_at": "2026-07-03T05:51:39.215202+00:00",
   "count": 74,
   "tools": [
     {
@@ -7,7 +7,7 @@
       "tool_url": "https://github.com/pytorch/pytorch",
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration PyTorch is a Python package that provides two high-level features: Tensor computation (like NumPy) with strong GPU acceleration Deep neural networks built on a tape-based autograd system You can reuse your favorite Python packages such as NumPy, SciPy, and Cython to extend PyTorch when needed. Our trunk health (Continuous I",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.688858+00:00",
+      "date_iso": "2026-07-03T05:51:39.211761+00:00",
       "categories": [
         "images",
         "voix",
@@ -20,7 +20,7 @@
       "tool_url": "https://github.com/langflow-ai/langflow",
       "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows. Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and built-in API and MCP servers that turn every workflow into a tool that can be integrated into applications built on any framework or stack. Langflow come",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.671948+00:00",
+      "date_iso": "2026-07-03T05:51:39.198391+00:00",
       "categories": [
         "images",
         "voix",
@@ -33,7 +33,7 @@
       "tool_url": "https://github.com/openai/codex-plugin-cc",
       "description": "Use Codex from Claude Code to review code or delegate tasks. Codex plugin for Claude Code Use Codex from inside Claude Code for code reviews or to delegate tasks to Codex. This plugin is for Claude Code users who want an easy way to start using Codex from the workflow they already have. What You Get /codex:review for a normal read-only Codex review /codex:adversarial-review for a steerable challen",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.667899+00:00",
+      "date_iso": "2026-07-03T05:51:39.194847+00:00",
       "categories": [
         "chatbot",
         "texte",
@@ -46,7 +46,7 @@
       "tool_url": "https://github.com/agentskills/agentskills",
       "description": "Specification and documentation for Agent Skills Agent Skills A standardized way to give AI agents new capabilities and expertise. What are Agent Skills? Agent Skills are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows. At its core, a skill is a folder containing a SKILL.md file. This file includes metadata ( name and description , at minimum",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.659451+00:00",
+      "date_iso": "2026-07-03T05:51:39.188159+00:00",
       "categories": [
         "texte",
         "documents",
@@ -59,7 +59,7 @@
       "tool_url": "https://github.com/HKUDS/Vibe-Trading",
       "description": "\"Vibe-Trading: Your Personal Trading Agent\" English | 中文 | 日本語 | 한국어 | العربية Vibe-Trading: Your Personal Trading Agent One Command to Empower Your Agent with Comprehensive Trading Capabilities Website · Docs · News · Features · Shadow Account · Demo · Quick Start · Examples · API / MCP · Roadmap · Contributing 📰 News 2026-07-02 ⚡ Factor acceleration + safer runtime boundaries : hot rolling facto",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.652194+00:00",
+      "date_iso": "2026-07-03T05:51:39.179798+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -72,7 +72,7 @@
       "tool_url": "https://github.com/affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. Language: English | Português (Brasil) | 简体中文 | 繁體中文 | 日本語 | 한국어 | Türkçe | Русский | Tiếng Việt | ไทย | Deutsch | Español Warning Official sources only. Install ECC only from verified channels: the GitHub repository github.com/",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.569113+00:00",
+      "date_iso": "2026-07-03T05:51:39.117024+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -85,7 +85,7 @@
       "tool_url": "https://github.com/actions/checkout",
       "description": "Action for checking out a repo Checkout v7 What's new Safer fork pull request handling: checkout now refuses to check out fork pull request code by default when the workflow is triggered by pull_request_target or workflow_run . These triggers run with the base repository's GITHUB_TOKEN , secrets, and runner access, where executing a fork's code commonly leads to \"pwn request\" vulnerabilities. To o",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.501942+00:00",
+      "date_iso": "2026-07-03T05:51:39.066763+00:00",
       "categories": [
         "voix",
         "chatbot",
@@ -98,7 +98,7 @@
       "tool_url": "https://github.com/browser-use/video-use",
       "description": "Edit videos with coding agents video-use Introducing video-use — edit videos with Claude Code. 100% open source. Drop raw footage in a folder, chat with Claude Code, get final.mp4 back. Works for any content — talking heads, montages, tutorials, travel, interviews — without presets or menus. Try video-use in Browser Use Cloud . What it does Cuts out filler words ( umm , uh , false starts) and dead",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.495328+00:00",
+      "date_iso": "2026-07-03T05:51:39.061484+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -111,7 +111,7 @@
       "tool_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "description": "Chrome DevTools for coding agents Chrome DevTools for agents Chrome DevTools for agents ( chrome-devtools-mcp ) lets your coding agent (such as Antigravity, Claude, Cursor or Copilot) control and inspect a live Chrome browser. It acts as a Model-Context-Protocol (MCP) server, giving your AI coding assistant access to the full power of Chrome DevTools for reliable automation, in-depth debugging, an",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.489474+00:00",
+      "date_iso": "2026-07-03T05:51:39.055983+00:00",
       "categories": [
         "images",
         "voix",
@@ -124,7 +124,7 @@
       "tool_url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works. Superpowers Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them. We're Hiring! We're hiring someone to help out full time with Superpowers community and code work. You can read about th",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.457407+00:00",
+      "date_iso": "2026-07-03T05:51:39.027235+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -137,7 +137,7 @@
       "tool_url": "https://github.com/santifer/career-ops",
       "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing. Career-Ops English | Deutsch | Español | Français | Português (Brasil) | 한국어 | 日本語 | 简体中文 | 繁體中文 | Українська | Русский | Polski | Dansk | العربية I spent months applying to jobs the hard way. So I engineered the system I wish I had. Companies use AI to filter candidates. I just gave",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.435011+00:00",
+      "date_iso": "2026-07-03T05:51:39.019523+00:00",
       "categories": [
         "images",
         "voix",
@@ -150,7 +150,7 @@
       "tool_url": "https://github.com/hasaneyldrm/exercises-dataset",
       "description": "A comprehensive dataset of 433 fitness exercises. Each entry includes name, category, target muscle group, equipment, instructions, thumbnail image, and animation video. 💪 Exercises Dataset A developer setup wizard + structured, multilingual exercise dataset — scaffold your own exercise app backend (DB schema, API code, LLM prompt) over 1,324 exercises with category, body-part, equipment, target a",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.422330+00:00",
+      "date_iso": "2026-07-03T05:51:38.993807+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -163,7 +163,7 @@
       "tool_url": "https://github.com/msitarzewski/agency-agents",
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. 🎭 The Agency: AI Specialists Ready to Transform Your Workflow A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.404163+00:00",
+      "date_iso": "2026-07-03T05:51:38.979635+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -176,7 +176,7 @@
       "tool_url": "https://github.com/JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman caveman why use many token when few do trick Before/After • Install • What You Get • Benchmarks • Full install guide A Claude Code skill/plugin (also Codex, Gemini, Cursor, Windsurf, Cline, Copilot, 30+ more) that makes agent talk like caveman — cuts ~75% of output tokens , keeps full t",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.337758+00:00",
+      "date_iso": "2026-07-03T05:51:38.929112+00:00",
       "categories": [
         "vidéo",
         "voix",
@@ -189,7 +189,7 @@
       "tool_url": "https://github.com/usestrix/strix",
       "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities. Strix The open-source AI pentesting tool. Autonomous AI hackers that find and fix your app’s vulnerabilities. Tip New! Strix integrates seamlessly with GitHub Actions and CI/CD pipelines. Automatically scan for vulnerabilities on every pull request and block insecure code before it reaches production - Get started",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-03T05:46:43.322774+00:00",
+      "date_iso": "2026-07-03T05:51:38.917098+00:00",
       "categories": [
         "images",
         "musique",
@@ -202,7 +202,7 @@
       "tool_url": "https://www.bensbites.com/p/codex-is-gaining-steam",
       "description": "but I wish it had this",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-03T05:46:42.419515+00:00",
+      "date_iso": "2026-07-03T05:51:38.099955+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -211,7 +211,7 @@
       "tool_url": "https://www.bensbites.com/p/elon-doubled-limits",
       "description": "Free ChatGPT got instantly better.",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-03T05:46:42.419400+00:00",
+      "date_iso": "2026-07-03T05:51:38.099859+00:00",
       "categories": [
         "chatbot"
       ],
@@ -222,7 +222,7 @@
       "tool_url": "https://www.bensbites.com/p/bens-builds-3-an-email-app",
       "description": "They have some challenges 😅",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-03T05:46:42.419272+00:00",
+      "date_iso": "2026-07-03T05:51:38.099746+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -231,7 +231,7 @@
       "tool_url": "https://www.bensbites.com/p/hey-siri-meet-ai",
       "description": "what's the deal with loops",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-03T05:46:42.418422+00:00",
+      "date_iso": "2026-07-03T05:51:38.098542+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -240,7 +240,7 @@
       "tool_url": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
       "description": "little tools for making life easier",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-03T05:46:42.418158+00:00",
+      "date_iso": "2026-07-03T05:51:38.098232+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -249,7 +249,7 @@
       "tool_url": "https://www.bensbites.com/p/gpt-56-is-here-but",
       "description": "plus the insanity of inference",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-03T05:46:42.417841+00:00",
+      "date_iso": "2026-07-03T05:51:38.097868+00:00",
       "categories": [],
       "pricing": "unknown"
     },
