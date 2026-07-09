@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T16:22:11.992802+00:00",
+  "generated_at": "2026-07-09T19:46:22.190313+00:00",
   "count": 71,
   "tools": [
     {
@@ -7,7 +7,7 @@
       "tool_url": "https://github.com/TencentCloud/CubeSandbox",
       "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents. CubeSandbox Instant, Concurrent, Secure & Lightweight Sandbox Service for AI Agents 中文文档 · Quick Start · Documentation · Changelog · X(Twitter) Cube Sandbox is a high-performance, out-of-the-box secure sandbox service built on RustVMM and KVM. It supports both single-node deployment and easy scaling to multi-node clusters. It is comp",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.709778+00:00",
+      "date_iso": "2026-07-09T19:46:20.222335+00:00",
       "categories": [
         "images",
         "voix",
@@ -20,7 +20,7 @@
       "tool_url": "https://github.com/bradautomates/claude-video",
       "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude. /watch Give Claude the ability to watch any video. Claude Code (recommended — auto-updates via marketplace): /plugin marketplace add bradautomates/claude-video /plugin install watch@claude-video Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts: npx skills add brad",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.694599+00:00",
+      "date_iso": "2026-07-09T19:46:20.207377+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -33,7 +33,7 @@
       "tool_url": "https://github.com/huxingyi/autoremesher",
       "description": "Automatic quad remeshing tool AutoRemesher AutoRemesher is a cross-platform automatic quad remeshing tool that converts high-polygon meshes into clean quad-based topology. It is built on top of libraries: Geogram , libigl , isotropicremesher and others . Buy me a coffee for staying up late coding 😃 Getting Started These instructions will get you a copy of AutoRemesher up and running on your local",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.680454+00:00",
+      "date_iso": "2026-07-09T19:46:20.193384+00:00",
       "categories": [
         "images",
         "voix",
@@ -46,7 +46,7 @@
       "tool_url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
       "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities Desktop Commander MCP Search, update, manage files and run terminal commands with AI Work with code and text, run processes, and automate tasks, going far beyond other AI editors - while using host client subscriptions instead of API token costs. 🖥️ Try the Desktop Commander App (Bet",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.671551+00:00",
+      "date_iso": "2026-07-09T19:46:20.186705+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -59,7 +59,7 @@
       "tool_url": "https://github.com/Diolinux/PhotoGIMP",
       "description": "A Patch for GIMP 3+ for Photoshop Users 🎨 PhotoGIMP PhotoGIMP is a free, community-driven patch that transforms GIMP (GNU Image Manipulation Program) into a layout that feels familiar to Adobe Photoshop users. If you're switching from Photoshop to GIMP and want to feel at home right away, PhotoGIMP is for you. New to GIMP? GIMP is a free and open-source image editor available for Linux, macOS, and",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.633382+00:00",
+      "date_iso": "2026-07-09T19:46:20.151232+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -72,7 +72,7 @@
       "tool_url": "https://github.com/alibaba/zvec",
       "description": "A lightweight, lightning-fast, in-process vector database English | 中文 🚀 Quickstart | 🏠 Home | 📚 Docs | 📊 Benchmarks | 🔎 DeepWiki | 🎮 Discord | 🐦 X (Twitter) Zvec is an open-source, in-process vector database — lightweight, lightning-fast, and designed to embed directly into applications. Battle-tested within Alibaba Group, it delivers production-grade, low-latency and scalable similarity search w",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.619940+00:00",
+      "date_iso": "2026-07-09T19:46:20.137844+00:00",
       "categories": [
         "images",
         "musique",
@@ -85,7 +85,7 @@
       "tool_url": "https://github.com/obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works. Superpowers Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them. We're Hiring! We're hiring someone to help out full time with Superpowers community and code work. You can read about th",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.613717+00:00",
+      "date_iso": "2026-07-09T19:46:20.131739+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -98,7 +98,7 @@
       "tool_url": "https://github.com/asgeirtj/system_prompts_leaks",
       "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly. As seen in The Washington Post: See the hidden rules behind AI. Then use them to rewrite this article. (May 11, 2026) Sys",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.604742+00:00",
+      "date_iso": "2026-07-09T19:46:20.122978+00:00",
       "categories": [
         "images",
         "voix",
@@ -111,7 +111,7 @@
       "tool_url": "https://github.com/iOfficeAI/OfficeCLI",
       "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required. OfficeCLI OfficeCLI is the world's first and the best Office suite designed for AI agents. Give any AI agent full control over Word, Excel, and PowerPoint — in one line of code. Open-source. Single",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.575833+00:00",
+      "date_iso": "2026-07-09T19:46:20.095419+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -124,7 +124,7 @@
       "tool_url": "https://github.com/argoproj/argo-cd",
       "description": "Declarative Continuous Deployment for Kubernetes Releases: Code: Social: Argo CD - Declarative Continuous Delivery for Kubernetes What is Argo CD? Argo CD is a declarative GitOps continuous delivery tool for Kubernetes. Why Argo CD? Application definitions, configurations, and environments should be declarative and version controlled. Application deployment and lifecycle management should be autom",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.528471+00:00",
+      "date_iso": "2026-07-09T19:46:20.050255+00:00",
       "categories": [
         "images",
         "chatbot",
@@ -137,7 +137,7 @@
       "tool_url": "https://github.com/mvanhorn/last30days-skill",
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary /last30days An AI agent-led search engine scored by upvotes, likes, and real money - not editors. This README tracks the current v3 pipeline. The runtime skill spec lives in skills/last30days/SKILL.md , which is the source of truth for the latest command and setup b",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.520311+00:00",
+      "date_iso": "2026-07-09T19:46:20.044249+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -150,7 +150,7 @@
       "tool_url": "https://github.com/prisma/prisma",
       "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB Prisma Quickstart • Website • Docs • Examples • Blog • Discord • Twitter • Youtube What is Prisma? Prisma ORM is a next-generation ORM that consists of these tools: Prisma Client : Auto-generated and type-safe query builder for Node.js & TypeScript Prisma Migrate : Declarative dat",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.503225+00:00",
+      "date_iso": "2026-07-09T19:46:20.027867+00:00",
       "categories": [
         "vidéo",
         "musique",
@@ -163,7 +163,7 @@
       "tool_url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
       "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies. Agents remember,Humans innovate. Highlights · Overview · Core Technology · Features · Quick Start English · 简体中文 ✨ Highlights TencentDB Agent Memory = symbolic short-term memory + layered long-term memory. Symbolic short-term memory offloads heavy tool",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.491813+00:00",
+      "date_iso": "2026-07-09T19:46:20.017043+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -176,7 +176,7 @@
       "tool_url": "https://github.com/ruvnet/RuView",
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. π RuView See through walls with WiFi Turn ordinary WiFi into a spatial intelligence / sensing system. Detect people, measure breathing and heart rate, track movement, and monitor rooms — through walls, in the dark, with no cameras or wearab",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.457818+00:00",
+      "date_iso": "2026-07-09T19:46:19.991017+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -189,7 +189,7 @@
       "tool_url": "https://github.com/addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents. Agent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development. DEFINE PLAN BUILD VERIFY",
       "source": "GitHub Trending",
-      "date_iso": "2026-07-09T16:22:08.391884+00:00",
+      "date_iso": "2026-07-09T19:46:19.928200+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -202,7 +202,7 @@
       "tool_url": "https://www.bensbites.com/p/elon-doubled-limits",
       "description": "Free ChatGPT got instantly better.",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-09T16:22:07.856593+00:00",
+      "date_iso": "2026-07-09T19:46:19.248955+00:00",
       "categories": [
         "chatbot"
       ],
@@ -213,7 +213,7 @@
       "tool_url": "https://www.bensbites.com/p/bens-builds-3-an-email-app",
       "description": "They have some challenges 😅",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-09T16:22:07.856467+00:00",
+      "date_iso": "2026-07-09T19:46:19.248827+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -222,7 +222,7 @@
       "tool_url": "https://www.bensbites.com/p/hey-siri-meet-ai",
       "description": "what's the deal with loops",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-09T16:22:07.855789+00:00",
+      "date_iso": "2026-07-09T19:46:19.248144+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -231,7 +231,7 @@
       "tool_url": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
       "description": "little tools for making life easier",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-09T16:22:07.855542+00:00",
+      "date_iso": "2026-07-09T19:46:19.247892+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -240,7 +240,7 @@
       "tool_url": "https://www.bensbites.com/p/gpt-56-is-here-but",
       "description": "plus the insanity of inference",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-09T16:22:07.855239+00:00",
+      "date_iso": "2026-07-09T19:46:19.247580+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -249,10 +249,163 @@
       "tool_url": "https://www.bensbites.com/p/grok-x-cursor",
       "description": "More Fable, GPT-5.6 and new ChatGPT voice",
       "source": "Ben's Bites",
-      "date_iso": "2026-07-09T16:22:07.854958+00:00",
+      "date_iso": "2026-07-09T19:46:19.241877+00:00",
       "categories": [
         "voix",
         "chatbot"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Claude Status Light",
+      "tool_url": "https://github.com/whatadewitt/claude-status-light",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T19:36:28+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "A prompt bar that lets my website edit itself (self-hosted Claude Code)",
+      "tool_url": "https://github.com/vibhasjain/agent-keyboard",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T19:08:14+00:00",
+      "categories": [
+        "open source",
+        "site web"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Fudge – Web Design References for AI",
+      "tool_url": "https://design.withfudge.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T18:55:56+00:00",
+      "categories": [
+        "infographie"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Onboard-CLI–a fast developer tool built in Go uses AST and LLM",
+      "tool_url": "https://onboard-cli.vercel.app/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T18:44:06+00:00",
+      "categories": [
+        "LLM"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Paris-based AI voice startup Gradium raises $100M seed, backed by Nvidia",
+      "tool_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/",
+      "description": "The company is using the cash to open an office in the Bay Area and compete for talent there, \"strengthening its position at the heart of the world's leading AI ecosystem.\"",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-07-09T18:34:35+00:00",
+      "categories": [
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "How did the government decide OpenAI’s frontier model was safe to release?",
+      "tool_url": "https://techcrunch.com/2026/07/09/how-did-the-government-decide-openais-frontier-model-was-safe-to-release/",
+      "description": "\"Exactly what that dialog looked like between the government and Anthropic and OpenAI is unclear.\"",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-07-09T18:22:39+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Pylon Sync, an agent-first full-stack realtime framework",
+      "tool_url": "https://www.pylonsync.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T17:38:18+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "CodeAlmanac – Self-updating wiki for your coding agent (local, Apache)",
+      "tool_url": "https://github.com/AlmanacCode/codealmanac",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T17:21:18+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "EdgeSpeech, on-device speech-to-speech for React Native",
+      "tool_url": "https://github.com/switchboard-sdk/edgespeech",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T17:15:47+00:00",
+      "categories": [
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Daily vibe-coding video games, day 87: Jungle Chess",
+      "tool_url": "https://gamevibe.us/87-jungle-chess",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T16:59:16+00:00",
+      "categories": [
+        "vidéo",
+        "jeu vidéo"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Zero2Robot – A free, from-scratch course on how robots learn",
+      "tool_url": "https://zero2robot.com/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T16:50:13+00:00",
+      "categories": [
+        "chatbot",
+        "éducation"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Atomic AST hot-reloads and local Datalog in Rust to audit AI commits",
+      "tool_url": "https://github.com/lambda-alpha-labs/Graphenium",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T16:42:36+00:00",
+      "categories": [
+        "données"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Outside Agent – Build SMS Agents from Claude Code",
+      "tool_url": "https://outsideagent.ai/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T16:26:29+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "MemLedger – AI agent memory you can trust",
+      "tool_url": "https://github.com/riktar/memledger",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-07-09T16:24:19+00:00",
+      "categories": [
+        "automatisation"
       ],
       "pricing": "unknown"
     },
@@ -308,115 +461,12 @@
       "pricing": "unknown"
     },
     {
-      "name": "Blocks.ai – control plane and network layer for agents",
-      "tool_url": "https://blocks.ai",
+      "name": "Policy enforcement for Claude Code, Cursor, and Codex",
+      "tool_url": "https://kastra.ai/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-07-09T15:26:13+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "TensorRT-LLM running natively on Windows (no WSL)",
-      "tool_url": "https://baremetalrt.ai/app?mode=1gpu",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-07-09T14:18:27+00:00",
-      "categories": [
-        "LLM"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "ContextNest versioned, governed context for AI agents (open-source CLI)",
-      "tool_url": "https://promptowl.ai/resources/building-a-viewable-second-brain-with-context/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-07-09T14:11:40+00:00",
-      "categories": [
-        "texte",
-        "automatisation",
-        "open source"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "Tokenstead, find AI models for your hardware",
-      "tool_url": "https://tokenstead.ai/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-07-09T14:10:48+00:00",
+      "date_iso": "2026-07-09T15:26:24+00:00",
       "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "EvenKeel – a free financial planning chatbot",
-      "tool_url": "https://evenkeel.c6e.me/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-07-09T14:06:32+00:00",
-      "categories": [
-        "chatbot"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "A zero-dependency auditor for decision records in AI-touched systems",
-      "tool_url": "https://github.com/forgedculture/legibility-field-kit",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-07-09T13:58:13+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Geojam – a daily music and geography game",
-      "tool_url": "https://geojam.world/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-07-09T13:55:04+00:00",
-      "categories": [
-        "musique",
-        "jeu vidéo"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Magpie-search, Federated, local-first search for an AI",
-      "tool_url": "https://github.com/xfloukiex-lab/magpie-search",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-07-09T13:36:39+00:00",
-      "categories": [
-        "recherche"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "FableCut – A browser video editor AI agents can drive (zero deps)",
-      "tool_url": "https://github.com/ronak-create/FableCut",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-07-09T13:23:10+00:00",
-      "categories": [
-        "vidéo",
-        "automatisation",
-        "navigateur"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Virena, a minimal vision-language-action robot model you can read",
-      "tool_url": "https://github.com/BuceaGeorgia/VIRENA",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-07-09T13:17:29+00:00",
-      "categories": [
-        "chatbot",
-        "langues"
-      ],
       "pricing": "unknown"
     },
     {
@@ -566,41 +616,6 @@
       "pricing": "unknown"
     },
     {
-      "name": "OpenAI releases new voice models for more natural live conversations",
-      "tool_url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
-      "description": "OpenAI says its new voice mode can speak and listen at the same time, a key ability for live translation.",
-      "source": "TechCrunch AI",
-      "date_iso": "2026-07-08T17:00:00+00:00",
-      "categories": [
-        "voix",
-        "chatbot",
-        "langues"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "These AI startups are growing  revenue at faster and faster rates",
-      "tool_url": "https://techcrunch.com/2026/07/08/these-ai-startups-are-growing-revenue-at-faster-and-faster-rates/",
-      "description": "There are a lot of fast-growing AI startups, but some are growing even faster, they say.",
-      "source": "TechCrunch AI",
-      "date_iso": "2026-07-08T15:41:06+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Your gaming data could be the secret to AGI, according to this Bezos-backed startup",
-      "tool_url": "https://techcrunch.com/podcast/your-gaming-data-could-be-the-secret-to-agi-according-to-this-bezos-backed-startup/",
-      "description": "When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move through space and time — an essential skill for producing intelligence that generalizes. That gap, it turns out, might be filled by gaming data. That’s the bet behi",
-      "source": "TechCrunch AI",
-      "date_iso": "2026-07-08T13:00:00+00:00",
-      "categories": [
-        "chatbot",
-        "texte",
-        "données"
-      ],
-      "pricing": "unknown"
-    },
-    {
       "name": "Coasty",
       "tool_url": "https://www.producthunt.com/products/coasty",
       "description": "A Computer-Use-Agent that runs legacy software like a human",
@@ -632,18 +647,6 @@
       "pricing": "unknown"
     },
     {
-      "name": "Hot French startup ZML releases free product to speed inference across lots of AI chips",
-      "tool_url": "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/",
-      "description": "ZML, a hot French AI startup endorsed by Turing Award winner Yann LeCun, has now released ZML/LLMD, software that could make running AI less costly.",
-      "source": "TechCrunch AI",
-      "date_iso": "2026-07-08T08:00:00+00:00",
-      "categories": [
-        "automatisation",
-        "LLM"
-      ],
-      "pricing": "free"
-    },
-    {
       "name": "Just Ask by SEORCE",
       "tool_url": "https://www.producthunt.com/products/seorce",
       "description": "Talk to your SEO & AI Visibility data on WhatsApp.",
@@ -651,17 +654,6 @@
       "date_iso": "2026-07-08T02:13:36-07:00",
       "categories": [
         "données"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Meta just launched a new AI generator, Muse Image, and users are already pushing back over use of th",
-      "tool_url": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
-      "description": "The new image-generating model has numerous use cases, including advertising and decorating, and creator-based opportunities.",
-      "source": "TechCrunch AI",
-      "date_iso": "2026-07-07T22:18:10+00:00",
-      "categories": [
-        "images"
       ],
       "pricing": "unknown"
     },
