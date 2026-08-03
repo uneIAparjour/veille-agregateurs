@@ -1,17 +1,43 @@
 {
-  "generated_at": "2026-08-02T19:09:32.859321+00:00",
-  "count": 63,
+  "generated_at": "2026-08-03T19:36:33.525320+00:00",
+  "count": 64,
   "tools": [
     {
-      "name": "bytedance/deer-flow",
-      "tool_url": "https://github.com/bytedance/deer-flow",
-      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours. 🦌 DeerFlow - 2.0 English | 中文 | 日本語 | Français | Русский On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version",
+      "name": "esengine/DeepSeek-Reasonix",
+      "tool_url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running. English · 简体中文 · Guide · ACP · Spec · Website · Discord A DeepSeek-native AI coding agent for your terminal. A config- and plugin-driven harness — a single static Go binary, tuned around DeepSeek's prefix cache so token costs stay low across long sessions. Important Community · 加入社区 — bi",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.331395+00:00",
+      "date_iso": "2026-08-03T19:36:32.515572+00:00",
       "categories": [
         "images",
         "vidéo",
         "voix"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "antirez/ds4",
+      "tool_url": "https://github.com/antirez/ds4",
+      "description": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm DwarfStar is a small native inference engine optimized first for DeepSeek V4 Flash . It also supports GLM 5.2 and, on very high-memory machines, DeepSeek V4 PRO . It is self-contained and deliberately narrow, not a general GGUF runner. Model loading, prompt rendering, tool calls, KV state, the HTTP server, and the coding agen",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-03T19:36:32.503390+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "voix"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "HarbourMasters/Lighthouse",
+      "tool_url": "https://github.com/HarbourMasters/Lighthouse",
+      "description": "Lighthouse Harbour Masters port of Banjo Kazooie Lead Developer: Malkierian Developers: JeodC Caladius Discord Official Discord: https://discord.com/invite/shipofharkinian If you're having any trouble after reading through this README , feel free ask for help in the Lighthouse text channels. Please keep in mind that we do not condone piracy. Quick Start Lighthouse does not include any copyrighted",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-03T19:36:32.477035+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "texte"
       ],
       "pricing": "free"
     },
@@ -20,7 +46,7 @@
       "tool_url": "https://github.com/NomaDamas/k-skill",
       "description": "한국인을 위한 스킬 모음집 - 에이전트를 한국인으로 k-skill 한국인인가요? 이 스킬 모음집을 다운로드 받아 두세요. 언젠가 무조건 쓸 때가 옵니다! SRT, KTX, KBO, 로또, 당근, 쿠팡, 카톡, 정부24, 홈택스 등등 귀찮은 것을 AI 에이전트에게 다 시켜버리세요. Claude Code, Codex, OpenCode, OpenClaw/ClawHub 등 각종 코딩 에이전트 지원합니다. 추가 클라이언트 API 레이어는 불필요합니다. 필요한 경우 k-skill-proxy 같은 프록시 서버에 HTTP 요청만 넣으면 됩니다. 설치 # 전체 스킬 설치 npx --yes skills add NomaDamas/k-skill --all -g # 특정 스킬만 설치 npx --yes skills add Noma",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.296807+00:00",
+      "date_iso": "2026-08-03T19:36:32.472133+00:00",
       "categories": [
         "vidéo",
         "chatbot",
@@ -29,24 +55,11 @@
       "pricing": "unknown"
     },
     {
-      "name": "TencentCloud/TencentDB-Agent-Memory",
-      "tool_url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks. Agents remember. Humans innovate. Installation · What is it? · Team Play · Technical Implementation · Benchmark English · 简体中文 Latest: Team Memory Bet",
+      "name": "mvanhorn/last30days-skill",
+      "tool_url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary /last30days English | Français | Deutsch | Español | Português (Brasil) | 日本語 | 简体中文 An AI agent-led search engine scored by upvotes, likes, and real money - not editors. This README tracks the current v3 pipeline. The runtime skill spec lives in skills/last30days/S",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.266199+00:00",
-      "categories": [
-        "images",
-        "voix",
-        "chatbot"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "microsoft/TRELLIS.2",
-      "tool_url": "https://github.com/microsoft/TRELLIS.2",
-      "description": "Native and Compact Structured Latents for 3D Generation Native and Compact Structured Latents for 3D Generation https://github.com/user-attachments/assets/63b43a7e-acc7-4c81-a900-6da450527d8f (Compressed version due to GitHub size limits. See the full-quality video on our project page!) TRELLIS.2 is a state-of-the-art large 3D generative model (4B parameters) designed for high-fidelity image-to-3D",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.254900+00:00",
+      "date_iso": "2026-08-03T19:36:32.439265+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -55,11 +68,24 @@
       "pricing": "free"
     },
     {
-      "name": "ansible/ansible",
-      "tool_url": "https://github.com/ansible/ansible",
-      "description": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com. Ansible Ansible is a radically simple IT automation system. I",
+      "name": "TencentCloud/TencentDB-Agent-Memory",
+      "tool_url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks. Agents remember. Humans innovate. Installation · What is it? · Team Play · Technical Implementation · Benchmark English · 简体中文 Latest: Team Memory Bet",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.246787+00:00",
+      "date_iso": "2026-08-03T19:36:32.412206+00:00",
+      "categories": [
+        "images",
+        "voix",
+        "chatbot"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Panniantong/Agent-Reach",
+      "tool_url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. 👁️ Agent Reach 给你的 AI Agent 一键装上互联网能力 当下最稳的接入方式，替你选好、装好、体检好——接入方式会换代，你不用操心 快速开始 · English · 日本語 · 한국어 · 支持平台 · 设计理念 为什么需要 Agent Reach？ AI Agent 已经能帮你写代码、改文档、管项目——但你让它去网上找点东西，它就抓瞎了： 📺 \"帮我看看这个 YouTube 教程讲了什么\" → 看不了 ，拿不到字幕 🐦 \"帮我搜一下推特上大家怎么评价这个产品\" → 搜不了 ，Tw",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-03T19:36:32.399853+00:00",
       "categories": [
         "chatbot",
         "texte",
@@ -68,80 +94,28 @@
       "pricing": "unknown"
     },
     {
-      "name": "iv-org/invidious",
-      "tool_url": "https://github.com/iv-org/invidious",
-      "description": "Invidious is an alternative front-end to YouTube Invidious An open source alternative front-end to YouTube Website • Instances list • FAQ • Documentation • Contribute • Donate Chat with us: Screenshots Player Preferences Subscriptions Features User features Lightweight No ads No tracking No JavaScript required Light/Dark themes Customizable homepage Subscriptions independent from Google Notificati",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.243832+00:00",
-      "categories": [
-        "vidéo",
-        "musique",
-        "chatbot"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "abus-aikorea/voice-pro",
-      "tool_url": "https://github.com/abus-aikorea/voice-pro",
-      "description": "Gradio WebUI for creators and developers, featuring key TTS (Edge-TTS, kokoro) and zero-shot Voice Cloning (E2 & F5-TTS, CosyVoice), with Whisper audio processing, YouTube download, Demucs vocal isolation, and multilingual translation. Voice-Pro The best AI speech recognition, translation, and multilingual dubbing solution 🚀 🎙️ An AI-powered web application for speech recognition, translation, and",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.239068+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "voix"
-      ],
-      "pricing": "freemium"
-    },
-    {
-      "name": "huggingface/speech-to-speech",
-      "tool_url": "https://github.com/huggingface/speech-to-speech",
-      "description": "Build local voice agents with open-source models Speech To Speech: Build voice agents with open-source models A low-latency, fully modular voice-agent pipeline: VAD -> STT -> LLM -> TTS , exposed through an OpenAI Realtime-compatible WebSocket API . Every component is swappable. The LLM slot speaks OpenAI-compatible protocols, so you can point it at a hosted provider, at HF Inference Providers , o",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.218047+00:00",
-      "categories": [
-        "vidéo",
-        "voix",
-        "musique"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "github/gh-stack",
-      "tool_url": "https://github.com/github/gh-stack",
-      "description": "GitHub Stacked PRs GitHub Stacked PRs A GitHub CLI extension for managing stacked branches and pull requests. Stacked PRs break large changes into a chain of small, reviewable pull requests that build on each other. gh stack automates the tedious parts — creating branches, keeping them rebased, setting correct PR base branches, and navigating between layers. Installation gh extension install githu",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.200731+00:00",
-      "categories": [
-        "vidéo",
-        "voix",
-        "chatbot"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "github/copilot-sdk",
-      "tool_url": "https://github.com/github/copilot-sdk",
-      "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services GitHub Copilot CLI SDKs Agents for every app. Embed Copilot's agentic workflows in your application with the GitHub Copilot SDK for Python, TypeScript, Go, .NET, Java, and Rust. The GitHub Copilot SDK exposes the same engine behind Copilot CLI: a production-tested agent runtime you can invoke programmatically. No need t",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.171248+00:00",
-      "categories": [
-        "documents",
-        "automatisation",
-        "LLM"
-      ],
-      "pricing": "freemium"
-    },
-    {
       "name": "microsoft/generative-ai-for-beginners",
       "tool_url": "https://github.com/microsoft/generative-ai-for-beginners",
       "description": "21 Lessons, Get Started Building with Generative AI 21 Lessons teaching everything you need to know to start building Generative AI applications 🌐 Multi-Language Support Supported via GitHub Action (Automated & Always Up-to-Date) Arabic | Bengali | Bulgarian | Burmese (Myanmar) | Chinese (Simplified) | Chinese (Traditional, Hong Kong) | Chinese (Traditional, Macau) | Chinese (Traditional, Taiwan)",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.164883+00:00",
+      "date_iso": "2026-08-03T19:36:32.383898+00:00",
       "categories": [
         "images",
         "vidéo",
         "voix"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "different-ai/openwork",
+      "tool_url": "https://github.com/different-ai/openwork",
+      "description": "The open-source alternative to Claude Cowork (powered by opencode) OpenWork OpenWork is a free, open-source desktop app made for sharing AI workflows. It is an open-source alternative to Claude Cowork and Codex for macOS, Windows, and Linux. Add one OpenWork MCP to Codex, Claude Code, Cursor, or another compatible agent and reuse the same skills, MCPs, and connected services across your tools, tea",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-03T19:36:32.371374+00:00",
+      "categories": [
+        "chatbot",
+        "documents",
+        "automatisation"
       ],
       "pricing": "free"
     },
@@ -150,7 +124,7 @@
       "tool_url": "https://github.com/zhaoxuya520/reverse-skill",
       "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端 reverse-skill Cybersecurity Skills Router · 逆向技能路由包 Navi",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.153249+00:00",
+      "date_iso": "2026-08-03T19:36:32.368718+00:00",
       "categories": [
         "voix",
         "documents",
@@ -159,11 +133,50 @@
       "pricing": "free"
     },
     {
+      "name": "codecrafters-io/build-your-own-x",
+      "tool_url": "https://github.com/codecrafters-io/build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch. Build your own <insert-technology-here> This repository is a compilation of well-written, step-by-step guides for re-creating our favorite technologies from scratch. What I cannot create, I do not understand — Richard Feynman. It's a great way to learn. 3D Renderer AI Model Augmented Reality BitTorrent Client Blockchain / Cr",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-03T19:36:32.359593+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "iv-org/invidious",
+      "tool_url": "https://github.com/iv-org/invidious",
+      "description": "Invidious is an alternative front-end to YouTube Invidious An open source alternative front-end to YouTube Website • Instances list • FAQ • Documentation • Contribute • Donate Chat with us: Screenshots Player Preferences Subscriptions Features User features Lightweight No ads No tracking No JavaScript required Light/Dark themes Customizable homepage Subscriptions independent from Google Notificati",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-03T19:36:32.326043+00:00",
+      "categories": [
+        "vidéo",
+        "musique",
+        "chatbot"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "lyogavin/airllm",
+      "tool_url": "https://github.com/lyogavin/airllm",
+      "description": "AirLLM 70B inference with single 4GB GPU Quickstart | Configurations | MacOS | Example notebooks | FAQ AirLLM dramatically reduces inference memory usage, letting 70B large language models run on a single 4GB GPU card — without quantization, distillation, or pruning. You can even run 405B Llama 3.1 on 8GB , DeepSeek-V3 (671B) on ~12GB , and Kimi K3 (2.8T) — the largest open-source model released t",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-03T19:36:32.320773+00:00",
+      "categories": [
+        "musique",
+        "chatbot",
+        "texte"
+      ],
+      "pricing": "free"
+    },
+    {
       "name": "usekaneo/kaneo",
       "tool_url": "https://github.com/usekaneo/kaneo",
       "description": "🎯 All you need. Nothing you don't. Open source project management that works for you, not against you. Quick Start | Website | Cloud | Discord Why Kaneo? After years of using bloated, overcomplicated project management platforms that distracted from actual work, we built Kaneo to be different. The problem with most tools isn't that they lack features—it's that they have too many . Every notificati",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.141678+00:00",
+      "date_iso": "2026-08-03T19:36:32.312890+00:00",
       "categories": [
         "images",
         "voix",
@@ -172,24 +185,11 @@
       "pricing": "free"
     },
     {
-      "name": "paperswithbacktest/awesome-systematic-trading",
-      "tool_url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
-      "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading. Awesome Systematic Trading 希望阅读中文版？点我 We are collecting a list of resources papers, softwares, books, articles for finding, developing, and running systematic trading (quantitative trading) strategies. What will you find here? 97 libraries and packages for research and live trading 40+ strate",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.134876+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "chatbot"
-      ],
-      "pricing": "free"
-    },
-    {
       "name": "microsoft/AI-For-Beginners",
       "tool_url": "https://github.com/microsoft/AI-For-Beginners",
       "description": "12 Weeks, 24 Lessons, AI for All! Artificial Intelligence for Beginners - A Curriculum AI For Beginners - Sketchnote by @girlie_mac Explore the world of Artificial Intelligence (AI) with our 12-week, 24-lesson curriculum! It includes practical lessons, quizzes, and labs. The curriculum is beginner-friendly and covers tools like TensorFlow and PyTorch, as well as ethics in AI 🌐 Multi-Language Suppo",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-02T19:09:32.079502+00:00",
+      "date_iso": "2026-08-03T19:36:32.306657+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -202,7 +202,7 @@
       "tool_url": "https://www.bensbites.com/p/hey-siri-meet-ai",
       "description": "what's the deal with loops",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-02T19:09:31.508657+00:00",
+      "date_iso": "2026-08-03T19:36:31.774493+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -211,7 +211,7 @@
       "tool_url": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
       "description": "little tools for making life easier",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-02T19:09:31.508443+00:00",
+      "date_iso": "2026-08-03T19:36:31.774306+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -220,7 +220,7 @@
       "tool_url": "https://www.bensbites.com/p/gpt-56-is-here-but",
       "description": "plus the insanity of inference",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-02T19:09:31.508253+00:00",
+      "date_iso": "2026-08-03T19:36:31.774100+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -229,7 +229,7 @@
       "tool_url": "https://www.bensbites.com/p/grok-x-cursor",
       "description": "More Fable, GPT-5.6 and new ChatGPT voice",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-02T19:09:31.508049+00:00",
+      "date_iso": "2026-08-03T19:36:31.773913+00:00",
       "categories": [
         "voix",
         "chatbot"
@@ -241,7 +241,7 @@
       "tool_url": "https://www.bensbites.com/p/how-to-use-gpt-56",
       "description": "new desktop app and hosted sites in ChatGPT",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-02T19:09:31.507949+00:00",
+      "date_iso": "2026-08-03T19:36:31.773813+00:00",
       "categories": [
         "chatbot"
       ],
@@ -252,7 +252,7 @@
       "tool_url": "https://www.bensbites.com/p/better-design-than-fable",
       "description": "unsolved maths problems vs ai models, who'll win?",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-02T19:09:31.507783+00:00",
+      "date_iso": "2026-08-03T19:36:31.773656+00:00",
       "categories": [
         "infographie"
       ],
@@ -263,7 +263,7 @@
       "tool_url": "https://www.bensbites.com/p/opus-5-fable-5",
       "description": "Codex plus Voice is the new openclaw",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-02T19:09:31.507606+00:00",
+      "date_iso": "2026-08-03T19:36:31.773486+00:00",
       "categories": [
         "voix"
       ],
@@ -274,91 +274,93 @@
       "tool_url": "https://www.bensbites.com/p/1-billion-chatgpt-users",
       "description": "tinkering with tldraw is so much fun",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-02T19:09:31.507426+00:00",
+      "date_iso": "2026-08-03T19:36:31.773333+00:00",
       "categories": [
         "chatbot"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "Kota – Bring AI agent CLIs into the same room",
-      "tool_url": "https://www.kota.place/",
+      "name": "MoneyCo – A coding agent built for accounting",
+      "tool_url": "https://thecompany.money/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-08-02T18:59:32+00:00",
+      "date_iso": "2026-08-03T19:16:37+00:00",
       "categories": [
         "automatisation"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "Mapping Jensen Huang's five-layer AI stack to engineering degrees",
-      "tool_url": "https://ai-five-layer-map.pages.dev/",
+      "name": "Apple finally fixed Siri. So why does it feel anticlimactic?",
+      "tool_url": "https://techcrunch.com/2026/08/03/apple-finally-fixed-siri-so-why-does-it-feel-anticlimactic/",
+      "description": "Apple’s long-awaited AI overhaul finally makes Siri the assistant it was always supposed to be. But after years of delays, the launch lands in an AI landscape where chatbots have evolved into agents that can code, reason, create media, and complete complex tasks. Siri AI is genuinely useful, yet it arrives at a moment when simply being a capable AI assistant no longer feels revolutionary.",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-08-03T18:43:43+00:00",
+      "categories": [
+        "chatbot",
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "RouteKit – a model gateway for coding subscriptions",
+      "tool_url": "https://routekit.velum-labs.com",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-08-02T18:12:52+00:00",
+      "date_iso": "2026-08-03T18:19:52+00:00",
       "categories": [],
       "pricing": "unknown"
     },
     {
-      "name": "Growth-Ratio Energy Function as Leading Indicator of Agent Task Failure",
-      "tool_url": "https://vishalvermalabs.com/papers/empirical-lyapunov-stability-agent-failure/",
+      "name": "Open-source tool to check if ChatGPT recommends your business",
+      "tool_url": "https://github.com/d08m/crazyseo",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-08-02T17:54:39+00:00",
+      "date_iso": "2026-08-03T18:16:02+00:00",
       "categories": [
-        "automatisation"
+        "chatbot",
+        "open source"
       ],
-      "pricing": "unknown"
+      "pricing": "free"
     },
     {
-      "name": "Atomadic – Zero-LLM Sub-200us MCP Action Interlock",
-      "tool_url": "https://atomadic.tech/",
+      "name": "Robinscan – A real-time block explorer for Robinhood Chain",
+      "tool_url": "https://robinscan.io",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-08-02T17:25:08+00:00",
-      "categories": [
-        "LLM"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "MCP Emails – An MCP Server for Gmail and IMAP/SMTP Inboxes",
-      "tool_url": "https://github.com/Albretsen/MCPEmails/tree/main/self-host",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T17:15:50+00:00",
+      "date_iso": "2026-08-03T18:11:35+00:00",
       "categories": [],
       "pricing": "unknown"
     },
     {
-      "name": "Sprocket – The Best AI Agent for Hardware and Software Development",
-      "tool_url": "https://sprocket-demo.spikonado.com",
+      "name": "Renovate Log Parser – Detect and Analyse Renovate Bot Problems",
+      "tool_url": "https://github.com/MShekow/renovate-log-parser",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-08-02T16:26:19+00:00",
+      "date_iso": "2026-08-03T18:06:40+00:00",
       "categories": [
-        "automatisation"
+        "chatbot"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "Replaybook, an Infrastructure Agent Evaluation Framework",
-      "tool_url": "https://github.com/ducks/replaybook",
+      "name": "Hacker News with AI stories filtered out",
+      "tool_url": "https://hcker.news/?view=frontpage&ai=exclude",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-08-02T15:52:25+00:00",
+      "date_iso": "2026-08-03T17:39:56+00:00",
       "categories": [
-        "automatisation"
+        "actualités"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "A fixed harness for comparing LLM agent memory systems",
-      "tool_url": "https://github.com/AML-memory/agent-memory-leaderboard",
+      "name": "11-Node Agentic RAG with MCP and PII Shield Under 512MB RAM",
+      "tool_url": "https://agentic-rag-financial-parser.onrender.com/",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-08-02T15:18:00+00:00",
+      "date_iso": "2026-08-03T17:19:29+00:00",
       "categories": [
         "automatisation",
         "LLM"
@@ -366,115 +368,185 @@
       "pricing": "unknown"
     },
     {
-      "name": "DFAH-Bench – same agent decision, different tool paths",
-      "tool_url": "https://github.com/ibm-client-engineering/output-drift-financial-llms",
+      "name": "Find the perfect name for your startup, app or domain",
+      "tool_url": "https://www.howdowesay.com",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-08-02T15:02:42+00:00",
+      "date_iso": "2026-08-03T16:41:54+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "TokenMaxxer – track every AI token you spend across your coding tools",
+      "tool_url": "https://tokenmaxxer.xyz",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-03T16:31:05+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "FutureSearch, AI forecasting you can verify",
+      "tool_url": "https://futuresearch.ai/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-03T16:27:59+00:00",
+      "categories": [
+        "recherche"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Product analytics (and evals) for agent sessions on your MCP",
+      "tool_url": "https://armature.tech/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-03T16:17:59+00:00",
+      "categories": [
+        "automatisation",
+        "données",
+        "youtube"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Rudder – Measure your own input on AI generated code",
+      "tool_url": "https://github.com/RudderCode/Rudder",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-03T16:07:40+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Book-skills – Agent Skills distilled from mgmt and programming books",
+      "tool_url": "https://github.com/DamiMartinez/book-skills",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-03T15:51:09+00:00",
       "categories": [
         "automatisation"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "MCP server so AI agents can screen markets in plain English",
-      "tool_url": "https://github.com/xcreener/xcreener-mcp",
+      "name": "ModelFuzz – Open-source runtime guardrails for AI agents",
+      "tool_url": "https://github.com/higagan/modelfuzz",
       "description": "",
       "source": "Hacker News",
-      "date_iso": "2026-08-02T14:38:46+00:00",
+      "date_iso": "2026-08-03T15:50:28+00:00",
+      "categories": [
+        "automatisation",
+        "open source"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Self-hosted pet diary built on Frigate and a local vision model",
+      "tool_url": "https://github.com/bolt12/pet-report",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-03T15:21:34+00:00",
+      "categories": [
+        "open source"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Jotchi, a smart scratchpad for the busy brain",
+      "tool_url": "https://jotchi.com/app",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-03T15:04:25+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Lucin -static analysis for AI agents with published false-negative list",
+      "tool_url": "https://lucin.pages.dev/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-03T15:03:08+00:00",
       "categories": [
         "automatisation"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "Rails Agent – Build Autonomous AI Agents Natively in Ruby on Rails",
-      "tool_url": "https://rails-agent.com",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T14:25:01+00:00",
+      "name": "A Marc Benioff-backed startup thinks AI can solve the AI deployment problem",
+      "tool_url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
+      "description": "June emerged from stealth today with a $20 million pre-seed round to make AI adoption simpler.",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-08-03T10:00:00+00:00",
       "categories": [
         "automatisation"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "CC Meter, a Windows Tray Gauge for Claude Code and Codex Limits",
-      "tool_url": "https://github.com/silverdolphin863/claude-code-meter",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T14:19:25+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Claude Code takes forever, so I filled the waiting with Pokémon",
-      "tool_url": "https://github.com/zamarrowski/claudemon",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T14:05:50+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Email client TUI with messenger-like layout UI",
-      "tool_url": "https://gitlab.com/Linkinverse/mailchat",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T13:57:33+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Crest, a MacBook notch control room that answers Claude Code prompts",
-      "tool_url": "https://crestnotch.app/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T13:46:38+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Maverik – Benchmark, compare and cost-predict your MCP agents",
-      "tool_url": "https://github.com/langens-jonathan/maverik",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T13:35:56+00:00",
+      "name": "MascotAI",
+      "tool_url": "https://www.producthunt.com/products/mascotai",
+      "description": "Animated SVG mascot studios for apps that need a personality",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-02T23:19:32-07:00",
       "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "iOS Style Bottom Sheet in Vanilla JavaScript",
-      "tool_url": "https://www.cssscript.com/ios-bottom-sheet/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T13:02:34+00:00",
-      "categories": [
-        "chatbot",
+        "musique",
         "application"
       ],
       "pricing": "unknown"
     },
     {
-      "name": "Loop-me – my simple generative art loop project",
-      "tool_url": "https://john-paul-ruf.github.io/loop-me/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T12:39:14+00:00",
+      "name": "Murmell",
+      "tool_url": "https://www.producthunt.com/products/murmell",
+      "description": "Cloud canvas where your team and AI agents works together",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-02T19:46:50-07:00",
+      "categories": [
+        "automatisation",
+        "infographie"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "mpai",
+      "tool_url": "https://www.producthunt.com/products/mpai",
+      "description": "Make existing Codex and Claude Code sessions multiplayer",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-02T13:12:27-07:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "claudemon",
+      "tool_url": "https://www.producthunt.com/products/claudemon",
+      "description": "Wild Pokémon appear while you wait for Claude Code",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-02T10:23:42-07:00",
       "categories": [],
       "pricing": "unknown"
     },
     {
-      "name": "Handoff is await human() for AI agents",
-      "tool_url": "https://github.com/OmegaAgent/handoff",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-02T12:20:56+00:00",
+      "name": "Inventory",
+      "tool_url": "https://www.producthunt.com/products/inventory",
+      "description": "Search every AI Agent & IDE Conversation",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-02T03:51:43-07:00",
       "categories": [
-        "automatisation"
+        "chatbot",
+        "automatisation",
+        "recherche"
       ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "CoachAI",
+      "tool_url": "https://www.producthunt.com/products/coachai-fitness-coach",
+      "description": "Your iPhone camera watches your form, rep by rep",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-01T16:15:00-07:00",
+      "categories": [],
       "pricing": "unknown"
     },
     {
@@ -581,6 +653,18 @@
       "pricing": "unknown"
     },
     {
+      "name": "AgentSky",
+      "tool_url": "https://www.producthunt.com/products/agentsky",
+      "description": "Any harness, any LLM — cloud-hosted agents on demand.",
+      "source": "Product Hunt",
+      "date_iso": "2026-07-30T21:59:22-07:00",
+      "categories": [
+        "automatisation",
+        "LLM"
+      ],
+      "pricing": "unknown"
+    },
+    {
       "name": "DepthData",
       "tool_url": "https://www.producthunt.com/products/depthdata",
       "description": "The system of record for your company's AI spend.",
@@ -614,40 +698,6 @@
       "pricing": "unknown"
     },
     {
-      "name": "Premation",
-      "tool_url": "https://www.producthunt.com/products/premation",
-      "description": "An open-source AI alternative to After Effects",
-      "source": "Product Hunt",
-      "date_iso": "2026-07-29T19:08:08-07:00",
-      "categories": [
-        "open source"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "Yap",
-      "tool_url": "https://www.producthunt.com/products/yap-5",
-      "description": "Open-source voice dictation for Mac, fully on-device",
-      "source": "Product Hunt",
-      "date_iso": "2026-07-29T14:28:30-07:00",
-      "categories": [
-        "voix",
-        "open source"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "Greplica",
-      "tool_url": "https://www.producthunt.com/products/greplica",
-      "description": "Self updating wiki for coding agents",
-      "source": "Product Hunt",
-      "date_iso": "2026-07-29T00:32:15-07:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
       "name": "Atlas Cloud",
       "tool_url": "https://www.aixploria.com/atlas-cloud-ai/",
       "description": "",
@@ -666,40 +716,6 @@
         "voix"
       ],
       "pricing": "free"
-    },
-    {
-      "name": "Caimera",
-      "tool_url": "https://www.producthunt.com/products/caimera-2",
-      "description": "AI Visual Production Platform for Fashion Teams",
-      "source": "Product Hunt",
-      "date_iso": "2026-07-28T00:17:55-07:00",
-      "categories": [
-        "images"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Screencap",
-      "tool_url": "https://www.producthunt.com/products/screencap",
-      "description": "Turn your team's real workflows into AI training data",
-      "source": "Product Hunt",
-      "date_iso": "2026-07-27T11:58:18-07:00",
-      "categories": [
-        "automatisation",
-        "données"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Cleanlist AI",
-      "tool_url": "https://www.producthunt.com/products/cleanlist-ai",
-      "description": "Natural-language prospecting: find, enrich and sync leads.",
-      "source": "Product Hunt",
-      "date_iso": "2026-07-27T08:47:32-07:00",
-      "categories": [
-        "langues"
-      ],
-      "pricing": "unknown"
     }
   ]
 }
