@@ -15,6 +15,11 @@ Sources actives :
   ✓ TechCrunch AI      — RSS catégorie AI
   ✓ GitHub Trending    — RSS tiers (repos trending, filtrés IA)
   ✓ Lobsters AI        — RSS tag AI
+  ✓ 16 répertoires WP  — même WP REST API que Aixploria (cf. WP_DIRECTORIES)
+
+tools.json est cumulatif : chaque run fusionne les nouveaux résultats avec le
+fichier existant (dédupliqué) au lieu de l'écraser, pour qu'un outil non
+trié ne disparaisse jamais silencieusement.
 """
 import json, re, sys
 from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
@@ -34,7 +39,12 @@ HEADERS = {
     "User-Agent":      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     "Accept":          "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Accept-Encoding": "gzip, deflate, br",
+    # Pas de "br" : requests/urllib3 ne décodent le Brotli que si le paquet
+    # `brotli` est installé, ce qui n'est pas le cas ici (cf. requirements).
+    # Sans ça, un serveur qui répond en br renvoie des octets illisibles que
+    # BeautifulSoup/feedparser parsent silencieusement comme vides — plusieurs
+    # sources (Aixploria, FutureTools, AI Secret, TLDR AI...) étaient dans ce cas.
+    "Accept-Encoding": "gzip, deflate",
     "Connection":      "keep-alive",
     "DNT":             "1",
 }
@@ -302,41 +312,126 @@ def fetch_hackernews():
     return results
 
 
-def fetch_aixploria():
-    """Aixploria — WP REST API avec extraction URL réelle."""
+def fetch_wp_directory(source_name, domain):
+    """Répertoire générique bâti sur WordPress — WP REST API avec extraction URL réelle."""
     results = []
-    try:
-        data = get_json(
-            "https://www.aixploria.com/wp-json/wp/v2/posts"
-            "?per_page=20&orderby=date&_fields=title,link,content,excerpt,date",
-            referer="https://www.aixploria.com/"
-        )
-        for post in data:
-            title    = BeautifulSoup(post.get("title",{}).get("rendered",""), "html.parser").get_text().strip()
-            date_iso = parse_date(post.get("date",""))
-            if not title or not is_recent(date_iso):
-                continue
-            content_html = post.get("content",{}).get("rendered","")
-            content_soup = BeautifulSoup(content_html, "html.parser")
-            tool_url = None
-            for a in content_soup.find_all("a", href=True):
-                href = a["href"].strip()
-                if href.startswith("http") and is_external(href):
-                    tool_url = href; break
+    data = get_json(
+        f"https://{domain}/wp-json/wp/v2/posts"
+        "?per_page=20&orderby=date&_fields=title,link,content,excerpt,date",
+        referer=f"https://{domain}/"
+    )
+    for post in data:
+        title    = BeautifulSoup(post.get("title",{}).get("rendered",""), "html.parser").get_text().strip()
+        date_iso = parse_date(post.get("date",""))
+        if not title or not is_recent(date_iso):
+            continue
+        content_html = post.get("content",{}).get("rendered","")
+        content_soup = BeautifulSoup(content_html, "html.parser")
+        tool_url = None
+        for a in content_soup.find_all("a", href=True):
+            href = a["href"].strip()
+            if href.startswith("http") and is_external(href):
+                tool_url = href; break
+        if not tool_url:
+            tool_url = post.get("link","")
             if not tool_url:
-                tool_url = post.get("link","")
-                if not tool_url:
-                    continue
-            excerpt = BeautifulSoup(
-                post.get("excerpt",{}).get("rendered",""), "html.parser"
-            ).get_text(" ", strip=True)
-            if not excerpt.strip():
-                excerpt = content_soup.get_text(" ", strip=True)[:300]
-            results.append(make_tool(title, tool_url, excerpt, "Aixploria", date_iso))
+                continue
+        excerpt = BeautifulSoup(
+            post.get("excerpt",{}).get("rendered",""), "html.parser"
+        ).get_text(" ", strip=True)
+        if not excerpt.strip():
+            excerpt = content_soup.get_text(" ", strip=True)[:300]
+        results.append(make_tool(title, tool_url, excerpt, source_name, date_iso))
+    return results
+
+
+def fetch_aixploria():
+    """Aixploria — WP REST API avec fallback RSS si l'API échoue."""
+    try:
+        results = fetch_wp_directory("Aixploria", "www.aixploria.com")
         print(f"  Aixploria (WP API): {len(results)}")
     except Exception as e:
         print(f"  Aixploria WP API erreur: {e}", file=sys.stderr)
         results = fetch_rss("Aixploria", "https://www.aixploria.com/feed/")
+    return results
+
+
+# Répertoires WP listés dans le README mais jamais câblés jusqu'ici — même API
+# que Aixploria, donc même fetcher générique. (nom affiché, domaine)
+#
+# Retirés de cette liste (vérifié le 11/08) :
+#   - Best of AI (bestofai.com) : pas du WP, pas de /feed — a son propre
+#     fetcher basé sur son sitemap (cf. fetch_bestofai ci-dessous).
+#   - Tools Story (toolsstory.net) et AI Finder (ai-finder.net) : domaines
+#     revendus / parkés (« this domain may be for sale »), plus les répertoires
+#     décrits dans le README — à retirer aussi du README si confirmé durable.
+WP_DIRECTORIES = [
+    ("aiapp.fr",                "aiapp.fr"),
+    ("iaweb.fr",                "iaweb.fr"),
+    ("WikiAI Tools",            "wikiaitools.com"),
+    ("Notable AI",              "noteableai.com"),
+    ("AI Tool Guru",            "aitoolguru.com"),
+    ("Best Free AI",            "bestfreeaiwebsites.com"),
+    ("HD Robots",               "hdrobots.com"),
+    ("Free AI Tools Directory", "free-ai-tools-directory.com"),
+    ("Mad Genius",              "madgenius.co"),
+    ("AI Tools LOL",            "aitools.lol"),
+    ("AI Tool Hunt",            "aitoolhunt.com"),
+    ("AI Tool Board",           "aitoolboard.com"),
+    ("Fastpedia",               "fastpedia.io"),
+]
+
+def make_wp_fetcher(source_name, domain):
+    """REST API d'abord ; si elle échoue ou est bloquée, tente le flux RSS
+    du même site (souvent accessible même quand /wp-json/ est protégé)."""
+    def fetcher():
+        try:
+            results = fetch_wp_directory(source_name, domain)
+            print(f"  {source_name} (WP API): {len(results)}")
+            return results
+        except Exception as e:
+            print(f"  {source_name} WP API erreur: {e}", file=sys.stderr)
+        results = fetch_rss(source_name, f"https://{domain}/feed/")
+        return results
+    fetcher.__name__ = f"fetch_wp_{domain.replace('.', '_').replace('-', '_')}"
+    return fetcher
+
+
+def fetch_bestofai():
+    """Best of AI — pas de WP/RSS ; utilise sitemap-tools.xml (lastmod par outil)
+    puis récupère les balises OG de chaque page récente pour nom/description."""
+    results = []
+    try:
+        r = requests.get("https://bestofai.com/sitemap-tools.xml", headers=HEADERS, timeout=30)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.content, "xml")
+        recent_urls = []
+        for u in soup.find_all("url"):
+            loc_el, lastmod_el = u.find("loc"), u.find("lastmod")
+            if not loc_el or not lastmod_el:
+                continue
+            date_iso = parse_date(lastmod_el.get_text(strip=True))
+            if date_iso and is_recent(date_iso):
+                recent_urls.append((loc_el.get_text(strip=True), date_iso))
+
+        # lastmod peut aussi correspondre à une simple mise à jour de contenu,
+        # pas forcément un nouvel outil : on limite le volume par prudence.
+        for tool_url, date_iso in recent_urls[:25]:
+            try:
+                pr = requests.get(tool_url, headers=HEADERS, timeout=12)
+                pr.raise_for_status()
+                psoup = BeautifulSoup(pr.text, "html.parser")
+                og_title = psoup.find("meta", property="og:title")
+                og_desc  = psoup.find("meta", property="og:description")
+                title = (og_title["content"].strip() if og_title and og_title.get("content")
+                         else tool_url.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title())
+                desc = og_desc["content"].strip() if og_desc and og_desc.get("content") else ""
+                results.append(make_tool(title, tool_url, desc, "Best of AI", date_iso))
+            except Exception:
+                continue
+        print(f"  Best of AI (sitemap): {len(results)}")
+    except Exception as e:
+        print(f"  Best of AI erreur: {e}", file=sys.stderr)
     return results
 
 
@@ -347,12 +442,11 @@ def fetch_futuretools():
         r = requests.get("https://futuretools.io/tools", headers=HEADERS, timeout=30)
         r.raise_for_status()
 
+        # Le payload RSC était autrefois un seul <script> > 100k caractères ;
+        # il est désormais streamé en ~25 chunks plus petits qu'il faut
+        # recoller avant d'y chercher les outils.
         scripts = re.findall(r"<script>(self\.__next_f\.push.*?)</script>", r.text, re.S)
-        big_script = ""
-        for s in scripts:
-            if len(s) > 100000:
-                big_script = s
-                break
+        big_script = "".join(scripts)
 
         if not big_script:
             raise Exception(f"Payload RSC non trouvé ({len(scripts)} scripts, page {len(r.text)} chars)")
@@ -396,7 +490,17 @@ def fetch_futuretools():
 
 
 def fetch_taaft():
-    """There's an AI for That — scraping HTML de la page d'accueil /?sort=new."""
+    """There's an AI for That — scraping HTML de la page d'accueil /?sort=new.
+
+    Site refondu (11/08) : les anciens sélecteurs (ai_link_wrap, external_ai_link...)
+    n'existent plus. La liste "Today" expose désormais name/date/lien interne
+    directement sur des attributs data-* de chaque ligne, ce qui évite le
+    scraping de texte fragile d'avant. Limite connue : le lien pointe vers la
+    fiche TAAFT de l'outil, pas son site externe — la fiche détail est
+    protégée par un challenge Cloudflare (Turnstile) qu'on ne cherche pas à
+    contourner, donc ni l'URL externe ni la description ne sont récupérables
+    sans navigateur headless.
+    """
     results = []
     try:
         hdrs = dict(HEADERS)
@@ -408,49 +512,25 @@ def fetch_taaft():
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
 
-        link_wraps = soup.find_all(class_="ai_link_wrap")
-        avail_starts = soup.find_all(class_="available_starting")
+        rows = soup.find_all(class_="home-today-row")
+        if not rows:
+            print(f"  There's an AI: 0 lignes trouvées (page {len(r.text)} chars)", file=sys.stderr)
 
-        if not link_wraps:
-            print(f"  There's an AI: 0 éléments HTML trouvés (page {len(r.text)} chars)", file=sys.stderr)
-
-        for i in range(min(len(link_wraps), len(avail_starts))):
-            lw = link_wraps[i]
-            av = avail_starts[i]
-
-            name_el = lw.find(class_="ai_link")
-            if not name_el:
+        for row in rows:
+            ts = row.get("data-release-ts")
+            tool_url = row.get("data-href", "")
+            if not ts or not tool_url:
                 continue
-            name = name_el.get_text(strip=True)
+            date_iso = datetime.fromtimestamp(int(ts), tz=timezone.utc).isoformat()
+            if not is_recent(date_iso):
+                continue
+
+            name_el = row.find(class_="home-today-name-text")
+            name = name_el.get_text(strip=True) if name_el else ""
             if not name or len(name) < 3:
                 continue
 
-            ext_link = lw.find(class_="external_ai_link")
-            tool_url = ext_link.get("href", "") if ext_link else ""
-            if not tool_url:
-                tool_url = name_el.get("href", "")
-            if not tool_url:
-                continue
-
-            price_el = av.find(class_="ai_launch_date")
-            price_text = price_el.get_text(strip=True) if price_el else ""
-
-            if "free +" in price_text.lower() or "free+" in price_text.lower():
-                pricing = "freemium"
-            elif price_text.lower().startswith("free") or price_text.lower() == "free":
-                pricing = "free"
-            elif "$" in price_text or "€" in price_text or price_text.lower().startswith("from"):
-                pricing = "paid"
-            else:
-                pricing = "unknown"
-
-            rel_date_el = av.find(class_="relative")
-            rel_text = rel_date_el.get_text(strip=True) if rel_date_el else ""
-            date_iso = _relative_to_iso(rel_text)
-
-            tool_url_clean = re.sub(r"[?&](?:ref|utm_\w+)=[^&]*", "", tool_url).rstrip("?&")
-
-            results.append(make_tool(name, tool_url_clean, "", "There's an AI", date_iso, pricing=pricing))
+            results.append(make_tool(name, tool_url, "", "There's an AI", date_iso))
 
         print(f"  There's an AI (HTML): {len(results)}")
     except Exception as e:
@@ -458,23 +538,23 @@ def fetch_taaft():
     return results
 
 
-def _relative_to_iso(text):
-    """Convertit '5h ago', '2d ago', '20h ago' en ISO."""
-    now = datetime.now(timezone.utc)
-    m = re.match(r"(\d+)\s*([mhdw])", text.lower())
-    if not m:
-        return now.isoformat()
-    val, unit = int(m.group(1)), m.group(2)
-    delta = {"m": timedelta(minutes=val), "h": timedelta(hours=val),
-             "d": timedelta(days=val), "w": timedelta(weeks=val)}.get(unit, timedelta())
-    return (now - delta).isoformat()
-
-
 def fetch_aisecret():
     """AI Secret — RSS Ghost pour les URLs puis scraping des articles."""
     results = []
     SOCIAL = ["twitter.com","x.com","linkedin.com","youtube.com",
               "facebook.com","instagram.com","threads.net"]
+    # Domaines de presse / référence / académiques cités en source dans les
+    # articles mais qui ne sont jamais des outils IA — sans ça, le scraping
+    # remonte autant de citations arXiv ou d'articles de presse que d'outils.
+    NON_TOOL_DOMAINS = [
+        "arxiv.org","apnews.com","reuters.com","bloomberg.com","nytimes.com",
+        "wsj.com","ft.com","forbes.com","techcrunch.com","theverge.com",
+        "wired.com","axios.com","cnbc.com","businessinsider.com",
+        "wikipedia.org","finance.yahoo.com","yahoo.com","semafor.com",
+        "theinformation.com","arstechnica.com","engadget.com",
+        "venturebeat.com","washingtonpost.com","cnn.com","bbc.com",
+        "aisecret.us","ghost.io",
+    ]
     try:
         feed = feedparser.parse("https://aisecret.us/rss/", request_headers={
             "User-Agent": HEADERS["User-Agent"],
@@ -498,6 +578,7 @@ def fetch_aisecret():
                 if not content:
                     continue
 
+                seen_in_article = set()
                 for a in content.find_all("a", href=True):
                     href = a["href"].strip()
                     text = a.get_text(strip=True)
@@ -507,8 +588,12 @@ def fetch_aisecret():
                     if any(s in low for s in SOCIAL):
                         continue
                     domain = urlparse(href).netloc.lower()
-                    if "aisecret" in domain or "ghost" in domain:
+                    if any(d in domain for d in NON_TOOL_DOMAINS):
                         continue
+                    href_key = href.rstrip("/").lower()
+                    if href_key in seen_in_article:
+                        continue
+                    seen_in_article.add(href_key)
                     results.append(make_tool(text, href, "", "AI Secret", date_iso))
             except Exception:
                 continue
@@ -607,7 +692,8 @@ FETCHERS = [
     fetch_techcrunch_ai,
     fetch_github_trending,
     fetch_lobsters,
-]
+    fetch_bestofai,
+] + [make_wp_fetcher(name, domain) for name, domain in WP_DIRECTORIES]
 
 def deduplicate(tools):
     seen_urls, seen_names, out = set(), set(), []
@@ -627,10 +713,24 @@ def run_fetcher(fn):
         print(f"  Erreur {fn.__name__}: {e}", file=sys.stderr)
         return fn.__name__, []
 
+def load_previous_tools():
+    """Charge le tools.json du run précédent pour accumuler au lieu d'écraser.
+
+    Les outils non triés (ni « déjà publié » ni « ignoré » côté interface) ne
+    doivent jamais disparaître silencieusement simplement parce qu'ils sont
+    sortis de la fenêtre « récent » d'une source — ils restent tant qu'ils ne
+    sont pas explicitement retirés.
+    """
+    try:
+        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+            return json.load(f).get("tools", [])
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
 def main():
     print(f"Veille IA — {datetime.now().strftime('%Y-%m-%d %H:%M')} — {len(FETCHERS)} sources\n")
     all_tools = []
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=12) as executor:
         futures = {executor.submit(run_fetcher, fn): fn.__name__ for fn in FETCHERS}
         for future in as_completed(futures):
             try:
@@ -641,9 +741,14 @@ def main():
             except Exception as e:
                 print(f"  Erreur future {futures[future]}: {e}", file=sys.stderr)
 
-    all_tools = deduplicate(all_tools)
+    new_count = len(deduplicate(all_tools))
+    previous_tools = load_previous_tools()
+    # Nouveaux en premier : en cas de doublon entre les deux runs, ce sont
+    # leurs métadonnées (plus fraîches) qui l'emportent dans deduplicate().
+    all_tools = deduplicate(all_tools + previous_tools)
     all_tools.sort(key=lambda t: t.get("date_iso",""), reverse=True)
     all_tools = [t for t in all_tools if len(t["name"].strip()) >= 3]
+    print(f"\nNouveaux ce run : {new_count} — Total cumulé : {len(all_tools)}")
 
     stats = {}
     for t in all_tools:

@@ -148,7 +148,7 @@ let tools=[],states=JSON.parse(localStorage.getItem(SK)||'{}'),filter='all';
 function saveS(){localStorage.setItem(SK,JSON.stringify(states))}
 function getS(t){return(states[t.tool_url]||{}).state||'pending'}
 function setS(url,s){states[url]={state:s,ts:Date.now()};saveS();render();updateSidebar();updateStats()}
-function pruneS(){const c=Date.now()-7*86400000;const f={};for(const[k,v]of Object.entries(states))if(!v.ts||v.ts>c)f[k]=v;states=f;saveS()}
+function pruneS(){const present=new Set(tools.map(t=>t.tool_url));const f={};for(const[k,v]of Object.entries(states))if(present.has(k))f[k]=v;states=f;saveS()}
 
 async function loadTools(){
   document.getElementById('cards-zone').innerHTML='<div class="loading"><div class="spinner"></div><br>Chargement...</div>';

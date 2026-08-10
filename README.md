@@ -128,11 +128,13 @@ Les catégories sont assignées automatiquement par correspondance de mots-clés
 
 ## Interface
 
-`index.html` charge `tools.json` et affiche les outils sous forme de cartes. Chaque carte propose trois actions dont l'état est persisté dans `localStorage` (7 jours) :
+`index.html` charge `tools.json` et affiche les outils sous forme de cartes. Chaque carte propose trois actions dont l'état est persisté dans `localStorage`, sans expiration — un outil non trié reste visible tant qu'il n'a pas été traité, même des semaines après sa première apparition :
 
 - **À publier** — l'outil est ajouté à la sélection du jour
 - **Déjà publié** — masqué dans le filtre "Non traités"
 - **Ignorer** — écarté jusqu'à réinitialisation
+
+`tools.json` lui-même est cumulatif : chaque run fusionne les nouveaux résultats avec le fichier existant au lieu de l'écraser, pour qu'un outil non trié ne disparaisse jamais simplement parce qu'il est sorti de la fenêtre « récent » d'une source (RSS/API qui ne gardent que les derniers items).
 
 Un bouton **Exporter la sélection** génère un bloc texte copier-coller pour amorcer la rédaction d'un article (nom, URL, description, catégories suggérées, source).
 
