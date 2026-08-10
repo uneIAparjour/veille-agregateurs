@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-10T18:56:38.943727+00:00",
-  "count": 58,
+  "generated_at": "2026-08-10T22:09:51.125343+00:00",
+  "count": 59,
   "tools": [
     {
       "name": "pingdotgg/t3code",
       "tool_url": "https://github.com/pingdotgg/t3code",
       "description": "T3 Code T3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app ( iOS , Android ), web app and Electron-based desktop app . Works with your subscriptions on Claude Code, Codex, Cursor, Grok Build, and OpenCode. If they're set up on your computer, T3 Code can control them. \"Wait, what are you selling me?\" Nothing. We built T3 C",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.219314+00:00",
+      "date_iso": "2026-08-10T22:09:50.271534+00:00",
       "categories": [
         "vidéo",
         "documents",
@@ -20,7 +20,7 @@
       "tool_url": "https://github.com/harveyai/harvey-labs",
       "description": "A benchmark built to evaluate and improve agent capabilities for supporting legal work. Legal Agent Benchmark (LAB): An open-source benchmark for evaluating agents on real legal work. Harvey LAB is an open-source project aimed at benchmarking LLM agents' abilities to perform legal work in realistic environments. LAB consists of two parts: a dataset of tasks containing agent instructions, documents",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.215569+00:00",
+      "date_iso": "2026-08-10T22:09:50.268095+00:00",
       "categories": [
         "texte",
         "documents",
@@ -33,7 +33,7 @@
       "tool_url": "https://github.com/Comfy-Org/ComfyUI",
       "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. ComfyUI The most powerful and modular AI engine for content creation. ComfyUI is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output. Its powerful and modular node graph interface empowers creatives to generate images, videos, 3D models",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.212063+00:00",
+      "date_iso": "2026-08-10T22:09:50.264654+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -46,7 +46,7 @@
       "tool_url": "https://github.com/google/skills",
       "description": "Agent Skills for Google products and technologies Agent Skills This repository contains Agent Skills for Google products and technologies, including Google Cloud . Note This repository is under active development. Installation npx skills add google/skills From the npx install command, you can select the specific skills from this repo to install. Available Skills Getting started with Google Cloud A",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.193538+00:00",
+      "date_iso": "2026-08-10T22:09:50.247494+00:00",
       "categories": [
         "musique",
         "documents",
@@ -59,7 +59,7 @@
       "tool_url": "https://github.com/goauthentik/authentik",
       "description": "The authentication glue you need. What is authentik? authentik is an open-source Identity Provider (IdP) for modern SSO. It supports SAML, OAuth2/OIDC, LDAP, RADIUS, and more, designed for self-hosting from small labs to large production clusters. Our enterprise offering is available for organizations to securely replace existing IdPs such as Okta, Auth0, Entra ID, and Ping Identity for robust, la",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.182018+00:00",
+      "date_iso": "2026-08-10T22:09:50.236451+00:00",
       "categories": [
         "musique",
         "documents",
@@ -72,7 +72,7 @@
       "tool_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
       "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs. 📈 股票智能分析系统 🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股/台股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱 产品预览 · 功能特性 · 快速开始 · 推送效果 · 文档中心 · 完整指南 简体中文 | English | 繁體中文 💖 赞助商 (Sponsors)",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.179290+00:00",
+      "date_iso": "2026-08-10T22:09:50.233814+00:00",
       "categories": [
         "voix",
         "chatbot",
@@ -85,7 +85,7 @@
       "tool_url": "https://github.com/addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents. Agent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development. DEFINE PLAN BUILD VERIFY",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.143415+00:00",
+      "date_iso": "2026-08-10T22:09:50.208156+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -98,7 +98,7 @@
       "tool_url": "https://github.com/google-deepmind/weathernext",
       "description": "WeatherNext WeatherNext 2 This repo contains the code for WeatherNext 2 (WN2), the global, medium-range atmospheric and cyclone forecasting model developed by Google DeepMind and Google Research. It also contains code for prior generation models GraphCast and GenCast . Accessing Forecast Data Feeds If you are interested in directly accessing daily data feeds of WN2 model outputs rather than runnin",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.108675+00:00",
+      "date_iso": "2026-08-10T22:09:50.189669+00:00",
       "categories": [
         "images",
         "voix",
@@ -111,7 +111,7 @@
       "tool_url": "https://github.com/pranshuparmar/witr",
       "description": "Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI. witr Why is this running? Trace any process, port, container, or file back to the exact chain that started it — one command, machine-readable JSON, or an interactive TUI . 🎮 Try witr in your browser → Investigate a simulated Linux box — a guided tutorial and free-play sandbox, no install required.",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.095739+00:00",
+      "date_iso": "2026-08-10T22:09:50.182292+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -124,7 +124,7 @@
       "tool_url": "https://github.com/msitarzewski/agency-agents",
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. 🎭 The Agency: AI Specialists Ready to Transform Your Workflow A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:38.058084+00:00",
+      "date_iso": "2026-08-10T22:09:50.145013+00:00",
       "categories": [
         "images",
         "vidéo",
@@ -137,7 +137,7 @@
       "tool_url": "https://github.com/vitali87/code-graph-rag",
       "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs Code-Graph-RAG Code-Graph-RAG parses a multi-language codebase with Tree-sitter, builds a knowledge graph of its structure in Memgraph, and lets you query, edit, and optimise that code in plain English. It works across a monorepo of mixed languages under one unified gr",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:37.979066+00:00",
+      "date_iso": "2026-08-10T22:09:50.047624+00:00",
       "categories": [
         "images",
         "musique",
@@ -150,7 +150,7 @@
       "tool_url": "https://github.com/PrimeIntellect-ai/prime-agent",
       "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks. Prime Agent: A Self-Improving RLM Agent Documentation • Verifiers • PRIME-RL • pi-mono Prime Agent is an open-source coding and research agent for general and long-running work. It is designed around two core abstractions: The Recursive Language Model (RLM) treats context as variables ( prompt-as-a-variable ) and to",
       "source": "GitHub Trending",
-      "date_iso": "2026-08-10T18:56:37.970948+00:00",
+      "date_iso": "2026-08-10T22:09:50.041257+00:00",
       "categories": [
         "voix",
         "musique",
@@ -163,7 +163,7 @@
       "tool_url": "https://www.bensbites.com/p/hey-siri-meet-ai",
       "description": "what's the deal with loops",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-10T18:56:37.428077+00:00",
+      "date_iso": "2026-08-10T22:09:49.456007+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -172,7 +172,7 @@
       "tool_url": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
       "description": "little tools for making life easier",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-10T18:56:37.427830+00:00",
+      "date_iso": "2026-08-10T22:09:49.455773+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -181,7 +181,7 @@
       "tool_url": "https://www.bensbites.com/p/gpt-56-is-here-but",
       "description": "plus the insanity of inference",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-10T18:56:37.427591+00:00",
+      "date_iso": "2026-08-10T22:09:49.455537+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -190,7 +190,7 @@
       "tool_url": "https://www.bensbites.com/p/grok-x-cursor",
       "description": "More Fable, GPT-5.6 and new ChatGPT voice",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-10T18:56:37.427343+00:00",
+      "date_iso": "2026-08-10T22:09:49.455301+00:00",
       "categories": [
         "voix",
         "chatbot"
@@ -202,7 +202,7 @@
       "tool_url": "https://www.bensbites.com/p/how-to-use-gpt-56",
       "description": "new desktop app and hosted sites in ChatGPT",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-10T18:56:37.427199+00:00",
+      "date_iso": "2026-08-10T22:09:49.455185+00:00",
       "categories": [
         "chatbot"
       ],
@@ -213,7 +213,7 @@
       "tool_url": "https://www.bensbites.com/p/better-design-than-fable",
       "description": "unsolved maths problems vs ai models, who'll win?",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-10T18:56:37.427007+00:00",
+      "date_iso": "2026-08-10T22:09:49.454960+00:00",
       "categories": [
         "infographie"
       ],
@@ -224,7 +224,7 @@
       "tool_url": "https://www.bensbites.com/p/opus-5-fable-5",
       "description": "Codex plus Voice is the new openclaw",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-10T18:56:37.426819+00:00",
+      "date_iso": "2026-08-10T22:09:49.454774+00:00",
       "categories": [
         "voix"
       ],
@@ -235,7 +235,7 @@
       "tool_url": "https://www.bensbites.com/p/1-billion-chatgpt-users",
       "description": "tinkering with tldraw is so much fun",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-10T18:56:37.426693+00:00",
+      "date_iso": "2026-08-10T22:09:49.454654+00:00",
       "categories": [
         "chatbot"
       ],
@@ -246,9 +246,101 @@
       "tool_url": "https://www.bensbites.com/p/what-my-agent-knows-about-me",
       "description": "80% cheaper GPT",
       "source": "Ben's Bites",
-      "date_iso": "2026-08-10T18:56:37.426547+00:00",
+      "date_iso": "2026-08-10T22:09:49.454525+00:00",
       "categories": [
         "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "AI Pulse a fake LED strip beside the macOS Dock that shows agent status",
+      "tool_url": "https://github.com/leog/ai-pulse",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-10T22:07:41+00:00",
+      "categories": [
+        "automatisation",
+        "bande dessinée"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Keen Code – an agentic-engineered coding agent",
+      "tool_url": "https://github.com/mochow13/keen-code",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-10T21:47:00+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "allmcps-server – MCP server for MCP servers",
+      "tool_url": "https://github.com/Jackalope-Dev/allmcps-server",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-10T21:32:05+00:00",
+      "categories": [
+        "LLM"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Graph2agent; Mermaid diagrams, explained for agents",
+      "tool_url": "https://graph2agent.github.io/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-10T21:29:40+00:00",
+      "categories": [
+        "automatisation",
+        "mindmap"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Agents can shop for you, and ship to your door",
+      "tool_url": "https://getsangria.com",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-10T21:20:59+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "EdgeSpeech; Voice I/O toolkit for your mobile app",
+      "tool_url": "https://github.com/switchboard-sdk/EdgeSpeech",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-10T21:12:52+00:00",
+      "categories": [
+        "voix",
+        "application"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Say It – private, local text-to-speech for macOS",
+      "tool_url": "https://sayit.sh/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-10T20:26:16+00:00",
+      "categories": [
+        "voix",
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Étincel trains Claude's voice for PR reviews and code comments",
+      "tool_url": "https://github.com/AIStoryHub/etincel",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-10T19:35:38+00:00",
+      "categories": [
+        "voix"
       ],
       "pricing": "unknown"
     },
@@ -385,89 +477,6 @@
       "pricing": "unknown"
     },
     {
-      "name": "Nitpicler. I was quoted $1M for AI PR review – so I bulit it myself",
-      "tool_url": "https://nitpicker.dev",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-10T15:24:45+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "TickClip – An AI shopping agent that can recommend not buying",
-      "tool_url": "https://www.tickclip.ai/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-10T14:42:09+00:00",
-      "categories": [
-        "vidéo",
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Multicoder ACP – Run Claude/Codex/OpenCode from the same VS Code GUI",
-      "tool_url": "https://marketplace.visualstudio.com/items?itemName=multicoder.multicoder",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-10T14:30:34+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Neolabs.fyi – 100 new AI labs by research area, valuation, and more",
-      "tool_url": "https://neolabs.fyi/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-10T14:18:09+00:00",
-      "categories": [
-        "recherche"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "DocSift convert a PDF once, give the model only the passages it needs",
-      "tool_url": "https://github.com/anishmoncivarghese/docsift",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-10T14:04:56+00:00",
-      "categories": [
-        "documents"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Edgi – Letterboxd or Strava for your brain",
-      "tool_url": "https://app.edgi.tv/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-10T13:14:00+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Mangudai – Agentless attack surface manager for small tech teams",
-      "tool_url": "https://github.com/oktaybilge1/mangudai-overview",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-10T10:57:26+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "r/place for coding agents, the longer it stays up, the more you keep",
-      "tool_url": "https://overwrite.place/",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-10T10:47:18+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
       "name": "Prime Agent",
       "tool_url": "https://www.producthunt.com/products/prime-intellect",
       "description": "A coding agent that can refine its own harness",
@@ -597,6 +606,18 @@
         "open source"
       ],
       "pricing": "free"
+    },
+    {
+      "name": "Prompt Bridge",
+      "tool_url": "https://www.producthunt.com/products/prompt-bridge-2",
+      "description": "Keep AI Context Portable",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-06T04:38:18-07:00",
+      "categories": [
+        "texte",
+        "histoires enfants"
+      ],
+      "pricing": "unknown"
     },
     {
       "name": "Soloop",
