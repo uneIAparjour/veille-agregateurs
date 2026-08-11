@@ -121,6 +121,14 @@ def guess_pricing(text):
 
 # ── Utilitaires ────────────────────────────────────────────────────────────────
 
+# Titres d'articles "listicle" (ex. "Top 10 AI Tools", "Top 25 Best AI Tools
+# for Marketers") : ce sont des articles de récap, pas l'annonce d'un outil
+# précis — à exclure de tools.json plutôt qu'à publier comme un outil.
+LISTICLE_RE = re.compile(r"\btop\s+\d+\b[^.\n]{0,40}\btools?\b", re.IGNORECASE)
+
+def is_listicle_title(title):
+    return bool(LISTICLE_RE.search(title or ""))
+
 def guess_categories(text):
     low = text.lower()
     seen, hits = set(), []
@@ -197,7 +205,7 @@ def fetch_rss(source_name, rss_url, ai_filter=False, max_items=30):
             summary  = entry.get("summary","") or entry.get("description","")
             desc     = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
             date_iso = parse_date(entry.get("published") or entry.get("updated",""))
-            if not title or not url or not is_recent(date_iso):
+            if not title or not url or not is_recent(date_iso) or is_listicle_title(title):
                 continue
             if ai_filter:
                 combined = (title + " " + desc).lower()
@@ -233,7 +241,7 @@ def fetch_producthunt():
             summary  = entry.get("summary","") or entry.get("description","")
             date_iso = parse_date(entry.get("published") or entry.get("updated",""))
 
-            if not title or not is_recent(date_iso):
+            if not title or not is_recent(date_iso) or is_listicle_title(title):
                 continue
 
             combined = (title + " " + BeautifulSoup(summary,"html.parser").get_text()).lower()
@@ -299,6 +307,8 @@ def fetch_hackernews():
                 continue
             if any(kw in title_low for kw in ARTICLE_KW):
                 continue
+            if is_listicle_title(title):
+                continue
             if url in seen:
                 continue
             seen.add(url)
@@ -323,7 +333,7 @@ def fetch_wp_directory(source_name, domain):
     for post in data:
         title    = BeautifulSoup(post.get("title",{}).get("rendered",""), "html.parser").get_text().strip()
         date_iso = parse_date(post.get("date",""))
-        if not title or not is_recent(date_iso):
+        if not title or not is_recent(date_iso) or is_listicle_title(title):
             continue
         content_html = post.get("content",{}).get("rendered","")
         content_soup = BeautifulSoup(content_html, "html.parser")
@@ -365,6 +375,7 @@ def fetch_aixploria():
 #   - Tools Story (toolsstory.net) et AI Finder (ai-finder.net) : domaines
 #     revendus / parkés (« this domain may be for sale »), plus les répertoires
 #     décrits dans le README — à retirer aussi du README si confirmé durable.
+#   - Free AI Tools Directory (free-ai-tools-directory.com) : plus active.
 WP_DIRECTORIES = [
     ("aiapp.fr",                "aiapp.fr"),
     ("iaweb.fr",                "iaweb.fr"),
@@ -373,7 +384,6 @@ WP_DIRECTORIES = [
     ("AI Tool Guru",            "aitoolguru.com"),
     ("Best Free AI",            "bestfreeaiwebsites.com"),
     ("HD Robots",               "hdrobots.com"),
-    ("Free AI Tools Directory", "free-ai-tools-directory.com"),
     ("Mad Genius",              "madgenius.co"),
     ("AI Tools LOL",            "aitools.lol"),
     ("AI Tool Hunt",            "aitoolhunt.com"),
@@ -426,6 +436,8 @@ def fetch_bestofai():
                 title = (og_title["content"].strip() if og_title and og_title.get("content")
                          else tool_url.rstrip("/").rsplit("/", 1)[-1].replace("-", " ").title())
                 desc = og_desc["content"].strip() if og_desc and og_desc.get("content") else ""
+                if is_listicle_title(title):
+                    continue
                 results.append(make_tool(title, tool_url, desc, "Best of AI", date_iso))
             except Exception:
                 continue
@@ -493,13 +505,13 @@ def fetch_taaft():
     """There's an AI for That — scraping HTML de la page d'accueil /?sort=new.
 
     Site refondu (11/08) : les anciens sélecteurs (ai_link_wrap, external_ai_link...)
-    n'existent plus. La liste "Today" expose désormais name/date/lien interne
-    directement sur des attributs data-* de chaque ligne, ce qui évite le
-    scraping de texte fragile d'avant. Limite connue : le lien pointe vers la
-    fiche TAAFT de l'outil, pas son site externe — la fiche détail est
-    protégée par un challenge Cloudflare (Turnstile) qu'on ne cherche pas à
-    contourner, donc ni l'URL externe ni la description ne sont récupérables
-    sans navigateur headless.
+    n'existent plus. La liste "Today" expose name/date/lien interne/tagline
+    directement sur des attributs et classes de chaque ligne, ce qui évite le
+    scraping de texte fragile d'avant (~65% des lignes ont une tagline, les
+    autres restent avec une description vide). Limite connue : le lien
+    renvoyé pointe vers la fiche TAAFT de l'outil, pas son site externe — la
+    fiche détail est protégée par un challenge Cloudflare (Turnstile) qu'on
+    ne cherche pas à contourner.
     """
     results = []
     try:
@@ -527,10 +539,16 @@ def fetch_taaft():
 
             name_el = row.find(class_="home-today-name-text")
             name = name_el.get_text(strip=True) if name_el else ""
-            if not name or len(name) < 3:
+            if not name or len(name) < 3 or is_listicle_title(name):
                 continue
 
-            results.append(make_tool(name, tool_url, "", "There's an AI", date_iso))
+            # La tagline ("Turn ideas into AI-powered apps instantly.") est
+            # directement sur la page de listing, pas besoin de la fiche
+            # détail bloquée par Cloudflare pour avoir une phrase explicative.
+            tagline_el = row.find(class_="tools-name-tagline")
+            desc = tagline_el.get_text(strip=True) if tagline_el else ""
+
+            results.append(make_tool(name, tool_url, desc, "There's an AI", date_iso))
 
         print(f"  There's an AI (HTML): {len(results)}")
     except Exception as e:
@@ -594,7 +612,17 @@ def fetch_aisecret():
                     if href_key in seen_in_article:
                         continue
                     seen_in_article.add(href_key)
-                    results.append(make_tool(text, href, "", "AI Secret", date_iso))
+
+                    # Le titre du lien seul ("MatrAIx") n'explique rien : le
+                    # paragraphe parent porte la phrase de contexte ("👀 What's
+                    # happening: ..."), dont on retire juste le label structurel.
+                    desc = ""
+                    parent_p = a.find_parent("p")
+                    if parent_p:
+                        desc = parent_p.get_text(" ", strip=True)
+                        desc = re.sub(r"^\W*[A-Za-z][\w' ]{0,30}:\s*", "", desc)
+
+                    results.append(make_tool(text, href, desc, "AI Secret", date_iso))
             except Exception:
                 continue
 
@@ -635,7 +663,7 @@ def fetch_techcrunch_ai():
             summary  = entry.get("summary","") or ""
             desc     = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
             date_iso = parse_date(entry.get("published") or entry.get("updated",""))
-            if not title or not is_recent(date_iso):
+            if not title or not is_recent(date_iso) or is_listicle_title(title):
                 continue
             combined = (title + " " + desc).lower()
             if not any(kw in combined for kw in TOOL_KW):
@@ -666,7 +694,7 @@ def fetch_lobsters():
             title    = entry.get("title","").strip()
             url      = entry.get("link","")
             date_iso = parse_date(entry.get("published") or entry.get("updated",""))
-            if not title or not url or not is_recent(date_iso):
+            if not title or not url or not is_recent(date_iso) or is_listicle_title(title):
                 continue
             if not any(kw in title.lower() for kw in TOOL_KW):
                 continue

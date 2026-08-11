@@ -64,7 +64,6 @@ Les sources sont classées par stratégie d'accès. Certaines sont bloquées par
 | Best Free AI | bestfreeaiwebsites.com |
 | HD Robots | hdrobots.com |
 | Tools Story | toolsstory.net |
-| Free AI Tools Directory | free-ai-tools-directory.com |
 | Mad Genius | madgenius.co |
 | AI Tools LOL | aitools.lol |
 | AI Finder | ai-finder.net |
