@@ -85,12 +85,15 @@
 <div class="sidebar">
   <div class="logo"><div class="logo-dot"></div>VEILLE IA — uneiaparjour.fr</div>
   <div class="stat-row">
-    <div class="stat-block"><div class="stat-num" id="s-total">—</div><div class="stat-lbl">outils trouvés</div></div>
-    <div class="stat-block"><div class="stat-num" style="color:var(--green)" id="s-pub">0</div><div class="stat-lbl">à publier</div></div>
+    <div class="stat-block"><div class="stat-num" id="s-total">—</div><div class="stat-lbl">outils trouvés (cumul)</div></div>
+    <div class="stat-block"><div class="stat-num" style="color:var(--orange)" id="s-today">—</div><div class="stat-lbl">trouvés aujourd'hui</div></div>
   </div>
   <div class="stat-row">
+    <div class="stat-block"><div class="stat-num" style="color:var(--green)" id="s-pub">0</div><div class="stat-lbl">à publier</div></div>
     <div class="stat-block"><div class="stat-num" style="color:var(--teal);font-size:18px" id="s-free">0</div><div class="stat-lbl">free / freemium</div></div>
-    <div class="stat-block"><div class="stat-num" style="color:var(--orange);font-size:18px" id="s-new">0</div><div class="stat-lbl">nouveaux</div></div>
+  </div>
+  <div class="stat-row" style="grid-template-columns:1fr">
+    <div class="stat-block"><div class="stat-num" style="color:var(--orange);font-size:18px" id="s-new">0</div><div class="stat-lbl">non triés</div></div>
   </div>
   <div class="sec-label">Sources actives</div>
   <div class="source-row"><span class="sname">Product Hunt AI</span><a href="https://www.producthunt.com/topics/artificial-intelligence" target="_blank">ouvrir</a></div>
@@ -143,7 +146,7 @@
 
 <script>
 const SK='veille-states-v3';
-let tools=[],states=JSON.parse(localStorage.getItem(SK)||'{}'),filter='all';
+let tools=[],newToday=0,states=JSON.parse(localStorage.getItem(SK)||'{}'),filter='all';
 
 function saveS(){localStorage.setItem(SK,JSON.stringify(states))}
 function getS(t){return(states[t.tool_url]||{}).state||'pending'}
@@ -157,6 +160,7 @@ async function loadTools(){
     if(!r.ok)throw new Error('HTTP '+r.status);
     const d=await r.json();
     tools=d.tools||[];
+    newToday=d.new_today||0;
     pruneS();
     document.getElementById('today-lbl').textContent=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});
     updateStats();updateSidebar();render();
@@ -191,6 +195,7 @@ function updateStats(){
   const pend=tools.filter(t=>getS(t)==='pending').length;
   const freeCount=tools.filter(t=>t.pricing==='free'||t.pricing==='freemium').length;
   document.getElementById('s-total').textContent=n;
+  document.getElementById('s-today').textContent=newToday;
   document.getElementById('s-pub').textContent=pub;
   document.getElementById('s-pub2').textContent=pub;
   document.getElementById('s-new').textContent=pend;

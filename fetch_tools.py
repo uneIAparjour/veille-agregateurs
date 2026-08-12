@@ -54,14 +54,14 @@ HEADERS = {
 CATEGORIES_KW = {
     "images":            ["image","photo","illustration","visual","artwork","dall-e","midjourney","stable diffusion","flux","picture","generate image"],
     "vidéo":             ["video","vidéo","clip","film","animation","cinematic","reel","short"],
-    "voix":              ["voice","speech","tts","text-to-speech","narration","speak","clone","podcast"],
-    "musique":           ["music","musique","audio","melody","song","beat","compose","suno","udio"],
+    "voix":              ["voice","speech","tts","text-to-speech","narration","speak","voice clone","podcast"],
+    "musique":           ["music","musique","audio","melody","song","beatmaker","compose","suno","udio"],
     "chatbot":           ["chat","chatbot","conversation","assistant","dialogue","bot"],
     "texte":             ["text","texte","writing","copywriting","article","blog","content","paraphrase","rewrite"],
     "documents":         ["document","pdf","file","report","contract","extract","summarize"],
     "éducation":         ["education","learning","teaching","student","teacher","quiz","flashcard","cours","tuteur","e-learning"],
     "automatisation":    ["automation","workflow","integration","pipeline","no-code","zapier","make","n8n","agentic","agent"],
-    "présentation":      ["presentation","slides","powerpoint","deck","pitch"],
+    "présentation":      ["presentation","slides","powerpoint","deck","pitch deck"],
     "recherche":         ["search","research","veille","academic","papers","arxiv","perplexity"],
     "données":           ["data","analytics","chart","csv","excel","visualization","statistics","dataset","spreadsheet"],
     "LLM":               ["llm","language model","llama","mistral","open weights","fine-tun","rag"],
@@ -69,13 +69,13 @@ CATEGORIES_KW = {
     "site web":          ["website","landing page","web app","builder","no-code site","html","portfolio"],
     "images 3D":         ["3d","three-dimensional","blender","render","3d model","texture"],
     "mindmap":           ["mindmap","mind map","brainstorm","diagram","concept map"],
-    "infographie":       ["infographic","infographie","design","poster","banner","canva","flyer"],
-    "langues":           ["translation","traduction","multilingual","language","subtitle","caption"],
+    "infographie":       ["infographic","infographie","graphic design","poster","banner","canva","flyer"],
+    "langues":           ["translation","traduction","multilingual","foreign language","subtitle","caption"],
     "bande dessinée":    ["comic","manga","bd","strip","graphic novel"],
     "histoires enfants": ["kids","children","enfant","story","conte","jeunesse"],
     "navigateur":        ["browser","extension","chrome","firefox","plugin browsing"],
-    "jeu vidéo":         ["game","gaming","rpg","level","character","asset","npc"],
-    "youtube":           ["youtube","yt","channel","transcript","video summary"],
+    "jeu vidéo":         ["game","gaming","rpg","npc","game level","game character","game asset"],
+    "youtube":           ["youtube","yt","youtube channel","transcript","video summary"],
     "qr code":           ["qr","qr code","qrcode"],
     "quiz et flashcards":["quiz","flashcard","revision","memorization","anki","mcq"],
     "application":       ["mobile app","ios","android","app store"],
@@ -121,19 +121,32 @@ def guess_pricing(text):
 
 # ── Utilitaires ────────────────────────────────────────────────────────────────
 
-# Titres d'articles "listicle" (ex. "Top 10 AI Tools", "Top 25 Best AI Tools
-# for Marketers") : ce sont des articles de récap, pas l'annonce d'un outil
-# précis — à exclure de tools.json plutôt qu'à publier comme un outil.
-LISTICLE_RE = re.compile(r"\btop\s+\d+\b[^.\n]{0,40}\btools?\b", re.IGNORECASE)
+# Titres d'articles "listicle" (ex. "Top 10 AI Tools", "50 AI Prompts for
+# Marketers", "20 ChatGPT Prompts You Need") : ce sont des articles de récap,
+# pas l'annonce d'un outil précis — à exclure plutôt qu'à publier. Le nombre
+# doit être en tête de titre (avec ou sans "Top") pour éviter les faux
+# positifs sur des noms d'outils contenant un chiffre (ex. "Notion AI 2.0").
+LISTICLE_RE = re.compile(
+    r"^\W*(top\s+)?\d+\b[^.\n]{0,40}\b(ai\s+)?(tools?|prompts?)\b",
+    re.IGNORECASE,
+)
 
 def is_listicle_title(title):
     return bool(LISTICLE_RE.search(title or ""))
 
+# Matching en sous-chaîne pure faisait remonter "story" (histoires enfants)
+# dans "history", "file" (documents) dans "profile", "short" (vidéo) dans
+# "shortage" — les mots-clés sont donc bornés par \b (mot entier), y compris
+# à l'intérieur des expressions à plusieurs mots.
+CATEGORY_PATTERNS = {
+    cat: re.compile(r"\b(?:" + "|".join(re.escape(kw) for kw in kws) + r")\b", re.IGNORECASE)
+    for cat, kws in CATEGORIES_KW.items()
+}
+
 def guess_categories(text):
-    low = text.lower()
     seen, hits = set(), []
-    for cat, kws in CATEGORIES_KW.items():
-        if cat not in seen and any(kw in low for kw in kws):
+    for cat, pattern in CATEGORY_PATTERNS.items():
+        if cat not in seen and pattern.search(text):
             hits.append(cat); seen.add(cat)
     return hits[:3]
 
@@ -314,12 +327,33 @@ def fetch_hackernews():
             seen.add(url)
             date_iso = datetime.fromtimestamp(hit.get("created_at_i",0), tz=timezone.utc).isoformat()
             name = re.sub(r"^show hn\s*[:\-–]\s*", "", title, flags=re.I)[:80]
-            results.append(make_tool(name, url, "", "Hacker News", date_iso))
+            desc = BeautifulSoup(hit.get("story_text") or "", "html.parser").get_text(" ", strip=True)
+            results.append((name, url, desc, date_iso, hit.get("objectID"), hit.get("author","")))
         results = results[:20]
+
+        tools = []
+        for name, url, desc, date_iso, story_id, author in results:
+            # Pas de story_text (post en lien externe) : l'explication de
+            # l'auteur vit dans le premier commentaire, convention Show HN.
+            if not desc and story_id:
+                desc = _hn_op_first_comment(story_id, author)
+            tools.append(make_tool(name, url, desc, "Hacker News", date_iso))
+        results = tools
         print(f"  Hacker News Show HN: {len(results)}")
     except Exception as e:
         print(f"  Hacker News erreur: {e}", file=sys.stderr)
     return results
+
+
+def _hn_op_first_comment(story_id, author):
+    try:
+        item = get_json(f"https://hn.algolia.com/api/v1/items/{story_id}", timeout=8)
+        for child in item.get("children") or []:
+            if child.get("author") == author and child.get("text"):
+                return BeautifulSoup(child["text"], "html.parser").get_text(" ", strip=True)
+    except Exception:
+        pass
+    return ""
 
 
 def fetch_wp_directory(source_name, domain):
@@ -769,14 +803,19 @@ def main():
             except Exception as e:
                 print(f"  Erreur future {futures[future]}: {e}", file=sys.stderr)
 
-    new_count = len(deduplicate(all_tools))
+    fetched_this_run = deduplicate(all_tools)
     previous_tools = load_previous_tools()
+    previous_urls = {t["tool_url"].rstrip("/").lower() for t in previous_tools}
+    # "Nouveau" = jamais vu lors d'un run précédent (pas juste "récupéré
+    # aujourd'hui" : une source peut re-lister un outil déjà connu).
+    new_today = sum(1 for t in fetched_this_run
+                     if t["tool_url"].rstrip("/").lower() not in previous_urls)
     # Nouveaux en premier : en cas de doublon entre les deux runs, ce sont
     # leurs métadonnées (plus fraîches) qui l'emportent dans deduplicate().
-    all_tools = deduplicate(all_tools + previous_tools)
+    all_tools = deduplicate(fetched_this_run + previous_tools)
     all_tools.sort(key=lambda t: t.get("date_iso",""), reverse=True)
     all_tools = [t for t in all_tools if len(t["name"].strip()) >= 3]
-    print(f"\nNouveaux ce run : {new_count} — Total cumulé : {len(all_tools)}")
+    print(f"\nNouveaux (jamais vus) : {new_today} — Total cumulé : {len(all_tools)}")
 
     stats = {}
     for t in all_tools:
@@ -794,6 +833,7 @@ def main():
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "count":        len(all_tools),
+        "new_today":    new_today,
         "tools":        all_tools,
     }
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
