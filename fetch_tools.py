@@ -648,12 +648,13 @@ def fetch_aisecret():
                     seen_in_article.add(href_key)
 
                     # Le titre du lien seul ("MatrAIx") n'explique rien : le
-                    # paragraphe parent porte la phrase de contexte ("👀 What's
-                    # happening: ..."), dont on retire juste le label structurel.
+                    # paragraphe/item parent porte la phrase de contexte
+                    # ("👀 What's happening: ..." en <p>, ou une puce <li> dans
+                    # les éditions "roundup"), dont on retire le label structurel.
                     desc = ""
-                    parent_p = a.find_parent("p")
-                    if parent_p:
-                        desc = parent_p.get_text(" ", strip=True)
+                    parent = a.find_parent(["p", "li"])
+                    if parent:
+                        desc = parent.get_text(" ", strip=True)
                         desc = re.sub(r"^\W*[A-Za-z][\w' ]{0,30}:\s*", "", desc)
 
                     results.append(make_tool(text, href, desc, "AI Secret", date_iso))
