@@ -1,8 +1,1998 @@
 {
-  "generated_at": "2026-08-13T19:02:33.804769+00:00",
-  "count": 547,
-  "new_today": 85,
+  "generated_at": "2026-08-14T18:58:08.749700+00:00",
+  "count": 630,
+  "new_today": 84,
   "tools": [
+    {
+      "name": "Les Nouvelles Fonctionnalités Étonnantes de Microsoft Copilot que Vous Devez Connaître",
+      "tool_url": "https://www.bing.com/copilotsearch",
+      "description": "Microsoft ne s’arrête pas. Lors d’une célébration pour son 50e anniversaire, la société a révélé une série de nouvelles fonctionnalités qui promettent de transformer l’expérience avec Copilot. De la capacité de mémoire aux actions automatisées, les mises à jour sont conçues pour faire en sorte que Copilot ressemble davantage à ChatGPT ou Gemini. Explorons ce […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.995396+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Profitez de Quake II avec IA dans votre navigateur grâce à Microsoft",
+      "tool_url": "https://copilot.microsoft.com/wham?features=labs-wham-enabled",
+      "description": "Dans un tournant passionnant pour les fans de jeux vidéo, Microsoft a présenté son modèle d’intelligence artificielle appelé Muse. Ce modèle, révélé en février 2025, est conçu pour générer des visuels et des actions de jeu en temps réel, permettant une expérience dynamique et unique à chaque partie. Muse, qui est basé sur un modèle […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.993247+00:00",
+      "categories": [
+        "vidéo"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "OpenAI lance un programme pionnier pour établir des normes dans les modèles d’IA",
+      "tool_url": "https://iaweb.fr/recherche-et-developpement-fr/openai-lance-un-programme-pionnier-pour-etablir-des-normes-dans-les-modeles-dia/",
+      "description": "OpenAI a fait un pas audacieux avec son nouveau Programme Pionniers, conçu pour révolutionner la mise en œuvre de l’intelligence artificielle dans des cas d’utilisation réels. Cette initiative vise à améliorer la manière dont les modèles d’IA sont évalués, un aspect critique alors que les développeurs et les entreprises dépendent de plus en plus des […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.991379+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Midjourney lance V7 avec des améliorations de la qualité d’image et de nouvelles fonctionnalités",
+      "tool_url": "https://iaweb.fr/applications-entreprises-fr/midjourney-lance-v7-avec-des-ameliorations-de-la-qualite-dimage-et-de-nouvelles-fonctionnalites/",
+      "description": "Midjourney a fait une annonce excitante avec le lancement de son nouveau modèle d’image, V7, qui commence à être déployé en mode alpha. Cette mise à jour apporte une qualité d’image remarquablement supérieure, avec des textures plus belles et une cohérence améliorée dans des éléments comme les mains et les objets. Mais ce n’est pas […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.989774+00:00",
+      "categories": [
+        "images"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Découvrez comment créer vos propres applications d’IA personnalisées pour des tâches spécifiques",
+      "tool_url": "https://poe.com/login",
+      "description": "Marre d’écrire des bibles dans ChatGPT juste pour qu’il comprenne ce que vous voulez ? Eh bien, il y a de bonnes nouvelles : créer votre propre application d’IA est plus facile que vous ne le pensez et, le meilleur dans tout ça, vous n’avez besoin de rien savoir en programmation. Rien, zéro, pas une […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.988278+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Les avancées dans l’interface cerveau-ordinateur permettent aux patients paralysés de parler presque",
+      "tool_url": "https://www.nature.com/articles/s41593-025-01905-6",
+      "description": "Dans une avancée passionnante dans le domaine de l’interface cerveau-ordinateur (BCI), des scientifiques de l’UC Berkeley et de l’UC San Francisco ont réalisé de grands progrès en permettant aux personnes atteintes de paralysie sévère de communiquer grâce à un système qui convertit les signaux cérébraux en parole presque en temps réel. Ce développement aborde l’un […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.984420+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Google finance des projets cinématographiques sur la relation entre les humains et l’IA",
+      "tool_url": "https://iaweb.fr/applications-entreprises-fr/google-finance-des-projets-cinematographiques-sur-la-relation-entre-les-humains-et-lia/",
+      "description": "Google s’est associé à Range Media pour lancer un programme intrigant appelé AI on Screen. Cette initiative vise à financer des projets où des cinéastes humains créent des courts-métrages abordant la relation complexe entre l’humanité et l’intelligence artificielle. Selon Google, « au cours des 18 prochains mois, en collaboration avec Range, nous allons commander des […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.982699+00:00",
+      "categories": [
+        "éducation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "MCP : le pont magique qui relie l’IA au monde réel",
+      "tool_url": "https://iaweb.fr/applications-entreprises-fr/mcp-le-pont-magique-qui-relie-lia-au-monde-reel/",
+      "description": "Peux-tu imaginer que ton chatbot préféré puisse lire tes fichiers Google Drive, envoyer des messages sur Slack ou même modifier des documents sur ton ordinateur sans que tu aies à faire quoi que ce soit ? Eh bien, c’est exactement ce que permet le Model Context Protocol (MCP), une petite merveille open source créée par […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.980970+00:00",
+      "categories": [
+        "chatbot",
+        "open source"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Configurez des serveurs MCP dans Claude pour Windows et Mac et découvrez leur potentiel",
+      "tool_url": "https://nodejs.org/en/download",
+      "description": "Tout d’abord : installe Node.js et l’application Claude Avant de plonger dans des configurations mystérieuses, il faut avoir deux outils clés bien en place : Node.js et l’application de bureau de Claude. Sans cela, pas de magie. Alors allons-y étape par étape. 1. Télécharge et installe Node.js Tu n’as pas encore Node.js ? Alors file […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.978475+00:00",
+      "categories": [
+        "documents"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Comparaison entre Copilot Podcasts de Microsoft et NotebookLM de Google révèle des différences clés",
+      "tool_url": "https://copilot.microsoft.com/",
+      "description": "Microsoft a célébré son 50e anniversaire avec un événement spécial où il a révélé plusieurs nouvelles fonctionnalités pour son chatbot Copilot. L’une des plus remarquables était la fonction Copilot Podcasts, qui promettait d’amener l’expérience des podcasts à un nouveau niveau. Après avoir testé NotebookLM de Google, qui m’avait déjà impressionné par sa capacité à générer […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.974229+00:00",
+      "categories": [
+        "chatbot"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Canva lance sa Visual Suite 2.0 avec IA et outils de codage innovants",
+      "tool_url": "https://iaweb.fr/applications-entreprises-fr/canva-lance-sa-visual-suite-2-0-avec-ia-et-outils-de-codage-innovants/",
+      "description": "Lors de l’événement Canva Create de cette année, la plateforme de design graphique a fait un bond quantique en présentant Visual Suite 2.0, une nouvelle collection d’outils qui promet de révolutionner la manière dont les utilisateurs créent du contenu. D’un assistant IA à un support pour les feuilles de calcul, les nouveautés sont vraiment passionnantes. […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.972677+00:00",
+      "categories": [
+        "images",
+        "chatbot",
+        "infographie"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "OpenAI présente GPT-4.1 un modèle révolutionnaire pour des tâches complexes",
+      "tool_url": "https://iaweb.fr/recherche-et-developpement-fr/openai-presente-gpt-4-1-un-modele-revolutionnaire-pour-des-taches-complexes/",
+      "description": "OpenAI a annoncé l’arrivée de trois nouveaux modèles : GPT-4.1, GPT-4.1 mini et GPT-4.1 nano, qui promettent d’amener l’intelligence artificielle à un nouveau niveau. Avec des fenêtres de contexte allant jusqu’à 1 million de tokens et une coupure de connaissance qui s’étend jusqu’en juin 2024, ces modèles sont conçus pour surpasser leurs prédécesseurs. Selon la […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.970779+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "OpenAI développe un nouveau réseau social pour concurrencer X et améliorer l’IA",
+      "tool_url": "https://iaweb.fr/startups-et-entreprises-fr/openai-developpe-un-nouveau-reseau-social-pour-concurrencer-x-et-ameliorer-lia/",
+      "description": "Dans un coup surprenant, OpenAI a commencé à développer son propre réseau social à la manière de X. Selon des rapports de The Verge, ce projet en est encore à ses premières phases, mais on parle déjà d’un prototype interne qui intègre intensément la génération d’images de ChatGPT et un fil social qui pourrait révolutionner […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.969168+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Créez des vidéos avec l’IA Veo 2 de Google sans dépenser un centime",
+      "tool_url": "https://iaweb.fr/applications-entreprises-fr/creez-des-videos-avec-lia-veo-2-de-google-sans-depenser-un-centime/",
+      "description": "Google a fait un grand pas en lançant la génération de vidéos avec son modèle d’intelligence artificielle Veo 2. Bien que cette fonctionnalité soit disponible via un abonnement premium de Google One coûtant 19,99 $ par mois, il existe une alternative gratuite que beaucoup ne connaissent pas : le AI Studio de Google. Cet espace […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.961722+00:00",
+      "categories": [],
+      "pricing": "free"
+    },
+    {
+      "name": "The Washington Post s’associe à OpenAI pour apporter des nouvelles à ChatGPT",
+      "tool_url": "https://iaweb.fr/applications-entreprises-fr/the-washington-post-sassocie-a-openai-pour-apporter-des-nouvelles-a-chatgpt/",
+      "description": "La collaboration entre The Washington Post et OpenAI marque une nouvelle étape dans l’accès à l’information. Ce partenariat permettra que lorsque les utilisateurs poseront des questions à ChatGPT sur des sujets couverts par le journal, le modèle d’IA fournisse des résumés, des citations et des liens directs vers les articles originaux sur le site web […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.960398+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Meta utilise l’IA pour connecter les parents et s’assurer que les adolescents utilisent des comptes",
+      "tool_url": "https://iaweb.fr/ethique-et-societe-fr/meta-utilise-lia-pour-connecter-les-parents-et-sassurer-que-les-adolescents-utilisent-des-comptes-securises/",
+      "description": "Récemment, Meta a fait un pas important vers la protection des adolescents sur ses réseaux sociaux. Dans le but de faciliter la transition vers des comptes plus sûrs pour les jeunes utilisateurs de Facebook et Messenger, la société a commencé à mettre en œuvre une stratégie qui combine la communication directe avec les parents et […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.959010+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "OpenAI lance des achats dans ChatGPT en réponse à Google",
+      "tool_url": "https://iaweb.fr/applications-entreprises-fr/openai-lance-des-achats-dans-chatgpt-en-reponse-a-google/",
+      "description": "Dans un mouvement audacieux, OpenAI a activé l’option d’effectuer des achats directement dans son chatbot populaire, ChatGPT. Cette nouvelle fonctionnalité vise non seulement à faciliter l’expérience d’achat, mais aussi à positionner ChatGPT comme un concurrent direct de géants tels que Google. Avec cette mise à jour, les utilisateurs peuvent comparer des produits de diverses catégories […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.952548+00:00",
+      "categories": [
+        "chatbot"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Découvrez les 10 exemples d’agents d’IA qui transformeront votre vie en 2025",
+      "tool_url": "https://www.vara.ai/",
+      "description": "L’intelligence artificielle progresse à grands pas, laissant derrière elle les anciens chatbots et donnant naissance à des agents d’IA orientés vers l’action. Ceux-ci ne se contentent pas de générer du texte ou des images ; ils prennent des décisions et les exécutent. Dans cet article, nous explorerons dix exemples de la manière dont ces agents […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.951040+00:00",
+      "categories": [
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Découvrez les agents d’intelligence artificielle et leur fonctionnement dans la nouvelle ère numériq",
+      "tool_url": "https://iaweb.fr/applications-entreprises-fr/decouvrez-les-agents-dintelligence-artificielle-et-leur-fonctionnement-dans-la-nouvelle-ere-numerique/",
+      "description": "L’intelligence artificielle évolue à grands pas, et il ne s’agit plus seulement de chatbots qui répondent à des questions. Depuis l’arrivée de ChatGPT fin 2022, l’attention s’est tournée vers les agents d’IA pilotés par des actions. Contrairement aux chatbots qui traitent des informations et répondent en langage naturel, ces agents sont capables d’exécuter des tâches […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.947844+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Meta lance l’API Llama avec des vitesses d’inférence record pour les développeurs",
+      "tool_url": "https://iaweb.fr/applications-entreprises-fr/meta-lance-lapi-llama-avec-des-vitesses-dinference-record-pour-les-developpeurs/",
+      "description": "Dans un tournant passionnant des événements dans le monde de l’intelligence artificielle, Meta a dévoilé la Llama API lors du premier LlamaCon, promettant de révolutionner la façon dont les développeurs interagissent avec leurs modèles d’IA. Ce nouveau service, qui se trouve en phase de test gratuit limité, permet aux développeurs d’accéder à différents modèles de […]",
+      "source": "iaweb.fr",
+      "date_iso": "2026-08-14T18:53:19.939496+00:00",
+      "categories": [
+        "LLM"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Mayo Clinic",
+      "tool_url": "https://futurism.com/health-medicine/lawsuit-mayo-clinic-ai-tools-hospital-maya?ref=aisecret.us",
+      "description": "Mayo Clinic faces a lawsuit from a former AI compliance lead who says its MAYA assistant hid error-rate and privacy problems.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.926303+00:00",
+      "categories": [
+        "chatbot"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Anthropic",
+      "tool_url": "https://9to5mac.com/2026/08/07/psa-claude-code-enabling-auto-mode-as-default-next-week-anthropic-says/?ref=aisecret.us",
+      "description": "Anthropic is making Claude Code Auto Mode the default for paid users, replacing most manual approvals with a risky-action classifier.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.926083+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Cloudflare",
+      "tool_url": "https://blog.cloudflare.com/kitesurf/?ref=aisecret.us",
+      "description": "Cloudflare launched Kitesurf, an agent-first browser built on Workers V8 isolates for lighter automated browsing workloads.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.925884+00:00",
+      "categories": [
+        "automatisation",
+        "navigateur"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Singapore",
+      "tool_url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/09/singapore-to-ensure-ai-helps-workers-worried-about-jobs-pm-wong-says?ref=aisecret.us",
+      "description": "Singapore said it will help workers adapt to AI, while warning that not every job can be protected.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.925670+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "GitHub",
+      "tool_url": "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/?ref=aisecret.us",
+      "description": "GitHub added Copilot side chats and isolated worktrees so developers can run parallel AI coding sessions more safely.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.925398+00:00",
+      "categories": [
+        "open source"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "41% more per visit",
+      "tool_url": "https://www.aol.com/articles/retailers-tap-ai-shopping-traffic-100750000.html?ref=aisecret.us",
+      "description": "As shoppers increasingly ask ChatGPT and Gemini what to buy, retailers are racing to appear in those answers. The referrals are lucrative: Ulta reports double the purchase intent from AI, and Etsy sees shoppers discover products in chatbots. But visitors sent by AI spend 41% more per visit , so brands optimize to rank in chatbots while steering the actual purchase back to their own sites, where th",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.914443+00:00",
+      "categories": [
+        "données"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Ulta reports",
+      "tool_url": "https://www.businessoffashion.com/news/retail/retailers-tap-ai-shopping-traffic-but-fight-to-keep-customer-data/?ref=aisecret.us",
+      "description": "As shoppers increasingly ask ChatGPT and Gemini what to buy, retailers are racing to appear in those answers. The referrals are lucrative: Ulta reports double the purchase intent from AI, and Etsy sees shoppers discover products in chatbots. But visitors sent by AI spend 41% more per visit , so brands optimize to rank in chatbots while steering the actual purchase back to their own sites, where th",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.913730+00:00",
+      "categories": [
+        "données"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "traffic is now mostly bots",
+      "tool_url": "https://www.vincentschmalbach.com/time-serves-ai-bots-a-different-website/?ref=aisecret.us",
+      "description": "It's easy to call this poisoning the well. But look at Time: traffic is now mostly bots , human-facing ads go unseen, revenue is collapsing. When your audience stops being people, selling to people stops paying the bills. This isn't a publisher turning malicious, it's one following its readers. The open web was built as a library for humans; it's quietly becoming feed for machines, and the busines",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.912971+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "serving hidden ads",
+      "tool_url": "https://www.theregister.com/ai-and-ml/2026/08/05/time-magazine-has-a-separate-version-of-its-website-with-ads-only-ai-can-see/5283640?ref=aisecret.us",
+      "description": "A German developer found Time serving hidden ads to AI crawlers, FAQ-shaped article versions only machines ever see. They aren't sent to live search bots but to training crawlers like ClaudeBot, which bake pages into a model's long-term memory. The pitch: why advertise to one human when you can shape the output of a whole model? Whether it even works is unclear, since model builders scrub training",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.912346+00:00",
+      "categories": [
+        "texte",
+        "recherche",
+        "données"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "MatrAIx",
+      "tool_url": "https://matraix.ai/?ref=aisecret.us",
+      "description": "A Harvard and MIT team released MatrAIx , a system that spins up 8.3 billion synthetic \"users,\" one per person alive, each stitched from real-world data: census stats, social surveys, Wikipedia bios, Amazon reviews, developer polls. Point an AI like Claude or GPT at them and it plays these people out, filling surveys, browsing pages, tapping through apps, so a company can test a product on \"humani",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.911607+00:00",
+      "categories": [
+        "données"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Best AI Avatar Generators in 2026",
+      "tool_url": "https://heygen.com/?sid=rewardful&via=hdrobots",
+      "description": "Looking for the best AI tools for ai avatar generators? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
+      "source": "HD Robots",
+      "date_iso": "2026-08-14T18:53:16.863710+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Best AI Note Taking in 2026",
+      "tool_url": "https://notebooklm.google/",
+      "description": "Looking for the best AI tools for ai note taking? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
+      "source": "HD Robots",
+      "date_iso": "2026-08-14T18:53:16.837899+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Best AI Background Removers in 2026",
+      "tool_url": "https://www.remove.bg/?aid=fvvgfygsgkgmrhqm&utm_campaign=affiliate+marketing&utm_medium=referral&utm_source=affiliate",
+      "description": "Looking for the best AI tools for ai background removers? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
+      "source": "HD Robots",
+      "date_iso": "2026-08-14T18:53:16.804565+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Best AI Voice Cloning in 2026",
+      "tool_url": "https://speechify.com/",
+      "description": "Looking for the best AI tools for ai voice cloning? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
+      "source": "HD Robots",
+      "date_iso": "2026-08-14T18:53:16.780334+00:00",
+      "categories": [
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Best AI Customer Support in 2026",
+      "tool_url": "https://www.tidio.com/",
+      "description": "Looking for the best AI tools for ai customer support? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
+      "source": "HD Robots",
+      "date_iso": "2026-08-14T18:53:16.763054+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Best AI Spreadsheet Tools in 2026",
+      "tool_url": "https://streamlit.io/",
+      "description": "Looking for the best AI tools for ai spreadsheet tools? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
+      "source": "HD Robots",
+      "date_iso": "2026-08-14T18:53:16.702911+00:00",
+      "categories": [
+        "données"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Linux",
+      "tool_url": "https://www.theregister.com/os-platforms/2026/08/10/linus-torvalds-says-ai-has-made-huge-linux-kernel-updates-the-new-normal/5285268?ref=aisecret.us",
+      "description": "Linux is seeing larger kernel update waves as AI-assisted review helps developers push more small fixes into the pipeline.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.412722+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Microsoft",
+      "tool_url": "https://whtc.com/2026/08/10/microsoft-plans-to-unveil-its-new-maia-300-ai-chip-this-fall-the-information-reports/?ref=aisecret.us",
+      "description": "Microsoft is reportedly preparing to unveil Maia 300 this fall, pushing deeper into custom AI chips to reduce Nvidia dependence.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.412465+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Bernie Sanders",
+      "tool_url": "https://www.theguardian.com/technology/2026/aug/10/bernie-sanders-ai-development-pause-letter?ref=aisecret.us",
+      "description": "Bernie Sanders urged Meta, OpenAI, and Anthropic to pause frontier AI development, warning Congress may step in if labs keep scaling risky systems.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.412197+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "invisible text watermark",
+      "tool_url": "https://interestingengineering.com/ai-robotics/anthropic-claude-text-invisible-watermarks?ref=aisecret.us",
+      "description": "Any Claude model launched on or after August 2 now ships with an invisible text watermark , woven into the output's statistical patterns so it survives copy-paste and some editing. Older models have until December 2 to comply and are being retrofitted with no timeline. The trigger is EU AI Act Article 50, which only governs AI sold into Europe, yet Anthropic switched the marking on worldwide, acro",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.411413+00:00",
+      "categories": [
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Muse Glimmer",
+      "tool_url": "https://developer.meta.com/ai/models/muse-glimmer/?ref=aisecret.us",
+      "description": "Meta Superintelligence Labs released Muse Glimmer , a 30B open-weight agent model under a permissive Apache 2.0 license, runnable on a Mac or a single consumer GPU with no cloud, no per-step API calls, working even offline. On its own benchmarks it nearly matches GPT-5.5 at tool use and agent tasks, while scoring roughly half of frontier models on hard general reasoning. Meta shipped the weights,",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.405358+00:00",
+      "categories": [
+        "automatisation",
+        "données",
+        "LLM"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "raise over $500B",
+      "tool_url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital?ref=aisecret.us",
+      "description": "Jensen Huang unveiled a plan with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to raise over $500B from outside investors to build AI data centers. The pitch: a GPU isn't a depreciating server anymore, it's an \"AI factory,\" an investable asset that earns revenue and holds resale value like a power plant. The rental data is real, H100 prices rose through 2026, and so is the Wall",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.404600+00:00",
+      "categories": [
+        "données"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "👉 Launch your site with Framer today",
+      "tool_url": "https://framer.link/sL7sUtS?ref=aisecret.us",
+      "description": "",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.404431+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "31 million tokens",
+      "tool_url": "https://www.datacamp.com/tutorial/claude-and-the-riemann-hypothesis?ref=aisecret.us",
+      "description": "This wasn't genius. It was stamina. The pieces sat on the shelf for years, Montgomery in 1973, Goldston and Suriajaya naming the exact missing step. No human fitted it. Claude did, across 650 failed attempts, 60 agents and 31 million tokens , half of them producing nothing. The edge wasn't a sharper idea, it was refusing to stop. Humans quit at the thirtieth dead end. The machine was calm at the s",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.403812+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Erdős problems",
+      "tool_url": "https://www.nature.com/articles/d41586-026-01651-0?ref=aisecret.us",
+      "description": "Anthropic set an unreleased Claude on the Riemann Hypothesis . It didn't prove it, nobody has in 167 years, but it moved a number humans couldn't. The share of zeta zeros provably on the critical line: mathematicians pushed it 0.8% across 37 years. Claude added 25.6% in a day and a half, from 41.6% to 67.2%. And it's not alone, through 2026 these records have fallen almost monthly, from Erdős prob",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.402819+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Riemann Hypothesis",
+      "tool_url": "https://www.anthropic.com/research/riemann-zeta?ref=aisecret.us",
+      "description": "Anthropic set an unreleased Claude on the Riemann Hypothesis . It didn't prove it, nobody has in 167 years, but it moved a number humans couldn't. The share of zeta zeros provably on the critical line: mathematicians pushed it 0.8% across 37 years. Claude added 25.6% in a day and a half, from 41.6% to 67.2%. And it's not alone, through 2026 these records have fallen almost monthly, from Erdős prob",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.401385+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Lightricks/LTX-2",
+      "tool_url": "https://github.com/Lightricks/LTX-2",
+      "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model. LTX-2 LTX-2 is the first DiT-based audio-video foundation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access. 🚀 Quick Start Clone the repo git clo",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:16.226254+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Alibaba Cloud",
+      "tool_url": "https://assets.theregister.com/2026/08/11/20262/?td=keepreading&ref=aisecret.us",
+      "description": "Alibaba Cloud put DualLane into production, using AI to route support tickets so routine cases burn far fewer tokens.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.211438+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "CoreWeave",
+      "tool_url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx?ref=aisecret.us",
+      "description": "CoreWeave reported Q2 revenue of $2.58 billion and a $104 billion backlog, showing AI cloud demand is still expanding.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.211167+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "$14 billion venture",
+      "tool_url": "https://www.prnewswire.com/news-releases/meta-announces-new-strategic-venture-with-blackrock-to-develop-data-center-in-el-paso-302836040.html?ref=aisecret.us",
+      "description": "Meta and BlackRock unveiled a $14 billion venture to build a 1-gigawatt data center in El Paso, with BlackRock-managed funds owning 80% and $12.5 billion of it debt-financed. Meta contributes land, takes a $1 billion distribution, and leases the compute back instead of owning it. The structure traces to BlackRock CEO Larry Fink, who said the AI buildout would lean on pensions , insurance, and savi",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.209902+00:00",
+      "categories": [
+        "données"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "70% of revenue",
+      "tool_url": "https://www.coindesk.com/business/2026/08/11/riot-platforms-surges-20-in-pre-market-trading-on-usd9-1-billion-anthropic-deal?ref=aisecret.us",
+      "description": "Riot Platforms said it signed a 20-year, $9.1B deal with Anthropic to provide 191 MW at its Rockdale, Texas campus. The stock jumped more than 20% premarket. With two five-year extensions, the contract could reach $16.1B. Riot already has an AI lease with AMD and says Rockdale will reach 241 MW. It is not alone. Hut 8, TeraWulf, IREN and other miners are making the same pivot, and CoinDesk noted t",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.208978+00:00",
+      "categories": [
+        "documents"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "20-year, $9.1B deal",
+      "tool_url": "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/?ref=aisecret.us",
+      "description": "Riot Platforms said it signed a 20-year, $9.1B deal with Anthropic to provide 191 MW at its Rockdale, Texas campus. The stock jumped more than 20% premarket. With two five-year extensions, the contract could reach $16.1B. Riot already has an AI lease with AMD and says Rockdale will reach 241 MW. It is not alone. Hut 8, TeraWulf, IREN and other miners are making the same pivot, and CoinDesk noted t",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.208112+00:00",
+      "categories": [
+        "documents"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Cursor acquisition",
+      "tool_url": "https://www.macrumors.com/2026/08/11/grok-bot-macos-ios/?ref=aisecret.us",
+      "description": "SpaceXAI shipped an early version of Grok Bot , a cloud-based AI agent. Each user's bot runs its own Linux virtual machine with a browser, files and terminal, logs into your accounts, and works end to end 24/7 even after you shut your laptop. You can run several in parallel, and it learns a task by watching you do it once. It's the first integration from the $60B Cursor acquisition , inheriting Cu",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.200193+00:00",
+      "categories": [
+        "chatbot",
+        "automatisation",
+        "navigateur"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Register to save your spot",
+      "tool_url": "https://www.vanta.com/webinars/run-compliance-from-claude-cursor-and-codex-build-with-vanta?utm_source=ai-secret&utm_medium=newsletter&utm_campaign=fy27q3_webinar_run_compliance_claude_cursor_codex_global",
+      "description": "Register to save your spot . Can't make the time? Register anyway, and you'll get a link to the recording.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.199207+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "partnering with Palantir",
+      "tool_url": "https://futurism.com/future-society/usa-today-palatnir-reader-intelligence?ref=aisecret.us",
+      "description": "USA Today's parent company is partnering with Palantir to build what its CEO calls a \"common intelligence layer\" on reader data, to monetize those relationships \"faster and at much greater value.\" Palantir is the surveillance firm tied to ICE crackdowns and mass data work, and a company USA Today's own reporters cover. The News Guild says journalists were \"shocked\" and is demanding the company end",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:16.198497+00:00",
+      "categories": [
+        "données",
+        "actualités"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "msitarzewski/agency-agents",
+      "tool_url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. 🎭 The Agency: AI Specialists Ready to Transform Your Workflow A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:16.174531+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "voix"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "3b1b/manim",
+      "tool_url": "https://github.com/3b1b/manim",
+      "description": "Animation engine for explanatory math videos Manim is an engine for precise programmatic animations, designed for creating explanatory math videos. Note, there are two versions of manim. This repository began as a personal project by the author of 3Blue1Brown for the purpose of animating those videos, with video-specific code available here . In 2020 a group of developers forked it into what is no",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:16.100720+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "documents"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "kepano/obsidian-skills",
+      "tool_url": "https://github.com/kepano/obsidian-skills",
+      "description": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas. Agent Skills for use with Obsidian. These skills follow the Agent Skills specification so they can be used by any skills-compatible agent, including Claude Code, Codex, and Open Code. Installation Marketplace /plugin marketplace add kepano/obsidian-skills /plugin install obsidia",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:16.093649+00:00",
+      "categories": [
+        "documents",
+        "automatisation",
+        "open source"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "holaboss-ai/holaOS",
+      "tool_url": "https://github.com/holaboss-ai/holaOS",
+      "description": "Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK. The Computer for You and Your Agent Run any agent — Claude Code, Codex, or holaOS — in one local-first workspace, over your tools, your files, and one shared memory. Frontier models built in, or bring you",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:16.083333+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "voix"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "NVIDIA-NeMo/Switchyard",
+      "tool_url": "https://github.com/NVIDIA-NeMo/Switchyard",
+      "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization. Switchyard Switchyard is a Rust proxy and library for LLM traffic. It routes requests across providers, translates between OpenAI and Anthropic APIs, records operational metric",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:16.071848+00:00",
+      "categories": [
+        "chatbot",
+        "texte",
+        "automatisation"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "smicallef/spiderfoot",
+      "tool_url": "https://github.com/smicallef/spiderfoot",
+      "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface. SpiderFoot is an open source intelligence (OSINT) automation tool. It integrates with just about every data source available and utilises a range of methods for data analysis, making that data easy to navigate. SpiderFoot has an embedded web-server for providing a clean and intuitive web-based interface but can als",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:16.046011+00:00",
+      "categories": [
+        "images",
+        "chatbot",
+        "texte"
+      ],
+      "pricing": "freemium"
+    },
+    {
+      "name": "megadose/holehe",
+      "tool_url": "https://github.com/megadose/holehe",
+      "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function. Holehe OSINT - Email to Registered Accounts 👋 Hi there! For any professional inquiries or collaborations, please reach out to me at: megadose@protonmail.com 📧 Preferably, use your professional email for correspondence. Let's keep it",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:15.993441+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "données"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "macro-inc/macro",
+      "tool_url": "https://github.com/macro-inc/macro",
+      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory. Sign up · Docs · Book demo · Website · Feature requests · Contribute · Hiring Macro is the all-in-one workspace for you and your team. It unifies email + messages + docs + tasks + agents + CRM into a single fast interface with shared team-level memory. Everything in y",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:15.950155+00:00",
+      "categories": [
+        "musique",
+        "chatbot",
+        "texte"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "unslothai/unsloth",
+      "tool_url": "https://github.com/unslothai/unsloth",
+      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more. Unsloth is the first desktop app to run and train models. Features • Quickstart • Notebooks • Documentation ⚡ Get started Download the native Unsloth Desktop app for your operating system: Platform Link Windows Download macOS Download Linux / Ubuntu (deb) Download Linux",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:15.891783+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "voix"
+      ],
+      "pricing": "freemium"
+    },
+    {
+      "name": "OpenAI",
+      "tool_url": "https://openai.com/index/how-enterprises-put-ai-to-work/?ref=aisecret.us",
+      "description": "OpenAI published enterprise usage studies showing AI adoption moving from assistants toward agentic workflows across non-engineering teams.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.865671+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Foxconn",
+      "tool_url": "https://electronics.economictimes.indiatimes.com/news/components-hardware/taiwans-foxconn-reports-35-rise-in-q2-profit-on-ai-demand-beats-forecasts/133173882?ref=aisecret.us",
+      "description": "Foxconn reported Q2 profit up 35% as AI server demand keeps lifting the company beyond its iPhone assembly base.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.865464+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Cerebras",
+      "tool_url": "https://www.investors.com/news/technology/cerebras-stock-cbrs-q2-2026-earnings/?ref=aisecret.us",
+      "description": "Cerebras raised its 2026 revenue outlook after core revenue doubled, but shares fell as investors questioned AI chip margins.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.865249+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Cisco",
+      "tool_url": "https://www.investors.com/news/technology/cisco-stock-csco-cisco-earnings-q22026/?ref=aisecret.us",
+      "description": "Cisco reported $4 billion in quarterly AI infrastructure orders, showing cloud customers are still buying networking capacity for AI buildouts.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.865040+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Mistral",
+      "tool_url": "https://mistral.ai/news/regional-inference-open-models-new-compute/?ref=aisecret.us",
+      "description": "Mistral added regional inference controls and third-party open models, starting with GLM-5.2, to strengthen its sovereign AI platform.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.864810+00:00",
+      "categories": [
+        "LLM"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Apple",
+      "tool_url": "https://9to5mac.com/2026/08/12/report-apple-seeks-publisher-deals-to-give-siri-ai-better-access-to-current-events/?ref=aisecret.us",
+      "description": "Apple is seeking multiyear publisher deals so Siri AI can answer current-news questions with licensed reporting instead of generated summaries.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.864595+00:00",
+      "categories": [
+        "actualités"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "MyClaw",
+      "tool_url": "https://myclaw.ai/?utm_source=aisecret",
+      "description": "MyClaw is a best-in-class AI agent platform that brings together OpenClaw, Hermes Agent, and commercial infrastructure to help businesses launch intelligent agents that understand goals, use tools, automate workflows, and deliver finished results.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.864239+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Y Combinator",
+      "tool_url": "https://www.ycombinator.com/launches/SUZ-gamgee-personalised-mrna-cancer-vaccines-for-dogs?ref=aisecret.us",
+      "description": "Paul Conyngham, an Australian tech entrepreneur who stresses he is \"not a biologist,\" turned a viral story, using ChatGPT and Grok to design a personalized mRNA cancer vaccine for his dog Rosie, into a startup called Gamgee . It sells personalized mRNA cancer vaccines for dogs, is backed by Y Combinator , takes cases globally, and promises a \"vaccine in hand\" in about four weeks. Its stated ambiti",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.863481+00:00",
+      "categories": [
+        "histoires enfants"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "70 million Deaf people",
+      "tool_url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/?ref=aisecret.us",
+      "description": "Every input method quietly defines the normal user. Keyboards assume you type; voice assistants assume you speak and can be heard. For decades that left 70 million Deaf people signing to no one, forced to fall back to typing a second language. Making signing a native input flips that. It doesn't just add a feature, it rewrites the list of things a phone assumes you can do, and a language the machi",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.862804+00:00",
+      "categories": [
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "sign-language-to-text mode",
+      "tool_url": "https://mashable.com/tech/google-pixel-11-asl-sign-to-text?ref=aisecret.us",
+      "description": "Google DeepMind shipped SL2T, a sign-language-to-text mode l, into Gboard and Live Transcribe on the Pixel 11, starting with ASL to English. It works like voice dictation, but instead of speaking, you sign to the phone's camera and it turns your signing into text in real time, anywhere you'd normally type: a search bar, a message, a prompt to Gemini. Trained on 100,000+ hours across 50+ sign langu",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.862025+00:00",
+      "categories": [
+        "voix",
+        "texte",
+        "recherche"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "altic-dev/FluidVoice",
+      "tool_url": "https://github.com/altic-dev/FluidVoice",
+      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon. FluidVoice Open source voice-to-text dictation app for macOS with on-device AI enhancement. Install with Homebrew: brew install --cask fluidvoice Manual download: latest release Note FluidVoice is on macOS today.",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:15.851844+00:00",
+      "categories": [
+        "voix",
+        "musique",
+        "texte"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Grok 4.6",
+      "tool_url": "https://x.ai/news/grok-4-6?ref=aisecret.us",
+      "description": "In one night, two hours apart, DeepSeek V4 Pro and Grok 4.6 both shipped, and both pushed near Claude Fable 5's level. DeepSeek matched Fable on tool benchmarks (Terminal Bench 87.9 to Fable's 88.0) at a fraction of the price: output around $0.87 per million tokens against Fable's $50, though DeepSeek has warned of price hikes. Grok landed close on quality with startling speed: coding tasks that d",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.850743+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "tool_url": "https://decrypt.co/375507/china-deepseek-upgrades-v4-pro-claude-fable?ref=aisecret.us",
+      "description": "In one night, two hours apart, DeepSeek V4 Pro and Grok 4.6 both shipped, and both pushed near Claude Fable 5's level. DeepSeek matched Fable on tool benchmarks (Terminal Bench 87.9 to Fable's 88.0) at a fraction of the price: output around $0.87 per million tokens against Fable's $50, though DeepSeek has warned of price hikes. Grok landed close on quality with startling speed: coding tasks that d",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.849935+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "cactus-compute/needle",
+      "tool_url": "https://github.com/cactus-compute/needle",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots. Needle 2 Needle 2 is an open 45M-parameter model for tool calling, device use and structured extraction. The whole model is a single 14MB binary that runs a full session in about 28MB of RAM. It is built on our Simple Attention Network findings, compressed to CQ2-bit with Cactus Quants, and baked into its own engine",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:15.818976+00:00",
+      "categories": [
+        "chatbot",
+        "texte",
+        "documents"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "anthropics/skills",
+      "tool_url": "https://github.com/anthropics/skills",
+      "description": "Public repository for Agent Skills Note: This repository contains Anthropic's implementation of skills for Claude. For information about the Agent Skills standard, see agentskills.io . Skills Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Skills teach Claude how to complete specific tasks in a repeatable way, wh",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:15.810778+00:00",
+      "categories": [
+        "musique",
+        "texte",
+        "documents"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "semantica-agi/semantica",
+      "tool_url": "https://github.com/semantica-agi/semantica",
+      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems Graph-Native Infrastructure for Context and Accountable AI Systems The Open Source Palantir for AI Agents Ingest your enterprise data, extract what matters, build a Context Graph and knowledge graph (KG), and run graph analytics and causal reasoning over all of it, with full decision provenance baked in. Explainable, traceable, and",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:15.763879+00:00",
+      "categories": [
+        "images",
+        "musique",
+        "chatbot"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "cathrynlavery/diagram-design",
+      "tool_url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop. Diagram Design Editorial diagrams your designer won't hate. New in 2.0 — the Loop: flywheels with a shared-memory hub. The dashed lines are the write-backs. New in 2.3: semantic system patterns and optional accessible motion, while static output stays the default. 27 visual types. One agent skill fo",
+      "source": "GitHub Trending",
+      "date_iso": "2026-08-14T18:53:15.709735+00:00",
+      "categories": [
+        "images",
+        "vidéo",
+        "texte"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "The Hardwire",
+      "tool_url": "https://thehardwire.com/?ref=aisecret.us",
+      "description": "The Hardwire explores hardware, consumer tech, and what’s coming next",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.548673+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Marketing Secret",
+      "tool_url": "https://marketingsecret.us/?ref=aisecret.us",
+      "description": "Marketing Secret breaks down real growth and go-to-market playbooks",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.548469+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Robotics Herald",
+      "tool_url": "https://roboticsherald.com/?ref=aisecret.us",
+      "description": "Robotics Herald tracks how robots move from labs into daily life",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.548328+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Bay Area Letters",
+      "tool_url": "https://bayarealetters.com/?ref=aisecret.us",
+      "description": "Bay Area Letters decodes tech and business shifts from Silicon Valley",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.548175+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Nvidia",
+      "tool_url": "https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/?ref=aisecret.us",
+      "description": "Nvidia expanded Nemotron as an open-source model family for agentic AI, publishing weights, datasets, and training techniques for developers.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.547942+00:00",
+      "categories": [
+        "automatisation",
+        "open source"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Databricks",
+      "tool_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales?ref=aisecret.us",
+      "description": "Databricks closed $5 billion at a $190 billion valuation as its AI-agent database and governance products keep driving enterprise demand.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.547697+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "ChatGPT",
+      "tool_url": "https://9to5mac.com/2026/08/13/chatgpt-for-mac-adds-opt-in-computer-history-feature-replacing-chronicle/?ref=aisecret.us",
+      "description": "ChatGPT added opt-in Computer History on Mac so context from selected apps and websites can carry into future conversations.",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.547423+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "entirely from AI-generated video",
+      "tool_url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-just-got-its-first-24-7-tv-channel/?ref=aisecret.us",
+      "description": "Fairground Entertainment launched Fairground AI Creator TV this month, the first FAST channel, meaning free ad-supported streaming, built entirely from AI-generated video running 24/7 with AI-generated ads. It pulls from 100-plus AI creators and landed on Roku's live guide, reaching over 100 million households. The company raised just $4 million. Critics were savage: Futurism called it an \"AI slop",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.546836+00:00",
+      "categories": [
+        "vidéo"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Fairground Entertainment",
+      "tool_url": "https://fairground.tv/creator/fast-channel?ref=aisecret.us",
+      "description": "Fairground Entertainment launched Fairground AI Creator TV this month, the first FAST channel, meaning free ad-supported streaming, built entirely from AI-generated video running 24/7 with AI-generated ads. It pulls from 100-plus AI creators and landed on Roku's live guide, reaching over 100 million households. The company raised just $4 million. Critics were savage: Futurism called it an \"AI slop",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.546194+00:00",
+      "categories": [
+        "vidéo"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "move in before it",
+      "tool_url": "https://www.pymnts.com/news/retail/2026/amazon-wants-alexa-to-own-the-shopping-list-before-walmart-ever-sees-it/?ref=aisecret.us",
+      "description": "Retail spent a century getting closer to the moment you decide. Amazon is trying to move in before it . The refrigerator is not a convenience; it is a sensor that hands the definition of your needs to the one company that profits from defining them. Proximity, Walmart's whole advantage, only matters once a trip begins. Amazon wants to author the trip. The seller becomes the source of the demand it",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.545597+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "photograph your refrigerator",
+      "tool_url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-ai-assistant?ref=aisecret.us",
+      "description": "Amazon demonstrated Alexa for Shopping on Wednesday. You photograph your refrigerator , and the AI reads what has been consumed, cross-references your purchase history and past conversations, and assembles the shopping list itself. CEO Doug Herrington framed it as one step toward a household that effectively replenishes itself. Traditional shopping starts when you say \"I'm out of coffee.\" This sta",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.544921+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "One compromised agent",
+      "tool_url": "https://www.alphaxiv.org/abs/2608.10218?ref=aisecret.us",
+      "description": "AI security has focused on the entry point: block the poisoned email or injected instruction before it reaches one agent. This paper moves the threat downstream. One compromised agent doesn't stay compromised alone. It recruits, and each recruit recruits the next. The memory finding is the sharpest edge: wipe the chat and the infection restarts anyway, because the virus now lives in the agent's id",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.537947+00:00",
+      "categories": [
+        "chatbot",
+        "documents",
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "mind viruses",
+      "tool_url": "https://www.anthropic.com/research/multiagent-systems?ref=aisecret.us",
+      "description": "Anthropic published a study this week showing AI agents can infect each other with what it calls \" mind viruses .\" Researchers seeded one agent in a six-member coding team with a goal, gave it no tools except direct messaging, and watched. The infected agent recruited teammates, who wrote the idea into their own memory files and passed it on. The paper reports some viruses survived twenty relay ro",
+      "source": "AI Secret",
+      "date_iso": "2026-08-14T18:53:15.537067+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "mpai",
+      "tool_url": "https://godfaddaai.github.io/multiplayer-ai/?ref=futuretools.io",
+      "description": "Share a live Codex or Claude Code session with a teammate.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.385298+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Typecast API",
+      "tool_url": "https://typecast.ai/developers/api/?ref=futuretools.io",
+      "description": "A text-to-speech API with emotive AI voices and real-time streaming.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.385193+00:00",
+      "categories": [
+        "voix",
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Soloop",
+      "tool_url": "https://www.soloop.io/?ref=futuretools.io",
+      "description": "AI operating system for solo founders to run and grow a company.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.385093+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Omniwork",
+      "tool_url": "https://www.omniwork.ai/?ref=futuretools.io",
+      "description": "An AI agent OS that coordinates expert agents for creative work.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.385000+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "ReMynd",
+      "tool_url": "https://remyndai.com/?ref=futuretools.io",
+      "description": "A private Mac app that records, searches, and queries your screen history.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.384894+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "LIVVO",
+      "tool_url": "https://livvo.ai/?ref=futuretools.io",
+      "description": "AI platform that captures conversations and creates searchable enterprise.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.384803+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Antigma",
+      "tool_url": "https://antigma.ai/?ref=futuretools.io",
+      "description": "Ante is a lightweight, offline-first AI coding agent runtime.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.384709+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "ChatExtender",
+      "tool_url": "https://chatextender.com/?ref=futuretools.io",
+      "description": "Mac app adding persistent memory and search to ChatGPT and Claude.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.384601+00:00",
+      "categories": [
+        "recherche"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "QueryWing",
+      "tool_url": "https://querywing.com/?ref=futuretools.io",
+      "description": "AI chatbot that captures leads and answers from your site content.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377900+00:00",
+      "categories": [
+        "chatbot",
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "MorningZero",
+      "tool_url": "https://morningzero.com/?ref=futuretools.io",
+      "description": "AI email triage that sorts all your Gmail inboxes overnight.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377806+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "EUrouter",
+      "tool_url": "https://www.eurouter.ai/?ref=futuretools.io",
+      "description": "A single API for AI inference routed through EU infrastructure.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377716+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "VidiRelay",
+      "tool_url": "https://vidirelay.com/?ref=futuretools.io",
+      "description": "Transcribe public TikTok, Reels, and YouTube videos into editable text.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377622+00:00",
+      "categories": [
+        "texte",
+        "youtube"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Looops",
+      "tool_url": "https://looops.ai/?ref=futuretools.io",
+      "description": "AI agent that builds and publishes websites from chat prompts.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377524+00:00",
+      "categories": [
+        "chatbot",
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "MeetOye",
+      "tool_url": "https://meetoye.com/?ref=futuretools.io",
+      "description": "AI-native video meetings with transcription, recaps, and translation.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377434+00:00",
+      "categories": [
+        "vidéo",
+        "langues"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Shocase",
+      "tool_url": "https://shocase.ai/?ref=futuretools.io",
+      "description": "Turns screen recordings into edited videos and written guides.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377347+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "TickClip",
+      "tool_url": "https://www.tickclip.ai/?ref=futuretools.io",
+      "description": "AI tool \"])self.__next_f.push([1,\"that checks price, reviews, and seller trust before you buy.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377208+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Vunote",
+      "tool_url": "https://www.vunote.so/?ref=futuretools.io",
+      "description": "Converts YouTube videos into AI-generated study notes and transcripts.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377116+00:00",
+      "categories": [
+        "youtube"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Xirp",
+      "tool_url": "https://xirp.spotify.com/?ref=futuretools.io",
+      "description": "Agentic dev environment with institutional system context for AI coding.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.377023+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "BlitzReels",
+      "tool_url": "https://blitzreels.com/?ref=futuretools.io",
+      "description": "AI tool that converts long videos into branded short clips.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.376932+00:00",
+      "categories": [
+        "vidéo"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "easybits",
+      "tool_url": "https://easybits.tech/?ref=futuretools.io",
+      "description": "No-code data extraction platform built for n8n workflows.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.376849+00:00",
+      "categories": [
+        "automatisation",
+        "données"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "DobroDesk",
+      "tool_url": "https://dobrodesk.com/?ref=futuretools.io",
+      "description": "AI-assisted customer support inbox with human handoff controls.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.376763+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "SRND AI",
+      "tool_url": "https://srnd.ai/?ref=futuretools.io",
+      "description": "AI operating system that manages music releases for artists.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.376674+00:00",
+      "categories": [
+        "musique"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Vibpost",
+      "tool_url": "https://vibpost.com/?ref=futuretools.io",
+      "description": "AI tool that generates reviews and social content via QR scan.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.376575+00:00",
+      "categories": [
+        "texte",
+        "qr code"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "App0",
+      "tool_url": "https://app0.ai/?ref=futuretools.io",
+      "description": "Build full-stack apps from a text description using GPT or Claude.",
+      "source": "FutureTools",
+      "date_iso": "2026-08-14T18:53:15.376444+00:00",
+      "categories": [
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "The first big exit in AI",
+      "tool_url": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
+      "description": "little tools for making life easier",
+      "source": "Ben's Bites",
+      "date_iso": "2026-08-14T18:53:15.246055+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "GPT-5.6 is here but...",
+      "tool_url": "https://www.bensbites.com/p/gpt-56-is-here-but",
+      "description": "plus the insanity of inference",
+      "source": "Ben's Bites",
+      "date_iso": "2026-08-14T18:53:15.245662+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Grok x Cursor",
+      "tool_url": "https://www.bensbites.com/p/grok-x-cursor",
+      "description": "More Fable, GPT-5.6 and new ChatGPT voice",
+      "source": "Ben's Bites",
+      "date_iso": "2026-08-14T18:53:15.245213+00:00",
+      "categories": [
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "How to use GPT-5.6",
+      "tool_url": "https://www.bensbites.com/p/how-to-use-gpt-56",
+      "description": "new desktop app and hosted sites in ChatGPT",
+      "source": "Ben's Bites",
+      "date_iso": "2026-08-14T18:53:15.244953+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Better design than Fable",
+      "tool_url": "https://www.bensbites.com/p/better-design-than-fable",
+      "description": "unsolved maths problems vs ai models, who'll win?",
+      "source": "Ben's Bites",
+      "date_iso": "2026-08-14T18:53:15.244561+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Opus 5 >> Fable 5",
+      "tool_url": "https://www.bensbites.com/p/opus-5-fable-5",
+      "description": "Codex plus Voice is the new openclaw",
+      "source": "Ben's Bites",
+      "date_iso": "2026-08-14T18:53:15.233586+00:00",
+      "categories": [
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "1 Billion ChatGPT users",
+      "tool_url": "https://www.bensbites.com/p/1-billion-chatgpt-users",
+      "description": "tinkering with tldraw is so much fun",
+      "source": "Ben's Bites",
+      "date_iso": "2026-08-14T18:53:15.233355+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "What my agent knows about me",
+      "tool_url": "https://www.bensbites.com/p/what-my-agent-knows-about-me",
+      "description": "80% cheaper GPT",
+      "source": "Ben's Bites",
+      "date_iso": "2026-08-14T18:53:15.233204+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Make it readable",
+      "tool_url": "https://www.bensbites.com/p/make-it-readable",
+      "description": "an ai future for everyone",
+      "source": "Ben's Bites",
+      "date_iso": "2026-08-14T18:53:15.232927+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Mole – Deep research agent for your terminal",
+      "tool_url": "https://github.com/lajosdeme/mole",
+      "description": "Doing research with agents is fun until they blow way past budget, jumble the sources, and don't even give you the best possible answer, just sound confident. And if you want to run some research task on local data - you have no idea where your data ends up after the prompt consumes it. So I built this tool: a deep-research agent with an enforced budget, verified quotes, and a privacy boundary for",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T18:52:48+00:00",
+      "categories": [
+        "automatisation",
+        "recherche",
+        "données"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "PasteDaemon – Automatically remove tracking from URLs and more",
+      "tool_url": "https://pastedaemon.app",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T18:42:07+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Captain, AI Travel Agent",
+      "tool_url": "https://www.moonlight.ng/captain/",
+      "description": "I’m a software designer from Lagos exploring conversational interfaces and frameworks for building agents. I made Captain to help with everyday travel planning. It can explore an itinerary, check live flight prices, or watch for the right time to book. Captain is a Telegram bot powered by a generalist model (anthropic/claude-sonnet-5), with specialist models handling workflows such as trip interpr",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T18:25:20+00:00",
+      "categories": [
+        "images",
+        "voix",
+        "chatbot"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Open-source and AI native web analytics",
+      "tool_url": "https://github.com/OpenLabs-so/openanalytics",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T18:17:42+00:00",
+      "categories": [
+        "données",
+        "open source"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "I Like Movies",
+      "tool_url": "https://theresanaiforthat.com/ai/i-like-movies/",
+      "description": "Find what to watch, together.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T18:00:02+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Easel – Interactive review boards for agent feedback loops",
+      "tool_url": "https://github.com/The-Sentience-Company/easel",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T17:14:19+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Vdoo AI | Video Generator",
+      "tool_url": "https://theresanaiforthat.com/ai/vdoo-ai-video-generator/",
+      "description": "Turn any image into a stunning video, no watermark.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T17:00:02+00:00",
+      "categories": [
+        "images",
+        "vidéo"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "I built a tool that delegates bounded spending to an AI agent",
+      "tool_url": "https://github.com/meyerdav24/molt",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T16:39:52+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Agentic Ship – open-source Lovable alternative that runs on your agent",
+      "tool_url": "https://github.com/moasq/agentic-ship",
+      "description": "Hi HN. This is an open-source harness that helps you ship a fullstack application the agentic way, you only pay for your AI subscription (Claude, Codex, Cursor) and the domain. It builds an end to end fullstack app starting from automatically connecting to the needed providers like convex, netlify, etc, and building the frontend , backend , payment, testing, to production deployment, all coordinat",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T16:39:40+00:00",
+      "categories": [
+        "automatisation",
+        "open source"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Ex-Google CEO: We Have 24 Months Before AGI Changes Everything",
+      "tool_url": "https://theresanaiforthat.com/youtube/ex-google-ceo-we-have-24-months-before-agi-changes-everything-olhamobc-ly/",
+      "description": "",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T16:15:23+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "DST this DST that, test your containers",
+      "tool_url": "https://github.com/bxrne/dstest",
+      "description": "now supports dtrun so environment is reproducible https://github.com/bxrne/dtrun",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T16:14:32+00:00",
+      "categories": [
+        "open source"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Hexis, open-source Claude Skills management",
+      "tool_url": "https://github.com/Bevel-Software/Hexis",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T16:14:19+00:00",
+      "categories": [
+        "open source"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Visibility Mesh",
+      "tool_url": "https://theresanaiforthat.com/ai/visibility-mesh/",
+      "description": "AI recommends the site it can read. Not the best one.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T16:00:02+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "SOPMaker",
+      "tool_url": "https://theresanaiforthat.com/ai/sopmaker/",
+      "description": "SOPs your team will actually follow.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T16:00:02+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
+      "tool_url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
+      "description": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside a letter from Mark Zuckerberg arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s […]",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-08-14T15:43:28+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Remarc – contextual feedback for coding agents via MCP",
+      "tool_url": "https://github.com/metedata/Remarc",
+      "description": "Like any side project, Remarc had its innocent beginnings in my own problem — there was no good way to provide contextual feedback to AI agents on their own output. There are a plethora of tools for collaborating with humans, but surprisingly little for collaborating with AI. Chat just wasn’t cutting it for the kind of contextual feedback I wanted to give my agents. This thing in the implementatio",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T15:35:23+00:00",
+      "categories": [
+        "chatbot",
+        "texte",
+        "automatisation"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Realistic AI Image Generator for portraits and product shots",
+      "tool_url": "https://realisticaiimagegenerator.online/",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T15:33:32+00:00",
+      "categories": [
+        "images"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Mininote: Instant, plain-text note taking without tracking or lock-in",
+      "tool_url": "https://mininote.ink/",
+      "description": "So, I built this little thing over the past month or so now, I got tired of places for tickets, notes, and such being shoved front and center in apps. Thus I created Mininote to get away from the noise I wanted something simple to move out of the way completely when I don't need it but be there when I do need it It contains a slew of features built right in, but the coolest is the sites own API is",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T15:30:29+00:00",
+      "categories": [
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Beeb, a daily Blokus-inspired block puzzle game",
+      "tool_url": "https://georgemike.com/beeb",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T15:24:50+00:00",
+      "categories": [
+        "jeu vidéo"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Graft – Claude Code hooks that cut grep tokens by 42%",
+      "tool_url": "https://github.com/NanoNets/Graft",
+      "description": "",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T15:22:02+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "I trained three LLMs from scratch and put them online to try them out",
+      "tool_url": "https://huggingface.co/spaces/JohnEnev/modern-llm-playground",
+      "description": "Created 3 models (from 315M to 672M parameters) from pre-training to GRPO. Sadly GRPO did hurt the models when it comes to general knowledge. Ended with building a KV cache and serving them on HF Space so people can try them out. https://github.com/JohnEnev/modern-llm/blob/main/README.md with the code and links to the articles.",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T15:06:26+00:00",
+      "categories": [
+        "LLM",
+        "open source"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "ego (lite)",
+      "tool_url": "https://theresanaiforthat.com/ai/ego-lite/",
+      "description": "The browser your AI agents use while you don't.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T15:00:06+00:00",
+      "categories": [
+        "navigateur"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Measure your AI search with BYOK and OSS (free)",
+      "tool_url": "https://github.com/letterstory/lettertrace",
+      "description": "Sharing something fun we made :)",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T14:57:16+00:00",
+      "categories": [
+        "recherche"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "Burla – Distributed computing framework for AI agents",
+      "tool_url": "https://burla.dev/",
+      "description": "Hi HN! Would love any thoughts on this, we built Burla to enable anyone, even total beginners to scale Python to thousands of computers in their cloud with zero hassle. In a world of coding agents, this means something different than it used to, specifically that Burla requires almost no cloud permissions to get started. Anyone who has permission to boot a VM in their cloud can simply pip install",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T14:52:54+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Kog is going deeper to squeeze more inference out of GPUs",
+      "tool_url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
+      "description": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-08-14T14:50:11+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Shoehorn, a library to quantize an LLM to fit your Mac's VRAM",
+      "tool_url": "https://github.com/notactuallytreyanastasio/shoehorn",
+      "description": "I made this after seeing someone posit the idea online yesterday over lunch then spent some time refining it. So far it's pretty impressive IMO! Right now I am running Qwen3-30B-A3B on my 24gb unified memory m4 MacBook Pro at 50 tok/sec and this should definitely not be working for such a large model on my middling hardware. Things are detailed in the README to get up and running and DESIGN.md has",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T14:43:59+00:00",
+      "categories": [
+        "LLM"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Omegle with (full-duplex) Voice Bots",
+      "tool_url": "https://www.aimegle.xyz/",
+      "description": "Randomly talk to different voice models. Roughly half of the time you should be speaking to Personaplex which is full-duplex, but this can be influenced by giving feedback.",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T14:38:15+00:00",
+      "categories": [
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "A painting engine that lets you sculpt drawings (tech demo)",
+      "tool_url": "https://softedge-techdemo.jign.workers.dev/",
+      "description": "This is a playable tech demo. All painting software (Photoshop, Krita, etc.) rasterize your strokes as you work. This means the stroke is frozen forever. You may use some tools like perspective warp or liquefy but they are quite limited. The Soft Edge engine instead keeps a record of your strokes as data and rasterization happens on the fly, on each frame, like in a game engine. This lets you scul",
+      "source": "Hacker News",
+      "date_iso": "2026-08-14T14:36:31+00:00",
+      "categories": [
+        "données",
+        "jeu vidéo"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Froging AI",
+      "tool_url": "https://theresanaiforthat.com/ai/froging-ai/",
+      "description": "Create images and videos with leading AI models in one workspace.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T14:00:01+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Meta’s ‘open’ AI, and a $250M deal gone very wrong",
+      "tool_url": "https://techcrunch.com/podcast/metas-open-ai-and-a-250m-deal-gone-very-wrong/",
+      "description": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside a letter from Mark Zuckerberg arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equity’s […]",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-08-14T14:00:00+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "WitSpeak",
+      "tool_url": "https://theresanaiforthat.com/ai/witspeak/",
+      "description": "Your AI English speaking coach.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T13:00:01+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Trify3D",
+      "tool_url": "https://theresanaiforthat.com/ai/trify3d/",
+      "description": "Turn images and text into 3D models instantly.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T13:00:01+00:00",
+      "categories": [
+        "texte",
+        "images 3D"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Similarweb",
+      "tool_url": "https://theresanaiforthat.com/ai/similarweb/",
+      "description": "Real-time intelligence to outsmart your competition.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T13:00:01+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Farseer AI",
+      "tool_url": "https://theresanaiforthat.com/ai/farseer-ai/",
+      "description": "Ask your financial model anything.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T12:00:01+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Aside",
+      "tool_url": "https://theresanaiforthat.com/ai/aside/",
+      "description": "A browser that works while you think.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T11:19:01+00:00",
+      "categories": [
+        "navigateur"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Xirp by Spotify",
+      "tool_url": "https://theresanaiforthat.com/ai/xirp-by-spotify/",
+      "description": "AI coding with institutional memory built in.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T10:00:02+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Apple trained its own AI model for China with help from Alibaba",
+      "tool_url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba?ref=taaft&utm_source=taaft&utm_medium=referral",
+      "description": "",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T09:21:17+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "GladiaFlow",
+      "tool_url": "https://theresanaiforthat.com/ai/gladiaflow/",
+      "description": "Real-time voice dictation for your desktop.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T09:12:02+00:00",
+      "categories": [
+        "voix"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "General Intelligence Labs launches EGO1GS device",
+      "tool_url": "https://theresanaiforthat.com/device/ego1gs/",
+      "description": "",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T07:21:00+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Percision",
+      "tool_url": "https://theresanaiforthat.com/ai/percision/",
+      "description": "Know where your next dollar of growth comes from.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T07:00:02+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "The SEO Agent",
+      "tool_url": "https://theresanaiforthat.com/ai/the-seo-agent/",
+      "description": "One keyword in, one ranking post out.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T06:42:55+00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "RankControl",
+      "tool_url": "https://theresanaiforthat.com/ai/rctrl/",
+      "description": "The AI-first SEO suite: content, visibility, links, and leads.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T03:00:00+00:00",
+      "categories": [
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Kuvu AI | Video Generator",
+      "tool_url": "https://theresanaiforthat.com/ai/kuvu-ai-video-generator/",
+      "description": "One platform for all your AI image and video creation.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T02:44:02+00:00",
+      "categories": [
+        "images",
+        "vidéo"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Seedeo Video Generator",
+      "tool_url": "https://theresanaiforthat.com/ai/seedeo/",
+      "description": "Turn text and images into cinematic AI videos.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T02:00:36+00:00",
+      "categories": [
+        "vidéo",
+        "texte"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Humanize AI Text.io",
+      "tool_url": "https://theresanaiforthat.com/ai/humanize-ai-text-io/",
+      "description": "Make AI text sound human.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T01:47:24+00:00",
+      "categories": [
+        "texte",
+        "automatisation"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Intuo – Your AI geospatial analyst",
+      "tool_url": "https://theresanaiforthat.com/ai/intuo/",
+      "description": "Ask a question about anywhere. Get analyst-grade maps and answers.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T01:42:49+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Checkie-AI",
+      "tool_url": "https://theresanaiforthat.com/ai/checkie/",
+      "description": "AI-powered risk checks for contracts, gigs, dating profiles, and images.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T01:00:02+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "2KEN",
+      "tool_url": "https://theresanaiforthat.com/ai/2ken/",
+      "description": "One API key for every major AI model.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T01:00:02+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "CoachLingo.ai",
+      "tool_url": "https://theresanaiforthat.com/ai/coachlingo-ai/",
+      "description": "Your AI coach for professional English conversations.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T00:00:01+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "IdeaVideo AI Video Generator",
+      "tool_url": "https://theresanaiforthat.com/ai/ideavideo-ai/",
+      "description": "IdeaVideo AI: Turn Ideas into Viral Videos.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-14T00:00:01+00:00",
+      "categories": [
+        "vidéo"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Hivematic - BestofAI",
+      "tool_url": "https://bestofai.com/tool/hivematic",
+      "description": "Hivematic is an AI-powered product photography platform for ecommerce brands. Upload your product, choose a scene, and generate professional lifestyle images in minutes — no photographers, no studios, no scheduling. Create custom AI models that stay consistent across every shot, batch-generate dozens of variations in one click, and review everything with a built-in approval workflow. Start free,",
+      "source": "Best of AI",
+      "date_iso": "2026-08-14T00:00:00",
+      "categories": [
+        "automatisation"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "PromptlessPress",
+      "tool_url": "https://theresanaiforthat.com/ai/promptlesspress/",
+      "description": "List Etsy digital products in minutes, without the design work.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-13T23:00:01+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Metrician",
+      "tool_url": "https://theresanaiforthat.com/ai/metrician/",
+      "description": "Fuel gauge for your AI usage",
+      "source": "There's an AI",
+      "date_iso": "2026-08-13T22:05:01+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "MindMapAny",
+      "tool_url": "https://theresanaiforthat.com/ai/mindmapany/",
+      "description": "Turn any content into a traceable mind map.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-13T22:00:03+00:00",
+      "categories": [
+        "texte",
+        "mindmap"
+      ],
+      "pricing": "unknown"
+    },
+    {
+      "name": "ReadyToTalk",
+      "tool_url": "https://theresanaiforthat.com/ai/readytotalk/",
+      "description": "Your AI receptionist that never misses a call.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-13T22:00:03+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "🦾 You're Paying for the Wrong Model",
+      "tool_url": "https://newsletter.theresanaiforthat.com/p/you-re-paying-for-the-wrong-model?ref=taaft&utm_source=taaft&utm_medium=referral",
+      "description": "",
+      "source": "There's an AI",
+      "date_iso": "2026-08-13T21:35:23+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Writer introduces new AI model and upgraded harness to contain token costs",
+      "tool_url": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
+      "description": "Built as a post-training variation on Z.ai's open source model GLM-5.2, Writer says the new system should provide deployment-ready capabilities at a much lower price.",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-08-13T21:13:24+00:00",
+      "categories": [
+        "open source"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "MeeLang",
+      "tool_url": "https://theresanaiforthat.com/ai/meelang/",
+      "description": "Live AI subtitles for every meeting.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-13T21:00:03+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "VideoToScript",
+      "tool_url": "https://theresanaiforthat.com/ai/videotoscript/",
+      "description": "Turn social videos into transcripts instantly.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-13T21:00:03+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "Everything You Know About AI Is Wrong",
+      "tool_url": "https://theresanaiforthat.com/youtube/everything-you-know-about-ai-is-wrong-vh-y4dth2iu/",
+      "description": "",
+      "source": "There's an AI",
+      "date_iso": "2026-08-13T20:32:14+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "AI Photo Editor Free",
+      "tool_url": "https://theresanaiforthat.com/ai/ai-photo-editor-free/",
+      "description": "3 free edits daily. No sign-up, no watermark.",
+      "source": "There's an AI",
+      "date_iso": "2026-08-13T20:00:02+00:00",
+      "categories": [
+        "images"
+      ],
+      "pricing": "free"
+    },
+    {
+      "name": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+      "tool_url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
+      "description": "OpenAI is launching a preview of a sped up version of its latest, most powerful model, in an effort to court enterprise users.",
+      "source": "TechCrunch AI",
+      "date_iso": "2026-08-13T19:22:40+00:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
     {
       "name": "Scale X",
       "tool_url": "https://scalex.dev/blog/ai-agent-permissions-stats/?ref=aisecret.us",
@@ -100,64 +2090,6 @@
       "pricing": "unknown"
     },
     {
-      "name": "Best AI Avatar Generators in 2026",
-      "tool_url": "https://heygen.com/?sid=rewardful&via=hdrobots",
-      "description": "Looking for the best AI tools for ai avatar generators? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-08-13T19:02:04.276541+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Best AI Note Taking in 2026",
-      "tool_url": "https://notebooklm.google/",
-      "description": "Looking for the best AI tools for ai note taking? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-08-13T19:02:04.199333+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Best AI Background Removers in 2026",
-      "tool_url": "https://www.remove.bg/?aid=fvvgfygsgkgmrhqm&utm_campaign=affiliate+marketing&utm_medium=referral&utm_source=affiliate",
-      "description": "Looking for the best AI tools for ai background removers? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-08-13T19:02:04.182294+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Best AI Voice Cloning in 2026",
-      "tool_url": "https://speechify.com/",
-      "description": "Looking for the best AI tools for ai voice cloning? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-08-13T19:02:04.140843+00:00",
-      "categories": [
-        "voix"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Best AI Customer Support in 2026",
-      "tool_url": "https://www.tidio.com/",
-      "description": "Looking for the best AI tools for ai customer support? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-08-13T19:02:04.121385+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Best AI Spreadsheet Tools in 2026",
-      "tool_url": "https://streamlit.io/",
-      "description": "Looking for the best AI tools for ai spreadsheet tools? We reviewed tools from our directory of 1,600+ AI tools and picked the top 10 based on features, pricing, user ratings, and real-world value. Whether you’re just getting started or looking to upgrade your toolkit, these are the ones worth your time in 2026. 1. […]",
-      "source": "HD Robots",
-      "date_iso": "2026-08-13T19:02:04.070654+00:00",
-      "categories": [
-        "données"
-      ],
-      "pricing": "unknown"
-    },
-    {
       "name": "Gridcast Sports Guide",
       "tool_url": "https://bestfreeaiwebsites.com/gridcast-sports-guide/",
       "description": "Description Gridcast Sports Guide is a sports viewing discovery platform that helps fans quickly find […]",
@@ -208,108 +2140,6 @@
       "date_iso": "2026-08-13T19:02:03.823677+00:00",
       "categories": [
         "texte"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Mayo Clinic",
-      "tool_url": "https://futurism.com/health-medicine/lawsuit-mayo-clinic-ai-tools-hospital-maya?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.816210+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Anthropic",
-      "tool_url": "https://9to5mac.com/2026/08/07/psa-claude-code-enabling-auto-mode-as-default-next-week-anthropic-says/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.816167+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Cloudflare",
-      "tool_url": "https://blog.cloudflare.com/kitesurf/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.816120+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Singapore",
-      "tool_url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/09/singapore-to-ensure-ai-helps-workers-worried-about-jobs-pm-wong-says?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.816071+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "GitHub",
-      "tool_url": "https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.816013+00:00",
-      "categories": [
-        "open source"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "41% more per visit",
-      "tool_url": "https://www.aol.com/articles/retailers-tap-ai-shopping-traffic-100750000.html?ref=aisecret.us",
-      "description": "As shoppers increasingly ask ChatGPT and Gemini what to buy, retailers are racing to appear in those answers. The referrals are lucrative: Ulta reports double the purchase intent from AI, and Etsy sees shoppers discover products in chatbots. But visitors sent by AI spend 41% more per visit , so brands optimize to rank in chatbots while steering the actual purchase back to their own sites, where th",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.815081+00:00",
-      "categories": [
-        "données"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Ulta reports",
-      "tool_url": "https://www.businessoffashion.com/news/retail/retailers-tap-ai-shopping-traffic-but-fight-to-keep-customer-data/?ref=aisecret.us",
-      "description": "As shoppers increasingly ask ChatGPT and Gemini what to buy, retailers are racing to appear in those answers. The referrals are lucrative: Ulta reports double the purchase intent from AI, and Etsy sees shoppers discover products in chatbots. But visitors sent by AI spend 41% more per visit , so brands optimize to rank in chatbots while steering the actual purchase back to their own sites, where th",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.814129+00:00",
-      "categories": [
-        "données"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "traffic is now mostly bots",
-      "tool_url": "https://www.vincentschmalbach.com/time-serves-ai-bots-a-different-website/?ref=aisecret.us",
-      "description": "It's easy to call this poisoning the well. But look at Time: traffic is now mostly bots , human-facing ads go unseen, revenue is collapsing. When your audience stops being people, selling to people stops paying the bills. This isn't a publisher turning malicious, it's one following its readers. The open web was built as a library for humans; it's quietly becoming feed for machines, and the busines",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.813266+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "serving hidden ads",
-      "tool_url": "https://www.theregister.com/ai-and-ml/2026/08/05/time-magazine-has-a-separate-version-of-its-website-with-ads-only-ai-can-see/5283640?ref=aisecret.us",
-      "description": "A German developer found Time serving hidden ads to AI crawlers, FAQ-shaped article versions only machines ever see. They aren't sent to live search bots but to training crawlers like ClaudeBot, which bake pages into a model's long-term memory. The pitch: why advertise to one human when you can shape the output of a whole model? Whether it even works is unclear, since model builders scrub training",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.812536+00:00",
-      "categories": [
-        "texte",
-        "recherche",
-        "données"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "MatrAIx",
-      "tool_url": "https://matraix.ai/?ref=aisecret.us",
-      "description": "A Harvard and MIT team released MatrAIx , a system that spins up 8.3 billion synthetic \"users,\" one per person alive, each stitched from real-world data: census stats, social surveys, Wikipedia bios, Amazon reviews, developer polls. Point an AI like Claude or GPT at them and it plays these people out, filling surveys, browsing pages, tapping through apps, so a company can test a product on \"humani",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.811768+00:00",
-      "categories": [
-        "données"
       ],
       "pricing": "unknown"
     },
@@ -450,117 +2280,6 @@
       "pricing": "unknown"
     },
     {
-      "name": "Linux",
-      "tool_url": "https://www.theregister.com/os-platforms/2026/08/10/linus-torvalds-says-ai-has-made-huge-linux-kernel-updates-the-new-normal/5285268?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.334437+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Microsoft",
-      "tool_url": "https://whtc.com/2026/08/10/microsoft-plans-to-unveil-its-new-maia-300-ai-chip-this-fall-the-information-reports/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.334312+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Bernie Sanders",
-      "tool_url": "https://www.theguardian.com/technology/2026/aug/10/bernie-sanders-ai-development-pause-letter?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.334190+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "invisible text watermark",
-      "tool_url": "https://interestingengineering.com/ai-robotics/anthropic-claude-text-invisible-watermarks?ref=aisecret.us",
-      "description": "Any Claude model launched on or after August 2 now ships with an invisible text watermark , woven into the output's statistical patterns so it survives copy-paste and some editing. Older models have until December 2 to comply and are being retrofitted with no timeline. The trigger is EU AI Act Article 50, which only governs AI sold into Europe, yet Anthropic switched the marking on worldwide, acro",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.333175+00:00",
-      "categories": [
-        "texte"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Muse Glimmer",
-      "tool_url": "https://developer.meta.com/ai/models/muse-glimmer/?ref=aisecret.us",
-      "description": "Meta Superintelligence Labs released Muse Glimmer , a 30B open-weight agent model under a permissive Apache 2.0 license, runnable on a Mac or a single consumer GPU with no cloud, no per-step API calls, working even offline. On its own benchmarks it nearly matches GPT-5.5 at tool use and agent tasks, while scoring roughly half of frontier models on hard general reasoning. Meta shipped the weights,",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.332204+00:00",
-      "categories": [
-        "automatisation",
-        "données",
-        "LLM"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "raise over $500B",
-      "tool_url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital?ref=aisecret.us",
-      "description": "Jensen Huang unveiled a plan with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to raise over $500B from outside investors to build AI data centers. The pitch: a GPU isn't a depreciating server anymore, it's an \"AI factory,\" an investable asset that earns revenue and holds resale value like a power plant. The rental data is real, H100 prices rose through 2026, and so is the Wall",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.331135+00:00",
-      "categories": [
-        "données"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "👉 Launch your site with Framer today",
-      "tool_url": "https://framer.link/sL7sUtS?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.330919+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "31 million tokens",
-      "tool_url": "https://www.datacamp.com/tutorial/claude-and-the-riemann-hypothesis?ref=aisecret.us",
-      "description": "This wasn't genius. It was stamina. The pieces sat on the shelf for years, Montgomery in 1973, Goldston and Suriajaya naming the exact missing step. No human fitted it. Claude did, across 650 failed attempts, 60 agents and 31 million tokens , half of them producing nothing. The edge wasn't a sharper idea, it was refusing to stop. Humans quit at the thirtieth dead end. The machine was calm at the s",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.329001+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Erdős problems",
-      "tool_url": "https://www.nature.com/articles/d41586-026-01651-0?ref=aisecret.us",
-      "description": "Anthropic set an unreleased Claude on the Riemann Hypothesis . It didn't prove it, nobody has in 167 years, but it moved a number humans couldn't. The share of zeta zeros provably on the critical line: mathematicians pushed it 0.8% across 37 years. Claude added 25.6% in a day and a half, from 41.6% to 67.2%. And it's not alone, through 2026 these records have fallen almost monthly, from Erdős prob",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.327702+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Riemann Hypothesis",
-      "tool_url": "https://www.anthropic.com/research/riemann-zeta?ref=aisecret.us",
-      "description": "Anthropic set an unreleased Claude on the Riemann Hypothesis . It didn't prove it, nobody has in 167 years, but it moved a number humans couldn't. The share of zeta zeros provably on the critical line: mathematicians pushed it 0.8% across 37 years. Claude added 25.6% in a day and a half, from 41.6% to 67.2%. And it's not alone, through 2026 these records have fallen almost monthly, from Erdős prob",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:03.326372+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Lightricks/LTX-2",
-      "tool_url": "https://github.com/Lightricks/LTX-2",
-      "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model. LTX-2 LTX-2 is the first DiT-based audio-video foundation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access. 🚀 Quick Start Clone the repo git clo",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-13T19:02:03.052618+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "voix"
-      ],
-      "pricing": "unknown"
-    },
-    {
       "name": "localsend/localsend",
       "tool_url": "https://github.com/localsend/localsend",
       "description": "An open-source cross-platform alternative to AirDrop LocalSend Homepage • Discord • GitHub • Codeberg English (Default) • Español • فارسی • Filipino • Français • Indonesia • Italiano • 日本語 • ភាសាខ្មែរ • 한국어 • Polski • Português Brasil • Русский • ภาษาไทย • Türkçe • Українська • Tiếng Việt • 中文 LocalSend is a free, open-source app that allows you to securely share files and messages with nearby dev",
@@ -574,19 +2293,6 @@
       "pricing": "free"
     },
     {
-      "name": "smicallef/spiderfoot",
-      "tool_url": "https://github.com/smicallef/spiderfoot",
-      "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface. SpiderFoot is an open source intelligence (OSINT) automation tool. It integrates with just about every data source available and utilises a range of methods for data analysis, making that data easy to navigate. SpiderFoot has an embedded web-server for providing a clean and intuitive web-based interface but can als",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-13T19:02:03.010831+00:00",
-      "categories": [
-        "images",
-        "chatbot",
-        "texte"
-      ],
-      "pricing": "freemium"
-    },
-    {
       "name": "ZuodaoTech/everyone-can-use-english",
       "tool_url": "https://github.com/ZuodaoTech/everyone-can-use-english",
       "description": "人人都能用英语 AI 是当今世界上最好的外语老师，Enjoy 做 AI 最好的助教。 网页版 Enjoy 全新版本已经上线，可访问 https://enjoy.bot 直接使用。 浏览器插件 Enjoy 浏览器插件已经上线，支持 YouTube 和 Netflix。可访问 Chrome Web Store 安装使用。 桌面版 新版桌面版将会是对网页版的套壳和增强，即将发布。 相关阅读 一千小时（2024） 简要说明 训练任务 语音塑造 大脑内部 自我训练 人人都能用英语（2010） 简介 第一章：起点 第二章：口语 第三章：语音 第四章：朗读 第五章：词典 第六章：语法 第七章：精读 第八章：叮嘱 后记 常见问题 请查询 文档 FAQ 。",
@@ -598,19 +2304,6 @@
         "youtube"
       ],
       "pricing": "unknown"
-    },
-    {
-      "name": "NVIDIA-NeMo/Switchyard",
-      "tool_url": "https://github.com/NVIDIA-NeMo/Switchyard",
-      "description": "Switchyard Switchyard is a Rust proxy and library for LLM traffic. It routes requests across providers, translates between OpenAI and Anthropic APIs, records operational metrics, and provides typed, composable routing algorithms. Why Switchyard? Point a coding agent such as Claude Code or Codex at an open-source model. Switchyard translates between the OpenAI Chat, Anthropic Messages, and OpenAI R",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-13T19:02:02.966500+00:00",
-      "categories": [
-        "chatbot",
-        "texte",
-        "automatisation"
-      ],
-      "pricing": "free"
     },
     {
       "name": "paperclipai/paperclip",
@@ -637,102 +2330,6 @@
         "chatbot"
       ],
       "pricing": "free"
-    },
-    {
-      "name": "Alibaba Cloud",
-      "tool_url": "https://assets.theregister.com/2026/08/11/20262/?td=keepreading&ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.897019+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "CoreWeave",
-      "tool_url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.896968+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Nvidia",
-      "tool_url": "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.896916+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "$14 billion venture",
-      "tool_url": "https://www.prnewswire.com/news-releases/meta-announces-new-strategic-venture-with-blackrock-to-develop-data-center-in-el-paso-302836040.html?ref=aisecret.us",
-      "description": "Meta and BlackRock unveiled a $14 billion venture to build a 1-gigawatt data center in El Paso, with BlackRock-managed funds owning 80% and $12.5 billion of it debt-financed. Meta contributes land, takes a $1 billion distribution, and leases the compute back instead of owning it. The structure traces to BlackRock CEO Larry Fink, who said the AI buildout would lean on pensions , insurance, and savi",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.896147+00:00",
-      "categories": [
-        "données"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "70% of revenue",
-      "tool_url": "https://www.coindesk.com/business/2026/08/11/riot-platforms-surges-20-in-pre-market-trading-on-usd9-1-billion-anthropic-deal?ref=aisecret.us",
-      "description": "Riot Platforms said it signed a 20-year, $9.1B deal with Anthropic to provide 191 MW at its Rockdale, Texas campus. The stock jumped more than 20% premarket. With two five-year extensions, the contract could reach $16.1B. Riot already has an AI lease with AMD and says Rockdale will reach 241 MW. It is not alone. Hut 8, TeraWulf, IREN and other miners are making the same pivot, and CoinDesk noted t",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.895466+00:00",
-      "categories": [
-        "documents"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "20-year, $9.1B deal",
-      "tool_url": "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/?ref=aisecret.us",
-      "description": "Riot Platforms said it signed a 20-year, $9.1B deal with Anthropic to provide 191 MW at its Rockdale, Texas campus. The stock jumped more than 20% premarket. With two five-year extensions, the contract could reach $16.1B. Riot already has an AI lease with AMD and says Rockdale will reach 241 MW. It is not alone. Hut 8, TeraWulf, IREN and other miners are making the same pivot, and CoinDesk noted t",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.894763+00:00",
-      "categories": [
-        "documents"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Cursor acquisition",
-      "tool_url": "https://www.macrumors.com/2026/08/11/grok-bot-macos-ios/?ref=aisecret.us",
-      "description": "SpaceXAI shipped an early version of Grok Bot , a cloud-based AI agent. Each user's bot runs its own Linux virtual machine with a browser, files and terminal, logs into your accounts, and works end to end 24/7 even after you shut your laptop. You can run several in parallel, and it learns a task by watching you do it once. It's the first integration from the $60B Cursor acquisition , inheriting Cu",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.888938+00:00",
-      "categories": [
-        "chatbot",
-        "automatisation",
-        "navigateur"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Register to save your spot",
-      "tool_url": "https://www.vanta.com/webinars/run-compliance-from-claude-cursor-and-codex-build-with-vanta?utm_source=ai-secret&utm_medium=newsletter&utm_campaign=fy27q3_webinar_run_compliance_claude_cursor_codex_global",
-      "description": "Register to save your spot . Can't make the time? Register anyway, and you'll get a link to the recording.",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.888061+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "partnering with Palantir",
-      "tool_url": "https://futurism.com/future-society/usa-today-palatnir-reader-intelligence?ref=aisecret.us",
-      "description": "USA Today's parent company is partnering with Palantir to build what its CEO calls a \"common intelligence layer\" on reader data, to monetize those relationships \"faster and at much greater value.\" Palantir is the surveillance firm tied to ICE crackdowns and mass data work, and a company USA Today's own reporters cover. The News Guild says journalists were \"shocked\" and is demanding the company end",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.887395+00:00",
-      "categories": [
-        "données",
-        "actualités"
-      ],
-      "pricing": "unknown"
     },
     {
       "name": "hugohe3/ppt-master",
@@ -774,19 +2371,6 @@
       "pricing": "free"
     },
     {
-      "name": "msitarzewski/agency-agents",
-      "tool_url": "https://github.com/msitarzewski/agency-agents",
-      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. 🎭 The Agency: AI Specialists Ready to Transform Your Workflow A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-13T19:02:02.765583+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "voix"
-      ],
-      "pricing": "free"
-    },
-    {
       "name": "stablyai/orca",
       "tool_url": "https://github.com/stablyai/orca",
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS. Orca 中文 · 日本語 · 한국어 · Español · Français · Português The AI Orchestrator for 100x builders. Run Codex, ClaudeCode, OpenCode or Pi side-by-side — each in its own worktree, tracked in one place. Download Orca Features Mobile Companion Monitor and steer y",
@@ -798,201 +2382,6 @@
         "recherche"
       ],
       "pricing": "free"
-    },
-    {
-      "name": "semantica-agi/semantica",
-      "tool_url": "https://github.com/semantica-agi/semantica",
-      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems Graph-Native Infrastructure for Context and Accountable AI Systems The Open Source Palantir for AI Agents Ingest your enterprise data, extract what matters, build a Context Graph and knowledge graph (KG), and run graph analytics and causal reasoning over all of it, with full decision provenance baked in. Explainable, traceable, and",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-13T19:02:02.630840+00:00",
-      "categories": [
-        "images",
-        "musique",
-        "chatbot"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "macro-inc/macro",
-      "tool_url": "https://github.com/macro-inc/macro",
-      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory. Sign up · Docs · Book demo · Website · Feature requests · Contribute · Hiring Macro is the all-in-one workspace for you and your team. It unifies email + messages + docs + tasks + agents + CRM into a single fast interface with shared team-level memory. Everything in y",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-13T19:02:02.577019+00:00",
-      "categories": [
-        "musique",
-        "chatbot",
-        "texte"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "cathrynlavery/diagram-design",
-      "tool_url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop. Diagram Design Editorial diagrams your designer won't hate. New in 2.0 — the Loop: flywheels with a shared-memory hub. The dashed lines are the write-backs. New in 2.3: semantic system patterns and optional accessible motion, while static output stays the default. 27 visual types. One agent skill fo",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-13T19:02:02.552080+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "texte"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "The Hardwire",
-      "tool_url": "https://thehardwire.com/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.538137+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Marketing Secret",
-      "tool_url": "https://marketingsecret.us/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.538085+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Robotics Herald",
-      "tool_url": "https://roboticsherald.com/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.538035+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Bay Area Letters",
-      "tool_url": "https://bayarealetters.com/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.537977+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "OpenAI",
-      "tool_url": "https://openai.com/index/how-enterprises-put-ai-to-work/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.537907+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Foxconn",
-      "tool_url": "https://electronics.economictimes.indiatimes.com/news/components-hardware/taiwans-foxconn-reports-35-rise-in-q2-profit-on-ai-demand-beats-forecasts/133173882?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.537864+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Cerebras",
-      "tool_url": "https://www.investors.com/news/technology/cerebras-stock-cbrs-q2-2026-earnings/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.537803+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Cisco",
-      "tool_url": "https://www.investors.com/news/technology/cisco-stock-csco-cisco-earnings-q22026/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.537757+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Mistral",
-      "tool_url": "https://mistral.ai/news/regional-inference-open-models-new-compute/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.537682+00:00",
-      "categories": [
-        "LLM"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Apple",
-      "tool_url": "https://9to5mac.com/2026/08/12/report-apple-seeks-publisher-deals-to-give-siri-ai-better-access-to-current-events/?ref=aisecret.us",
-      "description": "",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.537633+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "MyClaw",
-      "tool_url": "https://myclaw.ai/?utm_source=aisecret",
-      "description": "MyClaw is a best-in-class AI agent platform that brings together OpenClaw, Hermes Agent, and commercial infrastructure to help businesses launch intelligent agents that understand goals, use tools, automate workflows, and deliver finished results.",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.537309+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Y Combinator",
-      "tool_url": "https://www.ycombinator.com/launches/SUZ-gamgee-personalised-mrna-cancer-vaccines-for-dogs?ref=aisecret.us",
-      "description": "Paul Conyngham, an Australian tech entrepreneur who stresses he is \"not a biologist,\" turned a viral story, using ChatGPT and Grok to design a personalized mRNA cancer vaccine for his dog Rosie, into a startup called Gamgee . It sells personalized mRNA cancer vaccines for dogs, is backed by Y Combinator , takes cases globally, and promises a \"vaccine in hand\" in about four weeks. Its stated ambiti",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.536557+00:00",
-      "categories": [
-        "histoires enfants"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "70 million Deaf people",
-      "tool_url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/?ref=aisecret.us",
-      "description": "Every input method quietly defines the normal user. Keyboards assume you type; voice assistants assume you speak and can be heard. For decades that left 70 million Deaf people signing to no one, forced to fall back to typing a second language. Making signing a native input flips that. It doesn't just add a feature, it rewrites the list of things a phone assumes you can do, and a language the machi",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.535890+00:00",
-      "categories": [
-        "voix"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "sign-language-to-text mode",
-      "tool_url": "https://mashable.com/tech/google-pixel-11-asl-sign-to-text?ref=aisecret.us",
-      "description": "Google DeepMind shipped SL2T, a sign-language-to-text mode l, into Gboard and Live Transcribe on the Pixel 11, starting with ASL to English. It works like voice dictation, but instead of speaking, you sign to the phone's camera and it turns your signing into text in real time, anywhere you'd normally type: a search bar, a message, a prompt to Gemini. Trained on 100,000+ hours across 50+ sign langu",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.535133+00:00",
-      "categories": [
-        "voix",
-        "texte",
-        "recherche"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Grok 4.6",
-      "tool_url": "https://x.ai/news/grok-4-6?ref=aisecret.us",
-      "description": "In one night, two hours apart, DeepSeek V4 Pro and Grok 4.6 both shipped, and both pushed near Claude Fable 5's level. DeepSeek matched Fable on tool benchmarks (Terminal Bench 87.9 to Fable's 88.0) at a fraction of the price: output around $0.87 per million tokens against Fable's $50, though DeepSeek has warned of price hikes. Grok landed close on quality with startling speed: coding tasks that d",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.534338+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "DeepSeek V4 Pro",
-      "tool_url": "https://decrypt.co/375507/china-deepseek-upgrades-v4-pro-claude-fable?ref=aisecret.us",
-      "description": "In one night, two hours apart, DeepSeek V4 Pro and Grok 4.6 both shipped, and both pushed near Claude Fable 5's level. DeepSeek matched Fable on tool benchmarks (Terminal Bench 87.9 to Fable's 88.0) at a fraction of the price: output around $0.87 per million tokens against Fable's $50, though DeepSeek has warned of price hikes. Grok landed close on quality with startling speed: coding tasks that d",
-      "source": "AI Secret",
-      "date_iso": "2026-08-13T19:02:02.533547+00:00",
-      "categories": [],
-      "pricing": "unknown"
     },
     {
       "name": "StewAI",
@@ -1067,271 +2456,6 @@
         "chatbot",
         "texte",
         "site web"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "mpai",
-      "tool_url": "https://godfaddaai.github.io/multiplayer-ai/?ref=futuretools.io",
-      "description": "Share a live Codex or Claude Code session with a teammate.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.145742+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Typecast API",
-      "tool_url": "https://typecast.ai/developers/api/?ref=futuretools.io",
-      "description": "A text-to-speech API with emotive AI voices and real-time streaming.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.145627+00:00",
-      "categories": [
-        "voix",
-        "texte"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Soloop",
-      "tool_url": "https://www.soloop.io/?ref=futuretools.io",
-      "description": "AI operating system for solo founders to run and grow a company.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.145528+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Omniwork",
-      "tool_url": "https://www.omniwork.ai/?ref=futuretools.io",
-      "description": "An AI agent OS that coordinates expert agents for creative work.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.145422+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "ReMynd",
-      "tool_url": "https://remyndai.com/?ref=futuretools.io",
-      "description": "A private Mac app that records, searches, and queries your screen history.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.145319+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "LIVVO",
-      "tool_url": "https://livvo.ai/?ref=futuretools.io",
-      "description": "AI platform that captures conversations and creates searchable enterprise.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.145231+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Antigma",
-      "tool_url": "https://antigma.ai/?ref=futuretools.io",
-      "description": "Ante is a lightweight, offline-first AI coding agent runtime.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.145140+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "ChatExtender",
-      "tool_url": "https://chatextender.com/?ref=futuretools.io",
-      "description": "Mac app adding persistent memory and search to ChatGPT and Claude.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.145044+00:00",
-      "categories": [
-        "recherche"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "QueryWing",
-      "tool_url": "https://querywing.com/?ref=futuretools.io",
-      "description": "AI chatbot that captures leads and answers from your site content.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.144951+00:00",
-      "categories": [
-        "chatbot",
-        "texte"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "MorningZero",
-      "tool_url": "https://morningzero.com/?ref=futuretools.io",
-      "description": "AI email triage that sorts all your Gmail inboxes overnight.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.144863+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "EUrouter",
-      "tool_url": "https://www.eurouter.ai/?ref=futuretools.io",
-      "description": "A single API for AI inference routed through EU infrastructure.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.144773+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "VidiRelay",
-      "tool_url": "https://vidirelay.com/?ref=futuretools.io",
-      "description": "Transcribe public TikTok, Reels, and YouTube videos into editable text.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.144665+00:00",
-      "categories": [
-        "texte",
-        "youtube"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Looops",
-      "tool_url": "https://looops.ai/?ref=futuretools.io",
-      "description": "AI agent that builds and publishes websites from chat prompts.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.144578+00:00",
-      "categories": [
-        "chatbot",
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "MeetOye",
-      "tool_url": "https://meetoye.com/?ref=futuretools.io",
-      "description": "AI-native video meetings with transcription, recaps, and translation.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.144490+00:00",
-      "categories": [
-        "vidéo",
-        "langues"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Shocase",
-      "tool_url": "https://shocase.ai/?ref=futuretools.io",
-      "description": "Turns screen recordings into edited videos and written guides.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.144405+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "TickClip",
-      "tool_url": "https://www.tickclip.ai/?ref=futuretools.io",
-      "description": "AI tool that checks price, reviews, and seller trust before you buy.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.144298+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Vunote",
-      "tool_url": "https://www.vunote.so/?ref=futuretools.io",
-      "description": "Converts YouTube videos into AI-generated study notes and transcripts.",
-      "source": "FutureTools",
-      "date_iso": "2026-08-13T19:02:02.144168+00:00",
-      "categories": [
-        "youtube"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "The first big exit in AI",
-      "tool_url": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
-      "description": "little tools for making life easier",
-      "source": "Ben's Bites",
-      "date_iso": "2026-08-13T19:02:01.947585+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "GPT-5.6 is here but...",
-      "tool_url": "https://www.bensbites.com/p/gpt-56-is-here-but",
-      "description": "plus the insanity of inference",
-      "source": "Ben's Bites",
-      "date_iso": "2026-08-13T19:02:01.947322+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Grok x Cursor",
-      "tool_url": "https://www.bensbites.com/p/grok-x-cursor",
-      "description": "More Fable, GPT-5.6 and new ChatGPT voice",
-      "source": "Ben's Bites",
-      "date_iso": "2026-08-13T19:02:01.947068+00:00",
-      "categories": [
-        "voix"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "How to use GPT-5.6",
-      "tool_url": "https://www.bensbites.com/p/how-to-use-gpt-56",
-      "description": "new desktop app and hosted sites in ChatGPT",
-      "source": "Ben's Bites",
-      "date_iso": "2026-08-13T19:02:01.946906+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Better design than Fable",
-      "tool_url": "https://www.bensbites.com/p/better-design-than-fable",
-      "description": "unsolved maths problems vs ai models, who'll win?",
-      "source": "Ben's Bites",
-      "date_iso": "2026-08-13T19:02:01.946673+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Opus 5 >> Fable 5",
-      "tool_url": "https://www.bensbites.com/p/opus-5-fable-5",
-      "description": "Codex plus Voice is the new openclaw",
-      "source": "Ben's Bites",
-      "date_iso": "2026-08-13T19:02:01.946472+00:00",
-      "categories": [
-        "voix"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "1 Billion ChatGPT users",
-      "tool_url": "https://www.bensbites.com/p/1-billion-chatgpt-users",
-      "description": "tinkering with tldraw is so much fun",
-      "source": "Ben's Bites",
-      "date_iso": "2026-08-13T19:02:01.946316+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "What my agent knows about me",
-      "tool_url": "https://www.bensbites.com/p/what-my-agent-knows-about-me",
-      "description": "80% cheaper GPT",
-      "source": "Ben's Bites",
-      "date_iso": "2026-08-13T19:02:01.946177+00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Make it readable",
-      "tool_url": "https://www.bensbites.com/p/make-it-readable",
-      "description": "an ai future for everyone",
-      "source": "Ben's Bites",
-      "date_iso": "2026-08-13T19:02:01.945884+00:00",
-      "categories": [
-        "automatisation"
       ],
       "pricing": "unknown"
     },
@@ -1753,6 +2877,15 @@
       "pricing": "unknown"
     },
     {
+      "name": "Gemini 3.7 Flash",
+      "tool_url": "https://www.producthunt.com/products/gemini-3-7-flash",
+      "description": "Google's smartest workhorse yet for coding & agents",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-13T11:16:30-07:00",
+      "categories": [],
+      "pricing": "unknown"
+    },
+    {
       "name": "The Right Way to Worry About AI",
       "tool_url": "https://theresanaiforthat.com/youtube/the-right-way-to-worry-about-ai-or7aelrw2vu/",
       "description": "",
@@ -1809,6 +2942,17 @@
       "source": "There's an AI",
       "date_iso": "2026-08-13T06:23:00+00:00",
       "categories": [],
+      "pricing": "unknown"
+    },
+    {
+      "name": "DeepSeek Harness",
+      "tool_url": "https://www.producthunt.com/products/deepseek",
+      "description": "Composable agent harness where everything is a plugin",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-13T06:08:16-07:00",
+      "categories": [
+        "automatisation"
+      ],
       "pricing": "unknown"
     },
     {
@@ -1873,207 +3017,13 @@
       "pricing": "unknown"
     },
     {
-      "name": "Les Nouvelles Fonctionnalités Étonnantes de Microsoft Copilot que Vous Devez Connaître",
-      "tool_url": "https://www.bing.com/copilotsearch",
-      "description": "Microsoft ne s’arrête pas. Lors d’une célébration pour son 50e anniversaire, la société a révélé une série de nouvelles fonctionnalités qui promettent de transformer l’expérience avec Copilot. De la capacité de mémoire aux actions automatisées, les mises à jour sont conçues pour faire en sorte que Copilot ressemble davantage à ChatGPT ou Gemini. Explorons ce […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.655890+00:00",
+      "name": "min.",
+      "tool_url": "https://www.producthunt.com/products/min-4",
+      "description": "AI that truly knows you and your relationships",
+      "source": "Product Hunt",
+      "date_iso": "2026-08-12T20:00:00-07:00",
       "categories": [],
       "pricing": "unknown"
-    },
-    {
-      "name": "Profitez de Quake II avec IA dans votre navigateur grâce à Microsoft",
-      "tool_url": "https://copilot.microsoft.com/wham?features=labs-wham-enabled",
-      "description": "Dans un tournant passionnant pour les fans de jeux vidéo, Microsoft a présenté son modèle d’intelligence artificielle appelé Muse. Ce modèle, révélé en février 2025, est conçu pour générer des visuels et des actions de jeu en temps réel, permettant une expérience dynamique et unique à chaque partie. Muse, qui est basé sur un modèle […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.653806+00:00",
-      "categories": [
-        "vidéo"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "OpenAI lance un programme pionnier pour établir des normes dans les modèles d’IA",
-      "tool_url": "https://iaweb.fr/recherche-et-developpement-fr/openai-lance-un-programme-pionnier-pour-etablir-des-normes-dans-les-modeles-dia/",
-      "description": "OpenAI a fait un pas audacieux avec son nouveau Programme Pionniers, conçu pour révolutionner la mise en œuvre de l’intelligence artificielle dans des cas d’utilisation réels. Cette initiative vise à améliorer la manière dont les modèles d’IA sont évalués, un aspect critique alors que les développeurs et les entreprises dépendent de plus en plus des […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.652224+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Midjourney lance V7 avec des améliorations de la qualité d’image et de nouvelles fonctionnalités",
-      "tool_url": "https://iaweb.fr/applications-entreprises-fr/midjourney-lance-v7-avec-des-ameliorations-de-la-qualite-dimage-et-de-nouvelles-fonctionnalites/",
-      "description": "Midjourney a fait une annonce excitante avec le lancement de son nouveau modèle d’image, V7, qui commence à être déployé en mode alpha. Cette mise à jour apporte une qualité d’image remarquablement supérieure, avec des textures plus belles et une cohérence améliorée dans des éléments comme les mains et les objets. Mais ce n’est pas […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.645752+00:00",
-      "categories": [
-        "images"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Découvrez comment créer vos propres applications d’IA personnalisées pour des tâches spécifiques",
-      "tool_url": "https://poe.com/login",
-      "description": "Marre d’écrire des bibles dans ChatGPT juste pour qu’il comprenne ce que vous voulez ? Eh bien, il y a de bonnes nouvelles : créer votre propre application d’IA est plus facile que vous ne le pensez et, le meilleur dans tout ça, vous n’avez besoin de rien savoir en programmation. Rien, zéro, pas une […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.644506+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Les avancées dans l’interface cerveau-ordinateur permettent aux patients paralysés de parler presque",
-      "tool_url": "https://www.nature.com/articles/s41593-025-01905-6",
-      "description": "Dans une avancée passionnante dans le domaine de l’interface cerveau-ordinateur (BCI), des scientifiques de l’UC Berkeley et de l’UC San Francisco ont réalisé de grands progrès en permettant aux personnes atteintes de paralysie sévère de communiquer grâce à un système qui convertit les signaux cérébraux en parole presque en temps réel. Ce développement aborde l’un […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.634399+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Google finance des projets cinématographiques sur la relation entre les humains et l’IA",
-      "tool_url": "https://iaweb.fr/applications-entreprises-fr/google-finance-des-projets-cinematographiques-sur-la-relation-entre-les-humains-et-lia/",
-      "description": "Google s’est associé à Range Media pour lancer un programme intrigant appelé AI on Screen. Cette initiative vise à financer des projets où des cinéastes humains créent des courts-métrages abordant la relation complexe entre l’humanité et l’intelligence artificielle. Selon Google, « au cours des 18 prochains mois, en collaboration avec Range, nous allons commander des […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.632032+00:00",
-      "categories": [
-        "éducation"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "MCP : le pont magique qui relie l’IA au monde réel",
-      "tool_url": "https://iaweb.fr/applications-entreprises-fr/mcp-le-pont-magique-qui-relie-lia-au-monde-reel/",
-      "description": "Peux-tu imaginer que ton chatbot préféré puisse lire tes fichiers Google Drive, envoyer des messages sur Slack ou même modifier des documents sur ton ordinateur sans que tu aies à faire quoi que ce soit ? Eh bien, c’est exactement ce que permet le Model Context Protocol (MCP), une petite merveille open source créée par […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.624266+00:00",
-      "categories": [
-        "chatbot",
-        "open source"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "Configurez des serveurs MCP dans Claude pour Windows et Mac et découvrez leur potentiel",
-      "tool_url": "https://nodejs.org/en/download",
-      "description": "Tout d’abord : installe Node.js et l’application Claude Avant de plonger dans des configurations mystérieuses, il faut avoir deux outils clés bien en place : Node.js et l’application de bureau de Claude. Sans cela, pas de magie. Alors allons-y étape par étape. 1. Télécharge et installe Node.js Tu n’as pas encore Node.js ? Alors file […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.607527+00:00",
-      "categories": [
-        "documents"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Comparaison entre Copilot Podcasts de Microsoft et NotebookLM de Google révèle des différences clés",
-      "tool_url": "https://copilot.microsoft.com/",
-      "description": "Microsoft a célébré son 50e anniversaire avec un événement spécial où il a révélé plusieurs nouvelles fonctionnalités pour son chatbot Copilot. L’une des plus remarquables était la fonction Copilot Podcasts, qui promettait d’amener l’expérience des podcasts à un nouveau niveau. Après avoir testé NotebookLM de Google, qui m’avait déjà impressionné par sa capacité à générer […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.603353+00:00",
-      "categories": [
-        "chatbot"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Canva lance sa Visual Suite 2.0 avec IA et outils de codage innovants",
-      "tool_url": "https://iaweb.fr/applications-entreprises-fr/canva-lance-sa-visual-suite-2-0-avec-ia-et-outils-de-codage-innovants/",
-      "description": "Lors de l’événement Canva Create de cette année, la plateforme de design graphique a fait un bond quantique en présentant Visual Suite 2.0, une nouvelle collection d’outils qui promet de révolutionner la manière dont les utilisateurs créent du contenu. D’un assistant IA à un support pour les feuilles de calcul, les nouveautés sont vraiment passionnantes. […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.596437+00:00",
-      "categories": [
-        "images",
-        "chatbot",
-        "infographie"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "OpenAI présente GPT-4.1 un modèle révolutionnaire pour des tâches complexes",
-      "tool_url": "https://iaweb.fr/recherche-et-developpement-fr/openai-presente-gpt-4-1-un-modele-revolutionnaire-pour-des-taches-complexes/",
-      "description": "OpenAI a annoncé l’arrivée de trois nouveaux modèles : GPT-4.1, GPT-4.1 mini et GPT-4.1 nano, qui promettent d’amener l’intelligence artificielle à un nouveau niveau. Avec des fenêtres de contexte allant jusqu’à 1 million de tokens et une coupure de connaissance qui s’étend jusqu’en juin 2024, ces modèles sont conçus pour surpasser leurs prédécesseurs. Selon la […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.594709+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "OpenAI développe un nouveau réseau social pour concurrencer X et améliorer l’IA",
-      "tool_url": "https://iaweb.fr/startups-et-entreprises-fr/openai-developpe-un-nouveau-reseau-social-pour-concurrencer-x-et-ameliorer-lia/",
-      "description": "Dans un coup surprenant, OpenAI a commencé à développer son propre réseau social à la manière de X. Selon des rapports de The Verge, ce projet en est encore à ses premières phases, mais on parle déjà d’un prototype interne qui intègre intensément la génération d’images de ChatGPT et un fil social qui pourrait révolutionner […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.593402+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Créez des vidéos avec l’IA Veo 2 de Google sans dépenser un centime",
-      "tool_url": "https://iaweb.fr/applications-entreprises-fr/creez-des-videos-avec-lia-veo-2-de-google-sans-depenser-un-centime/",
-      "description": "Google a fait un grand pas en lançant la génération de vidéos avec son modèle d’intelligence artificielle Veo 2. Bien que cette fonctionnalité soit disponible via un abonnement premium de Google One coûtant 19,99 $ par mois, il existe une alternative gratuite que beaucoup ne connaissent pas : le AI Studio de Google. Cet espace […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.591802+00:00",
-      "categories": [],
-      "pricing": "free"
-    },
-    {
-      "name": "The Washington Post s’associe à OpenAI pour apporter des nouvelles à ChatGPT",
-      "tool_url": "https://iaweb.fr/applications-entreprises-fr/the-washington-post-sassocie-a-openai-pour-apporter-des-nouvelles-a-chatgpt/",
-      "description": "La collaboration entre The Washington Post et OpenAI marque une nouvelle étape dans l’accès à l’information. Ce partenariat permettra que lorsque les utilisateurs poseront des questions à ChatGPT sur des sujets couverts par le journal, le modèle d’IA fournisse des résumés, des citations et des liens directs vers les articles originaux sur le site web […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.590516+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Meta utilise l’IA pour connecter les parents et s’assurer que les adolescents utilisent des comptes",
-      "tool_url": "https://iaweb.fr/ethique-et-societe-fr/meta-utilise-lia-pour-connecter-les-parents-et-sassurer-que-les-adolescents-utilisent-des-comptes-securises/",
-      "description": "Récemment, Meta a fait un pas important vers la protection des adolescents sur ses réseaux sociaux. Dans le but de faciliter la transition vers des comptes plus sûrs pour les jeunes utilisateurs de Facebook et Messenger, la société a commencé à mettre en œuvre une stratégie qui combine la communication directe avec les parents et […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.589152+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "OpenAI lance des achats dans ChatGPT en réponse à Google",
-      "tool_url": "https://iaweb.fr/applications-entreprises-fr/openai-lance-des-achats-dans-chatgpt-en-reponse-a-google/",
-      "description": "Dans un mouvement audacieux, OpenAI a activé l’option d’effectuer des achats directement dans son chatbot populaire, ChatGPT. Cette nouvelle fonctionnalité vise non seulement à faciliter l’expérience d’achat, mais aussi à positionner ChatGPT comme un concurrent direct de géants tels que Google. Avec cette mise à jour, les utilisateurs peuvent comparer des produits de diverses catégories […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.587852+00:00",
-      "categories": [
-        "chatbot"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Découvrez les 10 exemples d’agents d’IA qui transformeront votre vie en 2025",
-      "tool_url": "https://www.vara.ai/",
-      "description": "L’intelligence artificielle progresse à grands pas, laissant derrière elle les anciens chatbots et donnant naissance à des agents d’IA orientés vers l’action. Ceux-ci ne se contentent pas de générer du texte ou des images ; ils prennent des décisions et les exécutent. Dans cet article, nous explorerons dix exemples de la manière dont ces agents […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.581156+00:00",
-      "categories": [
-        "texte"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Découvrez les agents d’intelligence artificielle et leur fonctionnement dans la nouvelle ère numériq",
-      "tool_url": "https://iaweb.fr/applications-entreprises-fr/decouvrez-les-agents-dintelligence-artificielle-et-leur-fonctionnement-dans-la-nouvelle-ere-numerique/",
-      "description": "L’intelligence artificielle évolue à grands pas, et il ne s’agit plus seulement de chatbots qui répondent à des questions. Depuis l’arrivée de ChatGPT fin 2022, l’attention s’est tournée vers les agents d’IA pilotés par des actions. Contrairement aux chatbots qui traitent des informations et répondent en langage naturel, ces agents sont capables d’exécuter des tâches […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.578022+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Meta lance l’API Llama avec des vitesses d’inférence record pour les développeurs",
-      "tool_url": "https://iaweb.fr/applications-entreprises-fr/meta-lance-lapi-llama-avec-des-vitesses-dinference-record-pour-les-developpeurs/",
-      "description": "Dans un tournant passionnant des événements dans le monde de l’intelligence artificielle, Meta a dévoilé la Llama API lors du premier LlamaCon, promettant de révolutionner la façon dont les développeurs interagissent avec leurs modèles d’IA. Ce nouveau service, qui se trouve en phase de test gratuit limité, permet aux développeurs d’accéder à différents modèles de […]",
-      "source": "iaweb.fr",
-      "date_iso": "2026-08-12T19:01:18.574649+00:00",
-      "categories": [
-        "LLM"
-      ],
-      "pricing": "free"
     },
     {
       "name": "jaywcjlove/awesome-mac",
@@ -2124,32 +3074,6 @@
         "images",
         "vidéo",
         "voix"
-      ],
-      "pricing": "free"
-    },
-    {
-      "name": "3b1b/manim",
-      "tool_url": "https://github.com/3b1b/manim",
-      "description": "Animation engine for explanatory math videos Manim is an engine for precise programmatic animations, designed for creating explanatory math videos. Note, there are two versions of manim. This repository began as a personal project by the author of 3Blue1Brown for the purpose of animating those videos, with video-specific code available here . In 2020 a group of developers forked it into what is no",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-12T19:01:17.138419+00:00",
-      "categories": [
-        "images",
-        "vidéo",
-        "documents"
-      ],
-      "pricing": "unknown"
-    },
-    {
-      "name": "anthropics/skills",
-      "tool_url": "https://github.com/anthropics/skills",
-      "description": "Public repository for Agent Skills Note: This repository contains Anthropic's implementation of skills for Claude. For information about the Agent Skills standard, see agentskills.io . Skills Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Skills teach Claude how to complete specific tasks in a repeatable way, wh",
-      "source": "GitHub Trending",
-      "date_iso": "2026-08-12T19:01:17.127999+00:00",
-      "categories": [
-        "musique",
-        "texte",
-        "documents"
       ],
       "pricing": "free"
     },
@@ -2396,15 +3320,6 @@
       "description": "Plan, validate, and book trips in one workspace.",
       "source": "There's an AI",
       "date_iso": "2026-08-12T17:00:01+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
-      "name": "Claude Code kept ignoring our MCP tools, so we used hooks instead",
-      "tool_url": "https://github.com/NanoNets/Graft",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-12T16:54:54+00:00",
       "categories": [],
       "pricing": "unknown"
     },
@@ -4046,15 +4961,6 @@
       "pricing": "unknown"
     },
     {
-      "name": "Remarc – Your feedback layer for AI collaboration",
-      "tool_url": "https://github.com/metedata/Remarc",
-      "description": "",
-      "source": "Hacker News",
-      "date_iso": "2026-08-11T15:16:15+00:00",
-      "categories": [],
-      "pricing": "unknown"
-    },
-    {
       "name": "AirMusic",
       "tool_url": "https://theresanaiforthat.com/ai/airmusic/",
       "description": "AI music generator and music video creator in one platform.",
@@ -4753,17 +5659,6 @@
       "date_iso": "2026-08-11T00:03:12-07:00",
       "categories": [],
       "pricing": "unknown"
-    },
-    {
-      "name": "Hivematic - BestofAI",
-      "tool_url": "https://bestofai.com/tool/hivematic",
-      "description": "Hivematic is an AI-powered product photography platform for ecommerce brands. Upload your product, choose a scene, and generate professional lifestyle images in minutes — no photographers, no studios, no scheduling. Create custom AI models that stay consistent across every shot, batch-generate dozens of variations in one click, and review everything with a built-in approval workflow. Start free,",
-      "source": "Best of AI",
-      "date_iso": "2026-08-11T00:00:00",
-      "categories": [
-        "automatisation"
-      ],
-      "pricing": "free"
     },
     {
       "name": "As AI-led attacks multiply, OpenAI launches a new cyber model",
