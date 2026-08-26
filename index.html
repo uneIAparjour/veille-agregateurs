@@ -112,6 +112,10 @@
   <div id="sel-list" style="flex:1;overflow-y:auto"><div style="font-size:12px;color:var(--text3);padding:4px 0">Aucun outil retenu</div></div>
   <div style="padding-top:1rem;display:flex;flex-direction:column;gap:6px">
     <button class="btn btn-sm" style="width:100%" onclick="exportSelected()">Exporter la sélection</button>
+    <button class="btn btn-sm" style="width:100%" onclick="bulkIgnoreAll()">Tout marquer Ignoré</button>
+    <button class="btn btn-sm" style="width:100%" onclick="downloadStatesBackup()">Exporter les états (backup)</button>
+    <button class="btn btn-sm" style="width:100%" onclick="document.getElementById('import-file').click()">Importer les états</button>
+    <input type="file" id="import-file" accept="application/json" style="display:none" onchange="importStatesBackup(this.files[0])">
     <button class="btn btn-sm" style="width:100%;color:var(--red);border-color:var(--red-bg)" onclick="clearAll()">Réinitialiser</button>
   </div>
 </div>
@@ -287,7 +291,43 @@ function copyExp(){
 }
 
 function clearAll(){
-  if(confirm('Réinitialiser tous les états ?')){states={};saveS();render();updateSidebar();updateStats();document.getElementById('export-area').style.display='none';}
+  if(confirm('Réinitialiser tous les états ? Un backup va être téléchargé automatiquement avant.')){
+    downloadStatesBackup();
+    states={};saveS();render();updateSidebar();updateStats();document.getElementById('export-area').style.display='none';
+  }
+}
+
+function bulkIgnoreAll(){
+  if(!confirm(`Marquer les ${tools.length} outil(s) affichés comme "Ignoré" ? Un backup de l'état actuel va être téléchargé avant.`))return;
+  downloadStatesBackup();
+  const now=Date.now();
+  for(const t of tools)states[t.tool_url]={state:'ign',ts:now};
+  saveS();render();updateSidebar();updateStats();
+}
+
+function downloadStatesBackup(){
+  const blob=new Blob([JSON.stringify(states,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  const stamp=new Date().toISOString().slice(0,19).replace(/[:T]/g,'-');
+  a.href=url;a.download=`veille-etats-backup-${stamp}.json`;
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function importStatesBackup(file){
+  if(!file)return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const imported=JSON.parse(reader.result);
+      if(typeof imported!=='object'||imported===null)throw new Error('format invalide');
+      states=imported;saveS();render();updateSidebar();updateStats();
+      alert('États restaurés depuis le backup.');
+    }catch(e){alert('Fichier invalide : '+e.message);}
+  };
+  reader.readAsText(file);
+  document.getElementById('import-file').value='';
 }
 
 loadTools();
