@@ -112,6 +112,7 @@
   <div id="sel-list" style="flex:1;overflow-y:auto"><div style="font-size:12px;color:var(--text3);padding:4px 0">Aucun outil retenu</div></div>
   <div style="padding-top:1rem;display:flex;flex-direction:column;gap:6px">
     <button class="btn btn-sm" style="width:100%" onclick="exportSelected()">Exporter la sélection</button>
+    <button class="btn btn-sm" style="width:100%" onclick="bulkIgnorePending()">Ignorer les non triés</button>
     <button class="btn btn-sm" style="width:100%" onclick="bulkIgnoreAll()">Tout marquer Ignoré</button>
     <button class="btn btn-sm" style="width:100%" onclick="downloadStatesBackup()">Exporter les états (backup)</button>
     <button class="btn btn-sm" style="width:100%" onclick="document.getElementById('import-file').click()">Importer les états</button>
@@ -297,8 +298,18 @@ function clearAll(){
   }
 }
 
+function bulkIgnorePending(){
+  const pending=tools.filter(t=>getS(t)==='pending');
+  if(!pending.length){alert('Aucun outil non trié.');return;}
+  if(!confirm(`Marquer les ${pending.length} outil(s) non triés comme "Ignoré" ? Les outils "À publier" et "Déjà publié" ne sont pas modifiés. Un backup de l'état actuel va être téléchargé avant.`))return;
+  downloadStatesBackup();
+  const now=Date.now();
+  for(const t of pending)states[t.tool_url]={state:'ign',ts:now};
+  saveS();render();updateSidebar();updateStats();
+}
+
 function bulkIgnoreAll(){
-  if(!confirm(`Marquer les ${tools.length} outil(s) affichés comme "Ignoré" ? Un backup de l'état actuel va être téléchargé avant.`))return;
+  if(!confirm(`Marquer les ${tools.length} outil(s) comme "Ignoré", y compris ceux déjà "À publier" ou "Déjà publié" ? Un backup de l'état actuel va être téléchargé avant.`))return;
   downloadStatesBackup();
   const now=Date.now();
   for(const t of tools)states[t.tool_url]={state:'ign',ts:now};
