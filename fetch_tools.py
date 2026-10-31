@@ -30,6 +30,8 @@ import requests
 import feedparser
 from bs4 import BeautifulSoup
 
+from classify import apply as classify_tool
+
 # ── Config ─────────────────────────────────────────────────────────────────────
 
 CUTOFF_HOURS = 168   # 7 jours
@@ -99,25 +101,6 @@ DIRECTORY_DOMAINS = {
     "techcrunch.com","venturebeat.com",
     "futuretools.link",
 }
-
-# ── Pricing ────────────────────────────────────────────────────────────────────
-
-FREE_KW = [
-    "free","gratuit","no cost","open source","open-source",
-    "100% free","completely free","always free",
-]
-FREEMIUM_KW = [
-    "freemium","free plan","free tier","free trial","free version",
-    "free +","basic free","starter free",
-]
-
-def guess_pricing(text):
-    low = text.lower()
-    if any(kw in low for kw in FREEMIUM_KW):
-        return "freemium"
-    if any(kw in low for kw in FREE_KW):
-        return "free"
-    return "unknown"
 
 # ── Utilitaires ────────────────────────────────────────────────────────────────
 
@@ -191,7 +174,7 @@ def make_tool(name, url, desc, source, date_iso=None, pricing=None):
         "source":      source,
         "date_iso":    date_iso or datetime.now(timezone.utc).isoformat(),
         "categories":  guess_categories(combined),
-        "pricing":     pricing or guess_pricing(combined),
+        "pricing":     pricing or "unknown",
     }
 
 def get_json(url, referer=None, timeout=12):
@@ -202,6 +185,14 @@ def get_json(url, referer=None, timeout=12):
     r = requests.get(url, headers=hdrs, timeout=timeout)
     r.raise_for_status()
     return r.json()
+
+AI_RE = re.compile(
+    r"(?<![\w-])(?:ai|a\.i\.|ia|artificial intelligence|intelligence artificielle|machine learning|llms?|gpt|chatgpt|"
+    r"claude|gemini|copilot|openai|anthropic|mistral|generative|générative|chatbots?|agents?|neural|diffusion)(?![\w-])",
+    re.IGNORECASE)
+
+def is_ai_text(text):
+    return bool(AI_RE.search(text or ""))
 
 def fetch_rss(source_name, rss_url, ai_filter=False, max_items=30):
     results = []
@@ -220,12 +211,8 @@ def fetch_rss(source_name, rss_url, ai_filter=False, max_items=30):
             date_iso = parse_date(entry.get("published") or entry.get("updated",""))
             if not title or not url or not is_recent(date_iso) or is_listicle_title(title):
                 continue
-            if ai_filter:
-                combined = (title + " " + desc).lower()
-                ai_kw = ["ai","artificial intelligence","machine learning","llm","gpt",
-                         "generative","automation","chatbot","image generation","voice","neural"]
-                if not any(kw in combined for kw in ai_kw):
-                    continue
+            if ai_filter and not is_ai_text(title + " " + desc):
+                continue
             results.append(make_tool(title, url, desc, source_name, date_iso))
         print(f"  {source_name} (RSS): {len(results)}")
     except Exception as e:
@@ -234,55 +221,43 @@ def fetch_rss(source_name, rss_url, ai_filter=False, max_items=30):
 
 # ── Sources actives ────────────────────────────────────────────────────────────
 
+PH_CATEGORIES = ["artificial-intelligence", "productivity", "education", "design-tools",
+                 "writing", "no-code", "chrome-extensions", "marketing"]
+
 def fetch_producthunt():
-    """Product Hunt AI — RSS officiel."""
+    """Product Hunt — flux RSS officiels par catégorie (50 entrées chacun)."""
     results = []
-    try:
-        feed = feedparser.parse(
-            "https://www.producthunt.com/feed?category=artificial-intelligence",
-            request_headers={
-                "User-Agent": HEADERS["User-Agent"],
-                "Accept": "application/rss+xml, application/xml, text/xml, */*",
-            }
-        )
-        if not feed.entries:
-            raise Exception(f"0 entrées (bozo={feed.bozo})")
-
-        for entry in feed.entries[:30]:
-            title    = entry.get("title","").strip()
-            ph_url   = entry.get("link","")
-            summary  = entry.get("summary","") or entry.get("description","")
-            date_iso = parse_date(entry.get("published") or entry.get("updated",""))
-
-            if not title or not is_recent(date_iso) or is_listicle_title(title):
-                continue
-
-            combined = (title + " " + BeautifulSoup(summary,"html.parser").get_text()).lower()
-            ai_kw = ["ai","artificial intelligence","machine learning","llm","gpt",
-                     "generative","automation","chatbot","image","voice","neural","agent"]
-            if not any(kw in combined for kw in ai_kw):
-                continue
-
-            tool_url = None
-            if summary:
-                desc_soup = BeautifulSoup(summary, "html.parser")
-                for a in desc_soup.find_all("a", href=True):
+    for cat in PH_CATEGORIES:
+        try:
+            feed = feedparser.parse(
+                f"https://www.producthunt.com/feed?category={cat}",
+                request_headers={"User-Agent": HEADERS["User-Agent"],
+                                 "Accept": "application/rss+xml, application/xml, text/xml, */*"},
+            )
+            if not feed.entries:
+                raise Exception(f"0 entrées (bozo={feed.bozo})")
+            n = 0
+            for entry in feed.entries[:50]:
+                title    = entry.get("title","").strip()
+                ph_url   = entry.get("link","")
+                summary  = entry.get("summary","") or entry.get("description","")
+                date_iso = parse_date(entry.get("published") or entry.get("updated",""))
+                if not title or not is_recent(date_iso) or is_listicle_title(title):
+                    continue
+                desc = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
+                desc = re.sub(r"Discussion\s*\|\s*Link", "", desc).strip()
+                if cat != "artificial-intelligence" and not is_ai_text(title + " " + desc):
+                    continue
+                tool_url = None
+                for a in BeautifulSoup(summary, "html.parser").find_all("a", href=True):
                     href = a["href"].strip()
                     if href.startswith("http") and is_external(href):
-                        tool_url = href
-                        break
-
-            if not tool_url:
-                tool_url = ph_url
-
-            desc = BeautifulSoup(summary, "html.parser").get_text(" ", strip=True)
-            desc = re.sub(r"Discussion\s*\|\s*Link", "", desc).strip()
-
-            results.append(make_tool(title, tool_url, desc, "Product Hunt", date_iso))
-
-        print(f"  Product Hunt (RSS): {len(results)}")
-    except Exception as e:
-        print(f"  Product Hunt erreur: {e}", file=sys.stderr)
+                        tool_url = href; break
+                results.append(make_tool(title, tool_url or ph_url, desc, "Product Hunt", date_iso))
+                n += 1
+            print(f"  Product Hunt {cat} (RSS): {n}")
+        except Exception as e:
+            print(f"  Product Hunt {cat} erreur: {e}", file=sys.stderr)
     return results
 
 
@@ -411,16 +386,22 @@ def fetch_aixploria():
 #     décrits dans le README — à retirer aussi du README si confirmé durable.
 #   - Free AI Tools Directory (free-ai-tools-directory.com) : plus active.
 WP_DIRECTORIES = [
-    ("aiapp.fr",                "aiapp.fr"),
     ("iaweb.fr",                "iaweb.fr"),
+    ("Best Free AI",            "bestfreeaiwebsites.com"),
+    ("HD Robots",               "hdrobots.com"),
+    ("AI Tool Hunt",            "aitoolhunt.com"),
+]
+
+# Mortes ou bloquées (vérifié le 31/10/2026 dans le log GitHub Actions : 404,
+# 403 Cloudflare, 521, timeout, flux vide). Retestées le 1er de chaque mois
+# seulement : si l'une revient, la déplacer dans WP_DIRECTORIES.
+DORMANT_WP_DIRECTORIES = [
+    ("aiapp.fr",                "aiapp.fr"),
     ("WikiAI Tools",            "wikiaitools.com"),
     ("Notable AI",              "noteableai.com"),
     ("AI Tool Guru",            "aitoolguru.com"),
-    ("Best Free AI",            "bestfreeaiwebsites.com"),
-    ("HD Robots",               "hdrobots.com"),
     ("Mad Genius",              "madgenius.co"),
     ("AI Tools LOL",            "aitools.lol"),
-    ("AI Tool Hunt",            "aitoolhunt.com"),
     ("AI Tool Board",           "aitoolboard.com"),
     ("Fastpedia",               "fastpedia.io"),
 ]
@@ -591,80 +572,10 @@ def fetch_taaft():
 
 
 def fetch_aisecret():
-    """AI Secret — RSS Ghost pour les URLs puis scraping des articles."""
-    results = []
-    SOCIAL = ["twitter.com","x.com","linkedin.com","youtube.com",
-              "facebook.com","instagram.com","threads.net"]
-    # Domaines de presse / référence / académiques cités en source dans les
-    # articles mais qui ne sont jamais des outils IA — sans ça, le scraping
-    # remonte autant de citations arXiv ou d'articles de presse que d'outils.
-    NON_TOOL_DOMAINS = [
-        "arxiv.org","apnews.com","reuters.com","bloomberg.com","nytimes.com",
-        "wsj.com","ft.com","forbes.com","techcrunch.com","theverge.com",
-        "wired.com","axios.com","cnbc.com","businessinsider.com",
-        "wikipedia.org","finance.yahoo.com","yahoo.com","semafor.com",
-        "theinformation.com","arstechnica.com","engadget.com",
-        "venturebeat.com","washingtonpost.com","cnn.com","bbc.com",
-        "aisecret.us","ghost.io",
-    ]
-    try:
-        feed = feedparser.parse("https://aisecret.us/rss/", request_headers={
-            "User-Agent": HEADERS["User-Agent"],
-        })
-        if not feed.entries:
-            raise Exception("0 entrées RSS")
-
-        for entry in feed.entries[:5]:
-            date_iso = parse_date(entry.get("published") or entry.get("updated",""))
-            if not is_recent(date_iso):
-                continue
-            article_url = entry.get("link", "")
-            if not article_url:
-                continue
-
-            try:
-                r = requests.get(article_url, headers=HEADERS, timeout=15)
-                r.raise_for_status()
-                soup = BeautifulSoup(r.text, "html.parser")
-                content = soup.find(class_="gh-content")
-                if not content:
-                    continue
-
-                seen_in_article = set()
-                for a in content.find_all("a", href=True):
-                    href = a["href"].strip()
-                    text = a.get_text(strip=True)
-                    if not href.startswith("http") or len(text) < 4:
-                        continue
-                    low = href.lower()
-                    if any(s in low for s in SOCIAL):
-                        continue
-                    domain = urlparse(href).netloc.lower()
-                    if any(d in domain for d in NON_TOOL_DOMAINS):
-                        continue
-                    href_key = href.rstrip("/").lower()
-                    if href_key in seen_in_article:
-                        continue
-                    seen_in_article.add(href_key)
-
-                    # Le titre du lien seul ("MatrAIx") n'explique rien : le
-                    # paragraphe/item parent porte la phrase de contexte
-                    # ("👀 What's happening: ..." en <p>, ou une puce <li> dans
-                    # les éditions "roundup"), dont on retire le label structurel.
-                    desc = ""
-                    parent = a.find_parent(["p", "li"])
-                    if parent:
-                        desc = parent.get_text(" ", strip=True)
-                        desc = re.sub(r"^\W*[A-Za-z][\w' ]{0,30}:\s*", "", desc)
-
-                    results.append(make_tool(text, href, desc, "AI Secret", date_iso))
-            except Exception:
-                continue
-
-        print(f"  AI Secret (scraping): {len(results)}")
-    except Exception as e:
-        print(f"  AI Secret erreur: {e}", file=sys.stderr)
-    return results
+    """AI Secret — newsletter d'actualité (le scraping des liens d'outils ne
+    marche plus : le flux ne contient plus que des teasers). Titres en RSS,
+    classés « article » par classify.py."""
+    return fetch_rss("AI Secret", "https://aisecret.us/feed", ai_filter=False, max_items=15)
 
 
 def fetch_bensbites():
@@ -679,7 +590,7 @@ def fetch_rundown():
 
 def fetch_tldr_ai():
     """TLDR AI — RSS newsletter."""
-    return fetch_rss("TLDR AI", "https://tldr.tech/ai/rss", ai_filter=False, max_items=20)
+    return fetch_rss("TLDR AI", "https://tldr.tech/api/rss/ai", ai_filter=False, max_items=20)
 
 
 def fetch_techcrunch_ai():
@@ -714,6 +625,60 @@ def fetch_github_trending():
     """GitHub Trending — RSS tiers, filtrés IA."""
     return fetch_rss("GitHub Trending", "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
                      ai_filter=True, max_items=15)
+
+
+ROUNDUP_TITLE = re.compile(r"new\s+ai\s+tools|tools\s+this\s+week|ai\s+tools\s+(?:to|you)", re.IGNORECASE)
+
+def fetch_toolnerd():
+    """The Tool Nerd — blog de tests. Les articles « New AI tools this week »
+    listent des outils avec leur lien : on en extrait un par lien externe.
+    Les autres articles sont gardés comme articles (titre seul)."""
+    results = []
+    try:
+        feed = feedparser.parse("https://thetoolnerd.com/feed", request_headers={"User-Agent": HEADERS["User-Agent"]})
+        if not feed.entries:
+            raise Exception(f"0 entrées (bozo={feed.bozo})")
+        for entry in feed.entries[:20]:
+            title    = entry.get("title","").strip()
+            link     = entry.get("link","")
+            date_iso = parse_date(entry.get("published") or entry.get("updated",""))
+            html     = (entry.get("content") or [{}])[0].get("value","") or entry.get("summary","")
+            if not title or not is_recent(date_iso):
+                continue
+            if ROUNDUP_TITLE.search(title):
+                seen = set()
+                for a in BeautifulSoup(html, "html.parser").find_all("a", href=True):
+                    href, text = a["href"].strip(), a.get_text(strip=True)
+                    key = href.rstrip("/").lower()
+                    if (not href.startswith("http") or len(text) < 3 or len(text) > 60 or key in seen
+                            or not is_external(href) or "thetoolnerd.com" in href):
+                        continue
+                    seen.add(key)
+                    parent = a.find_parent(["p", "li"])
+                    desc = parent.get_text(" ", strip=True) if parent else ""
+                    results.append(make_tool(text, href, desc, "The Tool Nerd (sélection)", date_iso))
+            else:
+                desc = BeautifulSoup(entry.get("summary",""), "html.parser").get_text(" ", strip=True)
+                results.append(make_tool(title, link, desc, "The Tool Nerd", date_iso))
+        print(f"  The Tool Nerd (RSS): {len(results)}")
+    except Exception as e:
+        print(f"  The Tool Nerd erreur: {e}", file=sys.stderr)
+    return results
+
+
+def fetch_mtd():
+    """MTD Technologies — blog IA pour PME (articles), filtré IA."""
+    return fetch_rss("MTD Technologies", "https://mtdtechnologies.com/feed", ai_filter=True, max_items=10)
+
+
+def fetch_actuia():
+    """ActuIA — actualité IA en français."""
+    return fetch_rss("ActuIA", "https://www.actuia.com/feed/", ai_filter=False, max_items=15)
+
+
+def fetch_siecledigital():
+    """Siècle Digital — actualité numérique en français, filtré IA."""
+    return fetch_rss("Siècle Digital", "https://www.siecledigital.fr/feed/", ai_filter=True, max_items=20)
 
 
 def fetch_lobsters():
@@ -756,7 +721,14 @@ FETCHERS = [
     fetch_github_trending,
     fetch_lobsters,
     fetch_bestofai,
-] + [make_wp_fetcher(name, domain) for name, domain in WP_DIRECTORIES]
+    fetch_toolnerd,
+    fetch_mtd,
+    fetch_actuia,
+    fetch_siecledigital,
+] + [make_wp_fetcher(name, domain) for name, domain in WP_DIRECTORIES] + (
+    [make_wp_fetcher(name, domain) for name, domain in DORMANT_WP_DIRECTORIES]
+    if datetime.now(timezone.utc).day == 1 else []
+)
 
 def deduplicate(tools):
     seen_urls, seen_names, out = set(), set(), []
@@ -813,9 +785,22 @@ def main():
                      if t["tool_url"].rstrip("/").lower() not in previous_urls)
     # Nouveaux en premier : en cas de doublon entre les deux runs, ce sont
     # leurs métadonnées (plus fraîches) qui l'emportent dans deduplicate().
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    for t in fetched_this_run:
+        if t["tool_url"].rstrip("/").lower() not in previous_urls:
+            t["first_seen"] = today
     all_tools = deduplicate(fetched_this_run + previous_tools)
     all_tools.sort(key=lambda t: t.get("date_iso",""), reverse=True)
     all_tools = [t for t in all_tools if len(t["name"].strip()) >= 3]
+    all_tools = [classify_tool(t) for t in all_tools]
+    verdicts = {}
+    for t in all_tools:
+        verdicts[t["verdict"]] = verdicts.get(t["verdict"], 0) + 1
+    today_verdicts = {}
+    for t in all_tools:
+        if t.get("first_seen") == today:
+            today_verdicts[t["verdict"]] = today_verdicts.get(t["verdict"], 0) + 1
+    print(f"\nVerdicts : {verdicts} — nouveaux du jour : {today_verdicts}")
     print(f"\nNouveaux (jamais vus) : {new_today} — Total cumulé : {len(all_tools)}")
 
     stats = {}
@@ -835,6 +820,9 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "count":        len(all_tools),
         "new_today":    new_today,
+        "run_date":     today,
+        "verdicts":     verdicts,
+        "today_verdicts": today_verdicts,
         "tools":        all_tools,
     }
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:

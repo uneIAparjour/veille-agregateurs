@@ -2,7 +2,12 @@ name: Veille quotidienne outils IA
 
 on:
   schedule:
-    - cron: '0 18 * * *'  # 18h UTC = 20h heure française (été) / 19h (hiver)
+    # GitHub planifie en UTC et ignore l'heure d'été : on déclenche à 16h et 17h
+    # UTC, et l'étape « Garde horaire » ne laisse passer que celle qui tombe à
+    # 18h heure de Paris (16h UTC l'été, 17h UTC l'hiver). GitHub peut retarder
+    # un cron de quelques minutes, d'où la tolérance sur toute l'heure de 18h.
+    - cron: '0 16 * * *'
+    - cron: '0 17 * * *'
   workflow_dispatch:        # déclenchement manuel
 
 jobs:
@@ -12,27 +17,43 @@ jobs:
       contents: write
 
     steps:
+      - name: Garde horaire (18h Paris)
+        id: gate
+        run: |
+          H=$(TZ=Europe/Paris date +%H)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$H" != "18" ]; then
+            echo "Il est ${H}h à Paris : ce n'est pas le créneau de 18h, on saute."
+            echo "run=false" >> $GITHUB_OUTPUT
+          else
+            echo "run=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Checkout
+        if: steps.gate.outputs.run == 'true'
         uses: actions/checkout@v4
 
       - name: Python 3.12
+        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Installer les dépendances
+        if: steps.gate.outputs.run == 'true'
         run: pip install requests feedparser beautifulsoup4 lxml
 
       - name: Récupérer les outils
+        if: steps.gate.outputs.run == 'true'
         run: python fetch_tools.py
 
       - name: Vérifier si tools.json a changé
+        if: steps.gate.outputs.run == 'true'
         id: check
         run: |
           git diff --quiet tools.json || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit et push
-        if: steps.check.outputs.changed == 'true'
+        if: steps.gate.outputs.run == 'true' && steps.check.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

@@ -9,10 +9,11 @@ Outil de veille quotidienne pour [uneiaparjour.fr](https://www.uneiaparjour.fr).
 ## Fonctionnement
 
 ```
-GitHub Actions (20h chaque soir)
+GitHub Actions (18h heure de Paris chaque jour)
     ↓
 fetch_tools.py
     ↓ interroge ~39 sources (RSS, WP API, JSON API, scraping HTML)
+classify.py  ← classe chaque entrée (outil/article/expert, prix, verdict)
 tools.json  ←  commit automatique si changement
     ↓
 index.html  ←  lit tools.json via fetch(), affiche les cartes
@@ -26,7 +27,8 @@ Le script Python tourne côté serveur (GitHub Actions), sans contrainte de CORS
 
 ```
 📄 index.html              ← Interface GitHub Pages (lecture tools.json)
-📄 fetch_tools.py          ← Script de collecte (39 sources)
+📄 fetch_tools.py          ← Script de collecte
+📄 classify.py             ← Tri : article / expert / prix / verdict (retenu, à vérifier, écarté)
 📄 tools.json              ← Données générées automatiquement
 📄 README.md               ← Ce fichier
 📁 .github/workflows/
@@ -177,3 +179,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 **Données** (`tools.json`) — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 Librement réutilisables et adaptables, y compris à des fins commerciales, avec mention de la source : **Bertrand Formet — uneiaparjour.fr**. Les contenus originaux des répertoires sources restent soumis à leurs propres droits.
+
+
+---
+
+## Tri automatique (classify.py)
+
+Chaque entrée reçoit un **verdict** et la liste des **raisons** (affichées sur la carte) :
+
+| Verdict | Sens |
+|---|---|
+| `keep` Retenu | outil grand public, free ou freemium confirmé |
+| `review` À vérifier | le filtre ne sait pas : prix inconnu, description vide, titre en phrase, mot « API », source mixte (Product Hunt, Hacker News), lien vers l'annuaire |
+| `drop` Écarté | article (levée de fonds, actualité, listicle, tutoriel), trop technique (MCP, SDK, CLI, Docker, lien GitHub…), payant confirmé, contenu adulte |
+
+Rien n'est supprimé : les écartés restent consultables (puce « Écartés »). Les règles se corrigent dans `classify.py` (mots-clés « forts » = tranchent ; « faibles » = renvoient en « à vérifier »), puis `python3 classify.py tools.json --write` reclasse tout le stock.
+
+Les sources mortes (404, 403 Cloudflare, 521) sont dans `DORMANT_WP_DIRECTORIES` et ne sont retestées que le 1er du mois.

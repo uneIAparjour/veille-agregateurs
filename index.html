@@ -34,6 +34,19 @@
   .filter-btn{padding:5px 14px;border-radius:20px;border:1px solid var(--border2);background:transparent;color:var(--text2);font-size:12px;cursor:pointer;transition:all .15s}
   .filter-btn:hover{border-color:var(--orange);color:var(--orange)}
   .filter-btn.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+  .chip-bar{display:flex;gap:6px;margin:-.5rem 0 1rem;flex-wrap:wrap;align-items:center}
+  .chip-lbl{font-size:11px;color:var(--text3);margin:0 2px 0 8px}
+  .chip-lbl:first-child{margin-left:0}
+  .chip{padding:3px 11px;border-radius:14px;border:1px dashed var(--border2);background:transparent;color:var(--text3);font-size:12px;cursor:pointer;transition:all .15s}
+  .chip:hover{border-color:var(--orange);color:var(--orange)}
+  .chip.on{background:var(--bg3);color:var(--text);border:1px solid var(--orange)}
+  .recap{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:8px 12px;margin-bottom:1rem;font-size:12px;color:var(--text2);display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .recap b{color:var(--text)}
+  .b-keep{background:var(--green-bg);color:var(--green)}
+  .b-review{background:var(--bg3);color:var(--orange);border:1px solid var(--orange)}
+  .b-drop{background:var(--bg3);color:var(--text3);border:1px solid var(--border)}
+  .why{font-size:11px;color:var(--text3);margin:-4px 0 8px;line-height:1.5}
+  .more-btn{display:block;margin:14px auto}
   .cpill{display:inline-flex;align-items:center;justify-content:center;background:var(--bg3);color:var(--text3);border-radius:10px;min-width:18px;height:18px;font-size:10px;font-weight:700;padding:0 5px;margin-left:4px}
   .cards{display:flex;flex-direction:column;gap:10px}
   .card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;transition:border-color .15s,opacity .2s}
@@ -125,18 +138,29 @@
   <div class="toolbar">
     <div>
       <div class="page-title">Veille du <span id="today-lbl">—</span></div>
-      <div class="update-info">Automatique chaque nuit · <button class="rbtn" onclick="loadTools()">↻ Actualiser</button></div>
+      <div class="update-info">Automatique chaque jour à 18h · <button class="rbtn" onclick="loadTools()">↻ Actualiser</button></div>
     </div>
     <a class="btn btn-trigger" href="https://github.com/uneIAparjour/veille-agregateurs/actions/workflows/fetch-tools.yml" target="_blank">
       ▶ Lancer la collecte
     </a>
   </div>
   <div class="filter-bar">
-    <button class="filter-btn active" onclick="setFilter('all',this)">Tous <span class="cpill" id="f-all">0</span></button>
-    <button class="filter-btn" onclick="setFilter('pending',this)">Nouveaux <span class="cpill" id="f-pend">0</span></button>
-    <button class="filter-btn" onclick="setFilter('free',this)">Free <span class="cpill" id="f-free">0</span></button>
+    <button class="filter-btn active" onclick="setFilter('review',this)">À vérifier <span class="cpill" id="f-review">0</span></button>
+    <button class="filter-btn" onclick="setFilter('keep',this)">Free / Freemium <span class="cpill" id="f-keep">0</span></button>
+    <button class="filter-btn" onclick="setFilter('drop',this)">Écartés <span class="cpill" id="f-drop">0</span></button>
+    <button class="filter-btn" onclick="setFilter('all',this)">Tous <span class="cpill" id="f-all">0</span></button>
     <button class="filter-btn" onclick="setFilter('pub',this)">À publier <span class="cpill" id="f-pub">0</span></button>
     <button class="filter-btn" onclick="setFilter('done',this)">Déjà publié <span class="cpill" id="f-done">0</span></button>
+  </div>
+  <div class="recap" id="recap"></div>
+  <div class="chip-bar" id="chip-bar">
+    <span class="chip-lbl">Prix</span>
+    <button class="chip" data-g="p" data-v="free" onclick="toggleChip(this)">Free</button>
+    <button class="chip" data-g="p" data-v="freemium" onclick="toggleChip(this)">Freemium</button>
+    <button class="chip" data-g="p" data-v="unknown" onclick="toggleChip(this)">Inconnu</button>
+    <button class="chip" data-g="p" data-v="paid" onclick="toggleChip(this)">Payant</button>
+    <span class="chip-lbl">Date</span>
+    <button class="chip" data-g="d" data-v="today" onclick="toggleChip(this)">Du jour</button>
   </div>
   <div id="cards-zone"><div class="loading"><div class="spinner"></div><br>Chargement...</div></div>
   <div id="export-area" class="export-area" style="display:none">
@@ -151,7 +175,11 @@
 
 <script>
 const SK='veille-states-v3';
-let tools=[],newToday=0,states=JSON.parse(localStorage.getItem(SK)||'{}'),filter='all';
+const FK='veille-chips-v2';
+const DEFAULT_CHIPS={p:[],d:[]};
+let chips=(()=>{try{return Object.assign({},DEFAULT_CHIPS,JSON.parse(localStorage.getItem(FK)||'{}'))}catch(e){return{...DEFAULT_CHIPS}}})();
+let runDate='',todayV={},limit=300;
+let tools=[],newToday=0,states=JSON.parse(localStorage.getItem(SK)||'{}'),filter='review';
 
 function saveS(){localStorage.setItem(SK,JSON.stringify(states))}
 function getS(t){return(states[t.tool_url]||{}).state||'pending'}
@@ -165,7 +193,7 @@ async function loadTools(){
     if(!r.ok)throw new Error('HTTP '+r.status);
     const d=await r.json();
     tools=d.tools||[];
-    newToday=d.new_today||0;
+    newToday=d.new_today||0;runDate=d.run_date||'';todayV=d.today_verdicts||{};
     pruneS();
     document.getElementById('today-lbl').textContent=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'});
     updateStats();updateSidebar();render();
@@ -180,17 +208,33 @@ function sortedTools(list){
     if(getS(t)==='pending') pending.push(t);
     else rest.push(t);
   }
-  const pricingOrder={free:0,freemium:1,unknown:2,paid:3};
-  pending.sort((a,b)=>(pricingOrder[a.pricing||'unknown']||2)-(pricingOrder[b.pricing||'unknown']||2));
+  const vo={keep:0,review:1,drop:2},po={free:0,freemium:1,unknown:2,paid:3};
+  pending.sort((a,b)=>((vo[a.verdict]??1)-(vo[b.verdict]??1))||((po[a.pricing]??2)-(po[b.pricing]??2))||String(b.date_iso||'').localeCompare(String(a.date_iso||'')));
   return{pending,rest};
 }
 
+function chipOn(g,v){return chips[g].includes(v)}
+function matchChips(t){
+  if(chips.p.length&&!chips.p.includes(t.pricing||'unknown'))return false;
+  if(chips.d.includes('today')&&t.first_seen!==runDate)return false;
+  return true;
+}
+function toggleChip(btn){
+  const g=btn.dataset.g,v=btn.dataset.v,i=chips[g].indexOf(v);
+  if(i>=0)chips[g].splice(i,1);else chips[g].push(v);
+  try{localStorage.setItem(FK,JSON.stringify(chips))}catch(e){}
+  limit=300;syncChips();render();
+}
+function syncChips(){document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('on',chipOn(b.dataset.g,b.dataset.v)))}
+function showMore(){limit+=300;render()}
+
 function filteredTools(){
-  if(filter==='pending')return tools.filter(t=>getS(t)==='pending');
+  // « À publier » et « Déjà publié » ignorent le tri auto : ce que tu as retenu reste visible.
   if(filter==='pub')return tools.filter(t=>getS(t)==='pub');
   if(filter==='done')return tools.filter(t=>getS(t)==='done');
-  if(filter==='free')return tools.filter(t=>(t.pricing==='free'||t.pricing==='freemium'));
-  return tools;
+  if(filter==='all')return tools.filter(matchChips);
+  // Onglets de tri : seulement les outils pas encore triés.
+  return tools.filter(t=>getS(t)==='pending'&&(t.verdict||'review')===filter&&matchChips(t));
 }
 
 function updateStats(){
@@ -199,6 +243,10 @@ function updateStats(){
   const done=tools.filter(t=>getS(t)==='done').length;
   const pend=tools.filter(t=>getS(t)==='pending').length;
   const freeCount=tools.filter(t=>t.pricing==='free'||t.pricing==='freemium').length;
+  const vc={keep:0,review:0,drop:0};tools.forEach(t=>{if(getS(t)==='pending')vc[t.verdict||'review']++});
+  for(const k in vc)document.getElementById('f-'+k).textContent=vc[k];
+  const tv=todayV,tn=(tv.keep||0)+(tv.review||0)+(tv.drop||0);
+  document.getElementById('recap').innerHTML=tn||runDate?`<span>Dernière collecte${runDate?' ('+new Date(runDate).toLocaleDateString('fr-FR',{day:'numeric',month:'short'})+')':''} :</span><span><b>${tn}</b> nouveaux</span><span><b>${tv.keep||0}</b> retenus</span><span><b>${tv.review||0}</b> à vérifier</span><span><b>${tv.drop||0}</b> écartés</span>`:'';
   document.getElementById('s-total').textContent=n;
   document.getElementById('s-today').textContent=newToday;
   document.getElementById('s-pub').textContent=pub;
@@ -206,10 +254,8 @@ function updateStats(){
   document.getElementById('s-new').textContent=pend;
   document.getElementById('s-free').textContent=freeCount;
   document.getElementById('f-all').textContent=n;
-  document.getElementById('f-pend').textContent=pend;
   document.getElementById('f-pub').textContent=pub;
   document.getElementById('f-done').textContent=done;
-  document.getElementById('f-free').textContent=freeCount;
 }
 
 function updateSidebar(){
@@ -220,6 +266,13 @@ function updateSidebar(){
 }
 
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
+
+function verdictBadge(t){
+  const m={keep:['b-keep','Retenu'],review:['b-review','À vérifier'],drop:['b-drop','Écarté']};
+  const k=m[t.verdict];if(!k)return'';
+  const kind=t.kind&&t.kind!=='outil'?` · ${t.kind}`:'';
+  return`<span class="badge ${k[0]}">${k[1]}${kind}</span>`;
+}
 
 function pricingBadge(p){
   if(p==='free')return '<span class="badge b-free">Free</span>';
@@ -233,18 +286,20 @@ function render(){
   if(list.length===0){zone.innerHTML='<div class="empty"><div class="empty-icon">○</div>Aucun outil dans cette vue.</div>';return;}
 
   const{pending,rest}=sortedTools(list);
+  const total=list.length;
   let html='<div class="cards">';
 
   if(pending.length>0 && rest.length>0 && filter==='all'){
     html+=`<div class="section-sep"><div class="sep-dot" style="background:var(--orange)"></div>Nouveaux — ${pending.length} outil(s)</div>`;
-    html+=pending.map(renderCard).join('');
+    html+=pending.slice(0,limit).map(renderCard).join('');
     html+=`<div class="section-sep" style="margin-top:16px"><div class="sep-dot" style="background:var(--text3)"></div>Déjà vus</div>`;
-    html+=rest.map(renderCard).join('');
+    html+=rest.slice(0,Math.max(50,limit-pending.length)).map(renderCard).join('');
   } else {
-    html+=list.map(renderCard).join('');
+    html+=list.slice(0,limit).map(renderCard).join('');
   }
 
   html+='</div>';
+  if(total>limit)html+=`<button class="btn more-btn" onclick="showMore()">Afficher plus (${Math.min(limit,total)} / ${total})</button>`;
   zone.innerHTML=html;
 }
 
@@ -261,8 +316,9 @@ function renderCard(t){
   return`<div class="card ${cls}">
     <div class="card-top">
       <a class="tool-name" href="${esc(url)}" target="_blank">${esc(t.name)}</a>
-      <div class="cbadges">${pricingBadge(t.pricing||'')}<span class="badge b-src">${esc(t.source||'—')}</span>${s==='pub'?'<span class="badge b-pub">À publier</span>':s==='done'?'<span class="badge b-done">Publié</span>':''}</div>
+      <div class="cbadges">${verdictBadge(t)}${pricingBadge(t.pricing||'')}<span class="badge b-src">${esc(t.source||'—')}</span>${s==='pub'?'<span class="badge b-pub">À publier</span>':s==='done'?'<span class="badge b-done">Publié</span>':''}</div>
     </div>
+    ${(t.why&&t.why.length)?`<div class="why">${t.why.map(esc).join(' · ')}</div>`:''}
     ${t.description?`<p class="card-desc">${esc(t.description)}</p>`:''}
     <div class="card-meta">
       ${(t.categories||[]).map(c=>`<span class="badge b-cat">${esc(c)}</span>`).join('')}
@@ -341,7 +397,7 @@ function importStatesBackup(file){
   document.getElementById('import-file').value='';
 }
 
-loadTools();
+syncChips();loadTools();
 </script>
 </body>
 </html>
